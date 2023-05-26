@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Azure AD Connect - Trevors Dev Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="www.cumulus.wiki/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/www.cumulus.wiki/css/style.min.6719d72e323121369d5caeb4264b95d8a63cf1deaab029da67602fe5a046e0a4.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-home">
+      <a href="www.cumulus.wiki/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-docs">
+      <a href="www.cumulus.wiki/docs/">
+        <span>Docs</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="www.cumulus.wiki"><img alt="Logo" src="/www.cumulus.wiki/images/logo.svg" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="www.cumulus.wiki"><img alt="Logo" src="/www.cumulus.wiki/images/logo-mobile.svg" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-home">
+      <a href="www.cumulus.wiki/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-docs">
+      <a href="www.cumulus.wiki/docs/">
+        <span>Docs</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Docs</h4>
+  <ul>
+    
+    <li class="">
+      <a href="www.cumulus.wiki/docs/aadr/">Azure AD Roles and RBAC</a>
+    </li>
+    
+    <li class="active ">
+      <a href="www.cumulus.wiki/docs/adc/">Azure AD Connect</a>
+    </li>
+    
+    <li class="">
+      <a href="www.cumulus.wiki/docs/azad/">Azure Active Directory</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+<h1 class="title">Azure AD Connect</h1>
+<div class="content ">
+  <h1 id="azure-ad-connect">Azure AD Connect</h1>
+<p>Azure AD Connect is a Microsoft tool that enables organizations to integrate their on-premises Active Directory (AD) infrastructure with Azure Active Directory (Azure AD), providing a seamless and unified identity management solution. It allows for synchronization of user accounts, passwords, and group membership information between on-premises AD and Azure AD. This comprehensive document aims to provide an extensive overview of Azure AD Connect, its features, deployment options, and benefits.</p>
+<h2 id="overview">Overview</h2>
+<p>Azure AD Connect serves as the synchronization engine between on-premises AD and Azure AD. It facilitates a single sign-on experience for users by synchronizing their identities, thus enabling them to access both on-premises and cloud-based applications and services using a single set of credentials.</p>
+<h2 id="features">Features</h2>
+<h3 id="user-and-group-synchronization">User and Group Synchronization</h3>
+<p>Azure AD Connect synchronizes user accounts and groups from on-premises AD to Azure AD. This synchronization process ensures that user accounts, group memberships, and attributes are up-to-date and consistent across both environments.</p>
+<h3 id="password-hash-synchronization">Password Hash Synchronization</h3>
+<p>Azure AD Connect supports password hash synchronization, which allows users to sign in to Azure AD using the same password they use for their on-premises AD account. Password changes and resets performed on-premises are automatically synchronized to Azure AD, providing a seamless user experience.</p>
+<h3 id="pass-through-authentication">Pass-Through Authentication</h3>
+<p>Pass-Through Authentication is an authentication method that validates user passwords against on-premises AD in real-time. It allows users to sign in to Azure AD-connected applications without the need to synchronize their passwords to the cloud.</p>
+<h3 id="seamless-single-sign-on-sso">Seamless Single Sign-On (SSO)</h3>
+<p>With Azure AD Connect, organizations can enable SSO for their users, simplifying the sign-in process. Once authenticated against their on-premises AD, users gain automatic access to cloud-based applications and services without the need to re-enter their credentials.</p>
+<h3 id="device-writeback">Device Writeback</h3>
+<p>Azure AD Connect offers device writeback functionality, which enables organizations to register and manage on-premises devices in Azure AD. This feature enhances device management capabilities, allowing for features such as conditional access and device-based policies in Azure AD.</p>
+<h3 id="health-monitoring-and-alerts">Health Monitoring and Alerts</h3>
+<p>Azure AD Connect provides monitoring capabilities to track the synchronization process, ensuring that synchronization occurs as expected. It also generates alerts and notifications in case of any issues or failures, helping administrators proactively address synchronization problems.</p>
+<h3 id="customization-and-filtering">Customization and Filtering</h3>
+<p>Administrators can customize and filter the objects that are synchronized between on-premises AD and Azure AD. This allows organizations to control which user accounts, groups, and attributes are synchronized, providing flexibility and control over the synchronization process.</p>
+<h2 id="deployment-options">Deployment Options</h2>
+<p>Azure AD Connect offers different deployment options to cater to the diverse needs of organizations. The available deployment options include:</p>
+<h3 id="express-settings">Express Settings</h3>
+<p>Express Settings is the default deployment option, designed for organizations seeking a simple and quick setup. It automatically configures most of the recommended settings based on Microsoft&rsquo;s best practices.</p>
+<h3 id="custom-settings">Custom Settings</h3>
+<p>Custom Settings offer a more granular level of control during the deployment process. It allows organizations to choose specific configuration options, such as the synchronization source, sign-in methods, and optional features based on their requirements.</p>
+<h3 id="staging-mode">Staging Mode</h3>
+<p>Staging Mode enables organizations to deploy Azure AD Connect in a non-intrusive manner. It allows administrators to perform a trial run of the synchronization process without affecting the production environment. This helps ensure that synchronization and configuration settings are correctly implemented before making them active.</p>
+<h2 id="benefits">Benefits</h2>
+<p>Azure AD Connect offers numerous benefits to organizations seeking to integrate their on-premises AD with Azure AD:</p>
+<ol>
+<li>
+<p><strong>Unified Identity Management:</strong> Azure AD Connect provides a unified identity management solution, allowing users to seamlessly access on-premises and cloud-based resources using a single set of credentials.</p>
+</li>
+<li>
+<p><strong>Reduced Administrative Overhead:</strong> By synchronizing user accounts and passwords between on-premises AD and Azure AD, organizations can significantly reduce administrative overhead associated with managing separate identity stores.</p>
+</li>
+<li>
+<p><strong>Enhanced Security:</strong> Azure AD Connect supports various authentication methods, including password hash synchronization and pass-through authentication, which enhance security by leveraging on-premises AD&rsquo;s robust security controls.</p>
+</li>
+<li>
+<p><strong>Improved User Experience:</strong> With SSO capabilities, users can enjoy a seamless sign-in experience, accessing applications and services without the need for multiple sets of credentials.</p>
+</li>
+<li>
+<p><strong>Flexibility and Control:</strong> Azure AD Connect offers customization and filtering options, allowing organizations to control which objects and attributes are synchronized, ensuring compliance with organizational policies.</p>
+</li>
+<li>
+<p><strong>Centralized Device Management:</strong> The device writeback feature allows organizations to manage on-premises devices in Azure AD, facilitating better device management and enabling features such as conditional access.</p>
+</li>
+<li>
+<p><strong>Monitoring and Troubleshooting:</strong> Azure AD Connect provides monitoring capabilities and alerts, enabling administrators to proactively monitor and troubleshoot synchronization issues, ensuring a smooth synchronization process.</p>
+</li>
+</ol>
+<h2 id="conclusion">Conclusion</h2>
+<p>Azure AD Connect is a powerful tool that bridges the gap between on-premises AD and Azure AD, providing organizations with a seamless and unified identity management solution. With its synchronization capabilities, SSO functionality, and various deployment options, Azure AD Connect simplifies identity management, enhances security, and improves the overall user experience for organizations embracing Microsoft&rsquo;s cloud services.</p>
+
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          <ul>
+            <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/www.cumulus.wiki/js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+
+</html>

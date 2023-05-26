@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs on Trevors Dev Notes</title>
+    <link>www.cumulus.wiki/docs/</link>
+    <description>Recent content in Docs on Trevors Dev Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 25 May 2023 20:21:28 -0400</lastBuildDate><atom:link href="www.cumulus.wiki/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure AD Roles and RBAC</title>
+      <link>www.cumulus.wiki/docs/aadr/</link>
+      <pubDate>Thu, 25 May 2023 20:21:28 -0400</pubDate>
+      
+      <guid>www.cumulus.wiki/docs/aadr/</guid>
+      <description>Role-Based Access Control (RBAC) is a vital component of Azure&amp;rsquo;s security model. RBAC allows you to assign specific roles to users or groups, granting them the necessary permissions to manage Azure resources. Azure provides a set of built-in roles with different levels of access, such as Owner, Contributor, and Reader. Additionally, you can create custom roles to meet specific requirements. RBAC ensures that users have the right level of access to perform their tasks while maintaining security and governance.</description>
+    </item>
+    
+    <item>
+      <title>Azure AD Connect</title>
+      <link>www.cumulus.wiki/docs/adc/</link>
+      <pubDate>Thu, 25 May 2023 19:49:25 -0400</pubDate>
+      
+      <guid>www.cumulus.wiki/docs/adc/</guid>
+      <description>Azure AD Connect Azure AD Connect is a Microsoft tool that enables organizations to integrate their on-premises Active Directory (AD) infrastructure with Azure Active Directory (Azure AD), providing a seamless and unified identity management solution. It allows for synchronization of user accounts, passwords, and group membership information between on-premises AD and Azure AD. This comprehensive document aims to provide an extensive overview of Azure AD Connect, its features, deployment options, and benefits.</description>
+    </item>
+    
+    <item>
+      <title>Azure Active Directory</title>
+      <link>www.cumulus.wiki/docs/azad/</link>
+      <pubDate>Thu, 25 May 2023 19:17:51 -0400</pubDate>
+      
+      <guid>www.cumulus.wiki/docs/azad/</guid>
+      <description>Azure Active Directory (Azure AD) Azure AD is a cloud-based identity and access management service provided by Microsoft Azure. It serves as the foundation for managing user identities and controlling access to Azure resources. Azure AD allows you to create and manage user accounts, groups, and guest accounts. With Azure AD, you can implement single sign-on (SSO) for seamless access to various applications and services. It also provides features like Multi-Factor Authentication (MFA) for enhanced security.</description>
+    </item>
+    
+  </channel>
+</rss>
