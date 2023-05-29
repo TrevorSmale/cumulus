@@ -1,48 +1,25 @@
-baseURL = "www.cumulus.wiki"
-languageCode = "en-us"
-title = "Trevors Dev Notes"
-theme = "hugo-whisper-theme"
+baseURL = "http://localhost"
+title = "Geekdocs"
+theme = "ace-documentation"
 
-pygmentsCodeFences = true
-pygmentsCodefencesGuessSyntax = true
+pluralizeListTitles = false
+
+# Geekdoc required configuration
 pygmentsUseClasses = true
+pygmentsCodeFences = true
+disablePathToLower = true
 
-[module]
-  [module.hugoVersion]
-    extended = true
-    min = "0.55.0"
+# Required if you want to render robots.txt template
+enableRobotsTXT = true
 
-# Controls how many words are printed in the content summary on the docs homepage.
-# See https://gohugo.io/content-management/summaries/
-summaryLength = 30
+# Needed for mermaid shortcodes
+[markup]
+  [markup.goldmark.renderer]
+    # Needed for mermaid shortcode
+    unsafe = true
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 9
 
-[[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
-
-[[menu.main]]
-    name = "Docs"
-    url = "/docs/"
-    weight = 2
-
-[params]
-  google_analytics_id=""
-  homepage_button_link = '/docs'
-  homepage_button_text = 'Let me Read!'
-  homepage_intro = 'My collection of Notes relating to learning IT & Development'
-  homepage_image = '/images/terminal.gif'
-
-  ## You can enable to add anchor links to header elements
-  # enable_anchor_link = true
-
-  [params.homepage_meta_tags]
-    meta_description = "Hugo Whisper is a documentation theme built with Hugo."
-    meta_og_title = "Hugo Whisper Theme"
-    meta_og_type = "website"
-    meta_og_image = "https://raw.githubusercontent.com/JugglerX/hugo-whisper-theme/master/images/tn.png"
-    meta_og_description = "Hugo Whisper is a documentation theme built with Hugo."
-
-  [params.logo]
-      mobile = "/images/logo-mobile.svg"
-      standard  = "/images/logo.svg"
+[taxonomies]
+   tag = "tags"
