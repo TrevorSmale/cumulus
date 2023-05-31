@@ -1,5 +1,5 @@
-baseURL = "http://localhost"
-title = "Geekdocs"
+baseURL = "http://localhost/docs"
+title = "TS Tech Notes"
 theme = "ace-documentation"
 
 pluralizeListTitles = false
@@ -11,6 +11,12 @@ disablePathToLower = true
 
 # Required if you want to render robots.txt template
 enableRobotsTXT = true
+
+# Turn off read more bar 
+disableReadmoreNav = true
+
+# Order alphabetically
+orderSectionby = "title"
 
 # Needed for mermaid shortcodes
 [markup]
