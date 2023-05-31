@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="canonical" href="https://github.com/trevorsmale/cumulus/docs/ADC/">
+
+    <title>
+        
+        Azure AD Connect | TS Tech Notes
+        
+    </title>
+
+    
+    <link href="https://github.com/trevorsmale/cumuluscss/fontawesome.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://github.com/trevorsmale/cumulus/css/ace.min.css">
+
+    
+
+    
+    
+        
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/trevorsmale/cumulus">
+                
+                TS Tech Notes
+            </a>
+        </div>
+        
+    </div>
+    </nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+            <form class="form-inline my-2 my-lg-0 searchbox">
+                <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder="Search">
+            </form>
+
+        
+
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/trevorsmale/cumulus/docs/" class="nav-item my-1 parent haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/docs/"><h6></h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/docs/NT/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/NT/" class="nav-link p-0">
+                    Network Tools
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/WASM/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/WASM/" class="nav-link p-0">
+                    WASM
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/API/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/API/" class="nav-link p-0">
+                    API
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/NGINX/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/NGINX/" class="nav-link p-0">
+                    NGINX
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/tmuxcs/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/tmuxcs/" class="nav-link p-0">
+                    TMUX Cheat Sheet
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/UNIXph/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/UNIXph/" class="nav-link p-0">
+                    UNIX Philosophy
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/ChatGPT/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/ChatGPT/" class="nav-link p-0">
+                    ChatGPT
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/AI/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/AI/" class="nav-link p-0">
+                    AI
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/Cron/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/Cron/" class="nav-link p-0">
+                    Cron
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/Docker/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/Docker/" class="nav-link p-0">
+                    Docker
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/sshfs/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/sshfs/" class="nav-link p-0">
+                    Sshfs
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/nix/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/nix/" class="nav-link p-0">
+                    Nix
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/msd/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/msd/" class="nav-link p-0">
+                    Multi-Site Dynamic Host NGINX Basic Workflow
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/BashBasics/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/BashBasics/" class="nav-link p-0">
+                    Bash Basics
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/podnet/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/podnet/" class="nav-link p-0">
+                    Podman Pod Networking
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/PodmanCP/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/PodmanCP/" class="nav-link p-0">
+                    Podman-Compose.yml
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/AADR/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/AADR/" class="nav-link p-0">
+                    Azure AD Roles and RBAC
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/ADC/" class="nav-item my-1 active">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/ADC/" class="nav-link p-0">
+                    Azure AD Connect
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/AZAD/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/AZAD/" class="nav-link p-0">
+                    Azure Active Directory
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#azure-ad-connect">Azure AD Connect</a>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#features">Features</a>
+          <ul>
+            <li><a href="#user-and-group-synchronization">User and Group Synchronization</a></li>
+            <li><a href="#password-hash-synchronization">Password Hash Synchronization</a></li>
+            <li><a href="#pass-through-authentication">Pass-Through Authentication</a></li>
+            <li><a href="#seamless-single-sign-on-sso">Seamless Single Sign-On (SSO)</a></li>
+            <li><a href="#device-writeback">Device Writeback</a></li>
+            <li><a href="#health-monitoring-and-alerts">Health Monitoring and Alerts</a></li>
+            <li><a href="#customization-and-filtering">Customization and Filtering</a></li>
+          </ul>
+        </li>
+        <li><a href="#deployment-options">Deployment Options</a>
+          <ul>
+            <li><a href="#express-settings">Express Settings</a></li>
+            <li><a href="#custom-settings">Custom Settings</a></li>
+            <li><a href="#staging-mode">Staging Mode</a></li>
+          </ul>
+        </li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<div class="d-flex flex-column">
+    <h1 class="js-title">Azure AD Connect</h1>
+    <div class="d-flex align-items-center">
+        
+    </div>
+</div>
+
+<hr>
+
+
+<h1 id="azure-ad-connect">Azure AD Connect</h1>
+<p>Azure AD Connect is a Microsoft tool that enables organizations to integrate their on-premises Active Directory (AD) infrastructure with Azure Active Directory (Azure AD), providing a seamless and unified identity management solution. It allows for synchronization of user accounts, passwords, and group membership information between on-premises AD and Azure AD. This comprehensive document aims to provide an extensive overview of Azure AD Connect, its features, deployment options, and benefits.</p>
+<h2 id="overview">Overview</h2>
+<p>Azure AD Connect serves as the synchronization engine between on-premises AD and Azure AD. It facilitates a single sign-on experience for users by synchronizing their identities, thus enabling them to access both on-premises and cloud-based applications and services using a single set of credentials.</p>
+<h2 id="features">Features</h2>
+<h3 id="user-and-group-synchronization">User and Group Synchronization</h3>
+<p>Azure AD Connect synchronizes user accounts and groups from on-premises AD to Azure AD. This synchronization process ensures that user accounts, group memberships, and attributes are up-to-date and consistent across both environments.</p>
+<h3 id="password-hash-synchronization">Password Hash Synchronization</h3>
+<p>Azure AD Connect supports password hash synchronization, which allows users to sign in to Azure AD using the same password they use for their on-premises AD account. Password changes and resets performed on-premises are automatically synchronized to Azure AD, providing a seamless user experience.</p>
+<h3 id="pass-through-authentication">Pass-Through Authentication</h3>
+<p>Pass-Through Authentication is an authentication method that validates user passwords against on-premises AD in real-time. It allows users to sign in to Azure AD-connected applications without the need to synchronize their passwords to the cloud.</p>
+<h3 id="seamless-single-sign-on-sso">Seamless Single Sign-On (SSO)</h3>
+<p>With Azure AD Connect, organizations can enable SSO for their users, simplifying the sign-in process. Once authenticated against their on-premises AD, users gain automatic access to cloud-based applications and services without the need to re-enter their credentials.</p>
+<h3 id="device-writeback">Device Writeback</h3>
+<p>Azure AD Connect offers device writeback functionality, which enables organizations to register and manage on-premises devices in Azure AD. This feature enhances device management capabilities, allowing for features such as conditional access and device-based policies in Azure AD.</p>
+<h3 id="health-monitoring-and-alerts">Health Monitoring and Alerts</h3>
+<p>Azure AD Connect provides monitoring capabilities to track the synchronization process, ensuring that synchronization occurs as expected. It also generates alerts and notifications in case of any issues or failures, helping administrators proactively address synchronization problems.</p>
+<h3 id="customization-and-filtering">Customization and Filtering</h3>
+<p>Administrators can customize and filter the objects that are synchronized between on-premises AD and Azure AD. This allows organizations to control which user accounts, groups, and attributes are synchronized, providing flexibility and control over the synchronization process.</p>
+<h2 id="deployment-options">Deployment Options</h2>
+<p>Azure AD Connect offers different deployment options to cater to the diverse needs of organizations. The available deployment options include:</p>
+<h3 id="express-settings">Express Settings</h3>
+<p>Express Settings is the default deployment option, designed for organizations seeking a simple and quick setup. It automatically configures most of the recommended settings based on Microsoft&rsquo;s best practices.</p>
+<h3 id="custom-settings">Custom Settings</h3>
+<p>Custom Settings offer a more granular level of control during the deployment process. It allows organizations to choose specific configuration options, such as the synchronization source, sign-in methods, and optional features based on their requirements.</p>
+<h3 id="staging-mode">Staging Mode</h3>
+<p>Staging Mode enables organizations to deploy Azure AD Connect in a non-intrusive manner. It allows administrators to perform a trial run of the synchronization process without affecting the production environment. This helps ensure that synchronization and configuration settings are correctly implemented before making them active.</p>
+<h2 id="benefits">Benefits</h2>
+<p>Azure AD Connect offers numerous benefits to organizations seeking to integrate their on-premises AD with Azure AD:</p>
+<ol>
+<li>
+<p><strong>Unified Identity Management:</strong> Azure AD Connect provides a unified identity management solution, allowing users to seamlessly access on-premises and cloud-based resources using a single set of credentials.</p>
+</li>
+<li>
+<p><strong>Reduced Administrative Overhead:</strong> By synchronizing user accounts and passwords between on-premises AD and Azure AD, organizations can significantly reduce administrative overhead associated with managing separate identity stores.</p>
+</li>
+<li>
+<p><strong>Enhanced Security:</strong> Azure AD Connect supports various authentication methods, including password hash synchronization and pass-through authentication, which enhance security by leveraging on-premises AD&rsquo;s robust security controls.</p>
+</li>
+<li>
+<p><strong>Improved User Experience:</strong> With SSO capabilities, users can enjoy a seamless sign-in experience, accessing applications and services without the need for multiple sets of credentials.</p>
+</li>
+<li>
+<p><strong>Flexibility and Control:</strong> Azure AD Connect offers customization and filtering options, allowing organizations to control which objects and attributes are synchronized, ensuring compliance with organizational policies.</p>
+</li>
+<li>
+<p><strong>Centralized Device Management:</strong> The device writeback feature allows organizations to manage on-premises devices in Azure AD, facilitating better device management and enabling features such as conditional access.</p>
+</li>
+<li>
+<p><strong>Monitoring and Troubleshooting:</strong> Azure AD Connect provides monitoring capabilities and alerts, enabling administrators to proactively monitor and troubleshoot synchronization issues, ensuring a smooth synchronization process.</p>
+</li>
+</ol>
+<h2 id="conclusion">Conclusion</h2>
+<p>Azure AD Connect is a powerful tool that bridges the gap between on-premises AD and Azure AD, providing organizations with a seamless and unified identity management solution. With its synchronization capabilities, SSO functionality, and various deployment options, Azure AD Connect simplifies identity management, enhances security, and improves the overall user experience for organizations embracing Microsoft&rsquo;s cloud services.</p>
+
+
+    
+
+
+                    
+                    <div class="row"><div class="position-relative mx-auto col-lg-9">
+                          <div class="bg-primary overflow-hidden p-3 mt-5 shadow">
+
+    <h4 class="text-white text-center">Read more</h4>
+
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/trevorsmale/cumulus/docs/AADR/" title="Azure AD Roles and RBAC"><i class="fas fa-chevron-left p-1"></i>Azure AD Roles and RBAC</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/trevorsmale/cumulus/docs/AZAD/" title="Azure Active Directory">Azure Active Directory<i class="fas fa-chevron-right p-1"></i></a>
+    </div>
+</div>
+
+
+                        </div></div> 
+
+                </div>
+
+            </div> 
+
+        </div> 
+<script src="https://github.com/trevorsmale/cumuluslib/jquery.min.js"></script> 
+<script src="https://github.com/trevorsmale/cumuluslib/popper.min.js"></script> 
+
+<script src="https://github.com/trevorsmale/cumulusjs/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/auto-complete.js"></script>
+<link href="/trevorsmale/cumulus/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "https:\/\/github.com\/trevorsmale\/cumulus";
+  
+</script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/search.js"></script>
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/favorites.js"></script>
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>

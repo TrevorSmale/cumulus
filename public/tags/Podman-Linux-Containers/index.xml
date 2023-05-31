@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>(Podman, Linux, Containers) on TS Tech Notes</title>
+    <link>https://github.com/trevorsmale/cumulus/tags/Podman-Linux-Containers/</link>
+    <description>Recent content in (Podman, Linux, Containers) on TS Tech Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 29 May 2023 17:55:58 -0400</lastBuildDate><atom:link href="https://github.com/trevorsmale/cumulus/tags/Podman-Linux-Containers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Podman-Compose.yml</title>
+      <link>https://github.com/trevorsmale/cumulus/docs/PodmanCP/</link>
+      <pubDate>Mon, 29 May 2023 17:55:58 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/docs/PodmanCP/</guid>
+      <description>Podman Compose YAML files, typically named podman-compose.yml or docker-compose.yml, are used to define the configuration of multi-container applications. They follow the YAML format, which is a human-readable data serialization language.
+Here are some common aspects and elements you can find in a Podman Compose YAML file:
+  Services: Services represent individual containers in your application. Each service is defined as a separate block in the YAML file and can have various properties such as the image to use, environment variables, port mappings, volumes, and resource limits.</description>
+    </item>
+    
+  </channel>
+</rss>

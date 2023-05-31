@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="canonical" href="https://github.com/trevorsmale/cumulus/docs/nix/">
+
+    <title>
+        
+        Nix | TS Tech Notes
+        
+    </title>
+
+    
+    <link href="https://github.com/trevorsmale/cumuluscss/fontawesome.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://github.com/trevorsmale/cumulus/css/ace.min.css">
+
+    
+
+    
+    
+        
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/trevorsmale/cumulus">
+                
+                TS Tech Notes
+            </a>
+        </div>
+        
+    </div>
+    </nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+            <form class="form-inline my-2 my-lg-0 searchbox">
+                <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder="Search">
+            </form>
+
+        
+
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/trevorsmale/cumulus/docs/" class="nav-item my-1 parent haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/docs/"><h6></h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/docs/NT/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/NT/" class="nav-link p-0">
+                    Network Tools
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/WASM/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/WASM/" class="nav-link p-0">
+                    WASM
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/API/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/API/" class="nav-link p-0">
+                    API
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/NGINX/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/NGINX/" class="nav-link p-0">
+                    NGINX
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/tmuxcs/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/tmuxcs/" class="nav-link p-0">
+                    TMUX Cheat Sheet
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/UNIXph/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/UNIXph/" class="nav-link p-0">
+                    UNIX Philosophy
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/ChatGPT/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/ChatGPT/" class="nav-link p-0">
+                    ChatGPT
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/AI/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/AI/" class="nav-link p-0">
+                    AI
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/Cron/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/Cron/" class="nav-link p-0">
+                    Cron
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/Docker/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/Docker/" class="nav-link p-0">
+                    Docker
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/sshfs/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/sshfs/" class="nav-link p-0">
+                    Sshfs
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/nix/" class="nav-item my-1 active">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/nix/" class="nav-link p-0">
+                    Nix
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/msd/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/msd/" class="nav-link p-0">
+                    Multi-Site Dynamic Host NGINX Basic Workflow
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/BashBasics/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/BashBasics/" class="nav-link p-0">
+                    Bash Basics
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/podnet/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/podnet/" class="nav-link p-0">
+                    Podman Pod Networking
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/PodmanCP/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/PodmanCP/" class="nav-link p-0">
+                    Podman-Compose.yml
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/AADR/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/AADR/" class="nav-link p-0">
+                    Azure AD Roles and RBAC
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/ADC/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/ADC/" class="nav-link p-0">
+                    Azure AD Connect
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/AZAD/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/AZAD/" class="nav-link p-0">
+                    Azure Active Directory
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#nix-os">NIX OS</a>
+      <ul>
+        <li><a href="#make-reproducible-declarative-and-reliable-systems">Make reproducible, declarative and reliable systems.</a></li>
+        <li><a href="#major-features">Major Features</a>
+          <ul>
+            <li><a href="#reproducible">Reproducible</a></li>
+            <li><a href="#declarative">Declarative</a></li>
+            <li><a href="#reliable">Reliable</a></li>
+          </ul>
+        </li>
+        <li><a href="#how-it-works">How it works</a>
+          <ul>
+            <li><a href="#grub-boot-menu">Grub boot menu</a></li>
+          </ul>
+        </li>
+        <li><a href="#flakes">Flakes</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<div class="d-flex flex-column">
+    <h1 class="js-title">Nix</h1>
+    <div class="d-flex align-items-center">
+        
+    </div>
+</div>
+
+<hr>
+
+
+<h1 id="nix-os">NIX OS</h1>
+<h2 id="make-reproducible-declarative-and-reliable-systems">Make reproducible, declarative and reliable systems.</h2>
+<hr>
+<h2 id="major-features">Major Features</h2>
+<h3 id="reproducible">Reproducible</h3>
+<p>Nix builds packages in isolation from each other. This ensures that they are reproducible and don&rsquo;t have undeclared dependencies, so if a package works on one machine, it will also work on another.</p>
+<h3 id="declarative">Declarative</h3>
+<p>Nix makes it trivial to share development and build environments for your projects, regardless of what programming languages and tools you’re using.</p>
+<h3 id="reliable">Reliable</h3>
+<p>Nix ensures that installing or upgrading one package cannot break other packages. It allows you to roll back to previous versions, and ensures that no package is in an inconsistent state during an upgrade.</p>
+<h2 id="how-it-works">How it works</h2>
+<p>Nix is a purely functional package manager. This means that it treats packages like values in purely functional programming languages such as Haskell — they are built by functions that don’t have side-effects, and they never change after they have been built. Nix stores packages in the Nix store, usually the directory /nix/store, where each package has its own unique subdirectory such as</p>
+<pre><code>/nix/store/b6gvzjyb2pg0kjfwrjmg1vfhh54ad73z-firefox-33.1/
+</code></pre>
+<p>where b6gvzjyb2pg0… is a unique identifier for the package that captures all its dependencies (it’s a cryptographic hash of the package’s build dependency graph). This enables many powerful features.
+Multiple versions</p>
+<p>You can have multiple versions or variants of a package installed at the same time. This is especially important when different applications have dependencies on different versions of the same package — it prevents the “DLL hell”. Because of the hashing scheme, different versions of a package end up in different paths in the Nix store, so they don’t interfere with each other.</p>
+<p>An important consequence is that operations like upgrading or uninstalling an application cannot break other applications, since these operations never “destructively” update or delete files that are used by other packages.
+Complete dependencies</p>
+<p>When you’re making a package for a package management system, like RPM, you are supposed to declare its dependencies, but you can&rsquo;t easily guarantee that your dependency declaration is complete. If you forget a dependency, that you have separately installed on your machine, then the component may build and work correctly on your machine, but failing on the end user&rsquo;s machine.</p>
+<p>Nix ensures that package dependency specifications are complete.</p>
+<p>Under Nix, a build process will only find resources that have been declared explicitly as dependencies. There&rsquo;s no way it can build until everything it needs has been correctly declared. If it builds, you will know you&rsquo;ve provided a complete declaration.</p>
+<p>Once a build is complete, ongoing runtime dependencies are detected automatically.
+Multi-user support</p>
+<p>Starting at version 0.11, Nix has multi-user support. This means that non-privileged users can securely install software. Each user can have a different profile, a set of packages in the Nix store that appear in the user’s PATH. If a user installs a package that another user has already installed previously, the package won’t be built or downloaded a second time. At the same time, it is not possible for one user to inject a Trojan horse into a package that might be used by another user.
+Atomic upgrades and rollbacks</p>
+<p>Since package management operations never overwrite packages in the Nix store but just add new versions in different paths, they are atomic. So during a package upgrade, there is no time window in which the package has some files from the old version and some files from the new version — which would be bad because a program might well crash if it’s started during that period.</p>
+<p>And since packages aren’t overwritten, the old versions are still there after an upgrade. This means that you can roll back to the old version:</p>
+<pre><code>$ nix-env --upgrade some-packages
+$ nix-env --rollback
+</code></pre>
+<p>Garbage collection</p>
+<p>When you uninstall a package like this…</p>
+<pre><code>$ nix-env --uninstall firefox
+</code></pre>
+<p>the package isn’t deleted from the system right away (after all, you might want to do a rollback, or it might be in the profiles of other users). Instead, unused packages can be deleted safely by running the garbage collector:</p>
+<pre><code>$ nix-collect-garbage
+</code></pre>
+<p>This deletes all packages that aren’t in use by any user profile or by a currently running program.
+Functional package language</p>
+<p>Packages are built from Nix expressions, which is a simple functional language. A Nix expression describes everything that goes into a package build action (a “derivation”): other packages, sources, the build script, environment variables for the build script, etc. Nix tries very hard to ensure that Nix expressions are deterministic: building a Nix expression twice should yield the same result.</p>
+<p>Because it’s a functional language, it’s easy to support building variants of a package: turn the Nix expression into a function and call it any number of times with the appropriate arguments. Due to the hashing scheme, variants don’t conflict with each other in the Nix store.
+Transparent source/binary deployment</p>
+<p>Nix expressions generally describe how to build a package from source, so an installation action like</p>
+<pre><code>$ nix-env --install firefox
+</code></pre>
+<p>could cause quite a bit of build activity, as not only Firefox but also all its dependencies (all the way up to the C library and the compiler) would have to built, at least if they are not already in the Nix store. This is a source deployment model. For most users, building from source is not very pleasant as it takes far too long. However, Nix can automatically skip building from source and instead use a binary cache, a web server that provides pre-built binaries. For instance, when asked to build /nix/store/b6gvzjyb2pg0…-firefox-33.1 from source, Nix would first check if the file <a href="http://cache.nixos.org/b6gvzjyb2pg0">http://cache.nixos.org/b6gvzjyb2pg0</a>….narinfo exists, and if so, fetch the pre-built binary referenced from there; otherwise, it would fall back to building from source.
+Nix Packages collection</p>
+<p>We provide a large set of Nix expressions containing thousands of existing Unix packages, the Nix Packages collection (Nixpkgs).
+Portability</p>
+<p>Nix runs on Linux and macOS.
+How NixOS works?</p>
+<p>NixOS is based on Nix, a purely functional package management system. Nix stores all packages in isolation from each other under paths such as</p>
+<pre><code>/nix/store/5rnfzla9kcx4mj5zdc7nlnv8na1najvg-firefox-3.5.4/
+</code></pre>
+<p>The string 5rnf&hellip; is a cryptographic hash of all input used to build the package. Packages are never overwritten after they have been built; instead, if you change the build description of a package (its ‘Nix expression’), it’s rebuilt and installed in a different path in /nix/store so it doesn’t interfere with the old version. NixOS extends this by using Nix not only to build packages, but also things like configuration files. For instance, the configuration of the SSH daemon is also built from a Nix expression and stored under a path like</p>
+<pre><code>/nix/store/s2sjbl85xnrc18rl4fhn56irkxqxyk4p-sshd_config
+</code></pre>
+<p>By building entire system configurations from a Nix expression, NixOS ensures that such configurations don’t overwrite each other, can be rolled back, and so on.</p>
+<p>A big implication of the way that Nix/NixOS stores packages is that there is no /bin, /sbin, /lib, /usr, and so on. Instead all packages are kept in /nix/store. (The only exception is a symlink /bin/sh to Bash in the Nix store.) Not using ‘global’ directories such as /bin is what allows multiple versions of a package to coexist. Nix does have a /etc to keep system-wide configuration files, but most files in that directory are symlinks to generated files in /nix/store.
+Declarative system configuration model</p>
+<p>In NixOS, the entire operating system — the kernel, applications, system packages, configuration files, and so on — is built by the Nix package manager from a description in a purely functional build language. The fact that it’s purely functional essentially means that building a new configuration cannot overwrite previous configurations. Most of the other features follow from this.</p>
+<p>You configure a NixOS system by writing a specification of the functionality that you want on your machine in /etc/nixos/configuration.nix. For instance, here is a minimal configuration of a machine running an SSH daemon:</p>
+<pre><code>{
+    boot.loader.grub.device = &quot;/dev/sda&quot;;
+
+    fileSystems.&quot;/&quot;.device = &quot;/dev/sda1&quot;;
+
+    services.sshd.enable = true;
+}
+</code></pre>
+<p>After changing /etc/nixos/configuration.nix, you realise the configuration by running this command:</p>
+<pre><code>$ nixos-rebuild switch
+</code></pre>
+<p>This command does everything necessary to make the configuration happen, including downloading and compiling OpenSSH, generating the configuration files for the SSH server, and so on.
+Reliable upgrades</p>
+<p>Another advantage of purely functional package management is that nixos-rebuild switch will always produce the same result, regardless of what packages or configuration files you already had on your system. Thus, upgrading a system is as reliable as reinstalling from scratch.
+Atomic upgrades</p>
+<p>NixOS has a transactional approach to configuration management: configuration changes such as upgrades are atomic. This means that if the upgrade to a new configuration is interrupted — say, the power fails half-way through — the system will still be in a consistent state: it will either boot in the old or the new configuration. In most other systems, you’ll end up in an inconsistent state, and your machine may not even boot anymore.
+Rollbacks</p>
+<p>Because the files of a new configuration don’t overwrite old ones, you can (atomically) roll back to a previous configuration. For instance, if after a nixos-rebuild switch you discover that you don’t like the new configuration, you can just go back:</p>
+<pre><code>$ nixos-rebuild switch --rollback
+</code></pre>
+<h3 id="grub-boot-menu">Grub boot menu</h3>
+<p>In fact, all old system configurations automatically show up in the Grub boot menu. So if the new configuration crashes or doesn’t boot properly, you can just roll back by selecting an older configuration in the Grub boot menu. Rollbacks are very fast: it doesn’t involve lots of files having to be restored from copies.
+Reproducible system configurations</p>
+<p>NixOS’ declarative configuration model makes it easy to reproduce a system configuration on another machine (for instance, to test a change in a test environment before doing it on the production server). You just copy the configuration.nix file to the target NixOS machine and run nixos-rebuild switch. This will give you the same configuration (kernel, applications, system services, and so on) except for ‘mutable state’ (such as the stuff that lives in /var).
+Safe to test changes</p>
+<p>NixOS makes it safe to test potentially dangerous changes to the system, because you can always roll back. (Unless you screw up the boot loader, that is…) For instance, whether the change is as simple as enabling a system service, or as large as rebuilding the entire system with a new version of Glibc, you can test it by doing:</p>
+<pre><code>$ nixos-rebuild test
+</code></pre>
+<p>This builds and activates the new configuration, but doesn’t make it the boot default. Thus, rebooting the system will take you back to the previous, known-good configuration.</p>
+<p>An even nicer way to test changes is the following:</p>
+<pre><code>$ nixos-rebuild build-vm
+$ ./result/bin/run-*-vm
+</code></pre>
+<p>This builds and starts a virtual machine that contains the new system configuration (i.e. a clone of the configuration of the host machine, with any changes that you made to configuration.nix). The VM doesn’t share any data with the host, so you can safely experiment inside the VM. The build-vm command is very efficient (it doesn’t require a disk image for the VM to be created), so it’s a very effective way to test changes.</p>
+<h2 id="flakes">Flakes</h2>
+<p>Flakes are like self contained builds of an application and dependancies. To me, they seem similar to a ICS container wherein a build file is created to describe the intended build and the nix package manager takes care of the build and hashing of a complete package. Unlike containers, they is no included operating system and no container engine.</p>
+
+
+    
+
+
+                    
+                    <div class="row"><div class="position-relative mx-auto col-lg-9">
+                          <div class="bg-primary overflow-hidden p-3 mt-5 shadow">
+
+    <h4 class="text-white text-center">Read more</h4>
+
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/trevorsmale/cumulus/docs/sshfs/" title="Sshfs"><i class="fas fa-chevron-left p-1"></i>Sshfs</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/trevorsmale/cumulus/docs/msd/" title="Multi-Site Dynamic Host NGINX Basic Workflow">Multi-Site Dynamic Host NGINX Basic Workflow<i class="fas fa-chevron-right p-1"></i></a>
+    </div>
+</div>
+
+
+                        </div></div> 
+
+                </div>
+
+            </div> 
+
+        </div> 
+<script src="https://github.com/trevorsmale/cumuluslib/jquery.min.js"></script> 
+<script src="https://github.com/trevorsmale/cumuluslib/popper.min.js"></script> 
+
+<script src="https://github.com/trevorsmale/cumulusjs/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/auto-complete.js"></script>
+<link href="/trevorsmale/cumulus/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "https:\/\/github.com\/trevorsmale\/cumulus";
+  
+</script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/search.js"></script>
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/favorites.js"></script>
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>

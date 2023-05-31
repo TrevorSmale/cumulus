@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="canonical" href="https://github.com/trevorsmale/cumulus/docs/Cron/">
+
+    <title>
+        
+        Cron | TS Tech Notes
+        
+    </title>
+
+    
+    <link href="https://github.com/trevorsmale/cumuluscss/fontawesome.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://github.com/trevorsmale/cumulus/css/ace.min.css">
+
+    
+
+    
+    
+        
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/trevorsmale/cumulus">
+                
+                TS Tech Notes
+            </a>
+        </div>
+        
+    </div>
+    </nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+            <form class="form-inline my-2 my-lg-0 searchbox">
+                <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder="Search">
+            </form>
+
+        
+
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/trevorsmale/cumulus/docs/" class="nav-item my-1 parent haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/docs/"><h6></h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/docs/NT/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/NT/" class="nav-link p-0">
+                    Network Tools
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/WASM/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/WASM/" class="nav-link p-0">
+                    WASM
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/API/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/API/" class="nav-link p-0">
+                    API
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/NGINX/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/NGINX/" class="nav-link p-0">
+                    NGINX
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/tmuxcs/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/tmuxcs/" class="nav-link p-0">
+                    TMUX Cheat Sheet
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/UNIXph/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/UNIXph/" class="nav-link p-0">
+                    UNIX Philosophy
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/ChatGPT/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/ChatGPT/" class="nav-link p-0">
+                    ChatGPT
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/AI/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/AI/" class="nav-link p-0">
+                    AI
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/Cron/" class="nav-item my-1 active">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/Cron/" class="nav-link p-0">
+                    Cron
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/Docker/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/Docker/" class="nav-link p-0">
+                    Docker
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/sshfs/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/sshfs/" class="nav-link p-0">
+                    Sshfs
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/nix/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/nix/" class="nav-link p-0">
+                    Nix
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/msd/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/msd/" class="nav-link p-0">
+                    Multi-Site Dynamic Host NGINX Basic Workflow
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/BashBasics/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/BashBasics/" class="nav-link p-0">
+                    Bash Basics
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/podnet/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/podnet/" class="nav-link p-0">
+                    Podman Pod Networking
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/PodmanCP/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/PodmanCP/" class="nav-link p-0">
+                    Podman-Compose.yml
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/AADR/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/AADR/" class="nav-link p-0">
+                    Azure AD Roles and RBAC
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/ADC/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/ADC/" class="nav-link p-0">
+                    Azure AD Connect
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/AZAD/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/AZAD/" class="nav-link p-0">
+                    Azure Active Directory
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#cron">Cron</a>
+      <ul>
+        <li><a href="#task-scheduler">Task Scheduler</a>
+          <ul>
+            <li><a href="#troubleshooting">Troubleshooting</a></li>
+            <li><a href="#cron-1">Cron</a></li>
+            <li><a href="#format">Format</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<div class="d-flex flex-column">
+    <h1 class="js-title">Cron</h1>
+    <div class="d-flex align-items-center">
+        
+    </div>
+</div>
+
+<hr>
+
+
+<h1 id="cron">Cron</h1>
+<h2 id="task-scheduler">Task Scheduler</h2>
+<h3 id="troubleshooting">Troubleshooting</h3>
+<p>NOTE: <code>echo</code> won&rsquo;t work because <code>cron</code> runs in its own shell.</p>
+<p>Possible problems:</p>
+<ol>
+<li>Not using absolute paths</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">* * * * * /bin/echo <span class="s2">&#34;cron works&#34;</span> &gt;&gt; /tmp/file
+</code></pre></div><ol start="2">
+<li>Not using a PATH variable</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">PATH</span><span class="o">=</span>/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+* * * * * <span class="nb">echo</span> <span class="s2">&#34;cron works&#34;</span> &gt;&gt; /tmp/file
+</code></pre></div><ol start="3">
+<li>Not escaping characters</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># mysqldump --databases db &gt; /home/user/backup-$(date +%Y%m%d-%H%M%S)</span>
+mysqldump --databases db &gt; /home/user/backup-<span class="k">$(</span>date +<span class="se">\%</span>Y<span class="se">\%</span>m<span class="se">\%</span>d-<span class="se">\%</span>H<span class="se">\%</span>M<span class="se">\%</span>S<span class="k">)</span>
+</code></pre></div><ol start="4">
+<li>Not leaving an empty new line in the end</li>
+</ol>
+<h3 id="cron-1">Cron</h3>
+<p>Each user has his own crontab i.e. cron table i.e table of scheduled processes.</p>
+<p>List</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># list of tasks for current user</span>
+crontab -l
+
+<span class="c1"># list of tasks for specific user</span>
+crontab –u username –l
+</code></pre></div><p>Edit</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># edit crontabs for current user</span>
+crontab -e
+
+<span class="c1"># edit tasks for specific user</span>
+crontab –u username –e
+
+<span class="c1"># edit tasks for root user</span>
+sudo crontab -e
+</code></pre></div><p>Jobs</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># list of crontabs</span>
+sudo less /var/spool/cron/crontabs
+
+<span class="c1"># root systemwide crontab</span>
+sudo less /etc/crontab
+</code></pre></div><h3 id="format">Format</h3>
+<p><strong>NOTE: Cron doesn&rsquo;t do seconds. Minimum is every minute.</strong></p>
+<pre tabindex="0"><code>.---------------- minute (0 - 59)
+|  .------------- hour (0 - 23)
+|  |  .---------- day of month (1 - 31)
+|  |  |  .------- month (1 - 12) OR jan, feb, mar, apr...
+|  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun, mon, tue, wed, thu, fri, sat
+|  |  |  |  |
+*  *  *  *  * command to be executed
+
+*     all
+,     list of values
+x-y   range of values
+/x    recurring i.e. every x times
+</code></pre><p><strong>NOTE: The timing doesn&rsquo;t overlap, meaning it happens in both cases, not a combination of the two.</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Every minute</span>
+* * * * *
+
+<span class="c1"># Every hour</span>
+<span class="m">0</span> * * * *
+
+<span class="c1"># Every 2 hours</span>
+<span class="m">0</span> */2 * * *
+
+<span class="c1"># Every day @ 23:59</span>
+<span class="m">59</span> <span class="m">23</span> * * *
+
+<span class="c1"># Sunday @ 23:59</span>
+<span class="m">59</span> <span class="m">23</span> * * <span class="m">0</span>
+
+<span class="c1"># At every minute past every hour from 7 through 18 on every day-of-week from Monday through Friday</span>
+* 7-18 * * 1-5
+
+<span class="c1"># At every 20th minute past hour 22 on day-of-month 1 and 15</span>
+*/20 <span class="m">22</span> 1,15 * *
+
+<span class="c1"># At 10:15 on every 2nd day-of-month from 1 through 10 and on Friday</span>
+<span class="m">15</span> <span class="m">10</span> 1-10/2 * <span class="m">5</span>
+</code></pre></div>
+
+    
+
+
+                    
+                    <div class="row"><div class="position-relative mx-auto col-lg-9">
+                          <div class="bg-primary overflow-hidden p-3 mt-5 shadow">
+
+    <h4 class="text-white text-center">Read more</h4>
+
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/trevorsmale/cumulus/docs/AI/" title="AI"><i class="fas fa-chevron-left p-1"></i>AI</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/trevorsmale/cumulus/docs/Docker/" title="Docker">Docker<i class="fas fa-chevron-right p-1"></i></a>
+    </div>
+</div>
+
+
+                        </div></div> 
+
+                </div>
+
+            </div> 
+
+        </div> 
+<script src="https://github.com/trevorsmale/cumuluslib/jquery.min.js"></script> 
+<script src="https://github.com/trevorsmale/cumuluslib/popper.min.js"></script> 
+
+<script src="https://github.com/trevorsmale/cumulusjs/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/auto-complete.js"></script>
+<link href="/trevorsmale/cumulus/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "https:\/\/github.com\/trevorsmale\/cumulus";
+  
+</script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/search.js"></script>
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/favorites.js"></script>
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>

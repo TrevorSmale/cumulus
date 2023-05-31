@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="alternate" type="application/rss+xml" href="https://github.com/trevorsmale/cumulus/Containers/index.xml" title="TS Tech Notes" />
+    <link rel="canonical" href="https://github.com/trevorsmale/cumulus/Containers/">
+
+    <title>
+        
+        Containers | TS Tech Notes
+        
+    </title>
+
+    
+    <link href="https://github.com/trevorsmale/cumuluscss/fontawesome.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://github.com/trevorsmale/cumulus/css/ace.min.css">
+
+    
+
+    
+    
+        
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/trevorsmale/cumulus">
+                
+                TS Tech Notes
+            </a>
+        </div>
+        
+    </div>
+    <div class="feed-icons">
+            <a href="https://github.com/trevorsmale/cumulus/Containers/index.xml"><img src="/img/feed-icon.svg" alt="RSS feed" /></a>
+        </div>
+    </nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+            <form class="form-inline my-2 my-lg-0 searchbox">
+                <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder="Search">
+            </form>
+
+        
+
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/trevorsmale/cumulus/AI/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/AI/"><h6>AI</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Containers/" class="nav-item my-1 parent active
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Containers/"><h6>Containers</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/NIX/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/NIX/"><h6>NIX</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/azure/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/azure/"><h6>Azure</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Azure/AADR/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Azure/AADR/" class="nav-link p-0">
+                    Azure AD Roles and RBAC
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#oci">OCI</a></li>
+    <li><a href="#docker">Docker</a>
+      <ul>
+        <li><a href="#course-notes-taken-while-following-the-docker-mastery-course-by-bret-fisher">Course notes taken while following the Docker Mastery course by Bret Fisher</a></li>
+        <li><a href="#what-is-docker">What is Docker?</a>
+          <ul>
+            <li><a href="#docker-is-container-engine">Docker is container engine</a></li>
+          </ul>
+        </li>
+        <li><a href="#the-3-major-functions-of-docker">The 3 Major functions of Docker</a></li>
+        <li><a href="#containers-and-the-cloud">Containers and the Cloud</a></li>
+        <li><a href="#anatomicallayers-of-the-docker-file-called-stanzas-are-written-in-json">Anatomical/Layers of the docker file called ‘stanzas’ are written in JSON</a>
+          <ul>
+            <li><a href="#all-of-these-stanzas-together-are-called-a-docker-image">All of these stanzas together are called a docker image.</a></li>
+          </ul>
+        </li>
+        <li><a href="#docker-registries">Docker Registries</a></li>
+        <li><a href="#running-a-docker-image">Running a Docker image</a></li>
+        <li><a href="#container-networking">Container Networking</a></li>
+        <li><a href="#practice-space">Practice Space</a></li>
+        <li><a href="#simple-commands">Simple Commands</a>
+          <ul>
+            <li><a href="#ps">PS</a></li>
+            <li><a href="#docker-pull">Docker pull</a></li>
+          </ul>
+        </li>
+        <li><a href="#concepts-from-linux">Concepts from Linux</a>
+          <ul>
+            <li><a href="#namespaces">Namespaces</a></li>
+            <li><a href="#control-groups">Control Groups</a></li>
+            <li><a href="#union-mounts">Union Mounts</a></li>
+          </ul>
+        </li>
+        <li><a href="#why-docker-and-containers">Why Docker and Containers?</a></li>
+        <li><a href="#technological-progress-of-development-infrastructure">Technological progress of development infrastructure</a></li>
+        <li><a href="#advantages-of-containerization">Advantages of containerization</a></li>
+        <li><a href="#bret-fisher-youtube-httpswwwyoutubecombretfisher">Bret Fisher Youtube [https://www.youtube.com/@BretFisher]</a></li>
+        <li><a href="#creating-and-using-containers">Creating and using containers</a></li>
+        <li><a href="#difference-between-an-image-and-container">Difference between an image and Container</a></li>
+        <li><a href="#running-an-nginx-container">Running an Nginx container</a></li>
+        <li><a href="#viewing-container-status-in-the-cli">Viewing container status in the CLI</a></li>
+        <li><a href="#stopping-a-running-container">Stopping a running container</a></li>
+        <li><a href="#naming-a-container">Naming a container</a></li>
+        <li><a href="#see-the-process-running-within-a-container">See the process running within a container</a></li>
+        <li><a href="#remove-containers">Remove containers</a></li>
+        <li><a href="#what-happens-in-the-background-when-docker-container-run-command-is-run">What happens in the background when &lsquo;docker container run&rsquo; command is run</a></li>
+        <li><a href="#containers-vs-vms">Containers vs. VM&rsquo;s</a></li>
+        <li><a href="#finding-help">Finding help</a></li>
+        <li><a href="#managing-multiple-containers">Managing Multiple Containers</a></li>
+        <li><a href="#docker-inspection-of-stats">Docker inspection of stats</a></li>
+        <li><a href="#getting-a-shell-inside-containers">Getting a Shell Inside Containers</a></li>
+        <li><a href="#how-to-access-a-container-after-the-fact">How to access a container after the fact</a></li>
+        <li><a href="#alpine-linux-is-super-small-and-has-its-own-package-manager">Alpine linux is super small and has its own package manager</a></li>
+        <li><a href="#docker-networks-concepts">Docker Networks: Concepts</a></li>
+        <li><a href="#docker-networks-defaults">Docker Networks Defaults</a></li>
+        <li><a href="#diving-into-network-interfaces">Diving into network interfaces</a></li>
+        <li><a href="#docker-networks-cli-management">Docker Networks: CLI Management</a></li>
+        <li><a href="#docker-networks-default-security">Docker networks: Default Security</a></li>
+      </ul>
+    </li>
+    <li><a href="#podman">Podman</a>
+      <ul>
+        <li><a href="#podman-is-slightly-different">Podman is slightly different</a></li>
+        <li><a href="#example-cli-build-command">Example CLI build command</a></li>
+        <li><a href="#trouble-pulling-images-from-fedoraredhat-container-directories">Trouble pulling images from Fedora/Redhat container directories</a></li>
+        <li><a href="#able-to-build-from-dockerio">Able to build from Docker.io</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<div class="d-flex flex-column">
+    <h1 class="js-title">Containers</h1>
+    <div class="d-flex align-items-center">
+        
+    </div>
+</div>
+
+<hr>
+
+
+<h1 id="oci">OCI</h1>
+<p>OCI (Open Container Initiative) is a standard for container image format and runtime that enables interoperability across different container platforms. It provides a common language for building, packaging, and running containerized applications, ensuring portability and ease of deployment.</p>
+<h1 id="docker">Docker</h1>
+<h2 id="course-notes-taken-while-following-the-docker-mastery-course-by-bret-fisher">Course notes taken while following the Docker Mastery course by Bret Fisher</h2>
+<h2 id="what-is-docker">What is Docker?</h2>
+<h3 id="docker-is-container-engine">Docker is container engine</h3>
+<h2 id="the-3-major-functions-of-docker">The 3 Major functions of Docker</h2>
+<ul>
+<li>The docker image - Build</li>
+<li>The docker registry - Ship</li>
+<li>The docker container - Run</li>
+</ul>
+<h2 id="containers-and-the-cloud">Containers and the Cloud</h2>
+<ul>
+<li>The cloud native computing foundation is based around a containerized workflow.</li>
+<li>The container image is kind of like a universal package manager.</li>
+<li>Dockerfile/Container image Anatomy - OCI standard for container images.</li>
+<li>The OCI ‘Open Container Initiative’</li>
+</ul>
+<h2 id="anatomicallayers-of-the-docker-file-called-stanzas-are-written-in-json">Anatomical/Layers of the docker file called ‘stanzas’ are written in JSON</h2>
+<h3 id="all-of-these-stanzas-together-are-called-a-docker-image">All of these stanzas together are called a docker image.</h3>
+<ul>
+<li>FROM python</li>
+<li>RUN pip install flask</li>
+<li>WORKDIR /app</li>
+<li>COPY ..</li>
+<li>CMD python app.py</li>
+</ul>
+<h2 id="docker-registries">Docker Registries</h2>
+<ul>
+<li>The Docker image registry is for the app distribution</li>
+<li>Each image has a unique SHA hash that represents the unique data within</li>
+</ul>
+<h2 id="running-a-docker-image">Running a Docker image</h2>
+<p>When an image is run using docker run, the Docker engine will prioritize and place it within a container with its own namespace and IP address. It essentially runs like its own system.</p>
+<h2 id="container-networking">Container Networking</h2>
+<p>Containers name space are air gapped from one another by default. So additional commands must be used in order to specify/setup open ports.</p>
+<h2 id="practice-space">Practice Space</h2>
+<p>Labs.play-with-docker.com</p>
+<h2 id="simple-commands">Simple Commands</h2>
+<h3 id="ps">PS</h3>
+<p>Processes running</p>
+<h3 id="docker-pull">Docker pull</h3>
+<p>will pull a docker image and dependancies using the docker engine. The engine is able to pull images from many different places</p>
+<h2 id="concepts-from-linux">Concepts from Linux</h2>
+<h3 id="namespaces">Namespaces</h3>
+<h3 id="control-groups">Control Groups</h3>
+<h3 id="union-mounts">Union Mounts</h3>
+<h2 id="why-docker-and-containers">Why Docker and Containers?</h2>
+<ul>
+<li>Isolation</li>
+<li>Environments</li>
+<li>Speed</li>
+</ul>
+<h2 id="technological-progress-of-development-infrastructure">Technological progress of development infrastructure</h2>
+<ul>
+<li>90’s saw the exit from mainframes</li>
+<li>00’’s Saw a change from bare metal to virtual</li>
+<li>10’s Saw Datacenter to Cloud</li>
+<li>Now Host to Container (Serverless)</li>
+</ul>
+<h2 id="advantages-of-containerization">Advantages of containerization</h2>
+<ul>
+<li>Develop, Build, Test and Deploy Faster.</li>
+<li>Weekly live Q&amp;A sessions on YouTube</li>
+</ul>
+<h2 id="bret-fisher-youtube-httpswwwyoutubecombretfisher">Bret Fisher Youtube [https://www.youtube.com/@BretFisher]</h2>
+<h2 id="creating-and-using-containers">Creating and using containers</h2>
+<p>Checking the version of Docker and associated infrastructure:</p>
+<p>CLI: Docker Version, always used first to verify the status and version</p>
+<p>CLI: Docker Info, displays most configuration values of the current docker install</p>
+<p>Check all available commands:</p>
+<p>CLI: Docker</p>
+<p>There is now a hierarchy of commands</p>
+<p>This means there are now management and common commands</p>
+<h2 id="difference-between-an-image-and-container">Difference between an image and Container</h2>
+<ul>
+<li>An image is the application we want to run</li>
+<li>A container is an instance of that image running as a process</li>
+<li>You can have many containers running off the same image</li>
+<li>In this lecture our image will be the Nginx web server</li>
+<li>Dockers default image &ldquo;registry&rdquo; is called Docker Hub (hub.docker.com)</li>
+</ul>
+<h2 id="running-an-nginx-container">Running an Nginx container</h2>
+<p>CLI: docker container run &ndash;publish 80:80 nginx</p>
+<ul>
+<li>Downloaded image &lsquo;nginx&rsquo; from Docker Hub</li>
+<li>Started a new container from that image</li>
+<li>Opened port 80 on the host IP</li>
+<li>Routes that traffic to the container IP, port 80</li>
+</ul>
+<p>Note: you will get a &ldquo;bind&rdquo; error if the left number [Host port] is already in use. If this is the case, an easy alternative is 8888</p>
+<h2 id="viewing-container-status-in-the-cli">Viewing container status in the CLI</h2>
+<p>docker container ls - will show regular status</p>
+<p>docker container ls -a - will show additional info</p>
+<h2 id="stopping-a-running-container">Stopping a running container</h2>
+<p>Docker stop + first 3 - 4 characters of unique id</p>
+<h2 id="naming-a-container">Naming a container</h2>
+<p>docker container run &ndash;publish 80:80 &ndash;detach &ndash;name webhost nginx</p>
+<h2 id="see-the-process-running-within-a-container">See the process running within a container</h2>
+<p>docker container top &lsquo;name&rsquo;</p>
+<h2 id="remove-containers">Remove containers</h2>
+<p>docker container rm &lsquo;id&rsquo; &lsquo;id&rsquo; &lsquo;id&rsquo;</p>
+<p>Note: error thrown if one or more of the containers are running</p>
+<h2 id="what-happens-in-the-background-when-docker-container-run-command-is-run">What happens in the background when &lsquo;docker container run&rsquo; command is run</h2>
+<ol>
+<li>Looks for that image locally in image cache, doesn&rsquo;t find anything</li>
+<li>Then looks in remote image repo (defaults to Docker Hub)</li>
+<li>Downloads the latest version (nginx:latest by default)</li>
+<li>Creates new container based on that image and prepares to start</li>
+<li>Gives it a virtual IP on a private network inside docker engine</li>
+<li>Opens up port 80 on host and forwards to port 80 in container</li>
+<li>Starts container by using the CMD in the image Dockerfile</li>
+</ol>
+<h2 id="containers-vs-vms">Containers vs. VM&rsquo;s</h2>
+<p>Containers are not Mini VM&rsquo;s</p>
+<ul>
+<li>They are just processes</li>
+<li>Limited to what resources they can access</li>
+<li>Exit when process stops</li>
+</ul>
+<p>by using a process viewing tool, one can see the docker process among other processes.</p>
+<p>docker ps will display docker specific processes
+ps will display that docker process mixed in with all of the processes of the operating system.</p>
+<h2 id="finding-help">Finding help</h2>
+<p>CLI docker &ndash;help</p>
+<p>or</p>
+<p>[docs.docker.com]</p>
+<h2 id="managing-multiple-containers">Managing Multiple Containers</h2>
+<p>The objective is to run multiple containers here.
+Each one should be on their own port</p>
+<ol>
+<li>nginx</li>
+<li>MariaDB</li>
+<li>httpd (Apache)</li>
+</ol>
+<p>each will be on their own port</p>
+<ul>
+<li>Nginx on 80:80</li>
+<li>MariaDB on 3306:3306</li>
+<li>httpd on 8080:80</li>
+</ul>
+<p>docker container run &ndash;publish 80:80 &ndash;detach &ndash;name nginx nginx
+docker container run &ndash;publish 3306:3306 &ndash;detach -e MYSQL_ROOT_PASSWORD=secret &ndash;name db mariadb:latest
+docker container run &ndash;publish 8080:80 &ndash;detach &ndash;name apache httpd</p>
+<h2 id="docker-inspection-of-stats">Docker inspection of stats</h2>
+<ul>
+<li>docker container top - process list in one container</li>
+<li>docker container inspect - details of one container config</li>
+<li>docker container stats - performance stats for all containers</li>
+</ul>
+<h2 id="getting-a-shell-inside-containers">Getting a Shell Inside Containers</h2>
+<ul>
+<li>docker container run -it - start new container interactively</li>
+<li>docker container exec -it - run additional command in existing container</li>
+<li>Different Linux distros in containers</li>
+</ul>
+<p>We don&rsquo;t need to have an SSH server within the container in order to remote in. Docker allows us to start both (Interactivity) and a (tty) service</p>
+<p>When starting a container:</p>
+<p>docker container run [options] IMAGE [COMMAND] [ARG]</p>
+<p>example: docker container run -it &ndash;name proxy nginx bash</p>
+<h2 id="how-to-access-a-container-after-the-fact">How to access a container after the fact</h2>
+<p>We can utilize the docker container exec command with 2 or more arguments to effect the container after it is created.</p>
+<p>for example docker container exec -it db bash will create a bash shell in the root of this database container.</p>
+<h2 id="alpine-linux-is-super-small-and-has-its-own-package-manager">Alpine linux is super small and has its own package manager</h2>
+<p>In fact, Alpine is soooo small that it does not include BASH, it actually containes SH</p>
+<p>So starting up an alpine container with an open shell looks like this</p>
+<p>docker container run -it alpine sh</p>
+<p>APK is the package manager for alpine</p>
+<h2 id="docker-networks-concepts">Docker Networks: Concepts</h2>
+<ul>
+<li>Review of docker container run -p</li>
+<li>For local dev/testing, networks ususally &ldquo;just work&rdquo;</li>
+<li>Quick port check with docker container port <contianer></li>
+<li>Learn concepts of Docker Networking</li>
+<li>Understand how network packets move around Docker</li>
+</ul>
+<h2 id="docker-networks-defaults">Docker Networks Defaults</h2>
+<ul>
+<li>Each container connected to a private virtual network &ldquo;bridge&rdquo;</li>
+<li>Each virtual network routes through NAT firewall on host IP</li>
+<li>All containers on a virtual network can talk to each other without -p</li>
+<li>Best practice is to create a new virtual network for each app:
+<ul>
+<li>network &ldquo;my-web-app&rdquo; for mysql and php/apache containers</li>
+<li>network &ldquo;my_api&rdquo; for mongo and node-js containers</li>
+</ul>
+</li>
+<li>&ldquo;Batteries Included, But Removable&rdquo;
+<ul>
+<li>Defaults work well in many cases, but easy to swap out parts to customize it</li>
+</ul>
+</li>
+<li>Make new virtual Networks</li>
+<li>Attach containers to more then one virtual network (or none)</li>
+<li>Skip virtual networks and use host IP (&ndash;net=host)</li>
+<li>Use different Docker network drivers to gain new abilities</li>
+<li>and much more&hellip;</li>
+</ul>
+<h2 id="diving-into-network-interfaces">Diving into network interfaces</h2>
+<p>docker container run -p 80:80 &ndash;name web-host -d nginx</p>
+<p>docker container inspect &ndash;format &lsquo;{{ .NetworkSettings.IPAddress }}&rsquo; web-host</p>
+<p>docker creates a bridge network or docker0 that is a virtual network. Internal addresses are hidden to external traffic.</p>
+<h2 id="docker-networks-cli-management">Docker Networks: CLI Management</h2>
+<ul>
+<li>Show networks: docker network ls</li>
+<li>Inspect a network: docker network inspect</li>
+<li>Create a network: docker network create &ndash;driver</li>
+<li>attach a network to container: docker network connect</li>
+<li>Detach a network from container: docker network disconnect</li>
+</ul>
+<h2 id="docker-networks-default-security">Docker networks: Default Security</h2>
+<ul>
+<li>Create your apps so frontend/backend sit on same Docker network</li>
+<li>Their inter-communication never leaves host</li>
+<li>All externally exposed ports closed by default</li>
+<li>You must manually expose via -p, which is better default security!</li>
+</ul>
+<h1 id="podman">Podman</h1>
+<p>A OCI based container engine created by RedHat that is mostly interchangeable with Docker with some key differences</p>
+<h2 id="podman-is-slightly-different">Podman is slightly different</h2>
+<ul>
+<li>Podman is an alternative to Docker that uses the same command line interface (CLI) and the same container image format.</li>
+<li>Unlike Docker, Podman does not require a daemon to be running in order to manage and run containers.</li>
+<li>Podman uses the same container runtime as CRI-O and Buildah, which is runc.</li>
+<li>Podman supports rootless containers, which means that it can run containers without requiring the user to have root privileges.</li>
+<li>Podman does not have the daemon attack surface and does not have any daemon-specific configuration options.</li>
+<li>Podman does not support Swarm mode, which is Docker&rsquo;s built-in container orchestration.</li>
+<li>Podman can be used with Kubernetes, which is a popular container orchestration platform.</li>
+<li>Podman support many features like cgroups v1 and v2, namespaces, and SELinux that are not available in Docker.</li>
+</ul>
+<h2 id="example-cli-build-command">Example CLI build command</h2>
+<p>podman build -t myhugo:latest &ndash;build-arg HUGO_VERSION=0.78.2 -f Dockerfile .</p>
+<h2 id="trouble-pulling-images-from-fedoraredhat-container-directories">Trouble pulling images from Fedora/Redhat container directories</h2>
+<p>There is seemingly an issue with pulling container images from the suggested sources. I am working from Fedora 37 and this issue seems to stem from permission issues or build scripts. I will be looking into this at a later date.</p>
+<h2 id="able-to-build-from-dockerio">Able to build from Docker.io</h2>
+<p>So I have successfully pulled down/built containers with vertualized open ports from the Docker.io hub. This works similarly to my past Docker experiences.
+I can use the $PS command to see built and running containers. furthermore, I can stop and remove the running contianers with the same CLI commands as well.</p>
+
+
+    
+
+
+                    
+                    <div class="row"><div class="position-relative mx-auto col-lg-9">
+                          <div class="bg-primary overflow-hidden p-3 mt-5 shadow">
+
+    <h4 class="text-white text-center">Read more</h4>
+
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/trevorsmale/cumulus/AI/" title="AI"><i class="fas fa-chevron-left p-1"></i>AI</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/trevorsmale/cumulus/NIX/" title="NIX">NIX<i class="fas fa-chevron-right p-1"></i></a>
+    </div>
+</div>
+
+
+                        </div></div> 
+
+                </div>
+
+            </div> 
+
+        </div> 
+<script src="https://github.com/trevorsmale/cumuluslib/jquery.min.js"></script> 
+<script src="https://github.com/trevorsmale/cumuluslib/popper.min.js"></script> 
+
+<script src="https://github.com/trevorsmale/cumulusjs/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/auto-complete.js"></script>
+<link href="/trevorsmale/cumulus/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "https:\/\/github.com\/trevorsmale\/cumulus";
+  
+</script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/search.js"></script>
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/favorites.js"></script>
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>

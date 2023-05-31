@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="canonical" href="https://github.com/trevorsmale/cumulus/docs/BashBasics/">
+
+    <title>
+        
+        Bash Basics | TS Tech Notes
+        
+    </title>
+
+    
+    <link href="https://github.com/trevorsmale/cumuluscss/fontawesome.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://github.com/trevorsmale/cumulus/css/ace.min.css">
+
+    
+
+    
+    
+        
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/trevorsmale/cumulus">
+                
+                TS Tech Notes
+            </a>
+        </div>
+        
+    </div>
+    </nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+            <form class="form-inline my-2 my-lg-0 searchbox">
+                <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder="Search">
+            </form>
+
+        
+
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/trevorsmale/cumulus/docs/" class="nav-item my-1 parent haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/docs/"><h6></h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/docs/NT/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/NT/" class="nav-link p-0">
+                    Network Tools
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/WASM/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/WASM/" class="nav-link p-0">
+                    WASM
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/API/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/API/" class="nav-link p-0">
+                    API
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/NGINX/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/NGINX/" class="nav-link p-0">
+                    NGINX
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/tmuxcs/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/tmuxcs/" class="nav-link p-0">
+                    TMUX Cheat Sheet
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/UNIXph/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/UNIXph/" class="nav-link p-0">
+                    UNIX Philosophy
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/ChatGPT/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/ChatGPT/" class="nav-link p-0">
+                    ChatGPT
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/AI/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/AI/" class="nav-link p-0">
+                    AI
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/Cron/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/Cron/" class="nav-link p-0">
+                    Cron
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/Docker/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/Docker/" class="nav-link p-0">
+                    Docker
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/sshfs/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/sshfs/" class="nav-link p-0">
+                    Sshfs
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/nix/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/nix/" class="nav-link p-0">
+                    Nix
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/msd/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/msd/" class="nav-link p-0">
+                    Multi-Site Dynamic Host NGINX Basic Workflow
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/BashBasics/" class="nav-item my-1 active">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/BashBasics/" class="nav-link p-0">
+                    Bash Basics
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/podnet/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/podnet/" class="nav-link p-0">
+                    Podman Pod Networking
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/PodmanCP/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/PodmanCP/" class="nav-link p-0">
+                    Podman-Compose.yml
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/AADR/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/AADR/" class="nav-link p-0">
+                    Azure AD Roles and RBAC
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/ADC/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/ADC/" class="nav-link p-0">
+                    Azure AD Connect
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/AZAD/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/AZAD/" class="nav-link p-0">
+                    Azure Active Directory
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#born-again-shell">Born Again Shell</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#line-breaks">Line breaks</a></li>
+            <li><a href="#variables">Variables</a></li>
+            <li><a href="#logical">Logical</a></li>
+            <li><a href="#redirection">Redirection</a></li>
+            <li><a href="#piping">Piping</a></li>
+            <li><a href="#command-substitution">Command Substitution</a></li>
+            <li><a href="#grep">grep</a></li>
+            <li><a href="#file-movement">File movement</a></li>
+            <li><a href="#image-manipulation">Image manipulation</a></li>
+            <li><a href="#resizing">Resizing</a></li>
+            <li><a href="#resampling">Resampling</a></li>
+            <li><a href="#watermarking">Watermarking</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<div class="d-flex flex-column">
+    <h1 class="js-title">Bash Basics</h1>
+    <div class="d-flex align-items-center">
+        
+    </div>
+</div>
+
+<hr>
+
+
+<h1 id="born-again-shell">Born Again Shell</h1>
+<h3 id="line-breaks">Line breaks</h3>
+<p>If the statement is correct without continuation, you need to use <code>\</code>. Therefore, the following works without a backslash, as you can&rsquo;t end a command with a <code>&amp;&amp;</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">Doesn<span class="err">&#39;</span>t need line <span class="nb">break</span>
+<span class="nb">echo</span> <span class="m">1</span> <span class="o">&amp;&amp;</span>
+<span class="nb">echo</span> <span class="m">2</span>
+
+Needs line <span class="nb">break</span>
+<span class="nb">echo</span> <span class="m">1</span> <span class="se">\
+</span><span class="se"></span><span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="m">2</span>
+
+<span class="nb">echo</span> <span class="m">1</span> <span class="m">2</span> <span class="m">3</span> <span class="se">\
+</span><span class="se"></span><span class="m">4</span>
+</code></pre></div><h3 id="variables">Variables</h3>
+<p>Setting a command&rsquo;s output into a variable.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">all</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>ls ./all <span class="p">|</span> wc -l<span class="k">)</span><span class="s2">&#34;</span> <span class="o">&amp;&amp;</span>
+<span class="nb">echo</span> <span class="s2">&#34;all: </span><span class="si">${</span><span class="nv">all</span><span class="si">}</span><span class="s2">&#34;</span> <span class="o">&amp;&amp;</span>
+<span class="nv">resampled</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>ls ./resampled <span class="p">|</span> wc -l<span class="k">)</span><span class="s2">&#34;</span> <span class="o">&amp;&amp;</span>
+<span class="nb">echo</span> <span class="s2">&#34;resampled: </span><span class="si">${</span><span class="nv">resampled</span><span class="si">}</span><span class="s2">&#34;</span>
+</code></pre></div><h3 id="logical">Logical</h3>
+<p><code>&amp;&amp;</code> - AND
+<code>||</code> - OR</p>
+<h3 id="redirection">Redirection</h3>
+<p><code>&gt;</code> - Redirect standard output and <strong>overwrite</strong>.<br>
+<code>&gt;&gt;</code> - Redirect standard output and <strong>append</strong>.<br>
+<code>&lt;</code> - Redirect input to another command. Ex. <code>mail mike@somewhere.org &lt; to_do.txt</code></p>
+<h3 id="piping">Piping</h3>
+<p><code>|</code> - Uses the <strong>output</strong> of one command as the <strong>input</strong> of another.</p>
+<h3 id="command-substitution">Command Substitution</h3>
+<p><code>$(PROGRAM_PATH)</code> - Use program output as variable. Ex. <code>echo &quot;$(/bin/date) - Hi&quot; &gt;&gt; logfile.log</code></p>
+<h3 id="grep">grep</h3>
+<p>Only works for searching files or standard outputs.</p>
+<p><code>grep &lt;CRITERIA&gt; &lt;PATH&gt;</code> - Returns all the lines containing the search criteria.</p>
+<h3 id="file-movement">File movement</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">Navigate to D:
+<span class="nb">cd</span> /mnt/d
+
+List all files WITH new line. Pasted in Excel gives one name per cell vertically.
+ls -1 &gt; ../pics.txt
+
+A <span class="o">&amp;&amp;</span> B  – Run B only <span class="k">if</span> A succeeded
+One <span class="nb">command</span> from main folder
+<span class="nb">cd</span> <span class="m">1</span> <span class="o">&amp;&amp;</span> ls -1 &gt; ../pics.txt <span class="o">&amp;&amp;</span> <span class="nb">cd</span> ../2 <span class="o">&amp;&amp;</span> ls -1 &gt;&gt; ../pics.txt <span class="o">&amp;&amp;</span> <span class="nb">cd</span> ..
+
+Wihtout .jpg extension.
+<span class="nb">cd</span> <span class="m">1</span> <span class="o">&amp;&amp;</span> ls -1 <span class="p">|</span> tr -d <span class="s2">&#34;.jpg&#34;</span> &gt; ../pics.txt <span class="o">&amp;&amp;</span> <span class="nb">cd</span> ../2 <span class="o">&amp;&amp;</span> ls -1 <span class="p">|</span> tr -d <span class="s2">&#34;.jpg&#34;</span> &gt;&gt; ../pics.txt <span class="o">&amp;&amp;</span> <span class="nb">cd</span> ..
+
+Navigate to folder with files. List all files and replace new line with comma <span class="o">(</span>,<span class="o">)</span> and <span class="nb">export</span> one folder up into .csv file.
+ls -1 <span class="p">|</span> tr <span class="s2">&#34;\\n&#34;</span> <span class="s2">&#34;,&#34;</span> &gt; ../pics.csv
+
+Append <span class="o">(</span>&gt;&gt;<span class="o">)</span> files from other folder
+ls -1 <span class="p">|</span> tr <span class="s2">&#34;\\n&#34;</span> <span class="s2">&#34;,&#34;</span> &gt;&gt; ../pics.csv
+
+List the different files from folder <span class="m">1</span> vs folder <span class="m">2</span>
+diff &lt;<span class="o">(</span>ls -1a folder1<span class="o">)</span> &lt;<span class="o">(</span>ls -1a folder2<span class="o">)</span>
+
+Check <span class="k">for</span> different files not present in folder2 from folder1, and MOVE those in folder3
+rsync -rcC --compare-dest<span class="o">=</span>folder2/ folder1/ folder3/
+
+Find all the files with a space in the name
+find ./ -name <span class="s2">&#34;* *&#34;</span>
+
+Find all the files with a space in the name AND move them
+find ./ -name <span class="s2">&#34;* *&#34;</span> -exec mv -t ../folder <span class="o">{}</span> +
+
+Find all the files with a dash - in the name AND move them
+find ./ -name <span class="s2">&#34;*-*&#34;</span> -exec mv -t ../temp <span class="o">{}</span> +
+
+Find all files with <span class="m">4</span> characters
+find ./ -name <span class="s2">&#34;????.jpg&#34;</span>
+
+Find all files with <span class="m">4</span> characters AND move them
+find ./ -name <span class="s2">&#34;????.jpg&#34;</span> -exec mv -t ../folder <span class="o">{}</span> +
+
+Count number of files in folder
+ls <span class="p">|</span> wc -l
+
+Count number of files in folder with <span class="m">6</span> characters.
+find ./ -name <span class="s2">&#34;??????.jpg&#34;</span> <span class="p">|</span> wc -l
+
+List just the names of the images <span class="o">(</span>without the extension<span class="o">)</span>.
+ls -1 <span class="p">|</span> sed -e <span class="s1">&#39;s/\..*$//&#39;</span> &gt; ../pics.txt
+</code></pre></div><h3 id="image-manipulation">Image manipulation</h3>
+<p>Requires the <code>imagemagick</code> package</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo apt-get install imagemagick
+</code></pre></div><h3 id="resizing">Resizing</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">Resize image to specific dimensions, <span class="k">while</span> trying to keep aspect ratio.
+convert image.jpg -resize 492x492 resized_image.jpg
+
+Bulk resizing of images in a folder with conversion statuses, saved in a specified folder.
+<span class="k">for</span> file in *.jpg<span class="p">;</span> <span class="k">do</span> convert <span class="nv">$file</span> -resize 492x492 ../resized/<span class="nv">$file</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="nv">$file</span> converted<span class="p">;</span> <span class="k">done</span>
+</code></pre></div><h3 id="resampling">Resampling</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo apt install imagemagick
+
+Reduce the image quality. Adjust the quality parameter 1-100.
+convert image.jpg -sampling-factor 4:2:0 -strip -quality <span class="m">1</span> -interlace JPEG -colorspace RGB resampled_image.jpg
+
+Bulk resampling of images in a folder with conversion statuses, saved in a specified folder.
+<span class="k">for</span> file in *.jpg<span class="p">;</span> <span class="k">do</span> convert <span class="nv">$file</span> -sampling-factor 4:2:0 -strip -quality <span class="m">1</span> -interlace JPEG -colorspace RGB ../resampled/<span class="nv">$file</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="nv">$file</span> resampled<span class="p">;</span> <span class="k">done</span>
+</code></pre></div><h3 id="watermarking">Watermarking</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">Watermarking
+composite -dissolve 30% -gravity center watermark2.jpg image.jpg watermarked_image.jpg
+
+Bulk Watermarking <span class="o">(</span>Save in a specific folder<span class="o">)</span>
+<span class="k">for</span> file in *.jpg<span class="p">;</span> <span class="k">do</span> composite -dissolve 30% -gravity center ../watermark.jpg <span class="nv">$file</span> ./watered/<span class="nv">$file</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="nv">$file</span> watermarked<span class="p">;</span> <span class="k">done</span>
+</code></pre></div>
+
+    
+
+
+                    
+                    <div class="row"><div class="position-relative mx-auto col-lg-9">
+                          <div class="bg-primary overflow-hidden p-3 mt-5 shadow">
+
+    <h4 class="text-white text-center">Read more</h4>
+
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/trevorsmale/cumulus/docs/msd/" title="Multi-Site Dynamic Host NGINX Basic Workflow"><i class="fas fa-chevron-left p-1"></i>Multi-Site Dynamic Host NGINX Basic Workflow</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/trevorsmale/cumulus/docs/podnet/" title="Podman Pod Networking">Podman Pod Networking<i class="fas fa-chevron-right p-1"></i></a>
+    </div>
+</div>
+
+
+                        </div></div> 
+
+                </div>
+
+            </div> 
+
+        </div> 
+<script src="https://github.com/trevorsmale/cumuluslib/jquery.min.js"></script> 
+<script src="https://github.com/trevorsmale/cumuluslib/popper.min.js"></script> 
+
+<script src="https://github.com/trevorsmale/cumulusjs/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/auto-complete.js"></script>
+<link href="/trevorsmale/cumulus/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "https:\/\/github.com\/trevorsmale\/cumulus";
+  
+</script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/search.js"></script>
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/favorites.js"></script>
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>

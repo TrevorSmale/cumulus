@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="canonical" href="https://github.com/trevorsmale/cumulus/docs/msd/">
+
+    <title>
+        
+        Multi-Site Dynamic Host NGINX Basic Workflow | TS Tech Notes
+        
+    </title>
+
+    
+    <link href="https://github.com/trevorsmale/cumuluscss/fontawesome.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://github.com/trevorsmale/cumulus/css/ace.min.css">
+
+    
+
+    
+    
+        
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/trevorsmale/cumulus">
+                
+                TS Tech Notes
+            </a>
+        </div>
+        
+    </div>
+    </nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+            <form class="form-inline my-2 my-lg-0 searchbox">
+                <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder="Search">
+            </form>
+
+        
+
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/trevorsmale/cumulus/docs/" class="nav-item my-1 parent haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/docs/"><h6></h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/docs/NT/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/NT/" class="nav-link p-0">
+                    Network Tools
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/WASM/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/WASM/" class="nav-link p-0">
+                    WASM
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/API/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/API/" class="nav-link p-0">
+                    API
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/NGINX/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/NGINX/" class="nav-link p-0">
+                    NGINX
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/tmuxcs/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/tmuxcs/" class="nav-link p-0">
+                    TMUX Cheat Sheet
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/UNIXph/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/UNIXph/" class="nav-link p-0">
+                    UNIX Philosophy
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/ChatGPT/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/ChatGPT/" class="nav-link p-0">
+                    ChatGPT
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/AI/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/AI/" class="nav-link p-0">
+                    AI
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/Cron/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/Cron/" class="nav-link p-0">
+                    Cron
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/Docker/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/Docker/" class="nav-link p-0">
+                    Docker
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/sshfs/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/sshfs/" class="nav-link p-0">
+                    Sshfs
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/nix/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/nix/" class="nav-link p-0">
+                    Nix
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/msd/" class="nav-item my-1 active">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/msd/" class="nav-link p-0">
+                    Multi-Site Dynamic Host NGINX Basic Workflow
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/BashBasics/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/BashBasics/" class="nav-link p-0">
+                    Bash Basics
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/podnet/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/podnet/" class="nav-link p-0">
+                    Podman Pod Networking
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/PodmanCP/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/PodmanCP/" class="nav-link p-0">
+                    Podman-Compose.yml
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/AADR/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/AADR/" class="nav-link p-0">
+                    Azure AD Roles and RBAC
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/ADC/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/ADC/" class="nav-link p-0">
+                    Azure AD Connect
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/AZAD/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/AZAD/" class="nav-link p-0">
+                    Azure Active Directory
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#debian-vps-deployment-workflow">Debian VPS deployment workflow</a>
+      <ul>
+        <li><a href="#simple-outline">Simple Outline</a></li>
+        <li><a href="#purchase-domain-name">Purchase Domain Name</a></li>
+        <li><a href="#rent-virtual-private-server-vps">Rent Virtual Private Server (VPS)</a></li>
+        <li><a href="#initial-server-setup">Initial Server Setup</a></li>
+        <li><a href="#deploy">Deploy</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<div class="d-flex flex-column">
+    <h1 class="js-title">Multi-Site Dynamic Host NGINX Basic Workflow</h1>
+    <div class="d-flex align-items-center">
+        
+    </div>
+</div>
+
+<hr>
+
+
+<h1 id="debian-vps-deployment-workflow">Debian VPS deployment workflow</h1>
+<h2 id="simple-outline">Simple Outline</h2>
+<ul>
+<li>Purchase Domain name.</li>
+<li>Choose a reputable VPS provider.</li>
+<li>Select Debian as the operating system.</li>
+<li>Connect to the VPS via SSH.</li>
+<li>Install necessary packages.</li>
+<li>Configure HTTP server.</li>
+<li>Deploy your application.</li>
+</ul>
+<h2 id="purchase-domain-name">Purchase Domain Name</h2>
+<ol>
+<li>Simple as</li>
+</ol>
+<h2 id="rent-virtual-private-server-vps">Rent Virtual Private Server (VPS)</h2>
+<ol>
+<li>Get a cheap VPS with IPV6 &amp; IPV4 addressing</li>
+<li>Get one with private networking</li>
+</ol>
+<h2 id="initial-server-setup">Initial Server Setup</h2>
+<ol>
+<li>
+<p>Setup Debian Server</p>
+</li>
+<li>
+<p>Copy IPV4 address of server/host to A record of Domain name host</p>
+</li>
+<li>
+<p>Copy IPV6 address of server/host to AAAA record of Domain name host</p>
+</li>
+<li>
+<p>Alter CNAME record to include a redirect when WWW is excluded</p>
+</li>
+<li>
+<p>Test this configuration by pinging the domain name. One should see the IP address for the host server</p>
+</li>
+<li>
+<p>SSH login as ROOT user</p>
+</li>
+<li>
+<p>Generate an SSH key pair with SSH-keygen (Locally)</p>
+</li>
+<li>
+<p>Copy public key to server:</p>
+<p>ssh-copy-id -i ~/.ssh/id_rsa.pub root.domainname.com</p>
+</li>
+<li>
+<p>On server:</p>
+<p>vim etc/ssh/ssh_config</p>
+</li>
+<li>
+<p>Alter SSH Config file to express the following changes:</p>
+<p>PasswordAuthentication no
+UsePAM no
+ChallengeResponseAuthentication no</p>
+</li>
+<li>
+<p>Reboot SSH:</p>
+<p>systemctl restart sshd</p>
+</li>
+<li>
+<p>Update server</p>
+<p>apt update</p>
+</li>
+<li>
+<p>Install software</p>
+<p>apt install nginx
+apt install certbot (for https)
+apt install python-certbot-nginx</p>
+</li>
+<li>
+<p>Copy sites-available template to new site file/profile for NGINX</p>
+<p>cp /etc/nginx/sites-available/default /etc/nginx/sites-available/newsite</p>
+</li>
+<li>
+<p>Edit this new site file/profile:</p>
+</li>
+</ol>
+<p>vim /etc/nginx/sites-available/newsite</p>
+<pre><code>server {
+    listen 80 ;
+    listen [::]:80 ;
+
+    root /var/www/newsite;
+
+    index index.html index.htm index.nginx-debian.html;
+
+    server_name newsite.com www.newsite.com;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+</code></pre>
+<ol start="16">
+<li>
+<p>Symlink newsite to enabled</p>
+<p>ln -s /etc/nginx/sites-available/newsite /etc/nginx/sites-enabled/</p>
+</li>
+<li>
+<p>Make a directory for site</p>
+<p>mkdir /var/www/cabin</p>
+</li>
+<li>
+<p>write/upload test index.html file</p>
+<p>vim index.html&hellip;</p>
+</li>
+<li>
+<p>Reboot NGINX</p>
+<p>systemctl reload nginx</p>
+</li>
+<li>
+<p>Get HTTPS cert from certbot</p>
+<p>certbot &ndash;nginx</p>
+<p>enter email</p>
+</li>
+<li>
+<p>Agree to terms.</p>
+</li>
+<li>
+<p>Disagree to sharing email.</p>
+</li>
+<li>
+<p>Choose what site address get certs.</p>
+</li>
+<li>
+<p>Yes to redirecting HTTP to HTTPS.</p>
+</li>
+<li>
+<p>Type in domain and check/confirm setup of nginx and certbot.</p>
+</li>
+<li>
+<p>Set up a cron job to renew check and renew certbot monthly</p>
+<p>root@newsite:/var/www/newsite crontab -e</p>
+<p>1 1 1 * * certbot renew</p>
+</li>
+</ol>
+<h2 id="deploy">Deploy</h2>
+<ol>
+<li>
+<p>Generate the HUGO static output into public folder</p>
+<p>HUGO</p>
+</li>
+<li>
+<p>Copy local static public folder to /var/www/newsite</p>
+</li>
+<li>
+<p>NGINX should spot the change and update the site immediately</p>
+</li>
+</ol>
+
+
+    
+
+
+                    
+                    <div class="row"><div class="position-relative mx-auto col-lg-9">
+                          <div class="bg-primary overflow-hidden p-3 mt-5 shadow">
+
+    <h4 class="text-white text-center">Read more</h4>
+
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/trevorsmale/cumulus/docs/nix/" title="Nix"><i class="fas fa-chevron-left p-1"></i>Nix</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/trevorsmale/cumulus/docs/BashBasics/" title="Bash Basics">Bash Basics<i class="fas fa-chevron-right p-1"></i></a>
+    </div>
+</div>
+
+
+                        </div></div> 
+
+                </div>
+
+            </div> 
+
+        </div> 
+<script src="https://github.com/trevorsmale/cumuluslib/jquery.min.js"></script> 
+<script src="https://github.com/trevorsmale/cumuluslib/popper.min.js"></script> 
+
+<script src="https://github.com/trevorsmale/cumulusjs/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/auto-complete.js"></script>
+<link href="/trevorsmale/cumulus/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "https:\/\/github.com\/trevorsmale\/cumulus";
+  
+</script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/search.js"></script>
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/favorites.js"></script>
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>

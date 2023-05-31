@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NIX on TS Tech Notes</title>
+    <link>https://github.com/trevorsmale/cumulus/nix/</link>
+    <description>Recent content in NIX on TS Tech Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 29 May 2023 18:25:29 -0400</lastBuildDate><atom:link href="https://github.com/trevorsmale/cumulus/nix/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NIX OS Overview</title>
+      <link>https://github.com/trevorsmale/cumulus/NIX/NIXOS_overview/</link>
+      <pubDate>Mon, 29 May 2023 18:25:29 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/NIX/NIXOS_overview/</guid>
+      <description>Make reproducible, declarative and reliable systems. Major Features:  Reproducible  Nix builds packages in isolation from each other. This ensures that they are reproducible and don&amp;rsquo;t have undeclared dependencies, so if a package works on one machine, it will also work on another.
+Declarative  Nix makes it trivial to share development and build environments for your projects, regardless of what programming languages and tools you’re using.
+Reliable  Nix ensures that installing or upgrading one package cannot break other packages.</description>
+    </item>
+    
+  </channel>
+</rss>

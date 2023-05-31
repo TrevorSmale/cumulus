@@ -1,0 +1,17 @@
+{{ define "main" }}
+	{{if .Site.Home.Content }}
+
+	<h1>{{ .Title }}</h1>
+
+	{{.Site.Home.Content}}
+	{{else}}
+			<h1>TS Tech Notes</h1>
+			<p>
+			  A collection of various technical notes and how-to's primarily for my own reference. I try my best to organize the markdown files into categories and sub-categories. I hope you find something useful here.
+			  However, organizing notes is an ongoing battle. I am constantly re-organizing and re-categorizing notes. So, if you can't find something, try the search box at the top of the page.
+			  My notes are 1 part personaly written, 1 part copy/paste from other sources, and 1 part copied and pasted from a variety of sources and modified to suit my needs. I put together this Hugo site as my Notes were outgrowing VSCODE and VIM treesitter.
+			  I have a much larger collection that I am still working on transfering to this site, so this is a work in progress.
+			</p>
+	{{ end }}
+
+{{ end }}

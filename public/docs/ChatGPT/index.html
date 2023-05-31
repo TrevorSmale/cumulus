@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="canonical" href="https://github.com/trevorsmale/cumulus/docs/ChatGPT/">
+
+    <title>
+        
+        ChatGPT | TS Tech Notes
+        
+    </title>
+
+    
+    <link href="https://github.com/trevorsmale/cumuluscss/fontawesome.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://github.com/trevorsmale/cumulus/css/ace.min.css">
+
+    
+
+    
+    
+        
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/trevorsmale/cumulus">
+                
+                TS Tech Notes
+            </a>
+        </div>
+        
+    </div>
+    </nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+            <form class="form-inline my-2 my-lg-0 searchbox">
+                <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder="Search">
+            </form>
+
+        
+
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/trevorsmale/cumulus/docs/" class="nav-item my-1 parent haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/docs/"><h6></h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/docs/NT/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/NT/" class="nav-link p-0">
+                    Network Tools
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/WASM/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/WASM/" class="nav-link p-0">
+                    WASM
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/API/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/API/" class="nav-link p-0">
+                    API
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/NGINX/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/NGINX/" class="nav-link p-0">
+                    NGINX
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/tmuxcs/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/tmuxcs/" class="nav-link p-0">
+                    TMUX Cheat Sheet
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/UNIXph/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/UNIXph/" class="nav-link p-0">
+                    UNIX Philosophy
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/ChatGPT/" class="nav-item my-1 active">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/ChatGPT/" class="nav-link p-0">
+                    ChatGPT
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/AI/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/AI/" class="nav-link p-0">
+                    AI
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/Cron/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/Cron/" class="nav-link p-0">
+                    Cron
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/Docker/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/Docker/" class="nav-link p-0">
+                    Docker
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/sshfs/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/sshfs/" class="nav-link p-0">
+                    Sshfs
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/nix/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/nix/" class="nav-link p-0">
+                    Nix
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/msd/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/msd/" class="nav-link p-0">
+                    Multi-Site Dynamic Host NGINX Basic Workflow
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/BashBasics/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/BashBasics/" class="nav-link p-0">
+                    Bash Basics
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/podnet/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/podnet/" class="nav-link p-0">
+                    Podman Pod Networking
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/PodmanCP/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/PodmanCP/" class="nav-link p-0">
+                    Podman-Compose.yml
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/AADR/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/AADR/" class="nav-link p-0">
+                    Azure AD Roles and RBAC
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/ADC/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/ADC/" class="nav-link p-0">
+                    Azure AD Connect
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/AZAD/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/AZAD/" class="nav-link p-0">
+                    Azure Active Directory
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#chat-gpt">Chat GPT</a>
+      <ul>
+        <li><a href="#description">Description</a></li>
+        <li><a href="#history">History</a></li>
+        <li><a href="#prompt-examples">Prompt Examples</a></li>
+        <li><a href="#prompting-tips">Prompting Tips</a></li>
+        <li><a href="#advanced-prompting-tips">Advanced Prompting Tips</a></li>
+      </ul>
+    </li>
+    <li><a href="#chatgpt-plugins">ChatGPT Plugins</a>
+      <ul>
+        <li><a href="#description-1">Description</a></li>
+        <li><a href="#how-plugins-work">How Plugins Work</a></li>
+        <li><a href="#benefits-of-using-plugins">Benefits of Using Plugins</a></li>
+        <li><a href="#getting-started-with-plugins">Getting Started with Plugins</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<div class="d-flex flex-column">
+    <h1 class="js-title">ChatGPT</h1>
+    <div class="d-flex align-items-center">
+        
+    </div>
+</div>
+
+<hr>
+
+
+<h1 id="chat-gpt">Chat GPT</h1>
+<h2 id="description">Description</h2>
+<p>Chat GPT is a language model developed by OpenAI based on the GPT-3.5 architecture. It is designed to generate human-like responses to text-based prompts and engage in conversational interactions with users. Chat GPT has been trained on a vast amount of diverse text data and can understand and generate coherent responses in multiple languages.</p>
+<h2 id="history">History</h2>
+<p>Chat GPT builds upon the success of previous iterations of the GPT (Generative Pre-trained Transformer) model developed by OpenAI. The initial version, GPT, was released in 2018 and marked a significant advancement in natural language processing. GPT-2, introduced in 2019, further improved upon the capabilities of its predecessor, generating remarkably coherent and contextually relevant text. GPT-3, unveiled in 2020, pushed the boundaries even further with its impressive language generation abilities.</p>
+<p>Based on the lessons learned from GPT-3, OpenAI introduced GPT-3.5, which powers the Chat GPT model. GPT-3.5 is trained on a massive dataset that encompasses a wide range of topics and styles, enabling Chat GPT to provide more accurate and nuanced responses to prompts.</p>
+<h2 id="prompt-examples">Prompt Examples</h2>
+<ol>
+<li>
+<p><strong>Prompt:</strong> &ldquo;What is the capital of France?&rdquo;
+<strong>Response:</strong> &ldquo;The capital of France is Paris.&rdquo;</p>
+</li>
+<li>
+<p><strong>Prompt:</strong> &ldquo;Tell me a joke.&rdquo;
+<strong>Response:</strong> &ldquo;Why don&rsquo;t scientists trust atoms? Because they make up everything!&rdquo;</p>
+</li>
+<li>
+<p><strong>Prompt:</strong> &ldquo;Can you recommend a good restaurant in New York City?&rdquo;
+<strong>Response:</strong> &ldquo;Sure! One popular restaurant in New York City is &lsquo;The Spicy Spoon.&rsquo; They offer a diverse menu with delicious options ranging from traditional American dishes to international cuisine.&rdquo;</p>
+</li>
+<li>
+<p><strong>Prompt:</strong> &ldquo;How does photosynthesis work?&rdquo;
+<strong>Response:</strong> &ldquo;Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy. It involves capturing sunlight, absorbing carbon dioxide, and releasing oxygen as a byproduct.&rdquo;</p>
+</li>
+<li>
+<p><strong>Prompt:</strong> &ldquo;Translate the phrase &lsquo;Hello, how are you?&rsquo; to French.&rdquo;
+<strong>Response:</strong> &ldquo;The phrase &lsquo;Hello, how are you?&rsquo; translates to &lsquo;Bonjour, comment ça va ?&rsquo; in French.&rdquo;</p>
+</li>
+</ol>
+<h2 id="prompting-tips">Prompting Tips</h2>
+<ol>
+<li>
+<p>Be specific: When asking questions or providing prompts, try to be as specific and clear as possible. This helps the model understand what you&rsquo;re asking for and provide a more accurate response.</p>
+</li>
+<li>
+<p>Add context: If you&rsquo;re asking a question or discussing a topic, provide relevant context to help the model generate a more informed response. This can include additional details, background information, or specific examples.</p>
+</li>
+<li>
+<p>Experiment with phrasing: If you&rsquo;re not satisfied with the initial response, try rephrasing or restructuring your prompt. Sometimes a slight adjustment in the wording can lead to a better answer.</p>
+</li>
+<li>
+<p>Control output length: You can specify the desired length of the response by indicating the approximate number of tokens you want the model to generate. This can be helpful to avoid excessively long or short responses.</p>
+</li>
+<li>
+<p>Use system messages: By adding a system message at the beginning of the conversation, you can guide the model&rsquo;s behavior. For example, you can instruct the model to adopt a certain persona or ask it to think step-by-step before providing an answer.</p>
+</li>
+</ol>
+<p>Remember, Chat GPT is a language model, and while it strives to generate accurate and coherent responses, it may occasionally produce incorrect or nonsensical outputs. It&rsquo;s always a good idea to critically evaluate the responses and verify the information when necessary.</p>
+<h2 id="advanced-prompting-tips">Advanced Prompting Tips</h2>
+<ol>
+<li>Specify the programming language.</li>
+<li>Provide input/output examples.</li>
+<li>Include necessary context.</li>
+<li>Break down complex tasks.</li>
+<li>Ask the model to explain code.</li>
+<li>Control code complexity.</li>
+</ol>
+<p>Remember to review and test the code generated by the model to ensure its correctness and suitability for your specific use case.</p>
+<h1 id="chatgpt-plugins">ChatGPT Plugins</h1>
+<h2 id="description-1">Description</h2>
+<p>ChatGPT plugins are a feature that allows developers to extend and customize the behavior of the ChatGPT model by providing additional instructions and specialized functionality. Plugins enable users to create domain-specific conversational agents and enhance the capabilities of ChatGPT for specific tasks or applications.</p>
+<h2 id="how-plugins-work">How Plugins Work</h2>
+<p>Plugins in ChatGPT follow a two-step process: registration and usage.</p>
+<ol>
+<li>
+<p><strong>Registration</strong>: Developers can create a plugin by defining a set of actions and their corresponding behaviors. Each action represents a specific instruction or task that the model can perform. Actions can include generating text, making API calls, or executing custom code.</p>
+</li>
+<li>
+<p><strong>Usage</strong>: Once a plugin is registered, it can be utilized in conversations with ChatGPT. By including plugin-specific instructions in the conversation, developers can invoke the actions defined in the plugin and elicit customized responses from the model.</p>
+</li>
+</ol>
+<h2 id="benefits-of-using-plugins">Benefits of Using Plugins</h2>
+<p>Plugins offer several advantages when using ChatGPT:</p>
+<ul>
+<li>
+<p><strong>Customizability</strong>: Plugins allow developers to tailor the behavior of ChatGPT to their specific requirements. By defining actions and behaviors, developers can instruct the model to perform domain-specific tasks or interact with external services.</p>
+</li>
+<li>
+<p><strong>Specialized functionality</strong>: Plugins enable the integration of specialized functionality, such as accessing external databases, performing calculations, or implementing complex workflows. This expands the range of tasks that ChatGPT can handle effectively.</p>
+</li>
+<li>
+<p><strong>Domain-specific conversational agents</strong>: With plugins, developers can create conversational agents that are specifically designed for particular domains or applications. Plugins help ChatGPT excel in fields like customer support, language translation, code generation, or specific knowledge domains.</p>
+</li>
+<li>
+<p><strong>Enhanced user experience</strong>: By leveraging plugins, developers can provide users with more interactive and personalized experiences. Plugins enable developers to incorporate interactive features, context-aware responses, and dynamic content generation within conversations.</p>
+</li>
+</ul>
+<h2 id="getting-started-with-plugins">Getting Started with Plugins</h2>
+<p>To get started with ChatGPT plugins, developers can refer to the official OpenAI documentation, which provides detailed instructions, examples, and code snippets. The documentation includes guidelines for plugin development, registration, and usage, as well as best practices and tips for achieving optimal results.</p>
+<p>Developers can leverage the flexibility and extensibility of plugins to build powerful conversational agents that fulfill specific use cases, offer enhanced functionality, and provide a more tailored user experience.</p>
+<p><strong>Note</strong>: As of my knowledge cutoff in September 2021, ChatGPT plugins were not yet available. Please refer to the OpenAI documentation or resources for the latest information on ChatGPT plugins and their implementation.</p>
+
+
+    
+
+
+                    
+                    <div class="row"><div class="position-relative mx-auto col-lg-9">
+                          <div class="bg-primary overflow-hidden p-3 mt-5 shadow">
+
+    <h4 class="text-white text-center">Read more</h4>
+
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/trevorsmale/cumulus/docs/UNIXph/" title="UNIX Philosophy"><i class="fas fa-chevron-left p-1"></i>UNIX Philosophy</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/trevorsmale/cumulus/docs/AI/" title="AI">AI<i class="fas fa-chevron-right p-1"></i></a>
+    </div>
+</div>
+
+
+                        </div></div> 
+
+                </div>
+
+            </div> 
+
+        </div> 
+<script src="https://github.com/trevorsmale/cumuluslib/jquery.min.js"></script> 
+<script src="https://github.com/trevorsmale/cumuluslib/popper.min.js"></script> 
+
+<script src="https://github.com/trevorsmale/cumulusjs/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/auto-complete.js"></script>
+<link href="/trevorsmale/cumulus/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "https:\/\/github.com\/trevorsmale\/cumulus";
+  
+</script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/search.js"></script>
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/favorites.js"></script>
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>

@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="canonical" href="https://github.com/trevorsmale/cumulus/docs/NGINX/">
+
+    <title>
+        
+        NGINX | TS Tech Notes
+        
+    </title>
+
+    
+    <link href="https://github.com/trevorsmale/cumuluscss/fontawesome.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://github.com/trevorsmale/cumulus/css/ace.min.css">
+
+    
+
+    
+    
+        
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/trevorsmale/cumulus">
+                
+                TS Tech Notes
+            </a>
+        </div>
+        
+    </div>
+    </nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+            <form class="form-inline my-2 my-lg-0 searchbox">
+                <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder="Search">
+            </form>
+
+        
+
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/trevorsmale/cumulus/docs/" class="nav-item my-1 parent haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/docs/"><h6></h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/docs/NT/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/NT/" class="nav-link p-0">
+                    Network Tools
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/WASM/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/WASM/" class="nav-link p-0">
+                    WASM
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/API/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/API/" class="nav-link p-0">
+                    API
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/NGINX/" class="nav-item my-1 active">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/NGINX/" class="nav-link p-0">
+                    NGINX
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/tmuxcs/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/tmuxcs/" class="nav-link p-0">
+                    TMUX Cheat Sheet
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/UNIXph/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/UNIXph/" class="nav-link p-0">
+                    UNIX Philosophy
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/ChatGPT/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/ChatGPT/" class="nav-link p-0">
+                    ChatGPT
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/AI/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/AI/" class="nav-link p-0">
+                    AI
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/Cron/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/Cron/" class="nav-link p-0">
+                    Cron
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/Docker/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/Docker/" class="nav-link p-0">
+                    Docker
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/sshfs/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/sshfs/" class="nav-link p-0">
+                    Sshfs
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/nix/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/nix/" class="nav-link p-0">
+                    Nix
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/msd/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/msd/" class="nav-link p-0">
+                    Multi-Site Dynamic Host NGINX Basic Workflow
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/BashBasics/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/BashBasics/" class="nav-link p-0">
+                    Bash Basics
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/podnet/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/podnet/" class="nav-link p-0">
+                    Podman Pod Networking
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/PodmanCP/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/PodmanCP/" class="nav-link p-0">
+                    Podman-Compose.yml
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/AADR/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/AADR/" class="nav-link p-0">
+                    Azure AD Roles and RBAC
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/ADC/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/ADC/" class="nav-link p-0">
+                    Azure AD Connect
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/AZAD/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/AZAD/" class="nav-link p-0">
+                    Azure Active Directory
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#nginx">Nginx</a></li>
+    <li><a href="#install">Install</a></li>
+    <li><a href="#configuration">Configuration</a></li>
+    <li><a href="#commands">Commands</a></li>
+    <li><a href="#terminology">Terminology</a>
+      <ul>
+        <li><a href="#mimetypes">mime.types</a></li>
+      </ul>
+    </li>
+    <li><a href="#simplest-server">Simplest server</a></li>
+    <li><a href="#real-life-server">Real life server</a></li>
+    <li><a href="#location-blocks">Location Blocks</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#serving-files">Serving Files</a></li>
+            <li><a href="#matching-uris-to-location-blocks">Matching URIs to Location Blocks</a></li>
+            <li><a href="#try_files">try_files</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#sslhttps">SSL/HTTPS</a></li>
+    <li><a href="#proxy-vs-reverse-proxy">Proxy vs Reverse Proxy</a></li>
+    <li><a href="#reverse-proxy">Reverse Proxy</a>
+      <ul>
+        <li><a href="#trailing-slash-"><strong>Trailing slash /</strong></a>
+          <ul>
+            <li><a href="#with-slash"><strong>WITH slash</strong></a></li>
+            <li><a href="#without-slash"><strong>WITHOUT slash</strong></a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#logging">Logging</a>
+      <ul>
+        <li><a href="#inheritance">Inheritance</a></li>
+        <li><a href="#testing">Testing</a></li>
+      </ul>
+    </li>
+    <li><a href="#optimization">Optimization</a></li>
+    <li><a href="#security">Security</a></li>
+    <li><a href="#caching">Caching</a></li>
+    <li><a href="#compression">Compression</a></li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<div class="d-flex flex-column">
+    <h1 class="js-title">NGINX</h1>
+    <div class="d-flex align-items-center">
+        
+    </div>
+</div>
+
+<hr>
+
+
+<h1 id="nginx">Nginx</h1>
+<p>It only knows about static content. While it can serve static HTML, for dynamically generated HTML, it has to offload requests to other processes in order to generate HTML. Ex. User requests a PHP file, and nginx sends it to an interpreter, which then returns the HTML, which is sent back by nginx.</p>
+<p>Nginx communicates with the PHP interpreter via a <strong>unix socket</strong> file. Nginx communicates with the website visitor via a <strong>TCP socket</strong> file.</p>
+<p>To access a guest (VM) nginx from a host, set a port forwarding in Virtualbox with name <code>nginx</code>, host port <code>80</code>, guest port <code>80</code>.</p>
+<h1 id="install">Install</h1>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">apt-get update <span class="c1"># Refresh packages list.</span>
+apt-get install nginx <span class="c1"># Install the web server.</span>
+</code></pre></div><p>If we want to add modules, we need to compile nginx from source and add them during the compilation phase.</p>
+<h1 id="configuration">Configuration</h1>
+<p><code>/usr/share/nginx/html/</code> has the default <code>index.html</code> file.</p>
+<p><code>/etc/nginx/nginx.conf</code> is the main server configuration file. You can configure many sites in this file</p>
+<p>You can also create a separate configuration for each, which should be placed in the <code>/etc/nginx/conf.d/</code> folder. These override any <code>nginx.conf</code> settings. These are loaded by the default <code>include /etc/nginx/conf.d/*.conf;</code> line in the main .conf file.</p>
+<h1 id="commands">Commands</h1>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Check if the configuration works</span>
+nginx -t
+
+<span class="c1"># Reload changes made to nginx.conf</span>
+systemctl reload nginx
+
+<span class="c1"># Check if nginx is running.</span>
+systemctl status nginx
+
+<span class="c1"># Start nginx.</span>
+systemctl start nginx
+
+<span class="c1"># Stop nginx.</span>
+systemctl stop nginx
+
+<span class="c1"># Reload nginx.</span>
+systemctl restart nginx
+
+<span class="c1"># Start a server with this custom configuration.</span>
+sudo nginx -c /home/user/elm-seed/nginx.conf
+
+<span class="c1"># Reload custom configuration after changes.</span>
+sudo nginx -s reload
+
+<span class="c1"># Show nginx processes.</span>
+ps -ef <span class="p">|</span> grep nginx
+
+<span class="c1"># Kill a server with a PID 2847.</span>
+<span class="nb">kill</span> -9 <span class="m">2847</span>
+</code></pre></div><p>The default location nginx looks in for the configuration file is <code>/etc/nginx/nginx.conf</code>, but you can pass in an arbitrary path with the <code>-c</code> flag. Ex. <code>nginx -c /usr/local/nginx/conf</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash">nginx -c &lt;path&gt; -t   <span class="c1"># Test configuration at absolute path</span>
+nginx -c &lt;path&gt;      <span class="c1"># Start with a custom configuration.</span>
+nginx -s &lt;signal&gt;    <span class="c1"># Stop or reload.</span>
+</code></pre></div><h1 id="terminology">Terminology</h1>
+<p><code>Blocks</code> - Sections to which directives are applied. Also called context or scope. They can be nested. The most important ones are <code>main</code>, <code>http</code>, <code>server</code> and <code>location</code> (for matching URI locations on incoming requests to parent server context)</p>
+<p><code>Vhost</code> - Virtual host. Defined in the <code>http</code> block.</p>
+<p><code>Directives</code> - Specific configuration options composed of an option name and option value. Ex. <code>Listen 80</code>. There are 4 types:</p>
+<ul>
+<li><strong>Standard</strong> directive. Defined once, unless turned off elsewhere. <code>gzip on</code>.</li>
+<li><strong>Array</strong> directive. Can be defined multiple times with different flags. <code>access_log logs/access.log</code> vs <code>access_log logs/access_notice.log notice;</code> in the same context.</li>
+<li><strong>Action</strong> directive. Perform an action when hit <code>rewrite</code>, <code>return</code>.</li>
+<li><strong>try_files</strong> directive. <code>try_files $uri index.html =404</code> tries finding a file and if not found, server index.html. If that also fails, send a 404 error.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">server</span> <span class="p">{</span>               <span class="c1"># Block start
+</span><span class="c1"></span>    <span class="kn">listen</span> <span class="mi">80</span><span class="p">;</span>         <span class="c1"># Directive
+</span><span class="c1"></span><span class="p">}</span>                      <span class="c1"># Block end
+</span></code></pre></div><h2 id="mimetypes">mime.types</h2>
+<p>If this file is not included in the <code>http</code> block, all the different files will be served as simple text files and thus won&rsquo;t be rendered. Intead of writing all cases like <code>http { text/html html; text/css css;}</code> we can simply include a list of them with <code>http { include mime.types; }</code>.</p>
+<h1 id="simplest-server">Simplest server</h1>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">events</span> <span class="p">{}</span>                                 <span class="c1"># Needed to be a valid conf file.
+</span><span class="c1"></span>
+<span class="k">http</span> <span class="p">{</span>
+    <span class="kn">include</span> <span class="s">mime.types</span><span class="p">;</span>                   <span class="c1"># Recognize filetypes.
+</span><span class="c1"></span>
+    <span class="kn">server</span> <span class="p">{</span>
+        <span class="kn">listen</span> <span class="mi">80</span><span class="p">;</span>
+        <span class="kn">server_name</span> <span class="mi">123</span><span class="s">.456.789.255</span><span class="p">;</span>      <span class="c1"># Should be domain name.
+</span><span class="c1"></span>
+        <span class="kn">root</span> <span class="s">/home/folder</span><span class="p">;</span>                <span class="c1"># Match URIs to files here.
+</span><span class="c1"></span>        <span class="kn">index</span> <span class="s">index.html</span><span class="p">;</span>                 <span class="c1"># index is inside folder
+</span><span class="c1"></span>    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><p>After that, reload with <code>systemctl reload nginx</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">events</span> <span class="p">{}</span>                                         <span class="c1"># Needed to be a valid conf file.
+</span><span class="c1"></span>
+<span class="k">http</span> <span class="p">{</span>
+    <span class="kn">include</span> <span class="s">mime.types</span><span class="p">;</span>                           <span class="c1"># Recognize filetypes.
+</span><span class="c1"></span>
+    <span class="kn">server</span> <span class="p">{</span>
+        <span class="kn">listen</span> <span class="mi">80</span><span class="p">;</span>
+        <span class="kn">server_name</span> <span class="mi">123</span><span class="s">.456.789.255</span><span class="p">;</span>              <span class="c1"># Should be domain name.
+</span><span class="c1"></span>
+        <span class="kn">location</span> <span class="s">/route</span> <span class="p">{</span>
+            <span class="kn">proxy_pass</span> <span class="s">&#39;http://127.0.0.1:8080&#39;</span><span class="p">;</span>   <span class="c1"># http://123.456.789.255:8080
+</span><span class="c1"></span>        <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><p>App is available at <code>http://123.456.789.255:8080</code>.</p>
+<h1 id="real-life-server">Real life server</h1>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx">
+<span class="k">events</span> <span class="p">{}</span>
+
+<span class="k">http</span> <span class="p">{</span>
+    <span class="kn">include</span> <span class="s">mime.types</span><span class="p">;</span>
+
+    <span class="kn">server</span> <span class="p">{</span>
+        <span class="kn">listen</span> <span class="mi">80</span><span class="p">;</span>
+        <span class="kn">server_name</span> <span class="s">subdomain.domain.com</span><span class="p">;</span>
+        <span class="kn">return</span> <span class="mi">301</span> <span class="s">https://subdomain.domain.com</span><span class="nv">$request_uri</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kn">server</span> <span class="p">{</span>
+        <span class="kn">listen</span> <span class="mi">443</span> <span class="s">ssl</span><span class="p">;</span>
+        <span class="kn">server_name</span> <span class="s">subdomain.domain.com</span><span class="p">;</span>
+        <span class="kn">ssl_certificate</span> <span class="s">/etc/letsencrypt/live/subdomain.domain.com/fullchain.pem</span><span class="p">;</span>
+        <span class="kn">ssl_certificate_key</span> <span class="s">/etc/letsencrypt/live/subdomain.domain.com/privkey.pem</span><span class="p">;</span>
+
+        <span class="kn">root</span> <span class="s">/home/user/app/public</span><span class="p">;</span>
+        <span class="kn">index</span> <span class="s">index.html</span><span class="p">;</span>
+
+        <span class="kn">location</span> <span class="s">/auth</span> <span class="p">{</span>
+            <span class="kn">proxy_pass</span> <span class="s">&#39;http://127.0.0.1:3000&#39;</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="kn">location</span> <span class="s">/api</span> <span class="p">{</span>
+            <span class="kn">proxy_pass</span> <span class="s">&#39;http://127.0.0.1:3000&#39;</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="kn">location</span> <span class="s">/socket.io/</span> <span class="p">{</span>
+            <span class="kn">proxy_pass</span> <span class="s">&#39;http://127.0.0.1:3000&#39;</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><h1 id="location-blocks">Location Blocks</h1>
+<p>The most used context block in any nginx configuration, which defines the behavior of specific URIs or requests. Think of them as intercepting a request based on its value and doing something else than serving to a client.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">events</span> <span class="p">{}</span>
+
+<span class="k">http</span> <span class="p">{</span>
+    <span class="kn">include</span> <span class="s">mime.types</span><span class="p">;</span>
+    <span class="kn">server</span> <span class="p">{</span>
+        <span class="kn">listen</span> <span class="mi">80</span><span class="p">;</span>
+        <span class="kn">server_name</span> <span class="mi">127</span><span class="s">.0.0.1</span><span class="p">;</span>
+        <span class="kn">root</span> <span class="s">/sites/template</span><span class="p">;</span>
+
+        <span class="kn">location</span> <span class="s">/example</span> <span class="p">{</span>
+            <span class="kn">return</span> <span class="mi">200</span> <span class="s">&#34;Hello</span> <span class="s">from</span> <span class="s">location</span> <span class="s">block!&#34;</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><h3 id="serving-files">Serving Files</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">events</span> <span class="p">{}</span>
+
+<span class="k">http</span> <span class="p">{</span>
+    <span class="kn">include</span> <span class="s">mime.types</span><span class="p">;</span>
+    <span class="kn">server</span> <span class="p">{</span>
+        <span class="kn">listen</span> <span class="mi">80</span><span class="p">;</span>
+        <span class="c1"># The files are available at domain.com/files/file.ext
+</span><span class="c1"></span>        <span class="c1"># The location is appended to the specified root path for the full location.
+</span><span class="c1"></span>        <span class="kn">location</span> <span class="s">/files/</span> <span class="p">{</span>
+            <span class="c1"># The files need to be inside /home/username/files/
+</span><span class="c1"></span>            <span class="kn">root</span> <span class="s">/home/username</span><span class="p">;</span>
+            <span class="kn">try_files</span> <span class="nv">$uri</span> <span class="nv">$uri/</span> <span class="p">=</span><span class="mi">404</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><h3 id="matching-uris-to-location-blocks">Matching URIs to Location Blocks</h3>
+<p>In order of importance. Matching occurs for everything past the value. <code>location /greet</code> will match <code>/greetings/something</code></p>
+<ol>
+<li><code>=</code> - Exact match.</li>
+<li><code>^~</code> - Preferential prefix. Same as standard (prefix), but more important than regex.</li>
+<li><code>~</code> or <code>~*</code> - Regex case sensitive or insensitive.</li>
+<li><code>no modifier</code> - Prefix standard match.</li>
+</ol>
+<p>Example for <code>/greet</code>:</p>
+<ol>
+<li><code>= /greet</code> - Match <strong>only</strong> /greet.</li>
+<li><code>^~</code> - Override the standard match if it also happens.</li>
+<li><code>~* /greet[0-9]</code> - Match /greet123, /greet456 etc.</li>
+<li><code>no modifier</code> - Match /greet, /greeting etc.</li>
+</ol>
+<h3 id="try_files">try_files</h3>
+<p>The example below sets up a location outside of the regular server root. When someone visits <code>domain/downloads/file</code> they would get the wanted file.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">events</span> <span class="p">{}</span>
+
+<span class="k">http</span> <span class="p">{</span>
+    <span class="kn">include</span> <span class="s">mime.types</span><span class="p">;</span>
+    <span class="kn">server</span> <span class="p">{</span>
+        <span class="kn">listen</span> <span class="mi">80</span><span class="p">;</span>
+        <span class="kn">server_name</span> <span class="mi">127</span><span class="s">.0.0.1</span><span class="p">;</span>
+        <span class="kn">root</span> <span class="s">/sites/template</span><span class="p">;</span>
+
+        <span class="kn">location</span> <span class="s">/downloads</span> <span class="p">{</span>
+            <span class="kn">root</span> <span class="s">/sites</span><span class="p">;</span>
+            <span class="kn">try_files</span> <span class="c1">#uri =404;
+</span><span class="c1"></span>        <span class="err">}</span>
+    <span class="err">}</span>
+<span class="err">}</span>
+</code></pre></div><h1 id="sslhttps">SSL/HTTPS</h1>
+<p>After purchasing an SSL certificate, two files are obtained.</p>
+<ul>
+<li><code>.crt</code> certificate file.</li>
+<li><code>.key</code> certificate key file.</li>
+</ul>
+<p>We place these files into <code>/etc/nginx/ssl/</code> and use this configuration in the server/domain block.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">server</span> <span class="p">{</span>
+    <span class="kn">listen</span> <span class="mi">443</span> <span class="s">ssl</span><span class="p">;</span>
+    <span class="kn">ssl_certificate</span> <span class="s">/etc/nginx/ssl/nginx.crt</span><span class="p">;</span>
+    <span class="kn">ssl_certificate_key</span> <span class="s">/etc/nginx/ssl/nginx.key</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><p>SSL/HTTPS uses the <code>443</code> port vs the standard HTTP <code>80</code>.</p>
+<p>Certbot is used for generating <strong>Let&rsquo;s Encrypt</strong> certificates and automating their renewal.</p>
+<h1 id="proxy-vs-reverse-proxy">Proxy vs Reverse Proxy</h1>
+<p><strong>Proxy: Hide the origin of the request, by inserting servers in-between.</strong></p>
+<pre tabindex="0"><code>Normal:   Client -----------------------&gt; Server
+Proxy:    Client ---&gt; Server (proxy) ---&gt; Server
+</code></pre><p><strong>Reverse proxy: Prevent direct access to app i.e. exploit bad code.</strong></p>
+<pre tabindex="0"><code>Normal:          Client -----------------------&gt; App
+Reverse Proxy:   Client ---&gt; Server (proxy) ---&gt; App
+</code></pre><p>To run any Linux server on port 80, you need to be running as root. If you want to run node directly on port 80, that means you have to run node as root. If your application has any security flaws, it will become significantly compounded by the fact that it has access to do <em>anything it wants</em>. For example, if you write something that accidentally allows the user to read arbitrary files, now they can read files from other server user&rsquo;s accounts.</p>
+<p>If you use nginx in front of node, you can run your node as a limited user on port <code>3000</code> (or whatever) and then have nginx run as root on port <code>80</code>, forwarding requests to port <code>3000</code>. Now the node application is limited to the user permissions you give it.</p>
+<p>It&rsquo;s always better to use nginx as a proxy for a node.js server; nginx can proxy to a number of node backends and should any of them die can fail-over automatically with the benefit that, if there is an issue with the node interpreter (for instance while upgrading) and it stops responding, it can serve a fall-back HTML page.</p>
+<blockquote>
+<p><strong>You shouldn&rsquo;t be using node.js for serving &ldquo;static&rdquo; files such as images, js/css files, etc.</strong></p>
+</blockquote>
+<p>Use node.js for the complex stuff and let nginx take care of the things it&rsquo;s good at - serving files from the disk or from a cache.</p>
+<h1 id="reverse-proxy">Reverse Proxy</h1>
+<p><strong>IMPORTANT:</strong> <strong>Any changes made to</strong> <code>nginx.conf</code> <strong>need to be reloaded with</strong> <code>sudo nginx -s reload</code> <strong>for them to work!!!</strong></p>
+<p>Any request made to the server on the <code>80</code> port is forwarded to <code>http://localhost:3000</code>, as if it was made directly there.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">events</span> <span class="p">{}</span>
+
+<span class="k">http</span> <span class="p">{</span>
+    <span class="kn">server</span> <span class="p">{</span>
+        <span class="kn">listen</span> <span class="mi">80</span><span class="p">;</span>
+
+        <span class="kn">location</span> <span class="s">/</span> <span class="p">{</span>
+            <span class="kn">proxy_pass</span> <span class="s">&#39;http://localhost:3000/&#39;</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><h2 id="trailing-slash-"><strong>Trailing slash /</strong></h2>
+<p><a href="https://stackoverflow.com/questions/32542282/how-do-i-rewrite-urls-in-a-proxy-response-in-nginx">Stack Overflow explanation.</a></p>
+<p>It is crucial to note the usage of the <strong>trailing slash</strong>. This is called a <strong>proxy path</strong>. Unless we specify one, nginx assumes the original request path i.e. location.</p>
+<p><strong>It is recommended to use the proxy path <code>/</code> trailing slash.</strong></p>
+<h3 id="with-slash"><strong>WITH slash</strong></h3>
+<p><strong>With</strong> trailing slash, the request for <code>http://localhost:3000/foo/bar/baz</code> will be proxied to <code>http://localhost:3000/bar/baz</code>. Basically, <code>/foo/</code> gets replaced by <code>/</code> to change the request path from <code>/foo/bar/baz</code> to <code>/bar/baz</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="c1"># http://localhost:3000/foo/bar/baz
+</span><span class="c1"></span>
+<span class="k">location</span> <span class="s">/foo/</span> <span class="p">{</span>
+    <span class="kn">proxy_pass</span> <span class="s">http://localhost:3000/</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1"># http://localhost:3000/bar/baz
+</span></code></pre></div><p>For example, a request to <code>http://localhost:8000/app/users</code> (with the config below) would return all users because the request made to the server is actually <code>http://localhost:3000/api/users</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="c1"># http://localhost:8000/app/users
+</span><span class="c1"></span><span class="k">server</span> <span class="p">{</span>
+    <span class="kn">listen</span> <span class="mi">8000</span><span class="p">;</span>
+
+    <span class="kn">location</span> <span class="s">/app/</span> <span class="p">{</span>
+        <span class="kn">proxy_pass</span> <span class="s">&#39;http://localhost:3000/api/users&#39;</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1"># http://localhost:3000/api/users
+</span></code></pre></div><h3 id="without-slash"><strong>WITHOUT slash</strong></h3>
+<p><strong>Without</strong> trailing slash, the same request will be proxied to <code>http://localhost:3000/foo/bar/baz</code>. Basically, the full original request path gets passed on without changes.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="c1"># http://localhost:3000/foo/bar/baz
+</span><span class="c1"></span>
+<span class="k">location</span> <span class="s">/foo</span> <span class="p">{</span>
+    <span class="kn">proxy_pass</span> <span class="s">http://localhost:3000</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1"># http://localhost:3000/foo/bar/baz
+</span></code></pre></div><h1 id="logging">Logging</h1>
+<p>There are two types of logs by default, located in <code>/var/log/nginx</code>.</p>
+<ol>
+<li><strong>Error</strong> logs for anything that went wrong.</li>
+<li><strong>Access</strong> logs for all requests made.</li>
+</ol>
+<p>If we want specific logs for specific context, we can do that by using <code>error_log /var/log/nginx/log_name.log debug;</code>.</p>
+<p>Also, we can disable logs for certain locations by using <code>access_log off</code> or <code>error_log off</code>. This is useful for saving resources, ex. for all .css requests.</p>
+<h2 id="inheritance">Inheritance</h2>
+<p>Http &gt; Server &gt; Location</p>
+<p>It only works for standard and array directives. It doesn&rsquo;t work for action and try_files directives as the stop the flow and are immediately executed.</p>
+<h2 id="testing">Testing</h2>
+<p><code>curl -I http://127.0.0.1/css/bootstrap.css</code> - Request the response headers of a resource.</p>
+<h1 id="optimization">Optimization</h1>
+<p>Further reading on these topics:</p>
+<ul>
+<li>Expires headers. Client side caching.</li>
+<li>Gzip. Compression.</li>
+<li>FastCGI cache. Cache backend responses.</li>
+<li>Limiting. Prevent DDoS.</li>
+<li>GeoIP. Location of requests and limits.</li>
+<li>HTTP2. One client-server connection vs 10+ individual requests.</li>
+</ul>
+<h1 id="security">Security</h1>
+<p>Here are some of the steps for hardening an nginx server:</p>
+<ul>
+<li>Remove unused modules. Can only be done while compiling from source.</li>
+<li>Turn off server tokens with <code>server_tokens off;</code>. This hides the nginx version.</li>
+<li>Set buffer sizes to prevent buffer overflow attacks.</li>
+<li>Block user agents. Prevents indexing and scraping.</li>
+<li>Configure X-frame-options. Tells when it&rsquo;s ok to server to an iframe.</li>
+</ul>
+<h1 id="caching">Caching</h1>
+<p>Reusing page renders after they have been loaded once. Instead of everyone making a request, running a script, fetching data from the database, rendering a page and sending a response, only the first one does the work, the results is cached in a database (for a certain amount of time), and everyone that wants the same is simply given the results from the database. <strong>Useful for static content, not so much for dynamic i.e. web apps.</strong></p>
+<p>Caching is also possible on the client side, by specifying certain HTTP headers (ETags, Last-Modified).</p>
+<p>POST requests should not be cached.</p>
+<p>Caching problems can be identified by appending a parameter at the end of the URL which bypasses the caching. <code>www.example.com/posts/1?test</code></p>
+<h1 id="compression">Compression</h1>
+<p>Using <code>gzip</code> can greatly reduce the traffic by compressing text files (not images) like HTML, CSS, JS, XML, which use verbose bloated formats.</p>
+<p>Done in <code>/etc/nginx/nginx.conf</code> (trickles down to all site-specific configs in <code>/etc/nginx/conf.d/SITEFILE</code>)</p>
+<p><code>gzip on</code> - Enable compression.<br>
+<code>gzip_min_length 512</code> - Only compress files bigger than 512 bytes.<br>
+<code>gzip_types text/plain application/javascript text/html text/css;</code> - Formats to compress.<br>
+<code>gzip_vary</code> - Sends vary header.</p>
+<p>It&rsquo;s important to use the <code>Vary</code> option in order to prevent compressed and non-compressed responses from interfering with each other i.e. two browsers download gzipped content, while only one supports it, resulting in only it being cached, making that response unusable to other non-supporting browsers.</p>
+
+
+    
+
+
+                    
+                    <div class="row"><div class="position-relative mx-auto col-lg-9">
+                          <div class="bg-primary overflow-hidden p-3 mt-5 shadow">
+
+    <h4 class="text-white text-center">Read more</h4>
+
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/trevorsmale/cumulus/docs/API/" title="API"><i class="fas fa-chevron-left p-1"></i>API</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/trevorsmale/cumulus/docs/tmuxcs/" title="TMUX Cheat Sheet">TMUX Cheat Sheet<i class="fas fa-chevron-right p-1"></i></a>
+    </div>
+</div>
+
+
+                        </div></div> 
+
+                </div>
+
+            </div> 
+
+        </div> 
+<script src="https://github.com/trevorsmale/cumuluslib/jquery.min.js"></script> 
+<script src="https://github.com/trevorsmale/cumuluslib/popper.min.js"></script> 
+
+<script src="https://github.com/trevorsmale/cumulusjs/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/auto-complete.js"></script>
+<link href="/trevorsmale/cumulus/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "https:\/\/github.com\/trevorsmale\/cumulus";
+  
+</script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/search.js"></script>
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/favorites.js"></script>
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>

@@ -1,4 +1,5 @@
-baseURL = "http://localhost/docs"
+baseURL = "https://github.com/trevorsmale/cumulus"
+weight = 2
 title = "TS Tech Notes"
 theme = "ace-documentation"
 

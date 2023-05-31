@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="canonical" href="https://github.com/trevorsmale/cumulus/docs/NT/">
+
+    <title>
+        
+        Network Tools | TS Tech Notes
+        
+    </title>
+
+    
+    <link href="https://github.com/trevorsmale/cumuluscss/fontawesome.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://github.com/trevorsmale/cumulus/css/ace.min.css">
+
+    
+
+    
+    
+        
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/trevorsmale/cumulus">
+                
+                TS Tech Notes
+            </a>
+        </div>
+        
+    </div>
+    </nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+            <form class="form-inline my-2 my-lg-0 searchbox">
+                <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder="Search">
+            </form>
+
+        
+
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/trevorsmale/cumulus/docs/" class="nav-item my-1 parent haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/docs/"><h6></h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/docs/NT/" class="nav-item my-1 active">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/NT/" class="nav-link p-0">
+                    Network Tools
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/WASM/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/WASM/" class="nav-link p-0">
+                    WASM
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/API/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/API/" class="nav-link p-0">
+                    API
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/NGINX/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/NGINX/" class="nav-link p-0">
+                    NGINX
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/tmuxcs/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/tmuxcs/" class="nav-link p-0">
+                    TMUX Cheat Sheet
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/UNIXph/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/UNIXph/" class="nav-link p-0">
+                    UNIX Philosophy
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/ChatGPT/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/ChatGPT/" class="nav-link p-0">
+                    ChatGPT
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/AI/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/AI/" class="nav-link p-0">
+                    AI
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/Cron/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/Cron/" class="nav-link p-0">
+                    Cron
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/Docker/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/Docker/" class="nav-link p-0">
+                    Docker
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/sshfs/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/sshfs/" class="nav-link p-0">
+                    Sshfs
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/nix/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/nix/" class="nav-link p-0">
+                    Nix
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/msd/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/msd/" class="nav-link p-0">
+                    Multi-Site Dynamic Host NGINX Basic Workflow
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/BashBasics/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/BashBasics/" class="nav-link p-0">
+                    Bash Basics
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/podnet/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/podnet/" class="nav-link p-0">
+                    Podman Pod Networking
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/PodmanCP/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/PodmanCP/" class="nav-link p-0">
+                    Podman-Compose.yml
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/AADR/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/AADR/" class="nav-link p-0">
+                    Azure AD Roles and RBAC
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/ADC/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/ADC/" class="nav-link p-0">
+                    Azure AD Connect
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/docs/AZAD/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/docs/AZAD/" class="nav-link p-0">
+                    Azure Active Directory
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#public-wan-ip-address">Public (WAN) IP address</a></li>
+    <li><a href="#privatelocal-lan-ip-address">Private/Local (LAN) IP address</a></li>
+    <li><a href="#interfaces">Interfaces</a></li>
+    <li><a href="#ping">ping</a>
+      <ul>
+        <li>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#unknown-host">unknown host</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#lsof">lsof</a></li>
+    <li><a href="#nc--netcat">nc / netcat</a></li>
+    <li><a href="#host">host</a></li>
+    <li><a href="#dig">dig</a></li>
+    <li><a href="#static-server">Static server</a></li>
+    <li><a href="#tshark">tshark</a></li>
+    <li><a href="#traceroute">traceroute</a></li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<div class="d-flex flex-column">
+    <h1 class="js-title">Network Tools</h1>
+    <div class="d-flex align-items-center">
+        
+    </div>
+</div>
+
+<hr>
+
+
+<p>Tools used for networking.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo apt-get update <span class="o">&amp;&amp;</span> sudo apt-get upgrade
+sudo apt-get install netcat-openbsd tcpdump traceroute mtr
+</code></pre></div><table>
+<thead>
+<tr>
+<th>unix</th>
+<th>windows</th>
+<th>use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ifconfig / route</td>
+<td>ifconfig</td>
+<td>View the system&rsquo;s network configuration</td>
+</tr>
+<tr>
+<td>grep</td>
+<td>findstr</td>
+<td>Search for specific text</td>
+</tr>
+<tr>
+<td>netstat</td>
+<td>netstat</td>
+<td>Display established network connections and statistics</td>
+</tr>
+<tr>
+<td>lsof</td>
+<td></td>
+<td>What processes open which files</td>
+</tr>
+<tr>
+<td>route</td>
+<td></td>
+<td>Display where and change how traffic is sent</td>
+</tr>
+<tr>
+<td>tcpdump</td>
+<td></td>
+<td>Display traffic to and from a server, view network activity</td>
+</tr>
+<tr>
+<td>traceroute</td>
+<td>tracert</td>
+<td>Show the route the traffic takes</td>
+</tr>
+<tr>
+<td>host</td>
+<td>nslookup</td>
+<td>Explore the Domain Name System (DNS)</td>
+</tr>
+</tbody>
+</table>
+<h1 id="public-wan-ip-address">Public (WAN) IP address</h1>
+<pre tabindex="0"><code>curl ipinfo.io/ip
+curl ipecho.net/plain
+curl ifconfig.me
+curl icanhazip.com
+</code></pre><h1 id="privatelocal-lan-ip-address">Private/Local (LAN) IP address</h1>
+<p>PC&rsquo;s don&rsquo;t have IP addresses. Network interfaces have them, meaning one PC will have multiple IP addresses.</p>
+<ol>
+<li>Find IP address of PC.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ip addr
+ip -c addr
+ip -o -c addr
+
+<span class="c1"># IP address: 192.168.100.16/24</span>
+<span class="c1"># /24 = 255.255.255.0 subnet mask</span>
+</code></pre></div><ol start="2">
+<li>Scan subnet for other devices (IP addresses).</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">nmap -sn 192.168.100.0/24
+</code></pre></div><ol start="3">
+<li>Ping other device.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ping 192.168.100.10
+</code></pre></div><ol start="4">
+<li>Default gateway (router)</li>
+</ol>
+<pre tabindex="0"><code>ip route show
+route -n
+netstat -rn
+</code></pre><h1 id="interfaces">Interfaces</h1>
+<pre tabindex="0"><code>ls /sys/class/net/
+netstat -i
+ip link show
+</code></pre><h1 id="ping">ping</h1>
+<p>It sends individual packets to test if traffic can get from one address to another, and back.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ping 8.8.8.8
+
+<span class="c1"># send 5 packets</span>
+ping -c <span class="m">5</span> google.com
+</code></pre></div><h4 id="unknown-host">unknown host</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo vim /etc/resolv.conf
+<span class="c1"># Add nameserver 8.8.8.8</span>
+</code></pre></div><h1 id="lsof">lsof</h1>
+<p>The <code>lsof</code> utility lists open files, including network sockets (listening or connected).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># List only network sockets</span>
+lsof -i
+</code></pre></div><h1 id="nc--netcat">nc / netcat</h1>
+<p><code>netcat</code> is a tool for manually talking to servers, by connecting to a port and sending a string over it. It&rsquo;s a thin wrapper over TCP.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">nc en.wikipedia.org <span class="m">80</span>
+nc localhost <span class="m">22</span>
+nc gmail-smtp-in.l.google.com <span class="m">80</span>
+</code></pre></div><p>To illustrate, we can use two terminals to talk to each other. This is a simple TCP server.</p>
+<p><strong>Anything typed at the second console will be concatenated to the first, and vice-versa.</strong></p>
+<p>The connection is closed with <code>CTRL</code> + <code>d</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># terminal 1 - Listen for an incoming connection on port 6666</span>
+nc -l <span class="m">6666</span>
+<span class="c1"># typed: foo</span>
+<span class="c1"># shown: bar</span>
+
+<span class="c1"># terminal 2 - Connect to the machine on that listening port</span>
+nc 127.0.0.1 <span class="m">6666</span>
+<span class="c1"># show: foo</span>
+<span class="c1"># typed: bar</span>
+</code></pre></div><p>Commands can be sent via a <code>pipe</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="s1">&#39;message&#39;</span> <span class="p">|</span> netcat server <span class="m">80</span>
+</code></pre></div><p><code>netcat</code> doesn&rsquo;t know anything about forming HTTP request, but in combination with <code>printf</code> and <code>piping</code>, it can be done.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Google</span>
+<span class="nb">printf</span> <span class="s1">&#39;HEAD / HTTP/1.1\r\nHost: google.com\r\n\r\n&#39;</span> <span class="p">|</span> nc google.com <span class="m">80</span>
+
+<span class="c1"># JSON</span>
+<span class="nb">printf</span> <span class="s1">&#39;GET /posts/1 HTTP/1.1\r\nHost:jsonplaceholder.typicode.com\r\n\r\n&#39;</span> <span class="p">|</span> nc jsonplaceholder.typicode.com <span class="m">80</span>
+</code></pre></div><h1 id="host">host</h1>
+<p>Used for looking up records in the DNS.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Returns all the records</span>
+host google.com
+
+<span class="c1"># Returns just the A record</span>
+host -t a google.com
+</code></pre></div><h1 id="dig">dig</h1>
+<p>Similar to <code>host</code> in showing DNS records, but in a way more readable for scripts and closer to the way they are stored in the DNS configuration files.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">dig google.com
+</code></pre></div><h1 id="static-server">Static server</h1>
+<p>This will start a static web server on port <code>8000</code>. The command has to be run in the directory with the <code>index.html</code> file.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">python -m SimpleHTTPServer <span class="m">8080</span>
+</code></pre></div><p><code>ifconfig</code> - Check IP address.<br>
+<code>ping 8.8.8.8</code> - Ping IP address.<br>
+<code>netstat -tupln</code> - Check open ports.</p>
+<p><code>cat etc/network/interfaces</code> - Shows the interfaces brought up after booting.</p>
+<p><code>/etc/hosts</code> is used to simulate a domain for an IP address. Add <code>127.0.0.1 domain.com</code> to avoid typing the IP address.</p>
+<h1 id="tshark">tshark</h1>
+<p>The terminal version of Wireshark, used for packet sniffing.</p>
+<h1 id="traceroute">traceroute</h1>
+<p>The asterisks you&rsquo;re seeing are servers that your packets are being routed through whom are timing out (5.0+ seconds) and so traceroute defaults to printing the *.</p>
+
+
+    
+
+
+                    
+                    <div class="row"><div class="position-relative mx-auto col-lg-9">
+                          <div class="bg-primary overflow-hidden p-3 mt-5 shadow">
+
+    <h4 class="text-white text-center">Read more</h4>
+
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/trevorsmale/cumulus/docs/" title=""><i class="fas fa-chevron-left p-1"></i></a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/trevorsmale/cumulus/docs/WASM/" title="WASM">WASM<i class="fas fa-chevron-right p-1"></i></a>
+    </div>
+</div>
+
+
+                        </div></div> 
+
+                </div>
+
+            </div> 
+
+        </div> 
+<script src="https://github.com/trevorsmale/cumuluslib/jquery.min.js"></script> 
+<script src="https://github.com/trevorsmale/cumuluslib/popper.min.js"></script> 
+
+<script src="https://github.com/trevorsmale/cumulusjs/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/auto-complete.js"></script>
+<link href="/trevorsmale/cumulus/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "https:\/\/github.com\/trevorsmale\/cumulus";
+  
+</script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/search.js"></script>
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/favorites.js"></script>
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>

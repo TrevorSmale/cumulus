@@ -1,36 +1,206 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Docs on Trevors Dev Notes</title>
-    <link>www.cumulus.wiki/docs/</link>
-    <description>Recent content in Docs on Trevors Dev Notes</description>
+    <title>TS Tech Notes</title>
+    <link>https://github.com/trevorsmale/cumulus/docs/</link>
+    <description>Recent content on TS Tech Notes</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 25 May 2023 20:21:28 -0400</lastBuildDate><atom:link href="www.cumulus.wiki/docs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 May 2023 18:47:41 -0400</lastBuildDate><atom:link href="https://github.com/trevorsmale/cumulus/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Network Tools</title>
+      <link>https://github.com/trevorsmale/cumulus/docs/NT/</link>
+      <pubDate>Mon, 29 May 2023 18:47:41 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/docs/NT/</guid>
+      <description>Tools used for networking.
+sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade sudo apt-get install netcat-openbsd tcpdump traceroute mtr    unix windows use     ifconfig / route ifconfig View the system&amp;rsquo;s network configuration   grep findstr Search for specific text   netstat netstat Display established network connections and statistics   lsof  What processes open which files   route  Display where and change how traffic is sent   tcpdump  Display traffic to and from a server, view network activity   traceroute tracert Show the route the traffic takes   host nslookup Explore the Domain Name System (DNS)    Public (WAN) IP address curl ipinfo.</description>
+    </item>
+    
+    <item>
+      <title>WASM</title>
+      <link>https://github.com/trevorsmale/cumulus/docs/WASM/</link>
+      <pubDate>Mon, 29 May 2023 18:46:32 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/docs/WASM/</guid>
+      <description>Web Assembly .WAT A statically compiled language that is able to use hardware acceleration to have near native performance in the browswer WASM will revolutionize the web as it allows for complex, performance intensive programs to load and run with normal web tools. WASM is treated like a compilation target wherein a codebase made with many different languages eg. C++ + RUST can compile to .WAT. For example the entire AutoCAD codebase was compiled to Web Assembly and works perfectly within a browser.</description>
+    </item>
+    
+    <item>
+      <title>API</title>
+      <link>https://github.com/trevorsmale/cumulus/docs/API/</link>
+      <pubDate>Mon, 29 May 2023 18:45:17 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/docs/API/</guid>
+      <description>Web API Web APIs are a service accessed from client devices to a web server using the Hypertext Transfer Protocol (HTTP). Client devices send a request in the form of an HTTP request, and are met with a response message usually in JavaScript Object Notation (JSON) or Extensible Markup Language (XML) format. Developers typically use Web APIs to query a server for a specific set of data from that server.</description>
+    </item>
+    
+    <item>
+      <title>NGINX</title>
+      <link>https://github.com/trevorsmale/cumulus/docs/NGINX/</link>
+      <pubDate>Mon, 29 May 2023 18:43:35 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/docs/NGINX/</guid>
+      <description>Nginx It only knows about static content. While it can serve static HTML, for dynamically generated HTML, it has to offload requests to other processes in order to generate HTML. Ex. User requests a PHP file, and nginx sends it to an interpreter, which then returns the HTML, which is sent back by nginx.
+Nginx communicates with the PHP interpreter via a unix socket file. Nginx communicates with the website visitor via a TCP socket file.</description>
+    </item>
+    
+    <item>
+      <title>TMUX Cheat Sheet</title>
+      <link>https://github.com/trevorsmale/cumulus/docs/tmuxcs/</link>
+      <pubDate>Mon, 29 May 2023 18:40:06 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/docs/tmuxcs/</guid>
+      <description>Commands start new:
+tmux  start new with session name:
+tmux new -s myname  attach:
+tmux a # (or at, or attach)  attach to named:
+tmux a -t myname  list sessions:
+tmux ls  kill session:
+tmux kill-session -t myname  In tmux, hit the prefix ctrl+b (my modified prefix is ctrl+h) and then:
+Sessions :new&amp;lt;CR&amp;gt; new session s list sessions $ name session d detach from current session  Windows (tabs) c new window w list windows f find window , name window &amp;amp; kill window  Panes (splits) % horizontal split &amp;quot; vertical split o swap panes q show pane numbers x kill pane + break pane into window (e.</description>
+    </item>
+    
+    <item>
+      <title>UNIX Philosophy</title>
+      <link>https://github.com/trevorsmale/cumulus/docs/UNIXph/</link>
+      <pubDate>Mon, 29 May 2023 18:38:17 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/docs/UNIXph/</guid>
+      <description>This is the Unix philosophy Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface. (Doug McIlroy)
+Mike Gancarz Creator of X stated:
+ Small is beautiful. Make each program do one thing well. Build a prototype as soon as possible. Choose portability over efficiency. Store data in flat text files. Use software leverage to your advantage.</description>
+    </item>
+    
+    <item>
+      <title>ChatGPT</title>
+      <link>https://github.com/trevorsmale/cumulus/docs/ChatGPT/</link>
+      <pubDate>Mon, 29 May 2023 18:32:14 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/docs/ChatGPT/</guid>
+      <description>Chat GPT Description Chat GPT is a language model developed by OpenAI based on the GPT-3.5 architecture. It is designed to generate human-like responses to text-based prompts and engage in conversational interactions with users. Chat GPT has been trained on a vast amount of diverse text data and can understand and generate coherent responses in multiple languages.
+History Chat GPT builds upon the success of previous iterations of the GPT (Generative Pre-trained Transformer) model developed by OpenAI.</description>
+    </item>
+    
+    <item>
+      <title>AI</title>
+      <link>https://github.com/trevorsmale/cumulus/docs/AI/</link>
+      <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/docs/AI/</guid>
+      <description>AI Artificial Intelligence Notes  From Age of Information to Age of Understanding    AOI AOU     Information Understanding   Mechanistic Humanistic   Single Interaction Conversational   We Synthesize AI Synthesizes   We conform to computers Computer conform to us   Content created by humans Content created by computers   Wrought memorization External facts and references   Dissociative Relational    LLM (Large Language Model) A large language model (LLM) is a language model consisting of a neural network with many parameters (typically billions of weights or more), trained on large quantities of unlabelled text using self-supervised learning.</description>
+    </item>
+    
+    <item>
+      <title>Cron</title>
+      <link>https://github.com/trevorsmale/cumulus/docs/Cron/</link>
+      <pubDate>Mon, 29 May 2023 18:29:39 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/docs/Cron/</guid>
+      <description>Cron Task Scheduler Troubleshooting NOTE: echo won&amp;rsquo;t work because cron runs in its own shell.
+Possible problems:
+ Not using absolute paths  * * * * * /bin/echo &amp;#34;cron works&amp;#34; &amp;gt;&amp;gt; /tmp/file Not using a PATH variable  PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin * * * * * echo &amp;#34;cron works&amp;#34; &amp;gt;&amp;gt; /tmp/file Not escaping characters  # mysqldump --databases db &amp;gt; /home/user/backup-$(date +%Y%m%d-%H%M%S) mysqldump --databases db &amp;gt; /home/user/backup-$(date +\%Y\%m\%d-\%H\%M\%S) Not leaving an empty new line in the end  Cron Each user has his own crontab i.</description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://github.com/trevorsmale/cumulus/docs/Docker/</link>
+      <pubDate>Mon, 29 May 2023 18:28:29 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/docs/Docker/</guid>
+      <description>Docker Course notes taken while following the Docker Mastery course by Bret Fisher What is Docker? Docker is container engine The 3 Major functions of Docker  The docker image - Build The docker registry - Ship The docker container - Run  Containers and the Cloud  The cloud native computing foundation is based around a containerized workflow. The container image is kind of like a universal package manager. Dockerfile/Container image Anatomy - OCI standard for container images.</description>
+    </item>
+    
+    <item>
+      <title>Sshfs</title>
+      <link>https://github.com/trevorsmale/cumulus/docs/sshfs/</link>
+      <pubDate>Mon, 29 May 2023 18:27:30 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/docs/sshfs/</guid>
+      <description>Secure Shell File-System A utility for sending files through ssh or linking directories for continuous use Commands Install sshfs. if you use ubuntu/debian:
+sudo apt-get install sshfs  or, if you use centos/rhel:
+sudo yum install fuse-sshfs  or, in macOS
+brew install sshfs  Create an empty dir
+mkdir /home/user/testdir  &amp;ldquo;link&amp;rdquo; or &amp;ldquo;mount&amp;rdquo; the two directories
+sshfs user@server.com:/remote/dir /home/user/testdir  &amp;ldquo;unlink&amp;rdquo; the dirs
+fusermount -u /home/user/testdir  On BSD and macOS, to unmount the filesystem:</description>
+    </item>
+    
+    <item>
+      <title>Nix</title>
+      <link>https://github.com/trevorsmale/cumulus/docs/nix/</link>
+      <pubDate>Mon, 29 May 2023 18:25:29 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/docs/nix/</guid>
+      <description>NIX OS Make reproducible, declarative and reliable systems.  Major Features Reproducible Nix builds packages in isolation from each other. This ensures that they are reproducible and don&amp;rsquo;t have undeclared dependencies, so if a package works on one machine, it will also work on another.
+Declarative Nix makes it trivial to share development and build environments for your projects, regardless of what programming languages and tools you’re using.
+Reliable Nix ensures that installing or upgrading one package cannot break other packages.</description>
+    </item>
+    
+    <item>
+      <title>Multi-Site Dynamic Host NGINX Basic Workflow</title>
+      <link>https://github.com/trevorsmale/cumulus/docs/msd/</link>
+      <pubDate>Mon, 29 May 2023 18:22:20 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/docs/msd/</guid>
+      <description>Debian VPS deployment workflow Simple Outline  Purchase Domain name. Choose a reputable VPS provider. Select Debian as the operating system. Connect to the VPS via SSH. Install necessary packages. Configure HTTP server. Deploy your application.  Purchase Domain Name  Simple as  Rent Virtual Private Server (VPS)  Get a cheap VPS with IPV6 &amp;amp; IPV4 addressing Get one with private networking  Initial Server Setup   Setup Debian Server</description>
+    </item>
+    
+    <item>
+      <title>Bash Basics</title>
+      <link>https://github.com/trevorsmale/cumulus/docs/BashBasics/</link>
+      <pubDate>Mon, 29 May 2023 18:11:53 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/docs/BashBasics/</guid>
+      <description>Born Again Shell Line breaks If the statement is correct without continuation, you need to use \. Therefore, the following works without a backslash, as you can&amp;rsquo;t end a command with a &amp;amp;&amp;amp;.
+Doesn&amp;#39;t need line break echo 1 &amp;amp;&amp;amp; echo 2 Needs line break echo 1 \ &amp;amp;&amp;amp; echo 2 echo 1 2 3 \ 4 Variables Setting a command&amp;rsquo;s output into a variable.
+all=&amp;#34;$(ls ./all | wc -l)&amp;#34; &amp;amp;&amp;amp; echo &amp;#34;all: ${all}&amp;#34; &amp;amp;&amp;amp; resampled=&amp;#34;$(ls .</description>
+    </item>
+    
+    <item>
+      <title>Podman Pod Networking</title>
+      <link>https://github.com/trevorsmale/cumulus/docs/podnet/</link>
+      <pubDate>Mon, 29 May 2023 17:55:58 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/docs/podnet/</guid>
+      <description>Configuring container networking with Podman Podman uses two different means for its networking stack, depending on whether the container is rootless or rootfull. When rootfull, defined as being run by the root (or equivalent) user, Podman primarily relies on the containernetworking plugins project. When rootless, defined as being run by a regular user, Podman uses the slirp4netns project.
+Networking and Podman pods By definition, all containers in a Podman pod share the same network namespace.</description>
+    </item>
+    
+    <item>
+      <title>Podman-Compose.yml</title>
+      <link>https://github.com/trevorsmale/cumulus/docs/PodmanCP/</link>
+      <pubDate>Mon, 29 May 2023 17:55:58 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/docs/PodmanCP/</guid>
+      <description>Podman Compose YAML files, typically named podman-compose.yml or docker-compose.yml, are used to define the configuration of multi-container applications. They follow the YAML format, which is a human-readable data serialization language.
+Here are some common aspects and elements you can find in a Podman Compose YAML file:
+  Services: Services represent individual containers in your application. Each service is defined as a separate block in the YAML file and can have various properties such as the image to use, environment variables, port mappings, volumes, and resource limits.</description>
+    </item>
+    
     <item>
       <title>Azure AD Roles and RBAC</title>
-      <link>www.cumulus.wiki/docs/aadr/</link>
+      <link>https://github.com/trevorsmale/cumulus/docs/AADR/</link>
       <pubDate>Thu, 25 May 2023 20:21:28 -0400</pubDate>
       
-      <guid>www.cumulus.wiki/docs/aadr/</guid>
+      <guid>https://github.com/trevorsmale/cumulus/docs/AADR/</guid>
       <description>Role-Based Access Control (RBAC) is a vital component of Azure&amp;rsquo;s security model. RBAC allows you to assign specific roles to users or groups, granting them the necessary permissions to manage Azure resources. Azure provides a set of built-in roles with different levels of access, such as Owner, Contributor, and Reader. Additionally, you can create custom roles to meet specific requirements. RBAC ensures that users have the right level of access to perform their tasks while maintaining security and governance.</description>
     </item>
     
     <item>
       <title>Azure AD Connect</title>
-      <link>www.cumulus.wiki/docs/adc/</link>
+      <link>https://github.com/trevorsmale/cumulus/docs/ADC/</link>
       <pubDate>Thu, 25 May 2023 19:49:25 -0400</pubDate>
       
-      <guid>www.cumulus.wiki/docs/adc/</guid>
+      <guid>https://github.com/trevorsmale/cumulus/docs/ADC/</guid>
       <description>Azure AD Connect Azure AD Connect is a Microsoft tool that enables organizations to integrate their on-premises Active Directory (AD) infrastructure with Azure Active Directory (Azure AD), providing a seamless and unified identity management solution. It allows for synchronization of user accounts, passwords, and group membership information between on-premises AD and Azure AD. This comprehensive document aims to provide an extensive overview of Azure AD Connect, its features, deployment options, and benefits.</description>
     </item>
     
     <item>
       <title>Azure Active Directory</title>
-      <link>www.cumulus.wiki/docs/azad/</link>
+      <link>https://github.com/trevorsmale/cumulus/docs/AZAD/</link>
       <pubDate>Thu, 25 May 2023 19:17:51 -0400</pubDate>
       
-      <guid>www.cumulus.wiki/docs/azad/</guid>
+      <guid>https://github.com/trevorsmale/cumulus/docs/AZAD/</guid>
       <description>Azure Active Directory (Azure AD) Azure AD is a cloud-based identity and access management service provided by Microsoft Azure. It serves as the foundation for managing user identities and controlling access to Azure resources. Azure AD allows you to create and manage user accounts, groups, and guest accounts. With Azure AD, you can implement single sign-on (SSO) for seamless access to various applications and services. It also provides features like Multi-Factor Authentication (MFA) for enhanced security.</description>
     </item>
     

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="canonical" href="https://github.com/trevorsmale/cumulus/AI/AI/">
+
+    <title>
+        
+        AI Overview | TS Tech Notes
+        
+    </title>
+
+    
+    <link href="https://github.com/trevorsmale/cumuluscss/fontawesome.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://github.com/trevorsmale/cumulus/css/ace.min.css">
+
+    
+
+    
+    
+        
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/trevorsmale/cumulus">
+                
+                TS Tech Notes
+            </a>
+        </div>
+        
+    </div>
+    </nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+            <form class="form-inline my-2 my-lg-0 searchbox">
+                <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder="Search">
+            </form>
+
+        
+
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/trevorsmale/cumulus/ai/" class="nav-item my-1 parent haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/ai/"><h6>AI</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/AI/AI/" class="nav-item my-1 active">
+                
+                
+                  <a href="/trevorsmale/cumulus/AI/AI/" class="nav-link p-0">
+                    AI Overview
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/nix/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/nix/"><h6>NIX</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/NIX/NIXOS_overview/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/NIX/NIXOS_overview/" class="nav-link p-0">
+                    NIX OS Overview
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/azure/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/azure/"><h6>Azure</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Azure/AADR/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Azure/AADR/" class="nav-link p-0">
+                    Azure AD Roles and RBAC
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#artificial-intelegence--machine-learning-models">Artificial Intelegence &amp; Machine Learning Models</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#from-age-of-information-to-age-of-understanding">From Age of Information to Age of Understanding</a></li>
+            <li><a href="#llm-large-language-model">LLM (Large Language Model)</a></li>
+            <li><a href="#1-natural-language-processing-nlp">1. Natural Language Processing (NLP):</a></li>
+            <li><a href="#2-computer-vision-cv">2. Computer Vision (CV):</a></li>
+            <li><a href="#3-speech-and-audio-processing">3. Speech and Audio Processing:</a></li>
+            <li><a href="#4-video-analysis">4. Video Analysis:</a></li>
+            <li><a href="#5-recommender-systems">5. Recommender Systems:</a></li>
+            <li><a href="#6-generative-models">6. Generative Models:</a></li>
+            <li><a href="#7-reinforcement-learning">7. Reinforcement Learning:</a></li>
+            <li><a href="#8-time-series-analysis">8. Time Series Analysis:</a></li>
+            <li><a href="#9-anomaly-detection">9. Anomaly Detection:</a></li>
+            <li><a href="#10-graph-neural-networks">10. Graph Neural Networks:</a></li>
+            <li><a href="#11-robotics-and-control">11. Robotics and Control:</a></li>
+            <li><a href="#12-medical-imaging">12. Medical Imaging:</a></li>
+            <li><a href="#13-financial-and-economic-modeling">13. Financial and Economic Modeling:</a></li>
+            <li><a href="#14-natural-language-generation-nlg">14. Natural Language Generation (NLG):</a></li>
+            <li><a href="#15-reinforcement-learning-in-robotics">15. Reinforcement Learning in Robotics:</a></li>
+            <li><a href="#16-knowledge-graphs">16. Knowledge Graphs:</a></li>
+            <li><a href="#17-augmented-reality-ar-and-virtual-reality-vr">17. Augmented Reality (AR) and Virtual Reality (VR):</a></li>
+            <li><a href="#18-network-analysis-and-social-media-mining">18. Network Analysis and Social Media Mining:</a></li>
+            <li><a href="#19-autonomous-vehicles">19. Autonomous Vehicles:</a></li>
+            <li><a href="#20-cognitive-computing-and-ai-assistants">20. Cognitive Computing and AI Assistants:</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<div class="d-flex flex-column">
+    <h1 class="js-title">AI Overview</h1>
+    <div class="d-flex align-items-center">
+        
+    </div>
+</div>
+
+<hr>
+
+
+<h1 id="artificial-intelegence--machine-learning-models">Artificial Intelegence &amp; Machine Learning Models</h1>
+<hr>
+<h3 id="from-age-of-information-to-age-of-understanding">From Age of Information to Age of Understanding</h3>
+<table>
+<thead>
+<tr>
+<th>AOI</th>
+<th>AOU</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Information</td>
+<td>Understanding</td>
+</tr>
+<tr>
+<td>Mechanistic</td>
+<td>Humanistic</td>
+</tr>
+<tr>
+<td>Single Interaction</td>
+<td>Conversational</td>
+</tr>
+<tr>
+<td>We Synthesize</td>
+<td>AI Synthesizes</td>
+</tr>
+<tr>
+<td>We conform to computers</td>
+<td>Computer conform to us</td>
+</tr>
+<tr>
+<td>Content created by humans</td>
+<td>Content created by computers</td>
+</tr>
+<tr>
+<td>Wrought memorization</td>
+<td>External facts and references</td>
+</tr>
+<tr>
+<td>Dissociative</td>
+<td>Relational</td>
+</tr>
+</tbody>
+</table>
+<h3 id="llm-large-language-model">LLM (Large Language Model)</h3>
+<p>A large language model (LLM) is a language model consisting of a neural network with many parameters (typically billions of weights or more), trained on large quantities of unlabelled text using self-supervised learning. LLMs emerged around 2018 and perform well at a wide variety of tasks. This has shifted the focus of natural language processing research away from the previous paradigm of training specialized supervised models for specific tasks.</p>
+<p>Though the term large language model has no formal definition, it generally refers to deep learning models having a parameter count on the order of billions or more. LLMs are general purpose models which excel at a wide range of tasks, as opposed to being trained for one specific task (such as sentiment analysis, named entity recognition, or mathematical reasoning). Though trained on simple tasks along the lines of predicting the next word in a sentence, neural language models with sufficient training and parameter counts are found to capture much of the syntax and semantics of human language. In addition, large language models demonstrate considerable general knowledge about the world, and are able to &ldquo;memorize&rdquo; a great quantity of facts during training.</p>
+<p>AI/ML Models</p>
+<h3 id="1-natural-language-processing-nlp">1. Natural Language Processing (NLP):</h3>
+<ul>
+<li>Language Models (e.g., GPT, BERT, T5)</li>
+<li>Named Entity Recognition (NER)</li>
+<li>Sentiment Analysis</li>
+<li>Topic Modeling</li>
+<li>Machine Translation</li>
+<li>Text Summarization</li>
+<li>Question-Answering Systems</li>
+<li>Text Classification</li>
+<li>Information Extraction</li>
+<li>Text Generation</li>
+<li>Dialogue Systems</li>
+<li>Text Sentiment Analysis</li>
+<li>Language Understanding</li>
+</ul>
+<h3 id="2-computer-vision-cv">2. Computer Vision (CV):</h3>
+<ul>
+<li>Image Classification</li>
+<li>Object Detection</li>
+<li>Semantic Segmentation</li>
+<li>Instance Segmentation</li>
+<li>Image Localization</li>
+<li>Image Captioning</li>
+<li>Image Generation</li>
+<li>Image Super-Resolution</li>
+<li>Facial Recognition</li>
+<li>Gesture Recognition</li>
+<li>Scene Understanding</li>
+<li>Video Analysis</li>
+<li>Pose Estimation</li>
+<li>Optical Character Recognition (OCR)</li>
+<li>Document Analysis</li>
+</ul>
+<h3 id="3-speech-and-audio-processing">3. Speech and Audio Processing:</h3>
+<ul>
+<li>Speech Recognition</li>
+<li>Speaker Identification</li>
+<li>Speaker Diarization</li>
+<li>Speech Emotion Recognition</li>
+<li>Speech Synthesis (Text-to-Speech)</li>
+<li>Voice Conversion</li>
+<li>Music Generation</li>
+<li>Automatic Speech Transcription</li>
+<li>Audio Classification</li>
+<li>Sound Event Detection</li>
+<li>Acoustic Scene Classification</li>
+</ul>
+<h3 id="4-video-analysis">4. Video Analysis:</h3>
+<ul>
+<li>Video Classification</li>
+<li>Video Object Detection</li>
+<li>Action Recognition</li>
+<li>Video Captioning</li>
+<li>Video Summarization</li>
+<li>Video Segmentation</li>
+<li>Video Tracking</li>
+<li>Temporal Action Localization</li>
+<li>Video Anomaly Detection</li>
+<li>Video-based Biometrics</li>
+<li>Video Compression</li>
+</ul>
+<h3 id="5-recommender-systems">5. Recommender Systems:</h3>
+<ul>
+<li>Collaborative Filtering</li>
+<li>Content-Based Filtering</li>
+<li>Hybrid Recommender Systems</li>
+<li>Context-Aware Recommenders</li>
+<li>Knowledge-Based Recommenders</li>
+<li>Reinforcement Learning-Based Recommenders</li>
+<li>Conversational Recommenders</li>
+<li>Group Recommender Systems</li>
+<li>Diversity-Aware Recommenders</li>
+<li>Multi-stakeholder Recommenders</li>
+</ul>
+<h3 id="6-generative-models">6. Generative Models:</h3>
+<ul>
+<li>Variational Autoencoders (VAEs)</li>
+<li>Generative Adversarial Networks (GANs)</li>
+<li>Autoencoders</li>
+<li>Deep Boltzmann Machines (DBMs)</li>
+<li>Flow-based Models</li>
+<li>Adversarial Autoencoders</li>
+<li>Normalizing Flows</li>
+<li>Energy-Based Models</li>
+<li>Latent Variable Models</li>
+<li>Transformer-Based Generative Models</li>
+</ul>
+<h3 id="7-reinforcement-learning">7. Reinforcement Learning:</h3>
+<ul>
+<li>Q-Learning</li>
+<li>Deep Q-Networks (DQNs)</li>
+<li>Policy Gradient Methods</li>
+<li>Proximal Policy Optimization (PPO)</li>
+<li>Monte Carlo Tree Search (MCTS)</li>
+<li>Actor-Critic Methods</li>
+<li>Inverse Reinforcement Learning</li>
+<li>Multi-Agent Reinforcement Learning</li>
+<li>Hierarchical Reinforcement Learning</li>
+<li>Model-Based Reinforcement Learning</li>
+</ul>
+<h3 id="8-time-series-analysis">8. Time Series Analysis:</h3>
+<ul>
+<li>Forecasting</li>
+<li>Anomaly Detection</li>
+<li>Seasonal Decomposition</li>
+<li>Time Series Classification</li>
+<li>Time Series Clustering</li>
+<li>Time Series Imputation</li>
+<li>Time Series Segmentation</li>
+<li>Change Point Detection</li>
+<li>Long Short-Term Memory (LSTM) Networks</li>
+<li>Gated Recurrent Units (GRUs)</li>
+<li>Time Series Generative Models</li>
+<li>Multivariate Time Series Analysis</li>
+</ul>
+<h3 id="9-anomaly-detection">9. Anomaly Detection:</h3>
+<ul>
+<li>Unsupervised Anomaly Detection</li>
+<li>Semi-Supervised Anomaly Detection</li>
+<li>Supervised Anomaly Detection</li>
+<li>One-Class Classification</li>
+<li>Isolation Forests</li>
+<li>Autoencoders for Anomaly Detection</li>
+<li>Local Outlier Factor (LOF)</li>
+<li>Support Vector Machines (SVM) for Anomaly Detection</li>
+<li>Mahalanobis Distance-based Anomaly Detection</li>
+<li>Ensemble Methods for Anomaly Detection</li>
+</ul>
+<h3 id="10-graph-neural-networks">10. Graph Neural Networks:</h3>
+<pre><code>- Node Classification
+- Link Prediction
+- Graph Generation
+- Graph Clustering
+- Graph Representation Learning
+- Graph Embedding
+- Graph Convolutional Networks (GCNs)
+- Graph Attention Networks (GATs)
+- Graph Autoencoders
+- Graph Reinforcement Learning
+</code></pre>
+<h3 id="11-robotics-and-control">11. Robotics and Control:</h3>
+<pre><code>- Robot Localization and Mapping (SLAM)
+- Robot Motion Planning
+- Robot Manipulation
+- Robot Grasping
+- Reinforcement Learning for Robotics
+- Control Systems
+- Path Planning
+- Obstacle Avoidance
+- Autonomous Navigation
+- Robot Perception
+</code></pre>
+<h3 id="12-medical-imaging">12. Medical Imaging:</h3>
+<pre><code>- Computer-Aided Diagnosis (CAD)
+- Tumor Detection and Segmentation
+- Radiology Image Analysis
+- Medical Image Registration
+- Disease Classification
+- Lesion Detection
+- Cell Classification
+- Medical Image Reconstruction
+- Radiomics Analysis
+- Medical Image Synthesis
+</code></pre>
+<h3 id="13-financial-and-economic-modeling">13. Financial and Economic Modeling:</h3>
+<pre><code>- Stock Market Prediction
+- Algorithmic Trading
+- Fraud Detection
+- Credit Scoring
+- Risk Assessment
+- Portfolio Optimization
+- Financial Time Series Analysis
+- Economic Forecasting
+- Customer Churn Prediction
+- Market Basket Analysis
+</code></pre>
+<h3 id="14-natural-language-generation-nlg">14. Natural Language Generation (NLG):</h3>
+<pre><code>- Text Summarization
+- Report Generation
+- Data-to-Text Generation
+- Story Generation
+- Dialogue Generation
+- Code Generation
+- Creative Writing Assistance
+- NLG in Business Intelligence
+- Personalized Email Generation
+- NLG in Virtual Assistants
+</code></pre>
+<h3 id="15-reinforcement-learning-in-robotics">15. Reinforcement Learning in Robotics:</h3>
+<pre><code>- Robot Navigation
+- Robot Manipulation
+- Robot Grasping
+- Object Recognition and Interaction
+- Task and Motion Planning
+- Sim2Real Transfer
+- Imitation Learning
+- Multi-Robot Systems
+- Human-Robot Collaboration
+- Reinforcement Learning for Robot Control
+</code></pre>
+<h3 id="16-knowledge-graphs">16. Knowledge Graphs:</h3>
+<pre><code>- Knowledge Graph Construction
+- Knowledge Graph Completion
+- Knowledge Graph Embedding
+- Knowledge Graph Reasoning
+- Knowledge Graph Alignment
+- Knowledge Graph Mining
+- Knowledge Graph Visualization
+- Knowledge Graph-based Question Answering
+- Ontology Learning and Population
+- Entity Linking and Disambiguation
+</code></pre>
+<h3 id="17-augmented-reality-ar-and-virtual-reality-vr">17. Augmented Reality (AR) and Virtual Reality (VR):</h3>
+<pre><code>- AR/VR Content Generation
+- AR/VR Interaction and User Interfaces
+- AR/VR Tracking and Pose Estimation
+- AR/VR Scene Understanding
+- AR/VR Simulation and Training
+- AR/VR Visualization
+- AR/VR Gaming and Entertainment
+- AR/VR Medical Applications
+- AR/VR Education and Training
+- AR/VR Design and Prototyping
+</code></pre>
+<h3 id="18-network-analysis-and-social-media-mining">18. Network Analysis and Social Media Mining:</h3>
+<pre><code>- Community Detection
+- Link Prediction
+- Influence Analysis
+- Sentiment Analysis in Social Media
+- Opinion Mining
+- Social Network Modeling
+- Online Social Network Analysis
+- Event Detection in Social Media
+- Recommender Systems in Social Media
+- Fake News Detection
+</code></pre>
+<h3 id="19-autonomous-vehicles">19. Autonomous Vehicles:</h3>
+<pre><code>- Perception Systems
+- Object Detection and Tracking
+- Lane Detection and Following
+- Traffic Sign Recognition
+- Path Planning and Navigation
+- Vehicle Control Systems
+- Sensor Fusion
+- Behavior Prediction
+- Human-Vehicle Interaction
+- Safety and Risk Analysis
+</code></pre>
+<h3 id="20-cognitive-computing-and-ai-assistants">20. Cognitive Computing and AI Assistants:</h3>
+<pre><code>- Intelligent Tutoring Systems
+- Virtual Assistants
+- Chatbots
+- Natural Language Interfaces
+- Knowledge Management Systems
+- Cognitive Automation
+- Decision Support Systems
+- Conversational Agents
+- Personalized Recommendations
+- Contextual Computing
+</code></pre>
+
+
+    
+
+
+                    
+                    <div class="row"><div class="position-relative mx-auto col-lg-9">
+                          <div class="bg-primary overflow-hidden p-3 mt-5 shadow">
+
+    <h4 class="text-white text-center">Read more</h4>
+
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/trevorsmale/cumulus/ai/" title="AI"><i class="fas fa-chevron-left p-1"></i>AI</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/trevorsmale/cumulus/nix/" title="NIX">NIX<i class="fas fa-chevron-right p-1"></i></a>
+    </div>
+</div>
+
+
+                        </div></div> 
+
+                </div>
+
+            </div> 
+
+        </div> 
+<script src="https://github.com/trevorsmale/cumuluslib/jquery.min.js"></script> 
+<script src="https://github.com/trevorsmale/cumuluslib/popper.min.js"></script> 
+
+<script src="https://github.com/trevorsmale/cumulusjs/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/auto-complete.js"></script>
+<link href="/trevorsmale/cumulus/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "https:\/\/github.com\/trevorsmale\/cumulus";
+  
+</script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/search.js"></script>
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/favorites.js"></script>
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>

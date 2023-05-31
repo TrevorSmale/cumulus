@@ -2,23 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>www.cumulus.wiki/docs/aadr/</loc>
+    <loc>https://github.com/trevorsmale/cumulus/</loc>
+    <lastmod>2023-05-29T18:31:10-04:00</lastmod>
+  </url><url>
+    <loc>https://github.com/trevorsmale/cumulus/AI/</loc>
+    <lastmod>2023-05-29T18:31:10-04:00</lastmod>
+  </url><url>
+    <loc>https://github.com/trevorsmale/cumulus/Containers/</loc>
+    <lastmod>2023-05-29T18:31:10-04:00</lastmod>
+  </url><url>
+    <loc>https://github.com/trevorsmale/cumulus/NIX/</loc>
+    <lastmod>2023-05-29T18:25:29-04:00</lastmod>
+  </url><url>
+    <loc>https://github.com/trevorsmale/cumulus/azure/</loc>
     <lastmod>2023-05-25T20:21:28-04:00</lastmod>
   </url><url>
-    <loc>www.cumulus.wiki/docs/</loc>
+    <loc>https://github.com/trevorsmale/cumulus/Azure/AADR/</loc>
     <lastmod>2023-05-25T20:21:28-04:00</lastmod>
   </url><url>
-    <loc>www.cumulus.wiki/</loc>
-    <lastmod>2023-05-25T20:21:28-04:00</lastmod>
-  </url><url>
-    <loc>www.cumulus.wiki/docs/adc/</loc>
-    <lastmod>2023-05-25T19:49:25-04:00</lastmod>
-  </url><url>
-    <loc>www.cumulus.wiki/docs/azad/</loc>
-    <lastmod>2023-05-25T19:17:51-04:00</lastmod>
-  </url><url>
-    <loc>www.cumulus.wiki/categories/</loc>
-  </url><url>
-    <loc>www.cumulus.wiki/tags/</loc>
+    <loc>https://github.com/trevorsmale/cumulus/tags/</loc>
   </url>
 </urlset>
