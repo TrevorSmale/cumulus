@@ -16,6 +16,7 @@ This site is a work in progress, notes are being actively added, formatted and r
 
 {{< panel title="In Progress" style="success" >}}
 * 2023 05 31 - Transfering and formatting LPIC index
+{{< /panel >}}
 
 {{< panel title="Update Log" style="success" >}}
 * 2023 05 31 - Transfered and formatted AI index
@@ -25,7 +26,6 @@ This site is a work in progress, notes are being actively added, formatted and r
 * 2023 05 31 - Transfered and formatted Linux index
 * 2023 05 31 - Transfered and formatted GO index
 * 2023 05 31 - Transfered and formatted Blender 3D index
-
 {{< /panel >}}
 
 {{< panel title="Open to Pull Requests & Issues" style="info" >}}
