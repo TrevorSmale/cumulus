@@ -3,6 +3,7 @@ title: "Azure"
 date: 2023-05-29T18:31:10-04:00
 draft: false
 ---
+<svg xmlns="http://www.w3.org/2000/svg" height="10em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#007BFF}</style><path d="M0 32h214.6v214.6H0V32zm233.4 0H448v214.6H233.4V32zM0 265.4h214.6V480H0V265.4zm233.4 0H448V480H233.4V265.4z"/></svg>
 
 ## Microsoft Azure Cloud Services
 
