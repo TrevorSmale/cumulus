@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html><head>
-	<meta name="generator" content="Hugo 0.92.2" />
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <meta name="description" content="Landing Page">
-    
-    <link rel="alternate" type="application/rss+xml" href="https://github.com/trevorsmale/cumulus/index.xml" title="TS Tech Notes" />
-    <link rel="canonical" href="https://github.com/trevorsmale/cumulus/">
+    <link rel="canonical" href="https://github.com/trevorsmale/cumulus/GO/WAILS/">
 
     <title>
         
-        Home | TS Tech Notes
+        WAILS | TS Tech Notes
         
     </title>
 
@@ -40,9 +36,6 @@
         </div>
         
     </div>
-    <div class="feed-icons">
-            <a href="https://github.com/trevorsmale/cumulus/index.xml"><img src="/img/feed-icon.svg" alt="RSS feed" /></a>
-        </div>
     </nav>
 <div class="container-fluid">
             <div class="row">
@@ -128,7 +121,7 @@
           <a class="nav-link p-0" href="/trevorsmale/cumulus/Containers/"><h6>Containers</h6></a>
         
     </li>
-    <li data-nav-id="/trevorsmale/cumulus/GO/" class="nav-item my-1 haschildren
+    <li data-nav-id="/trevorsmale/cumulus/GO/" class="nav-item my-1 parent haschildren
         ">
         
         
@@ -143,7 +136,7 @@
                   </a>
                 
         </li>
-        <li data-nav-id="/trevorsmale/cumulus/GO/WAILS/" class="nav-item my-1">
+        <li data-nav-id="/trevorsmale/cumulus/GO/WAILS/" class="nav-item my-1 active">
                 
                 
                   <a href="/trevorsmale/cumulus/GO/WAILS/" class="nav-link p-0">
@@ -183,95 +176,86 @@
 
 </div>
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
-	<nav id="TableOfContents"></nav>
+	<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#wails-features">Wails Features</a></li>
+        <li><a href="#feature-notes">Feature Notes</a></li>
+        <li><a href="#quick-start-templates">Quick Start Templates</a></li>
+        <li><a href="#lib">Lib</a></li>
+        <li><a href="#go--js-interoperability">Go &amp; JS Interoperability</a></li>
+        <li><a href="#dev-mode">Dev mode</a></li>
+        <li><a href="#debug">Debug</a></li>
+        <li><a href="#single-exe">Single EXE</a></li>
+        <li><a href="#cli">CLI</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 </div>
 </div>
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
-	
 
-	<h1>Home</h1>
-
-	<p class="lead">
-    Welcome to my organized collection of notes! This website houses my extensive collection of Markdown notes. By moving them online, I can access them conveniently from any device. I also believe others will find valuable information here. To better manage a large number of Markdown files, I&rsquo;ve migrated my notes to GO &amp; HUGO. This transition improves organization and simplifies navigation. Feel free to explore and benefit from the resources available. Enjoy!
-</p>
+<div class="d-flex flex-column">
+    <h1 class="js-title">WAILS</h1>
+    <div class="d-flex align-items-center">
+        
+    </div>
+</div>
 
 <hr>
 
 
-<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-danger rounded" style="border-width:4px !important;">
-    <div class="wrap border border-left-0 rounded">
-        
-        <div class="card-header border-0 bg-white pl-3 text-danger">
-            <h3>WIP</h3>
-        </div>
-        
-        <div class="card-body pt-1">
-            This site is a work in progress, notes are being actively added, formatted and reorganized at the moment.
-        </div>
-    </div>
-</div>
+<p class="lead">
+    <h2 id="overview">Overview</h2>
+<p>A tool for running cross platform applications using Go and JS
+</p>
 
-
-
-<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-success rounded" style="border-width:4px !important;">
-    <div class="wrap border border-left-0 rounded">
-        
-        <div class="card-header border-0 bg-white pl-3 text-success">
-            <h3>In Progress</h3>
-        </div>
-        
-        <div class="card-body pt-1">
-            <ul>
-<li>2023 05 31 - Transfering and formatting LPIC index</li>
+<h2 id="wails-features">Wails Features</h2>
+<ul>
+<li>Native Menus, Dialogs, Theming and Translucency</li>
+<li>Windows, macOS and linux support</li>
+<li>Built in templates for Svelte, React, Preact, Vue, Lit and Vanilla JS</li>
+<li>Easily call Go methods from JavaScript</li>
+<li>Automatic Go struct to TypeScript model generation</li>
+<li>No CGO or external DLLs required on Windows</li>
+<li>Live development mode using the power of Vite</li>
+<li>Powerful CLI to easily Create, Build and Package applications</li>
+<li>A rich runtime library</li>
+<li>Applications built with Wails are Apple &amp; Microsoft Store compliant</li>
 </ul>
-
-        </div>
-    </div>
-</div>
-
-
-
-<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-success rounded" style="border-width:4px !important;">
-    <div class="wrap border border-left-0 rounded">
-        
-        <div class="card-header border-0 bg-white pl-3 text-success">
-            <h3>Update Log</h3>
-        </div>
-        
-        <div class="card-body pt-1">
-            <ul>
-<li>2023 05 31 - Transfered and formatted AI index</li>
-<li>2023 05 31 - Transfered and formatted Containers index</li>
-<li>2023 05 31 - Transfered and formatted NIX index</li>
-<li>2023 05 31 - Transfered and formatted Azure index</li>
-<li>2023 05 31 - Transfered and formatted Linux index</li>
-<li>2023 05 31 - Transfered and formatted GO index</li>
-<li>2023 05 31 - Transfered and formatted Blender 3D index</li>
-</ul>
-
-        </div>
-    </div>
-</div>
-
+<h2 id="feature-notes">Feature Notes</h2>
+<h2 id="quick-start-templates">Quick Start Templates</h2>
+<p>Wails comes with a number of pre-configured templates that allow you to get your application up and running quickly. There are templates for the following frameworks: Svelte, React, Vue, Preact, Lit and Vanilla. There are both JavaScript and TypeScript versions for each template.
+Native Elements</p>
+<h2 id="lib">Lib</h2>
+<p>Wails uses a purpose built library for handling native elements such as Window, Menus, Dialogs, etc, so you can build good-looking, feature rich desktop applications.</p>
+<p>It does not embed a browser, so it is resource efficient. Instead, it uses the native rendering engine for the platform. On Windows, this is the new Microsoft Webview2 library, built on Chromium.
+Go &amp; JavaScript Interoperability</p>
+<h2 id="go--js-interoperability">Go &amp; JS Interoperability</h2>
+<p>Wails automatically makes your Go methods available to JavaScript, so you can call them by name from your frontend! It even generates TypeScript models for the structs used by your Go methods, so you can pass the same data structures between Go and JavaScript.
+Runtime Library</p>
+<p>Wails provides a runtime library, for both Go and JavaScript, that handles a lot of the things modern applications need, like Eventing, Logging, Dialogs, etc.
+Live Development Experience
+Automatic Rebuilds</p>
+<h2 id="dev-mode">Dev mode</h2>
+<p>When you run your application in &ldquo;dev&rdquo; mode, Wails will build your application as a native desktop application, but will read your assets from disk. It will detect any changes to your Go code and automatically rebuild and relaunch your application.
+Automatic Reloads</p>
+<p>When changes to your application assets are detected, your running application will &ldquo;reload&rdquo;, reflecting your changes almost immediately.
+Develop your application in a Browser</p>
+<h2 id="debug">Debug</h2>
+<p>If you prefer to debug and develop in a browser then Wails has you covered. The running application also has a webserver that will run your application in any browser that connects to it. It will even refresh when your assets change on disk.
+Production-ready Native Binaries</p>
+<h2 id="single-exe">Single EXE</h2>
+<p>When you&rsquo;re ready to do the final build of your application, the CLI will compile it down to a single executable, with all the assets bundled into it. On Windows and MacOS, it is possible to create a native package for distribution. The assets used in packaging (icon, info.plist, manifest file, etc) are part of your project and may be customised, giving you total control over how your applications are built.
+Tooling</p>
+<h2 id="cli">CLI</h2>
+<p>The Wails CLI provides a hassle-free way to generate, build and bundle your applications. It will do the heavy lifting of creating icons, compiling your application with optimal settings and delivering a distributable, production ready binary. Choose from a number of starter templates to get up and running quickly!</p>
 
 
-<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-info rounded" style="border-width:4px !important;">
-    <div class="wrap border border-left-0 rounded">
-        
-        <div class="card-header border-0 bg-white pl-3 text-info">
-            <h3>Open to Pull Requests &amp; Issues</h3>
-        </div>
-        
-        <div class="card-body pt-1">
-            If anyone finds a typo, wants to add something or make a suggestion, I am open to pull requests.
-<a href="http://www.github.com/trevorsmale/cumulus">www.github.com/trevorsmale/cumulus</a>
-        </div>
-    </div>
-</div>
-
-
-	
+    
 
 
                     
@@ -280,7 +264,8 @@
 
     <h4 class="text-white text-center">Read more</h4>
 
-    <div class="d-flex justify-content-center"><a class="p-1 ml-3 d-inline-block text-white text-right" href="/trevorsmale/cumulus/Workflows/" title="Work-Flows">Work-Flows<i class="fas fa-chevron-right p-1"></i></a>
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/trevorsmale/cumulus/GO/Course1/" title="Making Modern Webpages with GO"><i class="fas fa-chevron-left p-1"></i>Making Modern Webpages with GO</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/trevorsmale/cumulus/Linux/" title="Linux">Linux<i class="fas fa-chevron-right p-1"></i></a>
     </div>
 </div>
 

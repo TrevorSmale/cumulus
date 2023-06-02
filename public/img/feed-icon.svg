@@ -1,18 +1,10 @@
-<?xml version="1.0"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> 
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="128px" height="128px" id="RSSicon" viewBox="0 0 256 256">
-<defs>
-<linearGradient x1="0.085" y1="0.085" x2="0.915" y2="0.915" id="RSSg">
-<stop  offset="0.0" stop-color="#E3702D"/><stop  offset="0.1071" stop-color="#EA7D31"/>
-<stop  offset="0.3503" stop-color="#F69537"/><stop  offset="0.5" stop-color="#FB9E3A"/>
-<stop  offset="0.7016" stop-color="#EA7C31"/><stop  offset="0.8866" stop-color="#DE642B"/>
-<stop  offset="1.0" stop-color="#D95B29"/>
-</linearGradient>
-</defs>
-<rect width="256" height="256" rx="55" ry="55" x="0"  y="0"  fill="#CC5D15"/>
-<rect width="246" height="246" rx="50" ry="50" x="5"  y="5"  fill="#F49C52"/>
-<rect width="236" height="236" rx="47" ry="47" x="10" y="10" fill="url(#RSSg)"/>
-<circle cx="68" cy="189" r="24" fill="#FFF"/>
-<path d="M160 213h-34a82 82 0 0 0 -82 -82v-34a116 116 0 0 1 116 116z" fill="#FFF"/>
-<path d="M184 213A140 140 0 0 0 44 73 V 38a175 175 0 0 1 175 175z" fill="#FFF"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <path d="M128,27.5C128,12.322 115.678,0 100.5,0L27.5,0C12.322,0 0,12.322 0,27.5L0,100.5C0,115.678 12.322,128 27.5,128L100.5,128C115.678,128 128,115.678 128,100.5L128,27.5Z" style="fill:rgb(0,123,255);"/>
+    <path d="M125.5,27.5C125.5,13.702 114.298,2.5 100.5,2.5L27.5,2.5C13.702,2.5 2.5,13.702 2.5,27.5L2.5,100.5C2.5,114.298 13.702,125.5 27.5,125.5L100.5,125.5C114.298,125.5 125.5,114.298 125.5,100.5L125.5,27.5Z" style="fill:rgb(0,123,255);"/>
+    <path d="M123,28.5C123,15.53 112.47,5 99.5,5L28.5,5C15.53,5 5,15.53 5,28.5L5,99.5C5,112.47 15.53,123 28.5,123L99.5,123C112.47,123 123,112.47 123,99.5L123,28.5Z" style="fill:rgb(0,123,255);"/>
+    <circle cx="34" cy="94.5" r="12" style="fill:white;"/>
+    <path d="M80,106.5L63,106.5C63,84.008 44.492,65.5 22,65.5L22,48.5C53.818,48.5 80,74.682 80,106.5Z" style="fill:white;fill-rule:nonzero;"/>
+    <path d="M92,106.5C92,68.099 60.401,36.5 22,36.5L22,19C70.001,19 109.5,58.499 109.5,106.5L92,106.5Z" style="fill:white;fill-rule:nonzero;"/>
 </svg>

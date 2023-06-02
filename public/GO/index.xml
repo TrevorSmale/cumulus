@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GO on TS Tech Notes</title>
+    <link>https://github.com/trevorsmale/cumulus/GO/</link>
+    <description>Recent content in GO on TS Tech Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 29 May 2023 18:31:10 -0400</lastBuildDate><atom:link href="https://github.com/trevorsmale/cumulus/GO/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Making Modern Webpages with GO</title>
+      <link>https://github.com/trevorsmale/cumulus/GO/Course1/</link>
+      <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/GO/Course1/</guid>
+      <description>Course Overview Learn to write modern, fast, and secure web applications in Google&amp;rsquo;s Go programming language, and learn it from an award winning University professor with 20 years of teaching experience, and 20 years of experience working in the industry as an entrepreneur.
+This course is well-suited for both absolute beginners, and for developers who already know something about web development, but want to add Go to their toolbox.
+We start with an overview of the Go language, and then cover everything you need to get started writing web applications, including an overview of HTML5, a survey of JavaScript and JavaScript modules, how to work with Cascading Style Sheets to make our application look the way we want, and much more.</description>
+    </item>
+    
+    <item>
+      <title>WAILS</title>
+      <link>https://github.com/trevorsmale/cumulus/GO/WAILS/</link>
+      <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/GO/WAILS/</guid>
+      <description>Overview A tool for running cross platform applications using Go and JS Wails Features  Native Menus, Dialogs, Theming and Translucency Windows, macOS and linux support Built in templates for Svelte, React, Preact, Vue, Lit and Vanilla JS Easily call Go methods from JavaScript Automatic Go struct to TypeScript model generation No CGO or external DLLs required on Windows Live development mode using the power of Vite Powerful CLI to easily Create, Build and Package applications A rich runtime library Applications built with Wails are Apple &amp;amp; Microsoft Store compliant  Feature Notes Quick Start Templates Wails comes with a number of pre-configured templates that allow you to get your application up and running quickly.</description>
+    </item>
+    
+  </channel>
+</rss>

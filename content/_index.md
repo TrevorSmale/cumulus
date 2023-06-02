@@ -19,6 +19,9 @@ This site is a work in progress, notes are being actively added, formatted and r
 {{< /panel >}}
 
 {{< panel title="Update Log" style="success" >}}
+
+---
+
 * 2023 05 31 - Transfered and formatted AI index
 * 2023 05 31 - Transfered and formatted Containers index
 * 2023 05 31 - Transfered and formatted NIX index
@@ -26,6 +29,14 @@ This site is a work in progress, notes are being actively added, formatted and r
 * 2023 05 31 - Transfered and formatted Linux index
 * 2023 05 31 - Transfered and formatted GO index
 * 2023 05 31 - Transfered and formatted Blender 3D index
+
+---
+
+* 2023 06 02 - Transfered and formatted Blender Intro Course Notes
+* 2023 06 02 - Created WSL2 index 
+* 2023 06 02 - Transfered and formatted Blender GO Notes
+* 2023 06 02 - Created Tools index
+
 {{< /panel >}}
 
 {{< panel title="Open to Pull Requests & Issues" style="info" >}}

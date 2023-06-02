@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html><head>
-	<meta name="generator" content="Hugo 0.92.2" />
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <meta name="description" content="Landing Page">
+    <meta name="description" content="Windows Subsystem for Linux 2">
     
-    <link rel="alternate" type="application/rss+xml" href="https://github.com/trevorsmale/cumulus/index.xml" title="TS Tech Notes" />
-    <link rel="canonical" href="https://github.com/trevorsmale/cumulus/">
+    <link rel="alternate" type="application/rss+xml" href="https://github.com/trevorsmale/cumulus/WSL2/index.xml" title="TS Tech Notes" />
+    <link rel="canonical" href="https://github.com/trevorsmale/cumulus/WSL2/">
 
     <title>
         
-        Home | TS Tech Notes
+        WSL2 | TS Tech Notes
         
     </title>
 
@@ -41,7 +40,7 @@
         
     </div>
     <div class="feed-icons">
-            <a href="https://github.com/trevorsmale/cumulus/index.xml"><img src="/img/feed-icon.svg" alt="RSS feed" /></a>
+            <a href="https://github.com/trevorsmale/cumulus/WSL2/index.xml"><img src="/img/feed-icon.svg" alt="RSS feed" /></a>
         </div>
     </nav>
 <div class="container-fluid">
@@ -93,7 +92,7 @@
         </li>
         </ul>
     </li>
-    <li data-nav-id="/trevorsmale/cumulus/WSL2/" class="nav-item my-1
+    <li data-nav-id="/trevorsmale/cumulus/WSL2/" class="nav-item my-1 parent active
         ">
         
         
@@ -183,18 +182,73 @@
 
 </div>
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
-	<nav id="TableOfContents"></nav>
+	<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#issues-i-have-experienced">Issues I have experienced</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 </div>
 </div>
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
-	
 
-	<h1>Home</h1>
+<div class="d-flex flex-column">
+    <h1 class="js-title">WSL2</h1>
+    <div class="d-flex align-items-center">
+        
+    </div>
+</div>
 
-	<p class="lead">
-    Welcome to my organized collection of notes! This website houses my extensive collection of Markdown notes. By moving them online, I can access them conveniently from any device. I also believe others will find valuable information here. To better manage a large number of Markdown files, I&rsquo;ve migrated my notes to GO &amp; HUGO. This transition improves organization and simplifies navigation. Feel free to explore and benefit from the resources available. Enjoy!
+<hr>
+
+
+<h2 id="overview">Overview</h2>
+<p class="lead">
+    Ubuntu WSL2, or Windows Subsystem for Linux 2, is a compatibility layer that allows running Ubuntu, a popular Linux distribution, on Windows 10 or Windows Server. It provides a seamless integration of Ubuntu within the Windows operating system, enabling users to execute Linux commands and run Linux applications without the need for virtual machines. WSL2 offers improved performance compared to its predecessor, WSL1, by utilizing a full Linux kernel running in a lightweight virtual machine. With Ubuntu WSL2, developers and users can leverage the power of Linux tools and utilities while still benefiting from the familiarity and convenience of the Windows environment.
 </p>
+
+<h2 id="issues-i-have-experienced">Issues I have experienced</h2>
+
+
+<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-danger rounded" style="border-width:4px !important;">
+    <div class="wrap border border-left-0 rounded">
+        
+        <div class="card-header border-0 bg-white pl-3 text-danger">
+            <h3>VSCODE CLI Problem</h3>
+        </div>
+        
+        <div class="card-body pt-1">
+            I normally invoke VSCODE within Ubuntu WSL2 CLI with:
+$ code Documents/Git/Project
+Which opens VSCODE to that target directory.
+However I started getting an error regarding the path to VSCODE being broken
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-success rounded" style="border-width:4px !important;">
+    <div class="wrap border border-left-0 rounded">
+        
+        <div class="card-header border-0 bg-white pl-3 text-success">
+            <h3>VSCODE CLI Solution</h3>
+        </div>
+        
+        <div class="card-body pt-1">
+            <ul>
+<li>Within the WSL terminal, type rm -r ~/.vscode-server to delete the VS Code WSL server.</li>
+<li>Exit the terminal and from your PowerShell/Cmd, run wsl &ndash;shutdown.</li>
+</ul>
+
+        </div>
+    </div>
+</div>
 
 <hr>
 
@@ -203,11 +257,11 @@
     <div class="wrap border border-left-0 rounded">
         
         <div class="card-header border-0 bg-white pl-3 text-danger">
-            <h3>WIP</h3>
+            <h3>GO Path Variable constant reset</h3>
         </div>
         
         <div class="card-body pt-1">
-            This site is a work in progress, notes are being actively added, formatted and reorganized at the moment.
+            Go Path variable keeps resetting in WSL2:
         </div>
     </div>
 </div>
@@ -218,60 +272,18 @@
     <div class="wrap border border-left-0 rounded">
         
         <div class="card-header border-0 bg-white pl-3 text-success">
-            <h3>In Progress</h3>
+            <h3>GO Path Variable solution</h3>
         </div>
         
         <div class="card-body pt-1">
-            <ul>
-<li>2023 05 31 - Transfering and formatting LPIC index</li>
-</ul>
-
+            echo &lsquo;export PATH=$PATH:/usr/local/go/bin&rsquo; &raquo; ~/.bashrc
         </div>
     </div>
 </div>
 
 
 
-<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-success rounded" style="border-width:4px !important;">
-    <div class="wrap border border-left-0 rounded">
-        
-        <div class="card-header border-0 bg-white pl-3 text-success">
-            <h3>Update Log</h3>
-        </div>
-        
-        <div class="card-body pt-1">
-            <ul>
-<li>2023 05 31 - Transfered and formatted AI index</li>
-<li>2023 05 31 - Transfered and formatted Containers index</li>
-<li>2023 05 31 - Transfered and formatted NIX index</li>
-<li>2023 05 31 - Transfered and formatted Azure index</li>
-<li>2023 05 31 - Transfered and formatted Linux index</li>
-<li>2023 05 31 - Transfered and formatted GO index</li>
-<li>2023 05 31 - Transfered and formatted Blender 3D index</li>
-</ul>
-
-        </div>
-    </div>
-</div>
-
-
-
-<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-info rounded" style="border-width:4px !important;">
-    <div class="wrap border border-left-0 rounded">
-        
-        <div class="card-header border-0 bg-white pl-3 text-info">
-            <h3>Open to Pull Requests &amp; Issues</h3>
-        </div>
-        
-        <div class="card-body pt-1">
-            If anyone finds a typo, wants to add something or make a suggestion, I am open to pull requests.
-<a href="http://www.github.com/trevorsmale/cumulus">www.github.com/trevorsmale/cumulus</a>
-        </div>
-    </div>
-</div>
-
-
-	
+    
 
 
                     
@@ -280,7 +292,8 @@
 
     <h4 class="text-white text-center">Read more</h4>
 
-    <div class="d-flex justify-content-center"><a class="p-1 ml-3 d-inline-block text-white text-right" href="/trevorsmale/cumulus/Workflows/" title="Work-Flows">Work-Flows<i class="fas fa-chevron-right p-1"></i></a>
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/trevorsmale/cumulus/Workflows/RSS/" title="RSS feed"><i class="fas fa-chevron-left p-1"></i>RSS feed</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/trevorsmale/cumulus/AI/" title="AI">AI<i class="fas fa-chevron-right p-1"></i></a>
     </div>
 </div>
 

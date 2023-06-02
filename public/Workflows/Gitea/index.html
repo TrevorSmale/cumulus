@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="description" content="Procedural Workflows">
+    
+    <link rel="canonical" href="https://github.com/trevorsmale/cumulus/Workflows/Gitea/">
+
+    <title>
+        
+        Private Gitea Server | TS Tech Notes
+        
+    </title>
+
+    
+    <link href="https://github.com/trevorsmale/cumuluscss/fontawesome.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://github.com/trevorsmale/cumulus/css/ace.min.css">
+
+    
+
+    
+    
+        
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/trevorsmale/cumulus">
+                
+                TS Tech Notes
+            </a>
+        </div>
+        
+    </div>
+    </nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+            <form class="form-inline my-2 my-lg-0 searchbox">
+                <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder="Search">
+            </form>
+
+        
+
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/trevorsmale/cumulus/Workflows/" class="nav-item my-1 parent haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Workflows/"><h6>Work-Flows</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Workflows/MSDHNGINX/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Workflows/MSDHNGINX/" class="nav-link p-0">
+                    Multi-Site Single Server
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Workflows/Gitea/" class="nav-item my-1 active">
+                
+                
+                  <a href="/trevorsmale/cumulus/Workflows/Gitea/" class="nav-link p-0">
+                    Private Gitea Server
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Workflows/RSS/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Workflows/RSS/" class="nav-link p-0">
+                    RSS feed
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/WSL2/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/WSL2/"><h6>WSL2</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/AI/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/AI/"><h6>AI</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Azure/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Azure/"><h6>Azure</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Blender-3D/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Blender-3D/"><h6>Blender 3D</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Containers/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Containers/"><h6>Containers</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/GO/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/GO/"><h6>GO</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/GO/Course1/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/GO/Course1/" class="nav-link p-0">
+                    Making Modern Webpages with GO
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/GO/WAILS/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/GO/WAILS/" class="nav-link p-0">
+                    WAILS
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/"><h6>Linux</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+    <li data-nav-id="/trevorsmale/cumulus/Linux/LPI/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/LPI/"><h6>LPI</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/NIX/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/NIX/"><h6>NIX</h6></a>
+        
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#installing-gitea">Installing Gitea</a></li>
+        <li><a href="#setting-up-a-nginx-reverse-proxy">Setting up a Nginx reverse proxy</a></li>
+        <li><a href="#setting-up-gitea">Setting up Gitea</a></li>
+        <li><a href="#a-few-extras">A few extras</a></li>
+        <li><a href="#automatically-create-a-new-repo-on-push">Automatically create a new repo on push</a></li>
+        <li><a href="#change-tab-width">Change tab-width</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<div class="d-flex flex-column">
+    <h1 class="js-title">Private Gitea Server</h1>
+    <div class="d-flex align-items-center">
+        
+    </div>
+</div>
+
+<hr>
+
+
+
+
+<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-success rounded" style="border-width:4px !important;">
+    <div class="wrap border border-left-0 rounded">
+        
+        <div class="card-header border-0 bg-white pl-3 text-success">
+            <h3>Tried &amp; Tested Workflow</h3>
+        </div>
+        
+        <div class="card-body pt-1">
+            I have used this procedure to setup a Gitea repository on a single low-cost VPS using Dynamic Hosting with NGINX
+        </div>
+    </div>
+</div>
+
+<p>Gitea allows you to self-host your git repositories similar to <a href="/git">bare
+repositories</a>, but comes with additional features that you might know
+from GitHub, such as issues, pull requests or multiple users. Its advantage
+over GitLab&mdash;another Free Software GitHub clone&mdash;is that it is much more
+lightweight and easier to setup.</p>
+<p>Head over to <a href="https://gitea.com">gitea.com</a> to see what it looks like in
+practice.</p>
+<p>Although Gitea is lighter than Gitlab, if you have a VPS with only 512MB of
+RAM, you will probably have to upgrade. Gitea is more memory-intensive than
+having just a bare git repository. If you just want a minimalist browseable git
+server without  issue tracking and pull requests, install <a href="/cgit">cgit</a>
+instead.</p>
+<h2 id="installing-gitea">Installing Gitea</h2>
+<p>First install a few dependencies:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">apt install curl sqlite3
+</code></pre></div><p>Unfortunately, Gitea itself is not in the official Debian repos, so we
+will add a third-party repository for it.</p>
+<p>Add the repo's gpg key to apt's trusted keys:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">curl -sL -o /etc/apt/trusted.gpg.d/morph027-gitea.asc https://packaging.gitlab.io/gitea/gpg.key
+</code></pre></div><p>Then add the actual repository to apt:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="nb">echo</span> <span class="s2">&#34;deb [arch=</span><span class="k">$(</span>dpkg --print-architecture<span class="k">)</span><span class="s2">] https://packaging.gitlab.io/gitea gitea main&#34;</span> &gt; /etc/apt/sources.list.d/morph027-gitea.list
+</code></pre></div><p>Now we can install Gitea:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">apt update
+apt install gitea
+</code></pre></div><p>Since apt automatically enables and starts the Gitea service, it should
+already be running on port <code>3000</code> on your server!</p>
+<h2 id="setting-up-a-nginx-reverse-proxy">Setting up a Nginx reverse proxy</h2>
+<p>You should know how to generate SSL certificates and use Nginx by now.
+Add this to your Nginx config to proxy requests made to your git
+subdomain to Gitea running on port 3000:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">server</span> <span class="p">{</span>
+	<span class="kn">listen</span> <span class="mi">443</span> <span class="s">ssl</span><span class="p">;</span>
+	<span class="kn">listen</span> <span class="s">[::]:443</span> <span class="s">ssl</span><span class="p">;</span>
+	<span class="kn">ssl_certificate</span> <span class="s">/etc/ssl/nginx/git.example.org.crt</span><span class="p">;</span>
+	<span class="kn">ssl_certificate_key</span> <span class="s">/etc/ssl/nginx/git.example.org.key</span><span class="p">;</span>
+	<span class="kn">server_name</span> <span class="s">Gitea</span> <span class="s">Example</span> <span class="s">git.example.org</span><span class="p">;</span>
+	<span class="kn">location</span> <span class="s">/</span> <span class="p">{</span>
+		<span class="kn">proxy_pass</span> <span class="s">http://localhost:3000/</span><span class="p">;</span> <span class="c1"># The / is important!
+</span><span class="c1"></span>		<span class="kn">proxy_redirect</span> <span class="no">off</span><span class="p">;</span>
+		<span class="kn">proxy_set_header</span> <span class="s">Host</span> <span class="nv">$host</span><span class="p">;</span>
+		<span class="kn">proxy_set_header</span> <span class="s">X-Real-IP</span> <span class="nv">$remote_addr</span><span class="p">;</span>
+		<span class="kn">proxy_set_header</span> <span class="s">X-Forwarded-For</span> <span class="nv">$proxy_add_x_forwarded_for</span><span class="p">;</span>
+		<span class="kn">proxy_set_header</span> <span class="s">X-Forwarded-Proto</span> <span class="nv">$scheme</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><p>And reload Nginx:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">systemctl reload nginx
+</code></pre></div><h2 id="setting-up-gitea">Setting up Gitea</h2>
+<p>If everything worked fine you should now see a setup screen when you go
+to your configured domain in the browser. The options should be pretty
+self-explanatory, it is only important to select SQLite3 and to replace
+the base url and SSH server domain with your own.</p>
+<dl>
+<dt>Database Type:</dt>
+<dd>SQLite3</dd>
+<dt>SSH Server Domain:</dt>
+<dd><strong>git.example.org</strong></dd>
+<dt>Gitea Base URL:</dt>
+<dd><strong>git.example.org</strong></dd>
+</dl>
+<p>These and other settings can be changed in a configuration file later so
+don't worry about making wrong decisions right now.</p>
+<p>After clicking the install button you should now be able to log into
+your Gitea instance with the account you just created! Explore the
+settings for more things to do, such as setting up your SSH keys.</p>
+<p>If Gitea does not load fully and has random errors, it is possible that
+you need to increase your available memory on your VPS. This can usually
+be done on your VPS-provider's website without too much trouble.</p>
+<h2 id="a-few-extras">A few extras</h2>
+<h2 id="automatically-create-a-new-repo-on-push">Automatically create a new repo on push</h2>
+<p>This is an incredibly useful feature for me. Open up
+<code>/etc/gitea/app.ini</code> and add <code>DEFAULT_PUSH_CREATE_PRIVATE = true</code> to the
+<code>repository</code> section like so:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-systemd" data-lang="systemd"><span class="k">[repository]</span>
+<span class="na">ROOT </span><span class="o">=</span><span class="s"> /var/lib/gitea/data/gitea-repositories</span>
+<span class="na">DEFAULT_PUSH_CREATE_PRIVATE </span><span class="o">=</span><span class="s"> true</span>
+</code></pre></div><p>If you now add a remote to a repository like this</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">git remote add origin <span class="s1">&#39;ssh://gitea@git.example.org/username/coolproject.git&#39;</span>
+</code></pre></div><p>and push, Gitea will automatically create a private <code>coolproject</code>
+repository in your account!</p>
+<h2 id="change-tab-width">Change tab-width</h2>
+<p>By default Gitea displays tabs 8 spaces wide, however I prefer 4 spaces.
+We can change this!</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">mkdir -p /var/lib/gitea/custom/templates/custom/
+</code></pre></div><p>And write this into
+<code>/var/lib/gitea/custom/templates/custom/header.tmpl</code>:</p>
+
+
+    
+
+
+                    
+                    <div class="row"><div class="position-relative mx-auto col-lg-9">
+                          <div class="bg-primary overflow-hidden p-3 mt-5 shadow">
+
+    <h4 class="text-white text-center">Read more</h4>
+
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/trevorsmale/cumulus/Workflows/MSDHNGINX/" title="Multi-Site Single Server"><i class="fas fa-chevron-left p-1"></i>Multi-Site Single Server</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/trevorsmale/cumulus/Workflows/RSS/" title="RSS feed">RSS feed<i class="fas fa-chevron-right p-1"></i></a>
+    </div>
+</div>
+
+
+                        </div></div> 
+
+                </div>
+
+            </div> 
+
+        </div> 
+<script src="https://github.com/trevorsmale/cumuluslib/jquery.min.js"></script> 
+<script src="https://github.com/trevorsmale/cumuluslib/popper.min.js"></script> 
+
+<script src="https://github.com/trevorsmale/cumulusjs/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/auto-complete.js"></script>
+<link href="/trevorsmale/cumulus/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "https:\/\/github.com\/trevorsmale\/cumulus";
+  
+</script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/search.js"></script>
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/favorites.js"></script>
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>

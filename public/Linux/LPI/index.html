@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="alternate" type="application/rss+xml" href="https://github.com/trevorsmale/cumulus/Linux/LPI/index.xml" title="TS Tech Notes" />
+    <link rel="canonical" href="https://github.com/trevorsmale/cumulus/Linux/LPI/">
+
+    <title>
+        
+        LPI | TS Tech Notes
+        
+    </title>
+
+    
+    <link href="https://github.com/trevorsmale/cumuluscss/fontawesome.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://github.com/trevorsmale/cumulus/css/ace.min.css">
+
+    
+
+    
+    
+        
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/trevorsmale/cumulus">
+                
+                TS Tech Notes
+            </a>
+        </div>
+        
+    </div>
+    <div class="feed-icons">
+            <a href="https://github.com/trevorsmale/cumulus/Linux/LPI/index.xml"><img src="/img/feed-icon.svg" alt="RSS feed" /></a>
+        </div>
+    </nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+            <form class="form-inline my-2 my-lg-0 searchbox">
+                <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder="Search">
+            </form>
+
+        
+
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/trevorsmale/cumulus/Workflows/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Workflows/"><h6>Work-Flows</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Workflows/MSDHNGINX/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Workflows/MSDHNGINX/" class="nav-link p-0">
+                    Multi-Site Single Server
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Workflows/Gitea/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Workflows/Gitea/" class="nav-link p-0">
+                    Private Gitea Server
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Workflows/RSS/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Workflows/RSS/" class="nav-link p-0">
+                    RSS feed
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/WSL2/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/WSL2/"><h6>WSL2</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/AI/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/AI/"><h6>AI</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Azure/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Azure/"><h6>Azure</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Blender-3D/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Blender-3D/"><h6>Blender 3D</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Containers/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Containers/"><h6>Containers</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/GO/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/GO/"><h6>GO</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/GO/Course1/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/GO/Course1/" class="nav-link p-0">
+                    Making Modern Webpages with GO
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/GO/WAILS/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/GO/WAILS/" class="nav-link p-0">
+                    WAILS
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/" class="nav-item my-1 parent haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/"><h6>Linux</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+    <li data-nav-id="/trevorsmale/cumulus/Linux/LPI/" class="nav-item my-1 parent active
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/LPI/"><h6>LPI</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/NIX/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/NIX/"><h6>NIX</h6></a>
+        
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#lpic-1-notes">LPIC-1 Notes</a>
+      <ul>
+        <li><a href="#objectives">Objectives</a></li>
+        <li><a href="#toc">TOC</a></li>
+        <li><a href="#additional-resources">Additional Resources</a></li>
+        <li><a href="#1011-determine-and-configure-hardware-settings">101.1 Determine and configure hardware settings</a></li>
+        <li><a href="#key-knowledge-areas">Key knowledge Areas</a></li>
+        <li><a href="#partial-list-of-used-files-terms-and-utilities">Partial list of used files, terms and utilities</a></li>
+        <li><a href="#toc-1">TOC</a></li>
+        <li><a href="#must-know-hardware-concepts">Must know hardware concepts</a></li>
+        <li><a href="#linux-file-system--external-devices">Linux file system &amp; external devices</a></li>
+        <li><a href="#get-information-about-hardware">Get information about hardware</a></li>
+        <li><a href="#system-modules">System modules</a></li>
+        <li><a href="#commands-for-system-modules">Commands for system modules</a></li>
+        <li><a href="#1012">101.2</a></li>
+        <li><a href="#2-boot-the-system">2. Boot the system</a></li>
+        <li><a href="#key-knowledge-areas-1">Key knowledge areas</a></li>
+        <li><a href="#partial-list-of-used-files-terms-and-utilities-1">Partial list of used files, terms and utilities</a></li>
+        <li><a href="#toc-2">TOC</a></li>
+        <li><a href="#bios">BIOS</a></li>
+        <li><a href="#efiuefi">EFI/UEFI</a></li>
+        <li><a href="#advantages">Advantages</a></li>
+        <li><a href="#disadvantages">Disadvantages</a></li>
+        <li><a href="#boot-sequence">Boot sequence</a></li>
+        <li><a href="#boot-loader">Boot loader</a></li>
+        <li><a href="#mbr-master-boot-record">MBR: Master Boot Record</a></li>
+        <li><a href="#guid">GUID</a></li>
+        <li><a href="#grub-2-grand-unified-bootloader">GRUB 2 (GRand Unified Bootloader)</a></li>
+        <li><a href="#boot-processes">Boot Processes</a></li>
+        <li><a href="#sysvinit">SysVinit</a></li>
+        <li><a href="#systemd">systemd</a></li>
+        <li><a href="#upstar">Upstar</a></li>
+        <li><a href="#dmesg"><code>dmesg</code></a></li>
+        <li><a href="#initramfs">initramfs</a></li>
+        <li><a href="#1013-change-runlevels--boot-targets-and-shutdown-or-reboot-system">101.3 Change runlevels / boot targets and shutdown or reboot system</a></li>
+        <li><a href="#key-knowledge-areas-2">Key knowledge areas</a></li>
+        <li><a href="#partial-list-of-used-files-terms-and-utilities-2">Partial list of used files, terms and utilities</a></li>
+        <li><a href="#toc-3">TOC</a></li>
+        <li><a href="#terminal-commands">Terminal commands</a></li>
+        <li><a href="#sysvinit-runlevels">SysVinit runlevels</a></li>
+        <li><a href="#systemd-boot-targets">systemd boot targets</a></li>
+        <li><a href="#sysvinit-compatibility">SysVinit compatibility</a></li>
+        <li><a href="#systemctl"><code>systemctl</code></a></li>
+        <li><a href="#1021-design-hard-disk-layout">102.1 Design hard disk layout</a></li>
+        <li><a href="#key-knowledge-areas-3">Key knowledge areas</a></li>
+        <li><a href="#partial-list-of-used-files-terms-and-utilities-3">Partial list of used files, terms and utilities</a></li>
+        <li><a href="#toc-4">TOC</a></li>
+        <li><a href="#disk-partitioning">Disk partitioning</a></li>
+        <li><a href="#swap-partitioning">Swap partitioning</a></li>
+        <li><a href="#swap-space-heuristics">Swap space heuristics</a></li>
+        <li><a href="#fhs-filesystem-hierarchy-standard">FHS: Filesystem Hierarchy Standard</a></li>
+        <li><a href="#directory-str8ct8re">Directory str8ct8re</a></li>
+        <li><a href="#multiuser-file-systems">Multiuser file systems</a></li>
+        <li><a href="#lvm-logical-volume-manager">LVM: Logical Volume Manager</a></li>
+        <li><a href="#uses">Uses</a></li>
+        <li><a href="#raid-redundant-array-of-inexpensiveindependent-disks">RAID: Redundant Array of Inexpensive/Independent Disks</a></li>
+        <li><a href="#raid-0-striping">RAID 0: Striping</a></li>
+        <li><a href="#1022-install-a-boot-manager">102.2 Install a boot manager</a></li>
+        <li><a href="#key-knowledge-areas-4">Key knowledge areas</a></li>
+        <li><a href="#partial-list-of-used-files-terms-and-utilities-4">Partial list of used files, terms and utilities</a></li>
+        <li><a href="#toc-5">TOC</a></li>
+        <li><a href="#startup--boot-loaders">Startup &amp; Boot loaders</a></li>
+        <li><a href="#grub-gnu-grand-unified-bootloader">GRUB: GNU Grand Unified Bootloader</a></li>
+        <li><a href="#configuration-options">Configuration options</a></li>
+        <li><a href="#os-settings">OS settings</a></li>
+        <li><a href="#grub2">GRUB2</a></li>
+        <li><a href="#configuration">Configuration</a></li>
+        <li><a href="#update-from-grub-to-grub2">Update from GRUB to GRUB2</a></li>
+        <li><a href="#grub-recovery">GRUB Recovery</a></li>
+        <li><a href="#kernel-options">Kernel Options</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<div class="d-flex flex-column">
+    <h1 class="js-title">LPI</h1>
+    <div class="d-flex align-items-center">
+        
+    </div>
+</div>
+
+<hr>
+
+
+<h1 id="lpic-1-notes">LPIC-1 Notes</h1>
+<h2 id="objectives">Objectives</h2>
+<h2 id="toc">TOC</h2>
+<ul>
+<li>Introduction</li>
+<li>101 Exam
+<ul>
+<li>101: System Architecture
+<ul>
+<li>101.1 Determine and configure hardware settings</li>
+<li>101.2 Boot the system</li>
+<li>103.3 Change runlevels / boot targets and shutdown or reboot system</li>
+</ul>
+</li>
+<li>102: Linux installation and Package Management
+<ul>
+<li>102.1 Design hard disk layout</li>
+<li>102.2 Install a boot manager</li>
+<li>102.3 Manage shared libraries</li>
+<li>102.4 Use Debian package management</li>
+<li>102.5 Use RPM and YUM package management</li>
+<li>102.6 Linux as a virtualization guest</li>
+</ul>
+</li>
+<li>103: GNU and Unix Commands
+<ul>
+<li>103.1 Work on the command line</li>
+<li>103.2 Process text streams using filters</li>
+<li>103.3 Perform basic file management</li>
+<li>103.4 Use streams, pipes and redirects</li>
+<li>103.5 Create, monitor and kill processes</li>
+<li>103.6 Modify process execution priorities</li>
+<li>103.7 Search text files using regular expressions</li>
+<li>103.8 Basic file editing</li>
+</ul>
+</li>
+<li>104: Devices, Linux Filesystems, Filesystem Hierarchy Standard
+<ul>
+<li>104.1: Create partitions and filesystems</li>
+<li>104.2: Maintain the integrity of filesystems</li>
+<li>104.3: Control mounting and unmount of filesystems</li>
+<li>104.4: Removed</li>
+<li>104.5: Manage file permissions and ownership</li>
+<li>104.6: Create and change hard and symbolic links</li>
+<li>104.7: Find system files and place files in correct location</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>102 Exam
+<ul>
+<li>105: Shells and Shell Scripting
+<ul>
+<li>105.1: Customize and use the shell environment</li>
+<li>105.2: Customize or write simple scripts</li>
+</ul>
+</li>
+<li>106: User Interfaces and Desktops
+<ul>
+<li>106.1 Install and configure X11</li>
+<li>106.2 Graphical Desktops</li>
+<li>106.3 Accessibility</li>
+</ul>
+</li>
+<li>107: Administrative Tasks
+<ul>
+<li>107.1 Manage user and group accounts and related system files</li>
+<li>107.2 Automate system administration tasks by scheduling jobs</li>
+<li>107.3 Localisation and internationalisation</li>
+</ul>
+</li>
+<li>108: Essential System Services
+<ul>
+<li>108.1 Maintain system time</li>
+<li>108.2 System logging</li>
+<li>108.3 Mail Transfer Agent (MTA) basics</li>
+<li>108.4 Manage printing and printers</li>
+</ul>
+</li>
+<li>109: Networking Fundamentals
+<ul>
+<li>109.1: Fundamentals of internet protocols</li>
+<li>109.2 Persistent network configuration</li>
+<li>109.3 Basic network troubleshooting</li>
+<li>109.4 Configure client side DNS</li>
+</ul>
+</li>
+<li>110: Security
+<ul>
+<li>110.1 Perform security administration tasks</li>
+<li>110.2 Setup host security</li>
+<li>110.3 Securing data with encryption</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="additional-resources">Additional Resources</h2>
+<ul>
+<li><a href="https://developer.ibm.com/tutorials/l-lpic1-map/">https://developer.ibm.com/tutorials/l-lpic1-map/</a></li>
+</ul>
+<h2 id="1011-determine-and-configure-hardware-settings">101.1 Determine and configure hardware settings</h2>
+<p>Should be able to determine and configure fundamental system hardware.</p>
+<h2 id="key-knowledge-areas">Key knowledge Areas</h2>
+<ul>
+<li>Enable and disable integrated peripherals.</li>
+<li>Differentiate between various types of mass storage devices.</li>
+<li>Determine hardware resources for devices.</li>
+<li>Tools and utilities to list various hardware information (e.g. <code>lsub</code>, lspci`, etc.).</li>
+<li>Tools and utilities to manipulate USB devices.</li>
+<li>Conceptual understanding of <code>sysfs</code>, <code>udev</code> and <code>dbus</code>.</li>
+</ul>
+<h2 id="partial-list-of-used-files-terms-and-utilities">Partial list of used files, terms and utilities</h2>
+<ul>
+<li><code>/sys</code></li>
+<li><code>/proc</code></li>
+<li><code>/dev</code></li>
+<li><code>modprobe</code></li>
+<li><code>lsmod</code></li>
+<li><code>lspci</code></li>
+<li><code>lsusb</code></li>
+</ul>
+<h2 id="toc-1">TOC</h2>
+<ul>
+<li>Must know hardware concepts</li>
+<li>Linux filesystem &amp; external devices</li>
+<li>Get information about hardware</li>
+<li>System modules</li>
+</ul>
+<h2 id="must-know-hardware-concepts">Must know hardware concepts</h2>
+<ul>
+<li><strong>IRQ</strong> (<em>Interrupt Request</em>): Hardware signal sent to the processor that temporarily stops a running program and allows a special program, an <em>interrupt handler</em>, to run instead. Hardware interrupts are used to handle events such as receiving data from a modem/network card, key presses, or mouse movements.
+<ul>
+<li><code>/proc/interrupts</code></li>
+</ul>
+</li>
+<li><strong>DMA</strong> (_Direct memory Access): Feature that allows certain hardware subsystems to access main system memory (RAM) independent of the central processing unit (CPU). CPU first inititates the transfer, then it does other operations while the transfer is in progress and it finally receives an <em>interrupt</em> from the DMA controller (DMAC) when the operation is done.
+<ul>
+<li><code>/proc/dma</code></li>
+</ul>
+</li>
+<li><strong>I/O Ports/Addresses</strong>: Unique locations in memory reserved for communications between CPU and specific physical hardware devices.
+<ul>
+<li><code>/proc/ioports</code></li>
+</ul>
+</li>
+<li><strong>coldplug/hotplug</strong>: Devices that should be unplugged when system is off (cold) or on (hot).</li>
+</ul>
+<h2 id="linux-file-system--external-devices">Linux file system &amp; external devices</h2>
+<ul>
+<li><strong>Sysfs</strong> (<code>/sys</code>): Pseudo file system that exports information about various kernel subsystems, hardware devices, and associated device drivers from the kernel&rsquo;s device model to user space through virutal files.</li>
+<li><strong>D-Bus</strong> (<em>Desktop Bus</em>): Software bus, <em>Inter Process Communication (IPC)</em> and <em>Remote Procedure Call (RPC)</em> mechanism that allows communication between multiple processes running concurrently on the same machine.</li>
+<li><strong>udev</strong> (<code>/dev</code>): Userspace system that enables the OS administrator to register userspace handlers for events. The events received by <em>udev</em>&rsquo;s daemon are mainly generated by the (Linux) kernel in response to physical events relating to peripheral devices. As such, <em>udev</em>&rsquo;s main purpose is to act upon peripheral detection and hot-plugging, including actions that return control to the kernel. It manages device nodes in the <code>/dev</code> directory by adding, symlinking and renaming them. <em>udev</em> replaces the functionality of both <em>hotplug</em> and <em>hwdetect</em>.
+<ul>
+<li>e.g. Every time we connect a USB media device, files will be created to link the device with the file system, and multiple references too for example <code>cd /dev/disk &amp;&amp; ls -l</code>.</li>
+</ul>
+</li>
+</ul>
+<h2 id="get-information-about-hardware">Get information about hardware</h2>
+<ul>
+<li><code>lspci</code>: Show information about PCI buses and connected devices.
+<ul>
+<li><code>-v</code>/<code>-vv</code>: More verbose.</li>
+<li><code>-s</code>: Information about specific device.</li>
+</ul>
+</li>
+<li><code>lsusb</code>: Show information about buses and USB devices connected.
+<ul>
+<li><code>-v</code>/<code>-vv</code>/<code>-s</code></li>
+<li><code>-t</code>: Information as a tree and details about USB port.</li>
+</ul>
+</li>
+</ul>
+<h2 id="system-modules">System modules</h2>
+<p>Modules are part of the kernel that we can activate/deactivate to add/remove functionalities. They are very coupled to drivers.</p>
+<p>Those are files that end with the extension <code>.ko</code> that are stored at <code>/lib/modules/kernel_version</code>.</p>
+<h2 id="commands-for-system-modules">Commands for system modules</h2>
+<ul>
+<li><code>lsmod</code>: Show modules loaded in the system.</li>
+<li><code>modinfo</code>: Show information about a module.</li>
+<li><code>insmod</code>: Load a <code>.ko</code> file to the system.</li>
+<li><code>rmmod</code>: Remove a module from the system.
+<ul>
+<li><code>-w</code>: Wait for it&rsquo;s not being used.</li>
+<li><code>-f</code>: Force removal.</li>
+</ul>
+</li>
+<li><code>modprobe</code>: Load or remove modules and resolve dependencies.
+<ul>
+<li><code>-f</code>: Force load even if kernel version is mismatched.</li>
+<li><code>-r</code>: Remove module.</li>
+<li><code>-v</code>: Verbose.</li>
+</ul>
+</li>
+</ul>
+<p>If you are looking for an specific module: <code>lsmod | grep floppy</code>.</p>
+<h2 id="1012">101.2</h2>
+<h2 id="2-boot-the-system">2. Boot the system</h2>
+<p>Should be able to guide the system through the booting process.</p>
+<h2 id="key-knowledge-areas-1">Key knowledge areas</h2>
+<ul>
+<li>Provide common commands to the boot loader and options to the kernel at boot time.</li>
+<li>Demonstrate knowledge of the boot sequence from BIOS/UEFI to boot completion.</li>
+<li>Understanding of <em>SysVinit</em> and <em>systemd</em>.</li>
+<li>Awareness of <em>Upstart</em>.</li>
+<li>Check boot events in the log files.</li>
+</ul>
+<h2 id="partial-list-of-used-files-terms-and-utilities-1">Partial list of used files, terms and utilities</h2>
+<ul>
+<li>dmesg</li>
+<li>journalctl</li>
+<li>BIOS/UEFI</li>
+<li>bootloader</li>
+<li>kernel</li>
+<li>initramfs</li>
+<li>init</li>
+<li>SysVinit</li>
+<li>systemd</li>
+</ul>
+<h2 id="toc-2">TOC</h2>
+<ul>
+<li>BIOS</li>
+<li>EFI/UEFI</li>
+<li>Boot sequence</li>
+<li>MBR: Master Boot Record</li>
+<li>GPT: GUID Partition Table</li>
+<li>GRUB 2</li>
+<li>Boot Processes
+<ul>
+<li>SysVinit</li>
+<li>systemd</li>
+<li>Upstar</li>
+</ul>
+</li>
+<li>dmesg</li>
+<li>initramfs &amp; initrd</li>
+</ul>
+<h2 id="bios">BIOS</h2>
+<p>Firmware in ROM/PROM, that works as a basic I/O system.</p>
+<p>It consists of two fundamental parts:</p>
+<ul>
+<li><strong>Setup</strong>: configure options.</li>
+<li><strong>POST</strong>: assess correct functionality of important components for startup.</li>
+</ul>
+<h2 id="efiuefi">EFI/UEFI</h2>
+<p>Unified Extensible Firmware Interface. It is a specification that defines a software interface between an OS and platform firmware, replacing the legacy BIOS (but providing support for it).</p>
+<p>Intel developed the original EFI specifications. In 2005, UEFI deprecated EFI 1.10, and its specification is managed by the <em>Unified EFI Forum</em>.</p>
+<h2 id="advantages">Advantages</h2>
+<ul>
+<li>Backward and forward compatibility.</li>
+<li>Support for legacy BIOS systems.</li>
+<li>Ability to use large disk partitions (over 2TB) with a GUID partition table (GPT).</li>
+<li>Friendly and flexible environment pre-OS environment, including network capability, GUI and multi language.</li>
+<li>Modular design.</li>
+<li>Secure Boot option.</li>
+</ul>
+<h2 id="disadvantages">Disadvantages</h2>
+<ul>
+<li>Higher abstraction layer and ability to run UEFI applications opens the doors to rootkit.</li>
+<li>Many argue that UEFI introduces an unnecessary complexity that won&rsquo;t be used by OS anyway. Not many mainline OSes take advantage of CPU-independent drivers nor the flexible and modular design, and every OS needs a native driver.</li>
+</ul>
+<h2 id="boot-sequence">Boot sequence</h2>
+<ol>
+<li>BIOS firmware / UEFI.</li>
+<li>POST checks for hardware working properly.</li>
+<li>Look for a <em>Boot loader</em> depending on the order we configured the devices boot sequence.</li>
+</ol>
+<ul>
+<li>If using BIOS, it reads the first sector of the MBR driver where the code for searching the bootloader is stored.</li>
+<li>IF using UEFI, it executed the bootloader  that is stored in a special partition (ESP).</li>
+</ul>
+<h2 id="boot-loader">Boot loader</h2>
+<p>When a computer is turned off, its software‍—‌including operating systems, application code, and data‍—‌remains stored on non-volatile memory.</p>
+<p>When the computer is powered on, it typically does not have an operating system or its loader in random-access memory (RAM). The computer first executes a relatively small program stored in read-only memory (ROM) along with a small amount of needed data, to access the nonvolatile device or devices from which the operating system programs and data can be loaded into RAM.</p>
+<p>The small program that starts this sequence is known as a <em>bootstrap loader, bootstrap or boot loader</em>. This small program&rsquo;s only job is to load other data and programs which are then executed from RAM. Often, multiple-stage boot loaders are used, during which several programs of increasing complexity load one after the other in a process of chain loading.</p>
+<h2 id="mbr-master-boot-record">MBR: Master Boot Record</h2>
+<p>Special type of <em>boot sector</em> at the very beginning of partitioned computer mass storage devices. The concept of MBRs was publicly introduced in 1983 with PC DOS 2.0.</p>
+<p>The MBR holds the information on how the logical partitions, containing file systems, are organized on that medium. The MBR also contains executable code to function as a loder for the installed operating system, usually referred to as a <em>boot loader</em>.</p>
+<p>The organization of the partition table in the MBR limits the maximum addressable storage aspace of a partitioned disk to <em>2 TiB</em>. Therefore, the MBR-based partitioning scheme is in the process of being supersedded by the <em>GUID Partition Table (GPT)</em> scheme in new computers, which can coexist with an MBR in order to provide some limited form of backward compatibility for older systems.</p>
+<p>MBRs are note present on non-partitioned media such as floppies or other storage devices configured to behave as such.</p>
+<h2 id="guid">GUID</h2>
+<p>Standard for the layout of partition tables of a physical computer storage device, such as a HDD or SSD, using <em>universally unique identifiers</em>, which are also known as <em>Globally Unique Identifiers (GUIDs)</em>. Forming part of the <em>UEFI</em> standard, it is nevertheless also used for some BIOS systems, because of the limitations of MBR partition tables. GUID can support up to <em>9.4 ZiB</em>.</p>
+<p>All modern PC OS support GPT. Some, including macOS and Microsoft Windows on the x86 architecture, support booting from GPT partitions only on systems with EFI firmware, but FreeBSD and most Linux distributions can boot from GPT partitions on systems with either firmware interface, legacy BIOS or modern EFI.</p>
+<pre tabindex="0"><code>parted -l
+</code></pre><h2 id="grub-2-grand-unified-bootloader">GRUB 2 (GRand Unified Bootloader)</h2>
+<p>GRUB 2 is the default free boot loader for many linux distributions. As the computer starts, GRUB 2 either presents a menu and awaits user input or automatically transfers control to an operating system kernel. It has completely rewritten GRUB to provide the user significantly increased flexibility and performance.</p>
+<h2 id="boot-processes">Boot Processes</h2>
+<p>Once the grub boot loader loads the kernel and it has finished its startup procedure, it will hand over control to a startup manager.</p>
+<h2 id="sysvinit">SysVinit</h2>
+<p>On systems based on SysVinit, <strong>init</strong> is the first process that is executed once the Linux kernel loads. This process is responsible for coordinating the start of the rest of the system services, configuring the user environment and essentialy bringing the system to a functional state.</p>
+<ul>
+<li>
+<p>File <code>/etc/inittab</code> contains basic configuration.</p>
+</li>
+<li>
+<p>Different execution levels are defined, and <strong>rc</strong> script is invoked (<code>/etc/rc.d</code> or <code>/etc/init.d</code>) with a specific execution level.</p>
+</li>
+<li>
+<p><strong>rc</strong> executes the files in <code>/etc/rc&lt;level&gt;.d/</code> by numeric order. Those files are links that start with <code>S</code> (start) or <code>K</code> (stop) and that point to a script in <code>/etc/init.d</code>.</p>
+</li>
+</ul>
+<h2 id="systemd">systemd</h2>
+<p><em>systemd</em> is a suite of basic building blocks for a Linux system. It provides a system and service manager that runs as PID 1 and starts the rest of the system. It uses configuration files for each service/unity to manage.</p>
+<p>The main command used to introspect and control <em>systemd</em> is <code>systemctl</code>.</p>
+<ul>
+<li><code>systemctl status</code></li>
+<li><code>systemctl list-units [--type=service]</code></li>
+<li><code>systemctl --failed</code></li>
+<li><code>systemctl status &lt;pid|unit&gt;</code></li>
+<li><code>systemctl start/stop/status unit[.service]</code></li>
+<li><code>systemctl enable/disavble</code></li>
+</ul>
+<p><em>systemd</em> uses its own log manager <code>journalctl</code>.</p>
+<ul>
+<li><code>journalctl</code>
+<ul>
+<li><code>-S</code>: since.</li>
+<li><code>-U</code>: until.</li>
+<li><code>YYYY-MM-DD [HH:MM:SS]]</code>, <code>yesterday</code>, <code>today</code>, <code>tomorrow</code>, <code>N day ago</code>, <code>+/- NhMmin</code> (i.e <code>-1h15min</code>)</li>
+<li><code>-u &lt;unit&gt;</code></li>
+<li><code>-k</code>: kernel.</li>
+<li><code>-p</code>: emerg, alert, critc, err, warning, notice, info, debug.</li>
+</ul>
+</li>
+</ul>
+<h2 id="upstar">Upstar</h2>
+<blockquote>
+<p>Maintenance mode only. No new features are being developed and general advice would be move over to another minimal init system or systemd.</p>
+</blockquote>
+<p>Upstar is an event-based replacement for the <code>/sbin/init</code> daemon which handles starting of tasks and services during boot, stopping them during shutdown and supervising them while the system is running.</p>
+<h2 id="dmesg"><code>dmesg</code></h2>
+<p>You can use <code>dmesg</code> to see boot logs (drivers and operating system loading).</p>
+<ul>
+<li><code>-T</code>: more explit time data.</li>
+<li><code>-k</code>: kernel.</li>
+<li><code>-l</code> filter by type of alert.</li>
+<li><code>H</code>: filter with colors.</li>
+</ul>
+<h2 id="initramfs">initramfs</h2>
+<p><code>initramfs</code>: Initial RAM File System &amp; <code>initrd</code>: Initial RAM Disk</p>
+<p>Scheme for loading a temporary root file system into memory, which may be used as part of the Linux startup process. <code>initrd</code> and <code>initramfs</code> refer to two different methods of achieving this. Both are commonly used to make preparations before the real root file system can be mounted.</p>
+<p>Many Linux distros ship a single, genering Linux kernel image, specifically to boot on a wide variety of hardware. The device drivers for this generic kernel image are included as loadable kernel modules because statically compiling many drivers into one kernel causes the kernel image to be much larger, perhaps too large to boot on computers with limited memory. This then raises the problem of detecting and loading the modules necessary to mount the root file system at boot time, or for that matter, deducing where or what the root file system id.</p>
+<p>To further complicate matters, the root file system may be on a software RAID volume, LVM, NFS, or an encrypted partition. All of these require special preparations to mount.</p>
+<p>Another complication is kernel support for hibernation, which suspends the computer to disk by dumping an image of the entire contents of memory to a swap partition or a regular file, then powering off. On next boot, this image has to be made accessible before it can be loaded back into memory.</p>
+<p>To avoid having to hardcore handling for so many special cases into the kernel, an initial boot stage with a temporary root file-system, now dubbed <em>early user space</em>, is used. This root file system can contain user-space helpers which do the hardware detection, module loading and device discovery necessary to get the real root file-system mounted.</p>
+<p>You can find it in the GRUB configuration file in a similar way:</p>
+<pre tabindex="0"><code>initrd /boot/initrd.img-&lt;version&gt;-amd64
+</code></pre><h2 id="1013-change-runlevels--boot-targets-and-shutdown-or-reboot-system">101.3 Change runlevels / boot targets and shutdown or reboot system</h2>
+<p>Should be able to manage the SysVinit runlevel or systemd boot target of the system. This objective includes changing to single user mode, shutdown or rebooting the system.</p>
+<p>Should be able to alert users before switching runlevels / boot targets and properly terminate processes.</p>
+<h2 id="key-knowledge-areas-2">Key knowledge areas</h2>
+<ul>
+<li>Set the default runlevel or boot target.</li>
+<li>Change between runlevels / boot targets including single user mode.</li>
+<li>Shutdown and reboot from the command line.</li>
+<li>Alert users before switching runlevels / boot targets or other major system events.</li>
+<li>properly terminate processes.</li>
+<li>Awareness of acpid.</li>
+</ul>
+<h2 id="partial-list-of-used-files-terms-and-utilities-2">Partial list of used files, terms and utilities</h2>
+<ul>
+<li><code>/etc/inittab</code></li>
+<li>shutdown</li>
+<li>init</li>
+<li><code>/etc/init.d/</code></li>
+<li>telint</li>
+<li>systemd</li>
+<li>systemctl</li>
+<li><code>/etc/systemd/</code></li>
+<li><code>/user/lib/systemd</code></li>
+<li>wall</li>
+</ul>
+<h2 id="toc-3">TOC</h2>
+<ul>
+<li>Terminal commands</li>
+<li>SysVinit runlevels</li>
+<li>systemd boot targets</li>
+</ul>
+<h2 id="terminal-commands">Terminal commands</h2>
+<ul>
+<li><code>shutdown</code>: manage system shutdown.
+<ul>
+<li><code>-t</code>: seconds to wait.</li>
+<li><code>shutdown +&lt;minutes&gt;</code></li>
+<li><code>shutdown HH:MM</code></li>
+<li><code>-c</code>: cancel scheduled shutdowns.</li>
+</ul>
+</li>
+<li><code>shutdown -H</code> / <code>halt</code> / <code>reboot --halt</code>: shutdown system without sending signal ACPI for electrical shutdown.</li>
+<li><code>shutdown -P</code> / <code>poweroff</code> <code>halt -p</code>: shutdown sending ACPI signal.</li>
+<li><code>shutdown -r</code> / <code>reboot</code> / <code>halt --reboot</code>: reboot system.</li>
+<li><code>wall</code>: sends message to all terminals.</li>
+<li><code>mesg y/y</code>: manage reception of messages.</li>
+</ul>
+<h2 id="sysvinit-runlevels">SysVinit runlevels</h2>
+<ul>
+<li><code>runlevel</code>: current execution level.</li>
+<li><code>init</code> / <code>telint</code>: change execution level.</li>
+<li><code>update-rc.d</code>: scripts that get triggered at each level.
+<ul>
+<li><code>update-rc.d &lt;service&gt; enable &lt;level&gt;</code></li>
+<li>Scripts are stored in <code>/etc/rc&lt;level&gt;.d</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="systemd-boot-targets">systemd boot targets</h2>
+<p><em>systemd</em>&rsquo;s <em>&ldquo;targets&rdquo;</em> are the equivalent of SysVinit&rsquo;s runlevels, as they group units called <em>&ldquo;services&rdquo;</em> that we want to run together. Each unit is defined in files such as <code>&lt;name&gt;.service</code> and can be stored in different directories such as: <code>/user/lib/systemd/system</code>, <code>/lib/systemd/system</code> or <code>/etc/systemd/system</code>.</p>
+<p>You can find more information about units and where are they stored with <code>man systemd.unit</code>.</p>
+<p>For example, if we want to see what target is run by default:</p>
+<pre tabindex="0"><code>ls /lib/systemd/system default.target -l
+</code></pre><p>Or to list all services:</p>
+<pre tabindex="0"><code>ls /lib/systemd/system/*.service
+</code></pre><p>And we should use <code>systemctl</code> to manage most of <em>systemd</em>&rsquo;s aspect:</p>
+<h2 id="sysvinit-compatibility">SysVinit compatibility</h2>
+<p>You can see a linked target for a given SysVinit runlevel:</p>
+<pre tabindex="0"><code>ls -l /lib/systemd/system | grep runlevel
+</code></pre><h2 id="systemctl"><code>systemctl</code></h2>
+<ul>
+<li><code>systemctl get-default</code>: get default target.</li>
+<li><code>start/stop/status/etc... unit[.service]</code> i.e <code>systemctl restart apache2</code></li>
+<li><code>isolate unit.target</code>: change to selected target.</li>
+<li><code>list-units [--type=service]</code>: list loaded units.</li>
+<li><code>enable/disable</code>: active/deactivate an unit.</li>
+<li><code>list-dependencies</code></li>
+</ul>
+<h2 id="1021-design-hard-disk-layout">102.1 Design hard disk layout</h2>
+<p>Should be able to design a disk partitioning scheme for a Linux system.</p>
+<h2 id="key-knowledge-areas-3">Key knowledge areas</h2>
+<ul>
+<li>Allocate filesystems and swap space to separate partitions or disks.</li>
+<li>Tailor the design to the intended use of the system.</li>
+<li>Ensure the <code>/boot</code> partition conforms to the hardware architecture requirements for booting.</li>
+<li>Knowledge of basic features of LVM.</li>
+</ul>
+<h2 id="partial-list-of-used-files-terms-and-utilities-3">Partial list of used files, terms and utilities</h2>
+<ul>
+<li><code>/</code> (root) filesystem</li>
+<li><code>/var</code> filesystem</li>
+<li><code>/home</code> filesystem</li>
+<li><code>/boot</code> filesystem</li>
+<li>EFI System Partition (ESP)</li>
+<li>swap space</li>
+<li>mount points</li>
+<li>partitions</li>
+</ul>
+<h2 id="toc-4">TOC</h2>
+<ul>
+<li>Disk partitioning</li>
+<li>Swap partition</li>
+<li>FHS: Filesystem Hierarchy Standard</li>
+<li>LVM: Logical Volume Manager</li>
+<li>RAID: Redundant Array of Inexpensive/Independent Disks</li>
+</ul>
+<h2 id="disk-partitioning">Disk partitioning</h2>
+<p>When installing Linux OS, we need to decide which part of the disk we will use for this purpose.</p>
+<p>With Linux, we need at least to partitions: one for the system and other for the swap space</p>
+<h2 id="swap-partitioning">Swap partitioning</h2>
+<p>Swap partition serves multiple purposes:</p>
+<ul>
+<li><strong>Overflow space</strong> for your RAM. If your RAM fills up completely, any additional applications will run off the swap partition.</li>
+<li><strong>Prioritization</strong>. Move some itemos from memory to hard drive in order to leave more room in memory for more important items (can configure <em>&ldquo;swapiness</em>&quot;).</li>
+<li><strong>Hibernation</strong>. A swap partition is used as the destination of your memory&rsquo;s contents whenever you tell your system to hibernate.</li>
+</ul>
+<h2 id="swap-space-heuristics">Swap space heuristics</h2>
+<ul>
+<li>Without hibernation
+<ul>
+<li>&lt; 2GB RAM: x2</li>
+<li>2GB - 5GB RAM: Total RAM + 2gb</li>
+<li>&gt; 5GB RAM: depends on system use</li>
+</ul>
+</li>
+<li>With hibernation
+<ul>
+<li>RAM + sqrt(RAM)</li>
+</ul>
+</li>
+</ul>
+<h2 id="fhs-filesystem-hierarchy-standard">FHS: Filesystem Hierarchy Standard</h2>
+<p>FHS defines the directory structure and directory contents in Linux distributions. It is maintained by the <em>Linux Foundation</em>.</p>
+<p>In FHS, all files and directories appear under the <em>root directory</em> <code>/</code>, even if they are stored on different or virtual devices.</p>
+<h2 id="directory-str8ct8re">Directory str8ct8re</h2>
+<ul>
+<li><code>/</code>: Primary hierarchy root and <em>root directory</em> of the entire file system hierarchy.</li>
+<li><code>/bin</code>: Essential command binaries that need to be avaiable in single-user mode, for all users (e.g., <code>cat</code>, <code>ls</code>, <code>cp</code>).</li>
+<li><code>/boot</code>: Boot loader files (e.g. kernels, initrd).</li>
+<li><code>/dev</code>: Device files (e.g. <code>/dev/disk0</code>, <code>/dev/sda</code>, <code>/dev/tty</code>).</li>
+<li><code>/etc</code>: Host specific system-wide configuration files. FHS restricts this to static configuration files and may not contain binaries (&ldquo;Editable Text Configuration&rdquo; / &ldquo;Extended Tool Chest&rdquo;).
+<ul>
+<li><code>/etc/opt</code>: Configuration files for add-on packages that are stored in <code>/opt</code></li>
+<li><code>/etc/sgml</code></li>
+<li><code>/etc/X11</code></li>
+<li><code>/etc/xml</code></li>
+</ul>
+</li>
+<li><code>/home</code>: User&rsquo;s home directories, containing saved files, personal settings, etc.</li>
+<li><code>/lib</code>: Libraries essential for the binaries in <code>/bin</code> and <code>/sbin</code>.</li>
+<li><code>/lib&lt;qual&gt;</code> (optional): Alternate format essential libraries.</li>
+<li><code>/media</code>: Mount points for removable media.</li>
+<li><code>/mnt</code>: Temporary mounted filesystems.</li>
+<li><code>/opt</code>: Optional application software packages.</li>
+<li><code>/proc</code>: Virtual filesystem providing process and kernel information as files. Generally, automatically generated and populated by the system, on the fly.</li>
+<li><code>/root</code>: Home directory for the root user.</li>
+<li><code>/run</code>: Run-time variable data, information about the running system since last boot, e.g., currently logged-in users and running daemons.</li>
+<li><code>/sbin</code>: Essential system binaries (e.g. <code>fsck</code>, <code>init</code>, <code>route</code>).</li>
+<li><code>/srv</code>: Site-specific data served by this system, such as data and scripts for web servers, data offered by FTP servers, and repositories for version control systems.</li>
+<li><code>/sys</code>: Contains infromation about devices, drivers, and some kernel features.</li>
+<li><code>/tmp</code>: Directory for temporary files. Often not preserved between system reboots.</li>
+<li><code>/usr</code>: <em>Secondary hierarchy</em> for <strong>read-only user data</strong>, contains the majority of multi-user utilities and applications.
+<ul>
+<li><code>/usr/bin</code>: Non-essential command binaries (not needed in single-user mode) for all users.</li>
+<li><code>/usr/include</code>: Standard include files.</li>
+<li><code>/usr/lib</code> &amp; <code>/usr/lib&lt;qual&gt;</code>: Libraries for the binaries in <code>/usr/bin</code> and <code>/usr/sbin</code>.</li>
+<li><code>/usr/local</code>: <em>Tertiary hierarchy</em> for local data specific to this host.</li>
+<li><code>/usr/share</code>: architecture-indpendent (shared) data.</li>
+<li><code>/usr/src</code>: Source code, e.g., kernel source code with its header files.</li>
+<li><code>/usr/X11R6</code>: X Windows File System, Version 11, Release 6.</li>
+</ul>
+</li>
+<li><code>/var</code>: Variable files, files whose content is expected to continually change during normal operation of the system, such as logs, spool files, and temporary e-mail files.
+<ul>
+<li><code>/var/cache</code>: Application cache data. Such data are locally generated as a result of time-consuming I/O or calculation. Application must be able to regenerate or restore the data.</li>
+<li><code>/var/lib</code>: State information. Persistent data modified by programs as they run, e.g., databases, packaging system metadata, etc.</li>
+<li><code>/var/lock</code>: Lock files. Files keeping track of resources currently in use.</li>
+<li><code>/var/log</code>: Log files.</li>
+<li><code>/var/mail</code>: Mailbox files (some distros may store this in the deprecated <code>/var/spool/mail</code>).</li>
+<li><code>/var/opt</code>: Variable data from add-on packages.</li>
+<li><code>/var/run</code>: Run-time variable data. In FHS 3.0, this is replaced by <code>/run</code>. A system should either continue to provide a <code>var/run</code> directory or a symbolic link from it to <code>/run</code> for backwards compatibility.</li>
+<li><code>/var/spool</code>: Spool for tasks waiting to be processed, e.g., print queues and outgoing mail queue.
+<ul>
+<li><code>/var/spool/mail</code>: Deprectaed in favor of <code>/var/mail</code>.
+*<code>/var/tmp</code>: Temporary files to be preserved between reboots.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="multiuser-file-systems">Multiuser file systems</h2>
+<p>Those can be managed in different partitions for performance concerns.</p>
+<ul>
+<li><code>/var</code></li>
+<li><code>/tmp</code></li>
+<li><code>/home</code></li>
+<li><code>/usr</code>: If not going to store many user-specific applications.</li>
+</ul>
+<h2 id="lvm-logical-volume-manager">LVM: Logical Volume Manager</h2>
+<blockquote>
+<p>Physical Volume of different disks -&gt; Volume Groups -&gt; Logical Volumes</p>
+</blockquote>
+<p>Device mapper framework that provides logical volume management for the Linux kernel. Most modern Linux distributions are LVM-aware to the point of being able to have their root file systems on a logical volume.</p>
+<h2 id="uses">Uses</h2>
+<ul>
+<li>Creating single logical volumes of multiple physical volumes or entire hard disks, allowing for dynamic volume resizing.
+<ul>
+<li>Volume groups (VGs) can be resized online by absorbing new physical volumes (PVs) or ejecting existing ones.</li>
+<li>Logical volumes (LVs) can be resized online by concatenating extents onto them or truncating extents from them.</li>
+</ul>
+</li>
+<li>Managing large hard disk farms by allowing disks to be added and replaced without downtime or service disruption, in combination with hot swapping.</li>
+<li>On small systems, instead of having to estimate at installation time how big a partition might need to be, LVM allows filesystems to be easily resized as needed.</li>
+<li>Performing consistent backups by taking snapshots of the logical volumes.
+<ul>
+<li>Read only snapshots of LVs (LVM1).</li>
+<li>Read/write snapshots (LVM2).</li>
+</ul>
+</li>
+<li>Encrypting multiple physical partitions with one password.</li>
+<li>LVs can be created to include RAID functionality.</li>
+</ul>
+<h2 id="raid-redundant-array-of-inexpensiveindependent-disks">RAID: Redundant Array of Inexpensive/Independent Disks</h2>
+<p>Data storage virtualization technology that combines multiple physical disk drive components into one or more logical units for the purposes of data redundancy, performance improvement, or both.</p>
+<p>Data is distributed across the drives in one of several ways, referred to as RAID levels, depending on the required level of redundancy and performance.</p>
+<p>Different schemes / data distribution layouts are named by the word &ldquo;RAID&rdquo; followed by a number (e.g. RAID 0). Each scheme, or RAID level, provides a different balance among the key goals:</p>
+<ul>
+<li>Reliability</li>
+<li>Availability</li>
+<li>Performance</li>
+<li>Capacity</li>
+</ul>
+<p>RAID levels greater than RAID 0 provide protection against unrecoverable sector read errors, as well as against failures of whole physical drives.</p>
+<h2 id="raid-0-striping">RAID 0: Striping</h2>
+<p>Consists of striping, but no morroring (RAID 1) or parity.</p>
+<p>Because striping distributes the content of each file among all drives in the set, the failure of any drive causes the entire RAID 0 volume and all files to be lost, unlike a spanned volumes (disk concatened together, end to beginning, so they appear to be a single large disk) that preserves files on the unfalling drives.</p>
+<p>The benefit of RAID 0 is that the throughput of R/W operations to any file is multiplied by the number of drives because, unlike spanned volumes, R/W are done conrurently. The cost is increased vulnerability to drive failures.</p>
+<h2 id="1022-install-a-boot-manager">102.2 Install a boot manager</h2>
+<p>Should be able to select, install and configure a boot manager.</p>
+<h2 id="key-knowledge-areas-4">Key knowledge areas</h2>
+<ul>
+<li>Providing alternative boot locations and backup boot options.</li>
+<li>Install and configure a boot loader such as GRUB legacy.</li>
+<li>Perform basic configuration changes for GRUB 2.</li>
+<li>Interact with the boot loader.</li>
+</ul>
+<h2 id="partial-list-of-used-files-terms-and-utilities-4">Partial list of used files, terms and utilities</h2>
+<ul>
+<li><code>menu.lst</code>, <code>grub.cfg</code> and <code>grub.conf</code></li>
+<li><code>grub-install</code></li>
+<li><code>grub-mkconfig</code></li>
+<li>MBR</li>
+</ul>
+<h2 id="toc-5">TOC</h2>
+<ul>
+<li>Startup process &amp; boot loaders</li>
+<li>GRUB: GNU Grand Unified Bootloader</li>
+<li>GRUB2</li>
+<li>Update from GRUB to GRUB2</li>
+<li>GRUB recovery</li>
+<li>Kernel options</li>
+</ul>
+<h2 id="startup--boot-loaders">Startup &amp; Boot loaders</h2>
+<p>BIOS/UEFI delegate control to <strong>boot loader</strong> which will be responsible for loading the OS.</p>
+<ul>
+<li><strong>LILO</strong>: Linux Loader, old deprecated loader.</li>
+<li><strong>GRUB (legacy)</strong>: deprecated in favor of GRUB2.
+<ul>
+<li>Does not support UEFI.</li>
+<li>Configuration: <code>/boot/grub/menu.lst|grub.conf</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="grub-gnu-grand-unified-bootloader">GRUB: GNU Grand Unified Bootloader</h2>
+<p>GRUB is the reference implementation of the <em>Free Software Foundation</em>&rsquo;s <em>Multiboot Specification</em>, which provides a user the choice to boot one of multiple OS installed on a computer or select a specific kernel configuration available on a particular OS&rsquo;s partitions.</p>
+<p>GRUB enumerates units and partitions: first disk will be <code>hd0</code> and first partition <code>(hd0,0)</code>, other partitions will be named similarly.</p>
+<h2 id="configuration-options">Configuration options</h2>
+<ul>
+<li><strong>default</strong>: OS by default.</li>
+<li><strong>timeout</strong>: seconds to wait for user input.</li>
+</ul>
+<h2 id="os-settings">OS settings</h2>
+<ul>
+<li><strong>title</strong>: Name to show in menu.</li>
+<li><strong>root</strong>: Indicates partition that contains the Linux OS (e.g. <code>root (hd1, 2)</code>).</li>
+<li><strong>rootnoverify</strong>: For non-linux OS indicate partiton that contains OS.</li>
+<li><strong>chainloader</strong>: For non-linux OS, delegate control to other boot loader or <code>+1</code> to read <code>rootnoverify</code> partiton.</li>
+<li><strong>kernel</strong>: Path to kernel file and boot options.</li>
+<li><strong>initrm</strong>: Path to RAM disk, with options and drivers to boot.</li>
+</ul>
+<h2 id="grub2">GRUB2</h2>
+<p>The main difference is that it supports UEFI firmware. It is the most commonly used boot loader for all Linux distributions.</p>
+<p>It inherits the GRUB&rsquo;s nomenclature but partitions start at <code>1</code>, and some other differents as <code>rootnoverify</code> replaced by <code>root</code>.</p>
+<p>GRUB presents a menu where the user can choose from operating systems (OS) found by grub-install. GRUB can be configured to automatically load a specified OS after a user-defined timeout. If the timeout is set to zero seconds, pressing and holding <code>⇧ Shift</code> while the computer is booting makes it possible to access the boot menu.</p>
+<h2 id="configuration">Configuration</h2>
+<p>Configuration menu <strong>cannot be modified manually</strong>. Options are customized in <code>/etc/default/grub</code> and other data are obtained by scripts in <code>/etc/grub.d</code>.</p>
+<p>To generate <code>/boot/grub/grub.cfg</code>, you execute <code>update-grub</code> or <code>grub-mkconfig</code>, and to install grub2 <code>grub-install</code>.</p>
+<h2 id="update-from-grub-to-grub2">Update from GRUB to GRUB2</h2>
+<pre tabindex="0"><code>apt-get install grub2
+nano /etc/default/grub
+update-grub2
+upgrade-from-grub-legacy
+</code></pre><h2 id="grub-recovery">GRUB Recovery</h2>
+<p>You can start from an installation disk, and from <code>Advanced Options</code> you can enter <code>Rescue mode</code> and enter to partition&rsquo;s interpeter that you had previously installed linux.</p>
+<pre tabindex="0"><code>update-grub2
+grub-install /dev/sda
+</code></pre><h2 id="kernel-options">Kernel Options</h2>
+<pre tabindex="0"><code>nano /etc/default/grub
+update-grub2
+</code></pre><ul>
+<li><strong>quiet</strong>: avoid startup messages.</li>
+<li><strong>debug</strong>: see debug messages.</li>
+<li><strong>init</strong>: replace startup program instead of <code>/sbin/init</code> (e.g. <code>init=/bin/bash</code>).</li>
+<li><strong>single</strong>: execute single-user mode.</li>
+<li><strong>root</strong>: define partition that stored root OS.</li>
+<li><strong>RO</strong>/<strong>RW</strong>: read-only.</li>
+<li><strong>mem</strong>: forces RAM amount (e.g. <code>mem=1024M</code>).</li>
+</ul>
+
+
+    
+
+
+                    
+                    <div class="row"><div class="position-relative mx-auto col-lg-9">
+                          <div class="bg-primary overflow-hidden p-3 mt-5 shadow">
+
+    <h4 class="text-white text-center">Read more</h4>
+
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/trevorsmale/cumulus/Linux/" title="Linux"><i class="fas fa-chevron-left p-1"></i>Linux</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/trevorsmale/cumulus/Linux/NIX/" title="NIX">NIX<i class="fas fa-chevron-right p-1"></i></a>
+    </div>
+</div>
+
+
+                        </div></div> 
+
+                </div>
+
+            </div> 
+
+        </div> 
+<script src="https://github.com/trevorsmale/cumuluslib/jquery.min.js"></script> 
+<script src="https://github.com/trevorsmale/cumuluslib/popper.min.js"></script> 
+
+<script src="https://github.com/trevorsmale/cumulusjs/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/auto-complete.js"></script>
+<link href="/trevorsmale/cumulus/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "https:\/\/github.com\/trevorsmale\/cumulus";
+  
+</script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/search.js"></script>
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/favorites.js"></script>
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>

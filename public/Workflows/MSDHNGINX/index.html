@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="description" content="Procedural Workflows">
+    
+    <link rel="canonical" href="https://github.com/trevorsmale/cumulus/Workflows/MSDHNGINX/">
+
+    <title>
+        
+        Multi-Site Single Server | TS Tech Notes
+        
+    </title>
+
+    
+    <link href="https://github.com/trevorsmale/cumuluscss/fontawesome.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://github.com/trevorsmale/cumulus/css/ace.min.css">
+
+    
+
+    
+    
+        
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/trevorsmale/cumulus">
+                
+                TS Tech Notes
+            </a>
+        </div>
+        
+    </div>
+    </nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+            <form class="form-inline my-2 my-lg-0 searchbox">
+                <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder="Search">
+            </form>
+
+        
+
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/trevorsmale/cumulus/Workflows/" class="nav-item my-1 parent haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Workflows/"><h6>Work-Flows</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Workflows/MSDHNGINX/" class="nav-item my-1 active">
+                
+                
+                  <a href="/trevorsmale/cumulus/Workflows/MSDHNGINX/" class="nav-link p-0">
+                    Multi-Site Single Server
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Workflows/Gitea/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Workflows/Gitea/" class="nav-link p-0">
+                    Private Gitea Server
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Workflows/RSS/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Workflows/RSS/" class="nav-link p-0">
+                    RSS feed
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/WSL2/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/WSL2/"><h6>WSL2</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/AI/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/AI/"><h6>AI</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Azure/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Azure/"><h6>Azure</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Blender-3D/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Blender-3D/"><h6>Blender 3D</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Containers/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Containers/"><h6>Containers</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/GO/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/GO/"><h6>GO</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/GO/Course1/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/GO/Course1/" class="nav-link p-0">
+                    Making Modern Webpages with GO
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/GO/WAILS/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/GO/WAILS/" class="nav-link p-0">
+                    WAILS
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/"><h6>Linux</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+    <li data-nav-id="/trevorsmale/cumulus/Linux/LPI/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/LPI/"><h6>LPI</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/NIX/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/NIX/"><h6>NIX</h6></a>
+        
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#debian-vps-deployment-workflow">Debian VPS deployment workflow</a>
+      <ul>
+        <li><a href="#simple-outline">Simple Outline</a></li>
+        <li><a href="#purchase-domain-name">Purchase Domain Name</a>
+          <ul>
+            <li><a href="#1-simple-as">1. Simple as</a></li>
+          </ul>
+        </li>
+        <li><a href="#rent-virtual-private-server-vps">Rent Virtual Private Server (VPS)</a>
+          <ul>
+            <li><a href="#1-get-a-cheap-vps-with-ipv6--ipv4-addressing">1. Get a cheap VPS with IPV6 &amp; IPV4 addressing</a></li>
+            <li><a href="#2-get-one-with-private-networking">2. Get one with private networking</a></li>
+          </ul>
+        </li>
+        <li><a href="#initial-server-setup">Initial Server Setup</a>
+          <ul>
+            <li><a href="#1-setup-debian-server">1. Setup Debian Server</a></li>
+            <li><a href="#2-copy-ipv4-address-of-serverhost-to-a-record-of-domain-name-host">2. Copy IPV4 address of server/host to A record of Domain name host</a></li>
+            <li><a href="#3-copy-ipv6-address-of-serverhost-to-aaaa-record-of-domain-name-host">3. Copy IPV6 address of server/host to AAAA record of Domain name host</a></li>
+            <li><a href="#4-alter-cname-record-to-include-a-redirect-when-www-is-excluded">4. Alter CNAME record to include a redirect when WWW is excluded</a></li>
+            <li><a href="#5-test-this-configuration-by-pinging-the-domain-name-one-should-see-the-ip-address-for-the-host-server">5. Test this configuration by pinging the domain name. One should see the IP address for the host server</a></li>
+            <li><a href="#6-ssh-login-as-root-user">6. SSH login as ROOT user</a></li>
+            <li><a href="#7-generate-an-ssh-key-pair-with-ssh-keygen-locally">7. Generate an SSH key pair with SSH-keygen (Locally)</a></li>
+            <li><a href="#8-copy-public-key-to-server">8. Copy public key to server:</a></li>
+            <li><a href="#9-on-server">9. On server:</a></li>
+            <li><a href="#10-alter-ssh-config-file-to-express-the-following-changes">10. Alter SSH Config file to express the following changes:</a></li>
+            <li><a href="#11-reboot-ssh">11. Reboot SSH:</a></li>
+            <li><a href="#12-update-server">12. Update server</a></li>
+            <li><a href="#13-install-software">13. Install software</a></li>
+            <li><a href="#14-copy-sites-available-template-to-new-site-fileprofile-for-nginx">14. Copy sites-available template to new site file/profile for NGINX</a></li>
+            <li><a href="#15-edit-this-new-site-fileprofile">15. Edit this new site file/profile:</a></li>
+            <li><a href="#16-symlink-newsite-to-enabled">16. Symlink newsite to enabled</a></li>
+            <li><a href="#17-make-a-directory-for-site">17. Make a directory for site</a></li>
+            <li><a href="#18-writeupload-test-indexhtml-file">18. write/upload test index.html file</a></li>
+            <li><a href="#19-reboot-nginx">19. Reboot NGINX</a></li>
+            <li><a href="#20-get-https-cert-from-certbot">20. Get HTTPS cert from certbot</a></li>
+            <li><a href="#21-agree-to-terms">21. Agree to terms.</a></li>
+            <li><a href="#22-disagree-to-sharing-email">22. Disagree to sharing email.</a></li>
+            <li><a href="#23-choose-what-site-address-get-certs">23. Choose what site address get certs.</a></li>
+            <li><a href="#24-yes-to-redirecting-http-to-https">24. Yes to redirecting HTTP to HTTPS.</a></li>
+            <li><a href="#25-type-in-domain-and-checkconfirm-setup-of-nginx-and-certbot">25. Type in domain and check/confirm setup of nginx and certbot.</a></li>
+            <li><a href="#26-set-up-a-cron-job-to-renew-check-and-renew-certbot-monthly">26. Set up a cron job to renew check and renew certbot monthly</a></li>
+          </ul>
+        </li>
+        <li><a href="#deploy">Deploy</a>
+          <ul>
+            <li><a href="#1-generate-the-hugo-static-output-into-public-folder">1. Generate the HUGO static output into public folder</a></li>
+            <li><a href="#2-copy-local-static-public-folder-to-varwwwnewsite">2. Copy local static public folder to /var/www/newsite</a></li>
+            <li><a href="#3-nginx-should-spot-the-change-and-update-the-site-immediately">3. NGINX should spot the change and update the site immediately</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<div class="d-flex flex-column">
+    <h1 class="js-title">Multi-Site Single Server</h1>
+    <div class="d-flex align-items-center">
+        
+    </div>
+</div>
+
+<hr>
+
+
+
+
+<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-success rounded" style="border-width:4px !important;">
+    <div class="wrap border border-left-0 rounded">
+        
+        <div class="card-header border-0 bg-white pl-3 text-success">
+            <h3>Tried &amp; Tested Workflow</h3>
+        </div>
+        
+        <div class="card-body pt-1">
+            I have used this procedure to setup multiple websites on a single low-cost VPS using Dynamic Hosting with NGINX
+        </div>
+    </div>
+</div>
+
+<h1 id="debian-vps-deployment-workflow">Debian VPS deployment workflow</h1>
+<h2 id="simple-outline">Simple Outline</h2>
+<ul>
+<li>Purchase Domain name.</li>
+<li>Choose a reputable VPS provider.</li>
+<li>Select Debian as the operating system.</li>
+<li>Connect to the VPS via SSH.</li>
+<li>Install necessary packages.</li>
+<li>Configure HTTP server.</li>
+<li>Deploy your application.</li>
+</ul>
+<h2 id="purchase-domain-name">Purchase Domain Name</h2>
+<h3 id="1-simple-as">1. Simple as</h3>
+<h2 id="rent-virtual-private-server-vps">Rent Virtual Private Server (VPS)</h2>
+<h3 id="1-get-a-cheap-vps-with-ipv6--ipv4-addressing">1. Get a cheap VPS with IPV6 &amp; IPV4 addressing</h3>
+<h3 id="2-get-one-with-private-networking">2. Get one with private networking</h3>
+<h2 id="initial-server-setup">Initial Server Setup</h2>
+<h3 id="1-setup-debian-server">1. Setup Debian Server</h3>
+<h3 id="2-copy-ipv4-address-of-serverhost-to-a-record-of-domain-name-host">2. Copy IPV4 address of server/host to A record of Domain name host</h3>
+<h3 id="3-copy-ipv6-address-of-serverhost-to-aaaa-record-of-domain-name-host">3. Copy IPV6 address of server/host to AAAA record of Domain name host</h3>
+<h3 id="4-alter-cname-record-to-include-a-redirect-when-www-is-excluded">4. Alter CNAME record to include a redirect when WWW is excluded</h3>
+<h3 id="5-test-this-configuration-by-pinging-the-domain-name-one-should-see-the-ip-address-for-the-host-server">5. Test this configuration by pinging the domain name. One should see the IP address for the host server</h3>
+<h3 id="6-ssh-login-as-root-user">6. SSH login as ROOT user</h3>
+<h3 id="7-generate-an-ssh-key-pair-with-ssh-keygen-locally">7. Generate an SSH key pair with SSH-keygen (Locally)</h3>
+<h3 id="8-copy-public-key-to-server">8. Copy public key to server:</h3>
+<pre><code>ssh-copy-id -i ~/.ssh/id_rsa.pub root.domainname.com
+</code></pre>
+<h3 id="9-on-server">9. On server:</h3>
+<pre><code>vim etc/ssh/ssh_config
+</code></pre>
+<h3 id="10-alter-ssh-config-file-to-express-the-following-changes">10. Alter SSH Config file to express the following changes:</h3>
+<pre><code>PasswordAuthentication no
+UsePAM no
+ChallengeResponseAuthentication no
+</code></pre>
+<h3 id="11-reboot-ssh">11. Reboot SSH:</h3>
+<pre><code>systemctl restart sshd
+</code></pre>
+<h3 id="12-update-server">12. Update server</h3>
+<pre><code>apt update
+</code></pre>
+<h3 id="13-install-software">13. Install software</h3>
+<pre><code>apt install nginx
+apt install certbot (for https)
+apt install python-certbot-nginx
+</code></pre>
+<h3 id="14-copy-sites-available-template-to-new-site-fileprofile-for-nginx">14. Copy sites-available template to new site file/profile for NGINX</h3>
+<pre><code>cp /etc/nginx/sites-available/default /etc/nginx/sites-available/newsite
+</code></pre>
+<h3 id="15-edit-this-new-site-fileprofile">15. Edit this new site file/profile:</h3>
+<p>vim /etc/nginx/sites-available/newsite</p>
+<pre><code>server {
+    listen 80 ;
+    listen [::]:80 ;
+
+    root /var/www/newsite;
+
+    index index.html index.htm index.nginx-debian.html;
+
+    server_name newsite.com www.newsite.com;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+</code></pre>
+<h3 id="16-symlink-newsite-to-enabled">16. Symlink newsite to enabled</h3>
+<pre><code>ln -s /etc/nginx/sites-available/newsite /etc/nginx/sites-enabled/
+</code></pre>
+<h3 id="17-make-a-directory-for-site">17. Make a directory for site</h3>
+<pre><code>mkdir /var/www/cabin
+</code></pre>
+<h3 id="18-writeupload-test-indexhtml-file">18. write/upload test index.html file</h3>
+<pre><code>vim index.html...
+</code></pre>
+<h3 id="19-reboot-nginx">19. Reboot NGINX</h3>
+<pre><code>systemctl reload nginx
+</code></pre>
+<h3 id="20-get-https-cert-from-certbot">20. Get HTTPS cert from certbot</h3>
+<pre><code>certbot --nginx
+
+enter email
+</code></pre>
+<h3 id="21-agree-to-terms">21. Agree to terms.</h3>
+<h3 id="22-disagree-to-sharing-email">22. Disagree to sharing email.</h3>
+<h3 id="23-choose-what-site-address-get-certs">23. Choose what site address get certs.</h3>
+<h3 id="24-yes-to-redirecting-http-to-https">24. Yes to redirecting HTTP to HTTPS.</h3>
+<h3 id="25-type-in-domain-and-checkconfirm-setup-of-nginx-and-certbot">25. Type in domain and check/confirm setup of nginx and certbot.</h3>
+<h3 id="26-set-up-a-cron-job-to-renew-check-and-renew-certbot-monthly">26. Set up a cron job to renew check and renew certbot monthly</h3>
+<pre><code>root@newsite:/var/www/newsite crontab -e
+
+1 1 1 * * certbot renew
+</code></pre>
+<h2 id="deploy">Deploy</h2>
+<h3 id="1-generate-the-hugo-static-output-into-public-folder">1. Generate the HUGO static output into public folder</h3>
+<pre><code>HUGO
+</code></pre>
+<h3 id="2-copy-local-static-public-folder-to-varwwwnewsite">2. Copy local static public folder to /var/www/newsite</h3>
+<h3 id="3-nginx-should-spot-the-change-and-update-the-site-immediately">3. NGINX should spot the change and update the site immediately</h3>
+
+
+    
+
+
+                    
+                    <div class="row"><div class="position-relative mx-auto col-lg-9">
+                          <div class="bg-primary overflow-hidden p-3 mt-5 shadow">
+
+    <h4 class="text-white text-center">Read more</h4>
+
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/trevorsmale/cumulus/Workflows/" title="Work-Flows"><i class="fas fa-chevron-left p-1"></i>Work-Flows</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/trevorsmale/cumulus/Workflows/Gitea/" title="Private Gitea Server">Private Gitea Server<i class="fas fa-chevron-right p-1"></i></a>
+    </div>
+</div>
+
+
+                        </div></div> 
+
+                </div>
+
+            </div> 
+
+        </div> 
+<script src="https://github.com/trevorsmale/cumuluslib/jquery.min.js"></script> 
+<script src="https://github.com/trevorsmale/cumuluslib/popper.min.js"></script> 
+
+<script src="https://github.com/trevorsmale/cumulusjs/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/auto-complete.js"></script>
+<link href="/trevorsmale/cumulus/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "https:\/\/github.com\/trevorsmale\/cumulus";
+  
+</script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/search.js"></script>
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/favorites.js"></script>
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>

@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html><head>
-	<meta name="generator" content="Hugo 0.92.2" />
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <meta name="description" content="Landing Page">
+    <meta name="description" content="Procedural Workflows">
     
-    <link rel="alternate" type="application/rss+xml" href="https://github.com/trevorsmale/cumulus/index.xml" title="TS Tech Notes" />
-    <link rel="canonical" href="https://github.com/trevorsmale/cumulus/">
+    <link rel="canonical" href="https://github.com/trevorsmale/cumulus/Workflows/RSS/">
 
     <title>
         
-        Home | TS Tech Notes
+        RSS feed | TS Tech Notes
         
     </title>
 
@@ -40,9 +38,6 @@
         </div>
         
     </div>
-    <div class="feed-icons">
-            <a href="https://github.com/trevorsmale/cumulus/index.xml"><img src="/img/feed-icon.svg" alt="RSS feed" /></a>
-        </div>
     </nav>
 <div class="container-fluid">
             <div class="row">
@@ -60,7 +55,7 @@
         
 
          <ul class="navbar-nav flex-column pt-3">
-    <li data-nav-id="/trevorsmale/cumulus/Workflows/" class="nav-item my-1 haschildren
+    <li data-nav-id="/trevorsmale/cumulus/Workflows/" class="nav-item my-1 parent haschildren
         ">
         
         
@@ -83,7 +78,7 @@
                   </a>
                 
         </li>
-        <li data-nav-id="/trevorsmale/cumulus/Workflows/RSS/" class="nav-item my-1">
+        <li data-nav-id="/trevorsmale/cumulus/Workflows/RSS/" class="nav-item my-1 active">
                 
                 
                   <a href="/trevorsmale/cumulus/Workflows/RSS/" class="nav-link p-0">
@@ -183,95 +178,111 @@
 
 </div>
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
-	<nav id="TableOfContents"></nav>
+	<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#function">Function</a></li>
+        <li><a href="#how-an-rss-feed-works">How an RSS Feed Works</a></li>
+        <li><a href="#writing-an-rss-feed">Writing an RSS Feed</a></li>
+        <li><a href="#title-description-and-link">Title, Description, and Link</a></li>
+        <li><a href="#feed-items">Feed Items</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 </div>
 </div>
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
-	
 
-	<h1>Home</h1>
-
-	<p class="lead">
-    Welcome to my organized collection of notes! This website houses my extensive collection of Markdown notes. By moving them online, I can access them conveniently from any device. I also believe others will find valuable information here. To better manage a large number of Markdown files, I&rsquo;ve migrated my notes to GO &amp; HUGO. This transition improves organization and simplifies navigation. Feel free to explore and benefit from the resources available. Enjoy!
-</p>
+<div class="d-flex flex-column">
+    <h1 class="js-title">RSS feed</h1>
+    <div class="d-flex align-items-center">
+        
+    </div>
+</div>
 
 <hr>
 
 
-<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-danger rounded" style="border-width:4px !important;">
-    <div class="wrap border border-left-0 rounded">
-        
-        <div class="card-header border-0 bg-white pl-3 text-danger">
-            <h3>WIP</h3>
-        </div>
-        
-        <div class="card-body pt-1">
-            This site is a work in progress, notes are being actively added, formatted and reorganized at the moment.
-        </div>
-    </div>
-</div>
-
 
 
 <div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-success rounded" style="border-width:4px !important;">
     <div class="wrap border border-left-0 rounded">
         
         <div class="card-header border-0 bg-white pl-3 text-success">
-            <h3>In Progress</h3>
+            <h3>Tried &amp; Tested Workflow</h3>
         </div>
         
         <div class="card-body pt-1">
-            <ul>
-<li>2023 05 31 - Transfering and formatting LPIC index</li>
-</ul>
-
+            I have used this procedure to setup multiple websites on a single low-cost VPS using Dynamic Hosting with NGINX
         </div>
     </div>
 </div>
 
+<h2 id="function">Function</h2>
+<p>RSS feeds are an easy way to be notified about new content from various
+websites, and they are easy to implement in your website.</p>
+<h2 id="how-an-rss-feed-works">How an RSS Feed Works</h2>
+<p>Some websites with frequently changing content like blogs, podcasts, or
+video sharing sites, will have a link to a file containing the RSS feed
+and its items.</p>
+<p>When there is new content, a new item can be added to the RSS feed, and
+old items can optionally be removed from the RSS feed. A user's feed
+reader can check an RSS feed for new items and notify the user about
+them or organize them.</p>
+<h2 id="writing-an-rss-feed">Writing an RSS Feed</h2>
+<p>RSS feeds are written as XML (e<strong>x</strong>tensible <strong>m</strong>arkup <strong>l</strong>anguage)
+files, so they can be written and served similar to HTML webpages.</p>
+<p>We will start by creating a file for our RSS feed. Make sure the file
+name ends with <code>.rss</code> or <code>.xml</code>. Then, write the following code in the
+file:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34; ?&gt;</span>
+<span class="nt">&lt;rss</span> <span class="na">version=</span><span class="s">&#34;2.0&#34;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;channel&gt;</span>
+    <span class="nt">&lt;/channel&gt;</span>
+<span class="nt">&lt;/rss&gt;</span>
+</code></pre></div><p>The <code>&lt;rss&gt;</code> tag specifies that there is an RSS feed in between the
+<code>&lt;rss&gt;</code> and <code>&lt;/rss&gt;</code> tags. <code>version=&quot;2.0&quot;</code> specifies that version 2.0 of
+RSS is used. The items in an RSS feed go in between the <code>&lt;channel&gt;</code> and
+<code>&lt;/channel&gt;</code> tags.</p>
+<h2 id="title-description-and-link">Title, Description, and Link</h2>
+<p>Now we will write a title and description for our RSS feed, as well as a
+link to the webpage that the RSS feed goes with. In this example, we
+will be writing an RSS feed for a blog called <strong>Trevor's Blog</strong>.</p>
+<p>In between the <code>&lt;channel&gt;</code> and <code>&lt;/channel&gt;</code> tags, the <code>&lt;title&gt;</code> tag will
+be used to label the feed as <strong>Trevor's Blog</strong>. The <code>&lt;description&gt;</code>
+and <code>&lt;link&gt;</code> tags are used for the description of the feed and a link to
+the corresponding webpage.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;channel&gt;</span>
+   <span class="nt">&lt;title&gt;</span>Trevor&#39;s Blog<span class="nt">&lt;/title&gt;</span>
+   <span class="nt">&lt;description&gt;</span>Trevor&#39;s writings and ideas<span class="nt">&lt;/description&gt;</span>
+   <span class="nt">&lt;link&gt;</span>https://example.org/blog<span class="nt">&lt;/link&gt;</span>
+<span class="nt">&lt;/channel&gt;</span>
+</code></pre></div><p>&lt; img src=&quot;/pix/rss-01.png&quot; alt=&ldquo;Trevor&rsquo;s blog feed&rdquo; link=&quot;/pix/rss-01.png&quot; &gt;</p>
+<h2 id="feed-items">Feed Items</h2>
+<p>Now we will add items to the RSS feed. These items are listed in the
+user's feed reader and can represent different content on a page such
+as blog posts or videos. In this example, there is a blog post called
+<strong>RSS is simple!</strong>.</p>
+<p>The <code>&lt;item&gt;</code> tag is used to add items to the RSS feed. An item is given
+a title using the <code>&lt;title&gt;</code> tag to label the item. The item will have a
+link to its webpage using the <code>&lt;link&gt;</code> tag and an item description using
+the <code>&lt;description&gt;</code> tag.</p>
+<p>The date and time of an item can be specified using the <code>&lt;pubDate&gt;</code> tag.
+The date and time <strong>must follow a specific format</strong>. In the example
+below, the item was posted on <strong>Friday, November 6, 2023 at 4:45 PM in
+the -0400 time zone</strong>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;item&gt;</span>
+	<span class="nt">&lt;title&gt;</span>RSS is simple!<span class="nt">&lt;/title&gt;</span>
+	<span class="nt">&lt;link&gt;</span>https://example.org/blog/2023-11-2-rss<span class="nt">&lt;/link&gt;</span>
+	<span class="nt">&lt;description&gt;</span>RSS is a good notification system.<span class="nt">&lt;/description&gt;</span>
+	<span class="nt">&lt;pubDate&gt;</span>Fri, 1 Oct 2023 16:29:00 -0500<span class="nt">&lt;/pubDate&gt;</span>
+ <span class="nt">&lt;/item&gt;</span>
+</code></pre></div>
 
-
-<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-success rounded" style="border-width:4px !important;">
-    <div class="wrap border border-left-0 rounded">
-        
-        <div class="card-header border-0 bg-white pl-3 text-success">
-            <h3>Update Log</h3>
-        </div>
-        
-        <div class="card-body pt-1">
-            <ul>
-<li>2023 05 31 - Transfered and formatted AI index</li>
-<li>2023 05 31 - Transfered and formatted Containers index</li>
-<li>2023 05 31 - Transfered and formatted NIX index</li>
-<li>2023 05 31 - Transfered and formatted Azure index</li>
-<li>2023 05 31 - Transfered and formatted Linux index</li>
-<li>2023 05 31 - Transfered and formatted GO index</li>
-<li>2023 05 31 - Transfered and formatted Blender 3D index</li>
-</ul>
-
-        </div>
-    </div>
-</div>
-
-
-
-<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-info rounded" style="border-width:4px !important;">
-    <div class="wrap border border-left-0 rounded">
-        
-        <div class="card-header border-0 bg-white pl-3 text-info">
-            <h3>Open to Pull Requests &amp; Issues</h3>
-        </div>
-        
-        <div class="card-body pt-1">
-            If anyone finds a typo, wants to add something or make a suggestion, I am open to pull requests.
-<a href="http://www.github.com/trevorsmale/cumulus">www.github.com/trevorsmale/cumulus</a>
-        </div>
-    </div>
-</div>
-
-
-	
+    
 
 
                     
@@ -280,7 +291,8 @@
 
     <h4 class="text-white text-center">Read more</h4>
 
-    <div class="d-flex justify-content-center"><a class="p-1 ml-3 d-inline-block text-white text-right" href="/trevorsmale/cumulus/Workflows/" title="Work-Flows">Work-Flows<i class="fas fa-chevron-right p-1"></i></a>
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/trevorsmale/cumulus/Workflows/Gitea/" title="Private Gitea Server"><i class="fas fa-chevron-left p-1"></i>Private Gitea Server</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/trevorsmale/cumulus/WSL2/" title="WSL2">WSL2<i class="fas fa-chevron-right p-1"></i></a>
     </div>
 </div>
 
