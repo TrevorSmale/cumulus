@@ -10,8 +10,25 @@ Welcome to my organized collection of notes! This website houses my extensive co
 
 ---
 
-{{< panel title="WIP" style="danger" >}}
+{{< panel title="Search Function Not Working" style="danger" >}}
+
+#### This site is a WIP
+
 This site is a work in progress, notes are being actively added, formatted and reorganized at the moment.
+
+#### Items in progress:
+
+* Transfering and formatting LPIC index
+
+#### To-Do:
+
+* Ansible
+* NGINX
+* MySQL
+* PostGresql
+* WASM
+* HTML
+
 {{< /panel >}}
 
 {{< panel title="In Progress" style="success" >}}
@@ -32,10 +49,20 @@ This site is a work in progress, notes are being actively added, formatted and r
 
 ---
 
-* 2023 06 02 - Transfered and formatted Blender Intro Course Notes
-* 2023 06 02 - Created WSL2 index 
-* 2023 06 02 - Transfered and formatted Blender GO Notes
-* 2023 06 02 - Created Tools index
+* 2023 06 01 - Transfered and formatted Blender Intro Course Notes
+* 2023 06 01 - Created WSL2 index 
+* 2023 06 01 - Transfered and formatted Blender GO Notes
+* 2023 06 01 - Created Tools index
+
+---
+
+* 2023 06 02 - Created CSS index
+* 2023 06 02 - Created JS index
+* 2023 06 02 - Created EE index
+* 2023 06 02 - Created VIM index
+* 2023 06 02 - Created RSYNC index
+
+---
 
 {{< /panel >}}
 

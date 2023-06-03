@@ -4,6 +4,12 @@ date: 2023-05-29T18:31:10-04:00
 draft: false
 ---
 
+{{< panel title="Update Log" style="success" >}}
+
+* 2023 06 01 - Initial Commit
+
+{{< /panel >}}
+
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    class="ionicon"
@@ -122,6 +128,8 @@ Let’s now update our main function so that our Articles variable is populated 
 
 Perfect, let’s now move on to creating our /articles endpoint which will return all of the articles that we’ve just defined here.
 
+---
+
 ## Go Packaging Modules
 
 1. Initialize a new go module
@@ -141,6 +149,10 @@ Perfect, let’s now move on to creating our /articles endpoint which will retur
     }
 
 4. Commit to github
+
+<a href="#top" class="back-to-top">Back to Top</a>
+
+---
 
 ## Routers
 
@@ -247,6 +259,10 @@ Let’s use this key value to return the specific article that matches that key.
             }
         }
     }
+
+<a href="#top" class="back-to-top">Back to Top</a>
+
+---
 
 ## Binaries
 
