@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on TS Tech Notes</title>
+    <title>Home on Trevor Smale&#39; Notes</title>
     <link>https://github.com/trevorsmale/cumulus/</link>
-    <description>Recent content in Home on TS Tech Notes</description>
+    <description>Recent content in Home on Trevor Smale&#39; Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 29 May 2023 18:31:10 -0400</lastBuildDate><atom:link href="https://github.com/trevorsmale/cumulus/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -35,14 +35,121 @@ How an RSS Feed Works Some websites with frequently changing content like blogs,
     </item>
     
     <item>
-      <title>Making Modern Webpages with GO</title>
+      <title>Ansible</title>
+      <link>https://github.com/trevorsmale/cumulus/Linux/redhat/Ansible/</link>
+      <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/Linux/redhat/Ansible/</guid>
+      <description>Update Log   2023 06 05 - Initial Commit     Overview Ansible is an open-source automation platform that simplifies IT infrastructure provisioning, configuration management, and application deployment. It allows users to define infrastructure as code using simple, human-readable YAML files, making it easier to automate complex tasks and streamline IT operations.
+History Ansible was created by Michael DeHaan in 2012 and was later acquired by Red Hat (now part of IBM).</description>
+    </item>
+    
+    <item>
+      <title>AZ-104</title>
+      <link>https://github.com/trevorsmale/cumulus/Azure/Certifications/AZ104/</link>
+      <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/Azure/Certifications/AZ104/</guid>
+      <description>Update Log   2023 06 05 - Initial Commit     AZ 104 TOPICS Azure Active Directory (Azure AD) Azure AD is a cloud-based identity and access management service provided by Microsoft Azure. It serves as the foundation for managing user identities and controlling access to Azure resources. Azure AD allows you to create and manage user accounts, groups, and guest accounts. With Azure AD, you can implement single sign-on (SSO) for seamless access to various applications and services.</description>
+    </item>
+    
+    <item>
+      <title>Beginner Boost</title>
+      <link>https://github.com/trevorsmale/cumulus/Linux/TC/Skilstak/BB/</link>
+      <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/Linux/TC/Skilstak/BB/</guid>
+      <description>Update Log   2023 06 05 - Initial Commit     Extracted Content  This is material extracted from [Skilstak.io](Skilstak Page) Interspersed with my own notes as the course progresses    2023 Boost overview Here&amp;rsquo;s what we currently plan to cover over approximately 32 weeks in 2023 with an estimated completion date sometime in December based on two hours per week
+  Become an autodidact: learn to manage your own learning.</description>
+    </item>
+    
+    <item>
+      <title>Cron</title>
+      <link>https://github.com/trevorsmale/cumulus/Linux/Cron/</link>
+      <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/Linux/Cron/</guid>
+      <description>Update Log   2023 06 02 - Initial Commit     Overview UNIX cron is a time-based job scheduling system used in UNIX-like operating systems to automate recurring tasks or jobs. It allows users to schedule commands or scripts to run at specific intervals, such as minutes, hours, days, or months. Cron jobs are created and managed using the cron daemon.
+Here are some key components and concepts related to UNIX cron:</description>
+    </item>
+    
+    <item>
+      <title>Essentials</title>
+      <link>https://github.com/trevorsmale/cumulus/Linux/TC/LPI/ESENT/</link>
+      <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/Linux/TC/LPI/ESENT/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Intro Course</title>
+      <link>https://github.com/trevorsmale/cumulus/Blender-3D/Intro-Course/</link>
+      <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/Blender-3D/Intro-Course/</guid>
+      <description>&amp;lt;sodipodi:namedview id=&amp;ldquo;namedview55&amp;rdquo; pagecolor=&amp;quot;#ffffff&amp;quot; bordercolor=&amp;quot;#000000&amp;quot; borderopacity=&amp;ldquo;0.25&amp;rdquo; inkscape:showpageshadow=&amp;ldquo;2&amp;rdquo; inkscape:pageopacity=&amp;ldquo;0.0&amp;rdquo; inkscape:pagecheckerboard=&amp;ldquo;0&amp;rdquo; inkscape:deskcolor=&amp;quot;#d1d1d1&amp;quot; showgrid=&amp;ldquo;false&amp;rdquo; inkscape:zoom=&amp;ldquo;0.73681641&amp;rdquo; inkscape:cx=&amp;ldquo;1023.3214&amp;rdquo; inkscape:cy=&amp;ldquo;10.857522&amp;rdquo; inkscape:window-width=&amp;ldquo;3840&amp;rdquo; inkscape:window-height=&amp;ldquo;2066&amp;rdquo; inkscape:window-x=&amp;quot;-11&amp;quot; inkscape:window-y=&amp;quot;-11&amp;quot; inkscape:window-maximized=&amp;ldquo;1&amp;rdquo; inkscape:current-layer=&amp;ldquo;g51&amp;rdquo; /&amp;gt;           ®     
+Hugo Image Issue  Fix Bug relating to png image references    Hardware Requirements Blender Foundation recommendations Blender does have some special hardware requirements that may not be satisfied by the average computer.</description>
+    </item>
+    
+    <item>
+      <title>LPIC 1 Certification</title>
+      <link>https://github.com/trevorsmale/cumulus/Linux/TC/LPI/LPIC1/</link>
+      <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/Linux/TC/LPI/LPIC1/</guid>
+      <description>Update Log   2023 06 05 - Initial Commit     LPIC-1 Notes Objectives 101.1 Determine and configure hardware settings Should be able to determine and configure fundamental system hardware.
+Key knowledge Areas  Enable and disable integrated peripherals. Differentiate between various types of mass storage devices. Determine hardware resources for devices. Tools and utilities to list various hardware information (e.g. lsub, lspci`, etc.). Tools and utilities to manipulate USB devices.</description>
+    </item>
+    
+    <item>
+      <title>Making Modern Applications with GO</title>
       <link>https://github.com/trevorsmale/cumulus/GO/Course1/</link>
       <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
       
       <guid>https://github.com/trevorsmale/cumulus/GO/Course1/</guid>
-      <description>Course Overview Learn to write modern, fast, and secure web applications in Google&amp;rsquo;s Go programming language, and learn it from an award winning University professor with 20 years of teaching experience, and 20 years of experience working in the industry as an entrepreneur.
-This course is well-suited for both absolute beginners, and for developers who already know something about web development, but want to add Go to their toolbox.
-We start with an overview of the Go language, and then cover everything you need to get started writing web applications, including an overview of HTML5, a survey of JavaScript and JavaScript modules, how to work with Cascading Style Sheets to make our application look the way we want, and much more.</description>
+      <description>Update Log   2023 06 01 - Initial Commit     &amp;lt;sodipodi:namedview id=&amp;ldquo;namedview1234&amp;rdquo; pagecolor=&amp;quot;#ffffff&amp;quot; bordercolor=&amp;quot;#000000&amp;quot; borderopacity=&amp;ldquo;0.25&amp;rdquo; inkscape:showpageshadow=&amp;ldquo;2&amp;rdquo; inkscape:pageopacity=&amp;ldquo;0.0&amp;rdquo; inkscape:pagecheckerboard=&amp;ldquo;0&amp;rdquo; inkscape:deskcolor=&amp;quot;#d1d1d1&amp;quot; showgrid=&amp;ldquo;false&amp;rdquo; inkscape:zoom=&amp;ldquo;2.0058594&amp;rdquo; inkscape:cx=&amp;ldquo;301.61635&amp;rdquo; inkscape:cy=&amp;ldquo;257.74488&amp;rdquo; inkscape:window-width=&amp;ldquo;2802&amp;rdquo; inkscape:window-height=&amp;ldquo;1694&amp;rdquo; inkscape:window-x=&amp;ldquo;4435&amp;rdquo; inkscape:window-y=&amp;ldquo;132&amp;rdquo; inkscape:window-maximized=&amp;ldquo;0&amp;rdquo; inkscape:current-layer=&amp;ldquo;svg1232&amp;rdquo; /&amp;gt;Backspacerdf:RDF&amp;lt;cc:Work rdf:about=&amp;quot;&amp;quot;&amp;gt;dc:titleBackspace&amp;lt;/dc:title&amp;gt;&amp;lt;/cc:Work&amp;gt;&amp;lt;/rdf:RDF&amp;gt;
+Course Overview Learn to write modern, fast, and secure web applications in Google&amp;rsquo;s Go programming language, and learn it from an award winning University professor with 20 years of teaching experience, and 20 years of experience working in the industry as an entrepreneur.</description>
+    </item>
+    
+    <item>
+      <title>OpenShift</title>
+      <link>https://github.com/trevorsmale/cumulus/Linux/redhat/OpenShift/</link>
+      <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/Linux/redhat/OpenShift/</guid>
+      <description>Update Log   2023 06 05 - Initial Commit     Overview OpenShift is a Kubernetes-based open-source container platform developed by Red Hat (now part of IBM). It provides a complete containerized application platform, offering features for container orchestration, scalability, security, and automation. OpenShift simplifies the process of deploying, managing, and scaling containerized applications in the cloud or on-premises environments.
+History OpenShift originated from the open-source project called &amp;ldquo;Origin,&amp;rdquo; which was initiated by Red Hat in 2011.</description>
+    </item>
+    
+    <item>
+      <title>R-Sync</title>
+      <link>https://github.com/trevorsmale/cumulus/Linux/Rsync/</link>
+      <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/Linux/Rsync/</guid>
+      <description>Update Log   2023 06 02 - Initial Commit     Overview A backup and copy software Transfer files over SSH. Only transfer the files that have changes or are missing. Much faster and secure than FTP.
+Options -a # Recursion and preserve everything. -v # Transfer log. -h # Display the output numbers in a human-readable format. -e # Specify remote shell. -W # Copy whole file, without checking for changes.</description>
+    </item>
+    
+    <item>
+      <title>SSH</title>
+      <link>https://github.com/trevorsmale/cumulus/Linux/SSH/</link>
+      <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/Linux/SSH/</guid>
+      <description>Update Log   2023 06 02 - Initial Commit      What is SSH? SSH is a cryptographic network protocol that allows secure communication between networked devices. It was developed as a replacement for Telnet, which sends all data, including passwords, in clear text, making it susceptible to eavesdropping and interception.
+SSH provides encryption and authentication mechanisms to protect the confidentiality and integrity of network communications.</description>
+    </item>
+    
+    <item>
+      <title>Stringer</title>
+      <link>https://github.com/trevorsmale/cumulus/Project/Stringer/</link>
+      <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/Project/Stringer/</guid>
+      <description>Stringer Word Processor A low-tech digital word processing unit Stringer is a bespoke small form factor lo-tech computer purpose built for offline pros drafting. Stringer refers to the process of stringing words, sentences and paragraphs together.
+Overview I am interested in creating dedicated devices, machines that are assembled and configured for a single task. While creating a digital typewriter like Stringer may not be a new idea, I am confident in my ability to conduct thorough research on the topic and arrive at unique ideas and thoughtful design decisions.</description>
     </item>
     
     <item>
@@ -52,6 +159,15 @@ We start with an overview of the Go language, and then cover everything you need
       
       <guid>https://github.com/trevorsmale/cumulus/GO/WAILS/</guid>
       <description>Overview A tool for running cross platform applications using Go and JS Wails Features  Native Menus, Dialogs, Theming and Translucency Windows, macOS and linux support Built in templates for Svelte, React, Preact, Vue, Lit and Vanilla JS Easily call Go methods from JavaScript Automatic Go struct to TypeScript model generation No CGO or external DLLs required on Windows Live development mode using the power of Vite Powerful CLI to easily Create, Build and Package applications A rich runtime library Applications built with Wails are Apple &amp;amp; Microsoft Store compliant  Feature Notes Quick Start Templates Wails comes with a number of pre-configured templates that allow you to get your application up and running quickly.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://github.com/trevorsmale/cumulus/Linux/SSHT/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/Linux/SSHT/</guid>
+      <description></description>
     </item>
     
   </channel>

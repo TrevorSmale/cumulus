@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="description" content="JavaScript Notes">
+    
+    <link rel="alternate" type="application/rss+xml" href="https://github.com/trevorsmale/cumulus/JavaScript/index.xml" title="Trevor Smale' Notes" />
+    <link rel="canonical" href="https://github.com/trevorsmale/cumulus/JavaScript/">
+
+    <title>
+        
+        JavaScript | Trevor Smale&#39; Notes
+        
+    </title>
+
+    
+    <link href="https://github.com/trevorsmale/cumuluscss/fontawesome.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://github.com/trevorsmale/cumulus/css/ace.min.css">
+
+    
+
+    
+    
+        
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/trevorsmale/cumulus">
+                
+                Trevor Smale&#39; Notes
+            </a>
+        </div>
+        
+    </div>
+    <div class="feed-icons">
+            <a href="https://github.com/trevorsmale/cumulus/JavaScript/index.xml"><img src="/img/feed-icon.svg" alt="RSS feed" /></a>
+        </div>
+    </nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+            <form class="form-inline my-2 my-lg-0 searchbox">
+                <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder="Search">
+            </form>
+
+        
+
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/trevorsmale/cumulus/JavaScript/" class="nav-item my-1 parent active
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/JavaScript/"><h6>JavaScript</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Kubernetes/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Kubernetes/"><h6>Kubernetes</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Tools/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Tools/"><h6>Tools</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Workflows/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Workflows/"><h6>Work-Flows</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Workflows/MSDHNGINX/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Workflows/MSDHNGINX/" class="nav-link p-0">
+                    Multi-Site Single Server
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Workflows/Gitea/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Workflows/Gitea/" class="nav-link p-0">
+                    Private Gitea Server
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Workflows/RSS/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Workflows/RSS/" class="nav-link p-0">
+                    RSS feed
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/WSL2/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/WSL2/"><h6>WSL2</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/AI/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/AI/"><h6>AI</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Azure/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Azure/"><h6>Azure</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+    <li data-nav-id="/trevorsmale/cumulus/Azure/Certifications/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Azure/Certifications/"><h6>Azure Certifications</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Azure/Certifications/AZ104/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Azure/Certifications/AZ104/" class="nav-link p-0">
+                    AZ-104
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Blender-3D/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Blender-3D/"><h6>Blender 3D</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Blender-3D/Intro-Course/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Blender-3D/Intro-Course/" class="nav-link p-0">
+                    Intro Course
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Containers/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Containers/"><h6>Containers</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/CSS/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/CSS/"><h6>CSS</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Electronics/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Electronics/"><h6>Electronics</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/GO/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/GO/"><h6>GO</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/GO/Course1/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/GO/Course1/" class="nav-link p-0">
+                    Making Modern Applications with GO
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/GO/WAILS/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/GO/WAILS/" class="nav-link p-0">
+                    WAILS
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/"><h6>Linux</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Linux/Cron/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/Cron/" class="nav-link p-0">
+                    Cron
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Linux/Rsync/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/Rsync/" class="nav-link p-0">
+                    R-Sync
+                  </a>
+                
+        </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/redhat/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/redhat/"><h6>RedHat</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Linux/redhat/Ansible/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/redhat/Ansible/" class="nav-link p-0">
+                    Ansible
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Linux/redhat/OpenShift/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/redhat/OpenShift/" class="nav-link p-0">
+                    OpenShift
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+        <li data-nav-id="/trevorsmale/cumulus/Linux/SSH/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/SSH/" class="nav-link p-0">
+                    SSH
+                  </a>
+                
+        </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/TC/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/TC/"><h6>Training &amp; Certifications</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+    <li data-nav-id="/trevorsmale/cumulus/Linux/TC/LPI/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/TC/LPI/"><h6>Linux Professional Institute (LPI)</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Linux/TC/LPI/ESENT/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/TC/LPI/ESENT/" class="nav-link p-0">
+                    Essentials
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Linux/TC/LPI/LPIC1/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/TC/LPI/LPIC1/" class="nav-link p-0">
+                    LPIC 1 Certification
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/TC/Skilstak/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/TC/Skilstak/"><h6>SkilStak</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Linux/TC/Skilstak/BB/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/TC/Skilstak/BB/" class="nav-link p-0">
+                    Beginner Boost
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/NIX/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/NIX/"><h6>NIX</h6></a>
+        
+    </li>
+        <li data-nav-id="/trevorsmale/cumulus/Linux/SSHT/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/SSHT/" class="nav-link p-0">
+                    
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/LOG/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/LOG/"><h6>LogBook</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Project/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Project/"><h6>Project</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Project/Stringer/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Project/Stringer/" class="nav-link p-0">
+                    Stringer
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/VIM/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/VIM/"><h6>VIM</h6></a>
+        
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#how-i-learned-javascript">How I learned JavaScript</a></li>
+        <li><a href="#freecodecamp-course-description">FreeCodeCamp Course Description</a></li>
+        <li><a href="#heading"></a></li>
+        <li><a href="#variables">Variables</a>
+          <ul>
+            <li><a href="#declare-javascript-variables">Declare JavaScript Variables</a></li>
+            <li><a href="#declaring-a-sting-variable">Declaring a sting variable</a></li>
+            <li><a href="#initializing-variable-with-the-assignment-operator">Initializing Variable with the Assignment Operator</a></li>
+            <li><a href="#declare-string-variables">Declare String Variables</a></li>
+            <li><a href="#understanding-uninitialized-variables">Understanding Uninitialized Variables</a></li>
+          </ul>
+        </li>
+        <li><a href="#camelcase">Camelcase</a></li>
+        <li><a href="#js-mathematics">JS mathematics</a></li>
+        <li><a href="#golf-script">Golf script</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<div class="d-flex flex-column">
+    <h1 class="js-title">JavaScript</h1>
+    <div class="d-flex align-items-center">
+        
+    </div>
+</div>
+
+<hr>
+
+
+<p class="lead">
+    JavaScript is a versatile and widely used programming language that primarily runs on web browsers. It enables interactive and dynamic elements on websites, providing functionalities like validating forms, creating animations, and handling user interactions. JavaScript is also utilized in server-side development, allowing the creation of web applications and APIs. Its syntax is easy to learn and read, making it accessible for beginners. JavaScript&rsquo;s extensive ecosystem includes libraries and frameworks like React, Angular, and Node.js, empowering developers to build robust and scalable applications. With its cross-platform compatibility and continuous growth, JavaScript has become a fundamental language for both front-end and back-end web development.
+</p>
+
+<hr>
+
+
+<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-danger rounded" style="border-width:4px !important;">
+    <div class="wrap border border-left-0 rounded">
+        
+        <div class="card-header border-0 bg-white pl-3 text-danger">
+            <h3>WIP</h3>
+        </div>
+        
+        <div class="card-body pt-1">
+            This site is a work in progress, notes are being actively added, formatted and reorganized at the moment.
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-danger rounded" style="border-width:4px !important;">
+    <div class="wrap border border-left-0 rounded">
+        
+        <div class="card-header border-0 bg-white pl-3 text-danger">
+            <h3>FreeCodeCamp Code of Conduct</h3>
+        </div>
+        
+        <div class="card-body pt-1">
+            <p>Before we issue our verified certification to a camper, he or she must accept our Academic Honesty Pledge, which reads:</p>
+<p>&ldquo;I understand that plagiarism means copying someone else’s work and presenting the work as if it were my own, without clearly attributing the original author.</p>
+<p>&ldquo;I understand that plagiarism is an act of intellectual dishonesty, and that people usually get kicked out of university or fired from their jobs if they get caught plagiarizing.</p>
+<p>&ldquo;Aside from using open source libraries such as jQuery and Bootstrap, and short snippets of code which are clearly attributed to their original author, 100% of the code in my projects was written by me, or along with another camper with whom I was pair programming in real time.</p>
+<p>&ldquo;I pledge that I did not plagiarize any of my freeCodeCamp work. I understand that freeCodeCamp’s team will audit my projects to confirm this.&rdquo;</p>
+<p>In the situations where we discover instances of unambiguous plagiarism, we will replace the camper in question’s certification with a message that &ldquo;Upon review, this account has been flagged for academic dishonesty.&rdquo;</p>
+<p>As an academic institution that grants achievement-based certifications, we take academic honesty very seriously. If you have any questions about this policy, or suspect that someone has violated it, you can email <a href="mailto:team@freecodecamp.org">team@freecodecamp.org</a> and we will investigate.</p>
+
+        </div>
+    </div>
+</div>
+
+<h2 id="how-i-learned-javascript">How I learned JavaScript</h2>
+<p>JavaScript was and is confusing to learn, I still struggle with numerous aspects of the language. However, it is essential when it comes to Front End interaction. I have taken and finished a number of FreeCodeCamp courses as part of my self directed study and found The JS Course chalenging and informative. I will likely refer back to it in the future, because it is well structured and available.</p>
+<h2 id="freecodecamp-course-description">FreeCodeCamp Course Description</h2>
+<p>While HTML and CSS control the content and styling of a page, JavaScript is used to make it interactive. In the JavaScript Algorithm and Data Structures Certification, you&rsquo;ll learn the fundamentals of JavaScript including variables, arrays, objects, loops, and functions.</p>
+<p>Once you have the fundamentals down, you&rsquo;ll apply that knowledge by creating algorithms to manipulate strings, factorialize numbers, and even calculate the orbit of the International Space Station.</p>
+<p>Along the way, you&rsquo;ll also learn two important programming styles or paradigms: Object Oriented Programming (OOP) and Functional Programming (FP).</p>
+<h2 id="heading"></h2>
+
+
+<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-danger rounded" style="border-width:4px !important;">
+    <div class="wrap border border-left-0 rounded">
+        
+        <div class="card-header border-0 bg-white pl-3 text-danger">
+            <h3>Spoiler Alert!</h3>
+        </div>
+        
+        <div class="card-body pt-1">
+            <h2 id="personal-learning-notes">Personal Learning Notes</h2>
+<p>Some of this material is copied and pasted from some of the modules in the course in combination with my own notes.
+Be aware that I might be giving away some of the answers, so if you are adhering the the Academic Honesty Policy posted by FCC, overt your eyes.
+        </div>
+    </div>
+</div>
+
+<h2 id="variables">Variables</h2>
+<p>Variables can container many different data types</p>
+<h3 id="declare-javascript-variables">Declare JavaScript Variables</h3>
+<p>In computer science, data is anything that is meaningful to the computer. JavaScript provides eight different data types which are undefined, null, boolean, string, symbol, bigint, number, and object.</p>
+<p>For example, computers distinguish between numbers, such as the number 12, and strings, such as &ldquo;12&rdquo;, &ldquo;dog&rdquo;, or &ldquo;123 cats&rdquo;, which are collections of characters. Computers can perform mathematical operations on a number, but not on a string.</p>
+<p>Variables allow computers to store and manipulate data in a dynamic fashion. They do this by using a &ldquo;label&rdquo; to point to the data rather than using the data itself. Any of the eight data types may be stored in a variable.</p>
+<p>Variables are similar to the x and y variables you use in mathematics, which means they&rsquo;re a simple name to represent the data we want to refer to. Computer variables differ from mathematical variables in that they can store different values at different times.</p>
+<p>We tell JavaScript to create or declare a variable by putting the keyword var in front of it, like so:</p>
+<p>var ourName;</p>
+<p>creates a variable called ourName. In JavaScript we end statements with semicolons. Variable names can be made up of numbers, letters, and $ or _, but may not contain spaces or start with a number.</p>
+<h3 id="declaring-a-sting-variable">Declaring a sting variable</h3>
+<p>Variables can be declared in multiple ways.</p>
+<p>var myName;
+var myName = &ldquo;your name&rdquo;;</p>
+<h3 id="initializing-variable-with-the-assignment-operator">Initializing Variable with the Assignment Operator</h3>
+<p>var myVar = 0;</p>
+<h3 id="declare-string-variables">Declare String Variables</h3>
+<p>var myName = &ldquo;your name&rdquo;;</p>
+<h3 id="understanding-uninitialized-variables">Understanding Uninitialized Variables</h3>
+<p>When JavaScript variables are declared, they have an initial value of undefined. If you do a mathematical operation on an undefined variable your result will be NaN which means &ldquo;Not a Number&rdquo;. If you concatenate a string with an undefined variable, you will get a string of undefined.</p>
+<h2 id="camelcase">Camelcase</h2>
+<p>In camelCase, multi-word variable names have the first word in lowercase and the first letter of each subsequent word is capitalized.</p>
+<p>exampleCamelCase
+anotherExampleOfThis</p>
+<h2 id="js-mathematics">JS mathematics</h2>
+<p>The remainder operator % gives the remainder of the division of two numbers.</p>
+<p>Example</p>
+<pre><code>5 % 2 = 1 because
+Math.floor(5 / 2) = 2 (Quotient)
+2 * 2 = 4
+5 - 4 = 1 (Remainder)
+</code></pre>
+<p>Usage
+In mathematics, a number can be checked to be even or odd by checking the remainder of the division of the number by 2.</p>
+<pre><code>17 % 2 = 1 (17 is Odd)
+48 % 2 = 0 (48 is Even)
+</code></pre>
+<p>Note: The remainder operator is sometimes incorrectly referred to as the modulus operator. It is very similar to modulus, but does not work properly with negative numbers.</p>
+<h2 id="golf-script">Golf script</h2>
+<pre><code>const names = [&quot;Hole-in-one!&quot;, &quot;Eagle&quot;, &quot;Birdie&quot;, &quot;Par&quot;, &quot;Bogey&quot;, &quot;Double Bogey&quot;, &quot;Go Home!&quot;];
+
+function golfScore(par, strokes) {
+// Only change code below this line
+
+if (strokes == 1) {
+    return names[0];
+} else if (strokes &lt;= par - 2) {
+    return names[1];
+} else if (strokes === par - 1) {
+    return names[2];
+} else if (strokes === par) {
+    return names[3];
+} else if (strokes === par + 1) {
+    return names[4];
+} else if (strokes === par + 2) {
+    return names[5];
+} else {
+    return names[6];
+}
+
+// Only change code above this line
+}
+
+golfScore(5, 4);
+</code></pre>
+
+
+    
+
+
+                    
+                    <div class="row"><div class="position-relative mx-auto col-lg-9">
+                          <div class="bg-primary overflow-hidden p-3 mt-5 shadow">
+
+    <h4 class="text-white text-center">Read more</h4>
+
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/trevorsmale/cumulus/" title="Home"><i class="fas fa-chevron-left p-1"></i>Home</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/trevorsmale/cumulus/Kubernetes/" title="Kubernetes">Kubernetes<i class="fas fa-chevron-right p-1"></i></a>
+    </div>
+</div>
+
+
+                        </div></div> 
+
+                </div>
+
+            </div> 
+
+        </div> 
+<script src="https://github.com/trevorsmale/cumuluslib/jquery.min.js"></script> 
+<script src="https://github.com/trevorsmale/cumuluslib/popper.min.js"></script> 
+
+<script src="https://github.com/trevorsmale/cumulusjs/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/auto-complete.js"></script>
+<link href="/trevorsmale/cumulus/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "https:\/\/github.com\/trevorsmale\/cumulus";
+  
+</script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/search.js"></script>
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/favorites.js"></script>
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>

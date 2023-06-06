@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="canonical" href="https://github.com/trevorsmale/cumulus/Linux/SSH/">
+
+    <title>
+        
+        SSH | Trevor Smale&#39; Notes
+        
+    </title>
+
+    
+    <link href="https://github.com/trevorsmale/cumuluscss/fontawesome.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://github.com/trevorsmale/cumulus/css/ace.min.css">
+
+    
+
+    
+    
+        
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/trevorsmale/cumulus">
+                
+                Trevor Smale&#39; Notes
+            </a>
+        </div>
+        
+    </div>
+    </nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+            <form class="form-inline my-2 my-lg-0 searchbox">
+                <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder="Search">
+            </form>
+
+        
+
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/trevorsmale/cumulus/JavaScript/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/JavaScript/"><h6>JavaScript</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Kubernetes/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Kubernetes/"><h6>Kubernetes</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Tools/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Tools/"><h6>Tools</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Workflows/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Workflows/"><h6>Work-Flows</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Workflows/MSDHNGINX/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Workflows/MSDHNGINX/" class="nav-link p-0">
+                    Multi-Site Single Server
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Workflows/Gitea/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Workflows/Gitea/" class="nav-link p-0">
+                    Private Gitea Server
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Workflows/RSS/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Workflows/RSS/" class="nav-link p-0">
+                    RSS feed
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/WSL2/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/WSL2/"><h6>WSL2</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/AI/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/AI/"><h6>AI</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Azure/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Azure/"><h6>Azure</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+    <li data-nav-id="/trevorsmale/cumulus/Azure/Certifications/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Azure/Certifications/"><h6>Azure Certifications</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Azure/Certifications/AZ104/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Azure/Certifications/AZ104/" class="nav-link p-0">
+                    AZ-104
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Blender-3D/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Blender-3D/"><h6>Blender 3D</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Blender-3D/Intro-Course/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Blender-3D/Intro-Course/" class="nav-link p-0">
+                    Intro Course
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Containers/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Containers/"><h6>Containers</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/CSS/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/CSS/"><h6>CSS</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Electronics/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Electronics/"><h6>Electronics</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/GO/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/GO/"><h6>GO</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/GO/Course1/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/GO/Course1/" class="nav-link p-0">
+                    Making Modern Applications with GO
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/GO/WAILS/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/GO/WAILS/" class="nav-link p-0">
+                    WAILS
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/" class="nav-item my-1 parent haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/"><h6>Linux</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Linux/Cron/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/Cron/" class="nav-link p-0">
+                    Cron
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Linux/Rsync/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/Rsync/" class="nav-link p-0">
+                    R-Sync
+                  </a>
+                
+        </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/redhat/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/redhat/"><h6>RedHat</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Linux/redhat/Ansible/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/redhat/Ansible/" class="nav-link p-0">
+                    Ansible
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Linux/redhat/OpenShift/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/redhat/OpenShift/" class="nav-link p-0">
+                    OpenShift
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+        <li data-nav-id="/trevorsmale/cumulus/Linux/SSH/" class="nav-item my-1 active">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/SSH/" class="nav-link p-0">
+                    SSH
+                  </a>
+                
+        </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/TC/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/TC/"><h6>Training &amp; Certifications</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+    <li data-nav-id="/trevorsmale/cumulus/Linux/TC/LPI/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/TC/LPI/"><h6>Linux Professional Institute (LPI)</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Linux/TC/LPI/ESENT/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/TC/LPI/ESENT/" class="nav-link p-0">
+                    Essentials
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Linux/TC/LPI/LPIC1/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/TC/LPI/LPIC1/" class="nav-link p-0">
+                    LPIC 1 Certification
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/TC/Skilstak/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/TC/Skilstak/"><h6>SkilStak</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Linux/TC/Skilstak/BB/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/TC/Skilstak/BB/" class="nav-link p-0">
+                    Beginner Boost
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/NIX/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/NIX/"><h6>NIX</h6></a>
+        
+    </li>
+        <li data-nav-id="/trevorsmale/cumulus/Linux/SSHT/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/SSHT/" class="nav-link p-0">
+                    
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/LOG/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/LOG/"><h6>LogBook</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Project/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Project/"><h6>Project</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Project/Stringer/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Project/Stringer/" class="nav-link p-0">
+                    Stringer
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/VIM/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/VIM/"><h6>VIM</h6></a>
+        
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#heading"></a></li>
+        <li><a href="#what-is-ssh">What is SSH?</a></li>
+        <li><a href="#history">History</a></li>
+        <li><a href="#features">Features</a>
+          <ul>
+            <li><a href="#encryption">Encryption:</a></li>
+            <li><a href="#secure-file-transfer-protocol">Secure File Transfer Protocol:</a></li>
+            <li><a href="#remote-login">Remote login:</a></li>
+            <li><a href="#port-forwarding">Port forwarding:</a></li>
+            <li><a href="#x11-forwarding">X11 forwarding:</a></li>
+            <li><a href="#agent-forwarding">Agent forwarding:</a></li>
+          </ul>
+        </li>
+        <li><a href="#ssh-configuration">SSH Configuration</a>
+          <ul>
+            <li><a href="#generating-ssh-keys">Generating SSH keys:</a></li>
+            <li><a href="#editing-configuration-files">Editing configuration files:</a></li>
+            <li><a href="#authentication-methods">Authentication methods:</a></li>
+            <li><a href="#secure-ssh-configuration">Secure SSH configuration:</a></li>
+            <li><a href="#enabling-x11-forwarding">Enabling X11 forwarding:</a></li>
+            <li><a href="#port-forwarding-1">Port forwarding:</a></li>
+            <li><a href="#compression">Compression:</a></li>
+          </ul>
+        </li>
+        <li><a href="#ssh-examples-and-use-cases">SSH Examples and Use Cases:</a>
+          <ul>
+            <li><a href="#secure-file-transfer">Secure file transfer:</a></li>
+            <li><a href="#running-graphical-applications-remotely">Running graphical applications remotely:</a></li>
+            <li><a href="#port-forwarding-for-accessing-restricted-services">Port forwarding for accessing restricted services:</a></li>
+            <li><a href="#tunneling-for-secure-communication">Tunneling for secure communication:</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<div class="d-flex flex-column">
+    <h1 class="js-title">SSH</h1>
+    <div class="d-flex align-items-center">
+        
+    </div>
+</div>
+
+<hr>
+
+
+
+
+<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-success rounded" style="border-width:4px !important;">
+    <div class="wrap border border-left-0 rounded">
+        
+        <div class="card-header border-0 bg-white pl-3 text-success">
+            <h3>Update Log</h3>
+        </div>
+        
+        <div class="card-body pt-1">
+            <ul>
+<li>2023 06 02 - Initial Commit</li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+<h2 id="heading"></h2>
+<h2 id="what-is-ssh">What is SSH?</h2>
+<p>SSH is a cryptographic network protocol that allows secure communication between networked devices. It was developed as a replacement for Telnet, which sends all data, including passwords, in clear text, making it susceptible to eavesdropping and interception.</p>
+<p>SSH provides encryption and authentication mechanisms to protect the confidentiality and integrity of network communications.
+Brief History of SSH</p>
+<hr>
+<h2 id="history">History</h2>
+<p>The SSH protocol was first developed by Tatu Ylönen in 1995 as a more secure alternative to Telnet and FTP. The initial version, SSH-1, was released commercially in 1996 by SSH Communications Security and gained widespread adoption in the industry. However, SSH-1 had security vulnerabilities, prompting Ylönen to develop SSH-2 in 1998, which quickly became the most widely used version of SSH due to its improved security.</p>
+<p>How SSH Works:
+SSH follows a client-server architecture. The client initiates a connection to the server and requests a secure communication channel. The server generates a pair of cryptographic keys: a public key and a private key. The server shares the public key with the client, while keeping the private key secure. The client encrypts a random session key using the server&rsquo;s public key and sends it back to the server. The server decrypts the session key using its private key and sends an acknowledgement. From that point onward, all data transmitted between the client and server is encrypted using the session key.</p>
+<hr>
+<h2 id="features">Features</h2>
+<hr>
+<h3 id="encryption">Encryption:</h3>
+<p>SSH uses strong encryption algorithms, such as AES, to protect the confidentiality and integrity of data transmitted over the network.</p>
+<hr>
+<h3 id="secure-file-transfer-protocol">Secure File Transfer Protocol:</h3>
+<p>It provides secure file transfer (SFTP) capabilities, which allow users to transfer files between remote servers securely.</p>
+<hr>
+<h3 id="remote-login">Remote login:</h3>
+<p>SSH provides a secure way to login to remote servers and computers, without exposing login credentials to attackers.</p>
+<hr>
+<h3 id="port-forwarding">Port forwarding:</h3>
+<p>It provides port forwarding capabilities, which allow users to access restricted services on remote servers through a secure communication channel.</p>
+<hr>
+<h3 id="x11-forwarding">X11 forwarding:</h3>
+<p>SSH provides X11 forwarding capabilities, which allow users to run graphical applications remotely, without having to install them locally.</p>
+<hr>
+<h3 id="agent-forwarding">Agent forwarding:</h3>
+<p>It also provides agent forwarding capabilities, which allow users to use SSH keys for authentication on remote servers, without having to enter their password every time.</p>
+<hr>
+<h2 id="ssh-configuration">SSH Configuration</h2>
+<p>SSH configuration involves various settings and options that can be customized to optimize the SSH connection and improve security. Here are some common SSH configuration tasks:</p>
+<hr>
+<h3 id="generating-ssh-keys">Generating SSH keys:</h3>
+<p>Before using SSH, users must generate a pair of cryptographic keys, one public and one private. The public key is shared with the server, while the private key is kept securely on the user&rsquo;s computer.</p>
+<hr>
+<h3 id="editing-configuration-files">Editing configuration files:</h3>
+<p>Users can create and edit SSH configuration files to customize their SSH settings, such as specifying the preferred encryption algorithm or setting up port forwarding. The SSH configuration files are usually located in the /etc/ssh/ directory.</p>
+<hr>
+<h3 id="authentication-methods">Authentication methods:</h3>
+<p>SSH supports various authentication methods, such as password authentication, public key authentication, and multi-factor authentication. Users can choose the most suitable authentication method based on their security needs.</p>
+<hr>
+<h3 id="secure-ssh-configuration">Secure SSH configuration:</h3>
+<p>To ensure maximum security, users should follow best practices for secure SSH configuration, such as disabling root login, enforcing strong passwords, and limiting the number of failed login attempts. Users can also use tools like Fail2Ban to prevent brute-force attacks on SSH.</p>
+<hr>
+<h3 id="enabling-x11-forwarding">Enabling X11 forwarding:</h3>
+<p>SSH provides X11 forwarding capabilities, which allow users to run graphical applications remotely, without having to install them locally. To enable X11 forwarding, users can add the -X or -Y flag when connecting to the remote server.</p>
+<hr>
+<h3 id="port-forwarding-1">Port forwarding:</h3>
+<p>SSH allows users to set up port forwarding, which can be useful for accessing restricted services on remote servers through a secure communication channel. Users can set up local or remote port forwarding, depending on their needs.</p>
+<hr>
+<h3 id="compression">Compression:</h3>
+<p>SSH supports data compression, which can improve the performance of the SSH connection, especially when transferring large files or running resource-intensive applications. Users can enable compression by adding the -C flag when connecting to the remote server.</p>
+<hr>
+<h2 id="ssh-examples-and-use-cases">SSH Examples and Use Cases:</h2>
+<p>Remote server administration:</p>
+<p>SSH is commonly used for remote server administration, allowing users to execute commands and manage servers from a remote location.</p>
+<hr>
+<h3 id="secure-file-transfer">Secure file transfer:</h3>
+<p>provides a secure way to transfer files between remote servers, without exposing the files or login credentials to attackers.</p>
+<hr>
+<h3 id="running-graphical-applications-remotely">Running graphical applications remotely:</h3>
+<p>allows users to run graphical applications remotely, without having to install them locally, which can be useful for resource-intensive applications or when using a low-power device.</p>
+<hr>
+<h3 id="port-forwarding-for-accessing-restricted-services">Port forwarding for accessing restricted services:</h3>
+<p>allows users to access restricted services on remote servers through a secure communication channel, by setting up port forwarding.</p>
+<hr>
+<h3 id="tunneling-for-secure-communication">Tunneling for secure communication:</h3>
+<p>SSH allows users to set up encrypted tunnels for secure communication between two networked devices, which can be useful for accessing resources on a private network.</p>
+<hr>
+
+
+    
+
+
+                    
+                    <div class="row"><div class="position-relative mx-auto col-lg-9">
+                          <div class="bg-primary overflow-hidden p-3 mt-5 shadow">
+
+    <h4 class="text-white text-center">Read more</h4>
+
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/trevorsmale/cumulus/Linux/redhat/OpenShift/" title="OpenShift"><i class="fas fa-chevron-left p-1"></i>OpenShift</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/trevorsmale/cumulus/Linux/TC/" title="Training &amp; Certifications">Training &amp; Certifications<i class="fas fa-chevron-right p-1"></i></a>
+    </div>
+</div>
+
+
+                        </div></div> 
+
+                </div>
+
+            </div> 
+
+        </div> 
+<script src="https://github.com/trevorsmale/cumuluslib/jquery.min.js"></script> 
+<script src="https://github.com/trevorsmale/cumuluslib/popper.min.js"></script> 
+
+<script src="https://github.com/trevorsmale/cumulusjs/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/auto-complete.js"></script>
+<link href="/trevorsmale/cumulus/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "https:\/\/github.com\/trevorsmale\/cumulus";
+  
+</script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/search.js"></script>
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/favorites.js"></script>
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>

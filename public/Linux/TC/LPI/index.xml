@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux Professional Institute (LPI) on Trevor Smale&#39; Notes</title>
+    <link>https://github.com/trevorsmale/cumulus/Linux/TC/LPI/</link>
+    <description>Recent content in Linux Professional Institute (LPI) on Trevor Smale&#39; Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 29 May 2023 18:31:10 -0400</lastBuildDate><atom:link href="https://github.com/trevorsmale/cumulus/Linux/TC/LPI/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Essentials</title>
+      <link>https://github.com/trevorsmale/cumulus/Linux/TC/LPI/ESENT/</link>
+      <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/Linux/TC/LPI/ESENT/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LPIC 1 Certification</title>
+      <link>https://github.com/trevorsmale/cumulus/Linux/TC/LPI/LPIC1/</link>
+      <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/Linux/TC/LPI/LPIC1/</guid>
+      <description>Update Log   2023 06 05 - Initial Commit     LPIC-1 Notes Objectives 101.1 Determine and configure hardware settings Should be able to determine and configure fundamental system hardware.
+Key knowledge Areas  Enable and disable integrated peripherals. Differentiate between various types of mass storage devices. Determine hardware resources for devices. Tools and utilities to list various hardware information (e.g. lsub, lspci`, etc.). Tools and utilities to manipulate USB devices.</description>
+    </item>
+    
+  </channel>
+</rss>

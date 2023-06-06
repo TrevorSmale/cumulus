@@ -4,70 +4,51 @@ description = "Landing Page"
 weight = 2
 +++
 
-{{< lead >}}
-Welcome to my organized collection of notes! This website houses my extensive collection of Markdown notes. By moving them online, I can access them conveniently from any device. I also believe others will find valuable information here. To better manage a large number of Markdown files, I've migrated my notes to GO & HUGO. This transition improves organization and simplifies navigation. Feel free to explore and benefit from the resources available. Enjoy!
-{{< /lead >}}
+## Overview
+
+Welcome to my Notes. This site represents my continuing studies of technology and tangentially related subjects.
+I try to keep things well organized so that I can refer back.
+
+## Navigation
 
 ---
 
-{{< panel title="Search Function Not Working" style="danger" >}}
+### Desktop
 
-#### This site is a WIP
-
-This site is a work in progress, notes are being actively added, formatted and reorganized at the moment.
-
-#### Items in progress:
-
-* Transfering and formatting LPIC index
-
-#### To-Do:
-
-* Ansible
-* NGINX
-* MySQL
-* PostGresql
-* WASM
-* HTML
-
-{{< /panel >}}
-
-{{< panel title="In Progress" style="success" >}}
-* 2023 05 31 - Transfering and formatting LPIC index
-{{< /panel >}}
-
-{{< panel title="Update Log" style="success" >}}
+Getting around the site is quite intuitive, the topics listed on the left hand side in desktop mode are the major categories. Some of these categories contain sub-directories containing categorically related notes. 
 
 ---
 
-* 2023 05 31 - Transfered and formatted AI index
-* 2023 05 31 - Transfered and formatted Containers index
-* 2023 05 31 - Transfered and formatted NIX index
-* 2023 05 31 - Transfered and formatted Azure index
-* 2023 05 31 - Transfered and formatted Linux index
-* 2023 05 31 - Transfered and formatted GO index
-* 2023 05 31 - Transfered and formatted Blender 3D index
+### Mobile
+
+On a mobile phone you will see a hamburger menu (Three Horizontal Lines) that expand to reveal the menu. 
 
 ---
 
-* 2023 06 01 - Transfered and formatted Blender Intro Course Notes
-* 2023 06 01 - Created WSL2 index 
-* 2023 06 01 - Transfered and formatted Blender GO Notes
-* 2023 06 01 - Created Tools index
+### Table of Contents
+
+For each Article there is an interactive hierarchal Table of Contents located on the right hand side. This is only visible on the desktop layout.
 
 ---
 
-* 2023 06 02 - Created CSS index
-* 2023 06 02 - Created JS index
-* 2023 06 02 - Created EE index
-* 2023 06 02 - Created VIM index
-* 2023 06 02 - Created RSYNC index
+## Issues and/or Additions
+
+This site and its contents are store in a public GitHub repository. If you would like to raise an issue or submit a pull request, be my guest.
 
 ---
 
-{{< /panel >}}
+## Next/Previous Bar
 
-{{< panel title="Open to Pull Requests & Issues" style="info" >}}
-If anyone finds a typo, wants to add something or make a suggestion, I am open to pull requests.
+There is a bar located beneath each article that allows for navigation between Next/Previous Articals with the title 'READ MORE'
+
+---
+
+### Repo Address
+
 www.github.com/trevorsmale/cumulus
-{{< /panel >}}
+
+
+
+
+
 

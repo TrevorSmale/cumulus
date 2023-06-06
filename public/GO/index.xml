@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>GO on TS Tech Notes</title>
+    <title>GO on Trevor Smale&#39; Notes</title>
     <link>https://github.com/trevorsmale/cumulus/GO/</link>
-    <description>Recent content in GO on TS Tech Notes</description>
+    <description>Recent content in GO on Trevor Smale&#39; Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 29 May 2023 18:31:10 -0400</lastBuildDate><atom:link href="https://github.com/trevorsmale/cumulus/GO/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Making Modern Webpages with GO</title>
+      <title>Making Modern Applications with GO</title>
       <link>https://github.com/trevorsmale/cumulus/GO/Course1/</link>
       <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
       
       <guid>https://github.com/trevorsmale/cumulus/GO/Course1/</guid>
-      <description>Course Overview Learn to write modern, fast, and secure web applications in Google&amp;rsquo;s Go programming language, and learn it from an award winning University professor with 20 years of teaching experience, and 20 years of experience working in the industry as an entrepreneur.
-This course is well-suited for both absolute beginners, and for developers who already know something about web development, but want to add Go to their toolbox.
-We start with an overview of the Go language, and then cover everything you need to get started writing web applications, including an overview of HTML5, a survey of JavaScript and JavaScript modules, how to work with Cascading Style Sheets to make our application look the way we want, and much more.</description>
+      <description>Update Log   2023 06 01 - Initial Commit     &amp;lt;sodipodi:namedview id=&amp;ldquo;namedview1234&amp;rdquo; pagecolor=&amp;quot;#ffffff&amp;quot; bordercolor=&amp;quot;#000000&amp;quot; borderopacity=&amp;ldquo;0.25&amp;rdquo; inkscape:showpageshadow=&amp;ldquo;2&amp;rdquo; inkscape:pageopacity=&amp;ldquo;0.0&amp;rdquo; inkscape:pagecheckerboard=&amp;ldquo;0&amp;rdquo; inkscape:deskcolor=&amp;quot;#d1d1d1&amp;quot; showgrid=&amp;ldquo;false&amp;rdquo; inkscape:zoom=&amp;ldquo;2.0058594&amp;rdquo; inkscape:cx=&amp;ldquo;301.61635&amp;rdquo; inkscape:cy=&amp;ldquo;257.74488&amp;rdquo; inkscape:window-width=&amp;ldquo;2802&amp;rdquo; inkscape:window-height=&amp;ldquo;1694&amp;rdquo; inkscape:window-x=&amp;ldquo;4435&amp;rdquo; inkscape:window-y=&amp;ldquo;132&amp;rdquo; inkscape:window-maximized=&amp;ldquo;0&amp;rdquo; inkscape:current-layer=&amp;ldquo;svg1232&amp;rdquo; /&amp;gt;Backspacerdf:RDF&amp;lt;cc:Work rdf:about=&amp;quot;&amp;quot;&amp;gt;dc:titleBackspace&amp;lt;/dc:title&amp;gt;&amp;lt;/cc:Work&amp;gt;&amp;lt;/rdf:RDF&amp;gt;
+Course Overview Learn to write modern, fast, and secure web applications in Google&amp;rsquo;s Go programming language, and learn it from an award winning University professor with 20 years of teaching experience, and 20 years of experience working in the industry as an entrepreneur.</description>
     </item>
     
     <item>

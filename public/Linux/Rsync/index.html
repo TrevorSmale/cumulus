@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="description" content="A backup and copy software">
+    
+    <link rel="canonical" href="https://github.com/trevorsmale/cumulus/Linux/Rsync/">
+
+    <title>
+        
+        R-Sync | Trevor Smale&#39; Notes
+        
+    </title>
+
+    
+    <link href="https://github.com/trevorsmale/cumuluscss/fontawesome.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://github.com/trevorsmale/cumulus/css/ace.min.css">
+
+    
+
+    
+    
+        
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/trevorsmale/cumulus">
+                
+                Trevor Smale&#39; Notes
+            </a>
+        </div>
+        
+    </div>
+    </nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+            <form class="form-inline my-2 my-lg-0 searchbox">
+                <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder="Search">
+            </form>
+
+        
+
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/trevorsmale/cumulus/JavaScript/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/JavaScript/"><h6>JavaScript</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Kubernetes/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Kubernetes/"><h6>Kubernetes</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Tools/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Tools/"><h6>Tools</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Workflows/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Workflows/"><h6>Work-Flows</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Workflows/MSDHNGINX/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Workflows/MSDHNGINX/" class="nav-link p-0">
+                    Multi-Site Single Server
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Workflows/Gitea/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Workflows/Gitea/" class="nav-link p-0">
+                    Private Gitea Server
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Workflows/RSS/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Workflows/RSS/" class="nav-link p-0">
+                    RSS feed
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/WSL2/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/WSL2/"><h6>WSL2</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/AI/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/AI/"><h6>AI</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Azure/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Azure/"><h6>Azure</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+    <li data-nav-id="/trevorsmale/cumulus/Azure/Certifications/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Azure/Certifications/"><h6>Azure Certifications</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Azure/Certifications/AZ104/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Azure/Certifications/AZ104/" class="nav-link p-0">
+                    AZ-104
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Blender-3D/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Blender-3D/"><h6>Blender 3D</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Blender-3D/Intro-Course/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Blender-3D/Intro-Course/" class="nav-link p-0">
+                    Intro Course
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Containers/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Containers/"><h6>Containers</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/CSS/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/CSS/"><h6>CSS</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Electronics/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Electronics/"><h6>Electronics</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/GO/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/GO/"><h6>GO</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/GO/Course1/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/GO/Course1/" class="nav-link p-0">
+                    Making Modern Applications with GO
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/GO/WAILS/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/GO/WAILS/" class="nav-link p-0">
+                    WAILS
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/" class="nav-item my-1 parent haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/"><h6>Linux</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Linux/Cron/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/Cron/" class="nav-link p-0">
+                    Cron
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Linux/Rsync/" class="nav-item my-1 active">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/Rsync/" class="nav-link p-0">
+                    R-Sync
+                  </a>
+                
+        </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/redhat/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/redhat/"><h6>RedHat</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Linux/redhat/Ansible/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/redhat/Ansible/" class="nav-link p-0">
+                    Ansible
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Linux/redhat/OpenShift/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/redhat/OpenShift/" class="nav-link p-0">
+                    OpenShift
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+        <li data-nav-id="/trevorsmale/cumulus/Linux/SSH/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/SSH/" class="nav-link p-0">
+                    SSH
+                  </a>
+                
+        </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/TC/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/TC/"><h6>Training &amp; Certifications</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+    <li data-nav-id="/trevorsmale/cumulus/Linux/TC/LPI/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/TC/LPI/"><h6>Linux Professional Institute (LPI)</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Linux/TC/LPI/ESENT/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/TC/LPI/ESENT/" class="nav-link p-0">
+                    Essentials
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Linux/TC/LPI/LPIC1/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/TC/LPI/LPIC1/" class="nav-link p-0">
+                    LPIC 1 Certification
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/TC/Skilstak/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/TC/Skilstak/"><h6>SkilStak</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Linux/TC/Skilstak/BB/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/TC/Skilstak/BB/" class="nav-link p-0">
+                    Beginner Boost
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/NIX/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/NIX/"><h6>NIX</h6></a>
+        
+    </li>
+        <li data-nav-id="/trevorsmale/cumulus/Linux/SSHT/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/SSHT/" class="nav-link p-0">
+                    
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/LOG/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/LOG/"><h6>LogBook</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Project/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Project/"><h6>Project</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Project/Stringer/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Project/Stringer/" class="nav-link p-0">
+                    Stringer
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/VIM/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/VIM/"><h6>VIM</h6></a>
+        
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#transfer-files-over-ssh">Transfer files over SSH.</a>
+          <ul>
+            <li><a href="#options">Options</a></li>
+            <li><a href="#exclude-filesfolders">Exclude files/folders</a></li>
+          </ul>
+        </li>
+        <li><a href="#local--remote">Local &gt; Remote</a>
+          <ul>
+            <li><a href="#transfer-everything-from-the-current-directory-to-a-new-folder-in-the-remote-home-directory">Transfer everything from the current directory to a new folder in the remote home directory.</a></li>
+            <li><a href="#transfer-folder1-and-its-content-to-remote-home-directory">Transfer folder1 and its content to remote home directory</a></li>
+            <li><a href="#transfer-everything-from-folder1-without-the-folder-itself-to-remote-folder2-in-remote-home-directory">Transfer everything from folder1 without the folder itself to remote folder2 in remote home directory.</a></li>
+            <li><a href="#transfer-multiple-files-and-folders">Transfer multiple files and folders.</a></li>
+            <li><a href="#another-way">Another way</a></li>
+          </ul>
+        </li>
+        <li><a href="#remote--local">Remote &gt; Local</a></li>
+        <li><a href="#freezing">Freezing</a></li>
+        <li><a href="#virtual-machine">Virtual Machine</a></li>
+        <li><a href="#backup">Backup</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<div class="d-flex flex-column">
+    <h1 class="js-title">R-Sync</h1>
+    <div class="d-flex align-items-center">
+        
+    </div>
+</div>
+
+<hr>
+
+
+
+
+<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-success rounded" style="border-width:4px !important;">
+    <div class="wrap border border-left-0 rounded">
+        
+        <div class="card-header border-0 bg-white pl-3 text-success">
+            <h3>Update Log</h3>
+        </div>
+        
+        <div class="card-body pt-1">
+            <ul>
+<li>2023 06 02 - Initial Commit</li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+<p class="lead">
+    <h2 id="overview">Overview</h2>
+<p>A backup and copy software
+</p>
+
+<h2 id="transfer-files-over-ssh">Transfer files over SSH.</h2>
+<p>Only transfer the files that have changes or are missing. Much faster and secure than FTP.</p>
+<h3 id="options">Options</h3>
+<pre><code>-a   # Recursion and preserve everything.
+-v   # Transfer log.
+-h   # Display the output numbers in a human-readable format.
+-e   # Specify remote shell.
+-W   # Copy whole file, without checking for changes.
+
+--progress   # Show the sync progress during transfer
+</code></pre>
+<h3 id="exclude-filesfolders">Exclude files/folders</h3>
+<pre><code>rsync -av ./file1 ./folder1 --exclude 'folder1/node_modules/*' user@123.456.789.255:folder/
+</code></pre>
+<hr>
+<h2 id="local--remote">Local &gt; Remote</h2>
+<hr>
+<h3 id="transfer-everything-from-the-current-directory-to-a-new-folder-in-the-remote-home-directory">Transfer everything from the current directory to a new folder in the remote home directory.</h3>
+<pre><code>rsync -av . user@123.456.789.255:folder/
+</code></pre>
+<hr>
+<h3 id="transfer-folder1-and-its-content-to-remote-home-directory">Transfer folder1 and its content to remote home directory</h3>
+<pre><code>rsync -av ./folder1 user@123.456.789.255:
+</code></pre>
+<hr>
+<h3 id="transfer-everything-from-folder1-without-the-folder-itself-to-remote-folder2-in-remote-home-directory">Transfer everything from folder1 without the folder itself to remote folder2 in remote home directory.</h3>
+<pre><code>rsync -av ./folder1/ user@123.456.789.255:folder2/
+</code></pre>
+<hr>
+<h3 id="transfer-multiple-files-and-folders">Transfer multiple files and folders.</h3>
+<pre><code>rsync -av ./file1 ./file2 ./folder1 user@123.456.789.255:folder2/
+</code></pre>
+<hr>
+<h3 id="another-way">Another way</h3>
+<pre><code>rsync -av -e 'ssh' ./folder1/ user@123.456.789.255:~/folder1/
+</code></pre>
+<hr>
+<h2 id="remote--local">Remote &gt; Local</h2>
+<p>Runs from local</p>
+<pre><code>rsync -av user@123.456.789.255:folder/ /path/to/local/storage
+</code></pre>
+<h2 id="freezing">Freezing</h2>
+<p>When the terminal freezes, fix it with this in a <strong>new</strong> terminal&hellip;</p>
+<pre><code>while sudo killall -CHLD ssh; do sleep 0.1; done;
+</code></pre>
+<h2 id="virtual-machine">Virtual Machine</h2>
+<pre><code>rsync -av -e &quot;ssh -p PORT_NUMBER&quot; &lt;SOURCE&gt; &lt;DESTINATION&gt;:&lt;PATH&gt;
+
+rsync -av -e 'ssh -p 3022' . user@127.0.0.1:~/make-this_folder
+</code></pre>
+<h2 id="backup">Backup</h2>
+<p>To copy multiple files, the command must be a string. This will copy the content from the locations to the single location the command is called from.</p>
+<pre><code>rsync -av -e 'ssh' 'root@123.456.789.255:/etc/nginx/nginx.conf /etc/letsencrypt/keys' .
+</code></pre>
+<p>This command will copy the <code>nginx.conf</code> file and the letsencrypt folder with the keys. The command must run as root for the keys.</p>
+
+
+    
+
+
+                    
+                    <div class="row"><div class="position-relative mx-auto col-lg-9">
+                          <div class="bg-primary overflow-hidden p-3 mt-5 shadow">
+
+    <h4 class="text-white text-center">Read more</h4>
+
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/trevorsmale/cumulus/Linux/Cron/" title="Cron"><i class="fas fa-chevron-left p-1"></i>Cron</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/trevorsmale/cumulus/Linux/redhat/" title="RedHat">RedHat<i class="fas fa-chevron-right p-1"></i></a>
+    </div>
+</div>
+
+
+                        </div></div> 
+
+                </div>
+
+            </div> 
+
+        </div> 
+<script src="https://github.com/trevorsmale/cumuluslib/jquery.min.js"></script> 
+<script src="https://github.com/trevorsmale/cumuluslib/popper.min.js"></script> 
+
+<script src="https://github.com/trevorsmale/cumulusjs/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/auto-complete.js"></script>
+<link href="/trevorsmale/cumulus/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "https:\/\/github.com\/trevorsmale\/cumulus";
+  
+</script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/search.js"></script>
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/favorites.js"></script>
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="alternate" type="application/rss+xml" href="https://github.com/trevorsmale/cumulus/Linux/TC/LPI/index.xml" title="Trevor Smale' Notes" />
+    <link rel="canonical" href="https://github.com/trevorsmale/cumulus/Linux/TC/LPI/">
+
+    <title>
+        
+        Linux Professional Institute (LPI) | Trevor Smale&#39; Notes
+        
+    </title>
+
+    
+    <link href="https://github.com/trevorsmale/cumuluscss/fontawesome.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://github.com/trevorsmale/cumulus/css/ace.min.css">
+
+    
+
+    
+    
+        
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/trevorsmale/cumulus">
+                
+                Trevor Smale&#39; Notes
+            </a>
+        </div>
+        
+    </div>
+    <div class="feed-icons">
+            <a href="https://github.com/trevorsmale/cumulus/Linux/TC/LPI/index.xml"><img src="/img/feed-icon.svg" alt="RSS feed" /></a>
+        </div>
+    </nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+            <form class="form-inline my-2 my-lg-0 searchbox">
+                <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder="Search">
+            </form>
+
+        
+
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/trevorsmale/cumulus/JavaScript/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/JavaScript/"><h6>JavaScript</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Kubernetes/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Kubernetes/"><h6>Kubernetes</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Tools/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Tools/"><h6>Tools</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Workflows/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Workflows/"><h6>Work-Flows</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Workflows/MSDHNGINX/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Workflows/MSDHNGINX/" class="nav-link p-0">
+                    Multi-Site Single Server
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Workflows/Gitea/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Workflows/Gitea/" class="nav-link p-0">
+                    Private Gitea Server
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Workflows/RSS/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Workflows/RSS/" class="nav-link p-0">
+                    RSS feed
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/WSL2/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/WSL2/"><h6>WSL2</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/AI/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/AI/"><h6>AI</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Azure/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Azure/"><h6>Azure</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+    <li data-nav-id="/trevorsmale/cumulus/Azure/Certifications/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Azure/Certifications/"><h6>Azure Certifications</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Azure/Certifications/AZ104/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Azure/Certifications/AZ104/" class="nav-link p-0">
+                    AZ-104
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Blender-3D/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Blender-3D/"><h6>Blender 3D</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Blender-3D/Intro-Course/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Blender-3D/Intro-Course/" class="nav-link p-0">
+                    Intro Course
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Containers/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Containers/"><h6>Containers</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/CSS/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/CSS/"><h6>CSS</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Electronics/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Electronics/"><h6>Electronics</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/GO/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/GO/"><h6>GO</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/GO/Course1/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/GO/Course1/" class="nav-link p-0">
+                    Making Modern Applications with GO
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/GO/WAILS/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/GO/WAILS/" class="nav-link p-0">
+                    WAILS
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/" class="nav-item my-1 parent haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/"><h6>Linux</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Linux/Cron/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/Cron/" class="nav-link p-0">
+                    Cron
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Linux/Rsync/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/Rsync/" class="nav-link p-0">
+                    R-Sync
+                  </a>
+                
+        </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/redhat/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/redhat/"><h6>RedHat</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Linux/redhat/Ansible/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/redhat/Ansible/" class="nav-link p-0">
+                    Ansible
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Linux/redhat/OpenShift/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/redhat/OpenShift/" class="nav-link p-0">
+                    OpenShift
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+        <li data-nav-id="/trevorsmale/cumulus/Linux/SSH/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/SSH/" class="nav-link p-0">
+                    SSH
+                  </a>
+                
+        </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/TC/" class="nav-item my-1 parent haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/TC/"><h6>Training &amp; Certifications</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+    <li data-nav-id="/trevorsmale/cumulus/Linux/TC/LPI/" class="nav-item my-1 parent active haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/TC/LPI/"><h6>Linux Professional Institute (LPI)</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Linux/TC/LPI/ESENT/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/TC/LPI/ESENT/" class="nav-link p-0">
+                    Essentials
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Linux/TC/LPI/LPIC1/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/TC/LPI/LPIC1/" class="nav-link p-0">
+                    LPIC 1 Certification
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/TC/Skilstak/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/TC/Skilstak/"><h6>SkilStak</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Linux/TC/Skilstak/BB/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/TC/Skilstak/BB/" class="nav-link p-0">
+                    Beginner Boost
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/NIX/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/NIX/"><h6>NIX</h6></a>
+        
+    </li>
+        <li data-nav-id="/trevorsmale/cumulus/Linux/SSHT/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/SSHT/" class="nav-link p-0">
+                    
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/LOG/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/LOG/"><h6>LogBook</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Project/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Project/"><h6>Project</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Project/Stringer/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Project/Stringer/" class="nav-link p-0">
+                    Stringer
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/VIM/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/VIM/"><h6>VIM</h6></a>
+        
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#history">History</a></li>
+        <li><a href="#lpi-certification-proves-you-have-the-skills">LPI certification proves you have the skills.</a></li>
+        <li><a href="#exam-development">Exam Development</a></li>
+        <li><a href="#job-task-analysis">Job Task Analysis</a>
+          <ul>
+            <li><a href="#pre-survey">Pre-survey</a></li>
+            <li><a href="#data-analysis">Data analysis</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#courses">Courses</a>
+      <ul>
+        <li><a href="#linux-essentials">Linux Essentials</a></li>
+        <li><a href="#lpic-1">LPIC-1</a></li>
+      </ul>
+    </li>
+    <li><a href="#lpic-2">LPIC-2</a></li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<div class="d-flex flex-column">
+    <h1 class="js-title">Linux Professional Institute (LPI)</h1>
+    <div class="d-flex align-items-center">
+        
+    </div>
+</div>
+
+<hr>
+
+
+
+
+<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-success rounded" style="border-width:4px !important;">
+    <div class="wrap border border-left-0 rounded">
+        
+        <div class="card-header border-0 bg-white pl-3 text-success">
+            <h3>Update Log</h3>
+        </div>
+        
+        <div class="card-body pt-1">
+            <ul>
+<li>2023 06 05 - Initial Commit</li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+<h2 id="history">History</h2>
+<p>Note: (From Site)</p>
+<p>Back in 1998, Apple released the iMac and Microsoft released Windows98. Unix was still a force on server computers but Microsoft Windows NT was promising major inroads into the server space. Linux was rapidly becoming a growing phenomenon with millions of users worldwide. Upstart companies, such as Red Hat and SUSE, were attracting the attention of corporate users with their commercial packaging and support of Linux, but analysts and IT journalists maintained Linux would never get beyond a niche presence without dramatic increases in professional support.</p>
+<p>That year, two separate community efforts were building momentum to try to address one of the perceived deep gaps in Linux support.  If a company chose to deploy Linux, how would an IT manager be able to find qualified people to install, maintain, and support it?</p>
+<p>At the time, there were a large number of certification programs for Microsoft Windows systems and they provided a mechanism for companies to try to understand someone’s expertise with Windows. Could there be some similar kind of certification program for Linux?  Red Hat started to develop their own certification for their Linux distribution. Several other distribution vendors started to mention creating their own certifications. Some people within the Linux community started to be concerned that we might wind up with multiple smaller Linux certifications that wouldn’t help advance the deployment of Linux as much as a common certification would.</p>
+<p>In October 1998, Dan York published in the Linux Gazette an article calling for a community Linux certification program, resulting in an active community discussion group. Dan would go on to write a series of articles, with one outcome being that Linuxcare, a startup offering Linux support, contacted Dan and employed him specifically to build the LPI certification program.</p>
+<p>Meanwhile, a separate discussion led by Evan Leibovitch at the Canadian Linux Users Exchange was promoting a similar initiative. Jon “maddog” Hall, President of Linux International, who knew both Evan and Dan, introduced them, and they merged their efforts into a single project to create a community-based Linux certification program. The agreed objective was to take a different path from most IT certifications of the day, by being:</p>
+<p>Non-profit
+Neutral with regard to vendors, open source operating systems, and software distributions
+Opposed to using certification as a tool to sell “official training”
+Psychometrically-validated
+Multilingual and globally accessible</p>
+<h2 id="lpi-certification-proves-you-have-the-skills">LPI certification proves you have the skills.</h2>
+<p>Verified credentials get you to the top of the resume pile and on recruiter hot lists. It’s the quickest way through the HR firewall.</p>
+<p>LPI’s distribution neutral certification shows Linux versatility. Rather than being limited to one particular vendor technology, you will be able to work with multiple open source technologies – mirroring actual work environments.   Certifying at the command line means you can work with any Linux distribution.</p>
+<p>With detailed exam objectives, your exam prep time is better spent because you know what to study. Our multi-level track verifies you have the most comprehensive breadth and depth of Linux and open source knowledge. Our certifications are valid for 5-years, longer than most competitive certifications.</p>
+<h2 id="exam-development">Exam Development</h2>
+<p>LPI’s exam development process is detailed, thorough, participatory, collaborative and employs many proven techniques used by the best IT certification programs.
+Psychometrics</p>
+<p>Psychometrics, the study of testing and measuring mental capacity, is used throughout LPI certification development to ensure that our exams reflect the needs of the IT community and industry.
+Development Structure</p>
+<p>As a part of our ongoing certification development process we continually monitor the needs of the Linux and IT markets to ensure our exams effectively evaluate candidates on the most relevant skills.</p>
+<p>When we began this process in the late 1990’s we initially launched a two-tiered certification track that became what is known as LPIC-1 and LPIC-2 today. Over the years we have expanded our offerings to include the third tier to the LPIC professional track with the three enterprise specialties of LPIC-3. We’ve also introduced an entry-level certificate program, Linux Essentials, for those see</p>
+<h2 id="job-task-analysis">Job Task Analysis</h2>
+<p>After development of a program structure and a job description for an exam or series, the next stage is to scientifically determine the skills, tasks and areas of knowledge needed for the job. The challenge: Anyone could come up with a list of tasks they think a Linux professional should be able to do. If you ask 10 Linux professionals what a “junior-level” professional should do, you might get 10 lists.</p>
+<p>Which list is correct?</p>
+<p>Our solution: We ask a large number of Linux professionals for their lists of necessary job duties, and then compile the responses to find the common and most important tasks. The most important tasks show up on all lists.</p>
+<p>This process is called job analysis study or job task analysis. LPI has completed extensive job analysis surveys of Linux professionals to help ensure exams are unbiased and constructed fairly.
+How we do it:</p>
+<h3 id="pre-survey">Pre-survey</h3>
+<p>First we work with a large pool of subject-matter experts to compile an exhaustive list of all the tasks that they think might be performed by the target audience of the certification.
+Job Analysis Survey</p>
+<p>Next, the tasks collected during the pre-survey go into a job analysis survey. This survey asks practicing Linux professionals to rate each task in several ways:</p>
+<ul>
+<li>Frequency: How often they perform the task.</li>
+<li>Importance: How important it is for an administrator to be able to perform the task.</li>
+</ul>
+<h3 id="data-analysis">Data analysis</h3>
+<p>Finally, we conduct statistical analysis of the survey responses. We compute statistics indicating, on average, how critical respondents rated each task. This analysis guides the determination of the final job task list.</p>
+<h1 id="courses">Courses</h1>
+<h2 id="linux-essentials">Linux Essentials</h2>
+<p>Show employers that you have the foundational skills required for your next job or promotion.</p>
+<p>Linux adoption continues to rise world-wide as individual users, government entities and industries ranging from automotive to space exploration embrace open source technologies. This expansion of open source in enterprise is redefining traditional Information and Communication Technology (ICT) job roles to require more Linux skills. Whether you’re starting your career in open source, or looking for advancement, independently verifying your skill set can help you stand out to hiring managers or your management team.</p>
+<p>The Linux Essentials certificate also serves as a great introduction to the more complete and advanced Linux Professional certification track.</p>
+<p>Current version: 1.6 (Exam code 010-160)</p>
+<ul>
+<li>
+<p>Objectives: 010-160</p>
+</li>
+<li>
+<p>Prerequisites: There are no prerequisites for this certification</p>
+</li>
+<li>
+<p>Requirements: Passing the Linux Essentials 010 exam. The Linux Essentials exam contains 40 questions and must be completed within 60 minutes.</p>
+</li>
+<li>
+<p>Validity period: Lifetime</p>
+</li>
+<li>
+<p>Cost: Click here for exam pricing in your country.</p>
+</li>
+</ul>
+<p>Languages for exam available in VUE test centers: English, French, German, Japanese, Portuguese (Brazilian), Spanish</p>
+<p>Languages for exam available online via OnVUE: English, French, German, Japanese, Portuguese (Brazilian), Spanish</p>
+<p>To receive the Linux Essentials certificate the candidate must:</p>
+<ul>
+<li>have an understanding of the Linux and open source industry and knowledge of the most popular open source Applications;</li>
+<li>understand the major components of the Linux operating system, and have the technical proficiency to work on the Linux command line; and</li>
+<li>have a basic understanding of security and administration related topics such as user/group management, working on the command line, and permissions.</li>
+</ul>
+<h2 id="lpic-1">LPIC-1</h2>
+<p>LPIC-1 is the first certification in the multi-level Linux professional certification program of the Linux Professional Institute (LPI). The LPIC-1 will validate the candidate&rsquo;s ability to perform maintenance tasks on the command line, install and configure a computer running Linux and configure basic networking.</p>
+<p>The LPIC-1 is designed to reflect current research and validate a candidate&rsquo;s proficiency in real world system administration. The objectives are tied to real-world job skills, which we determine through job task analysis surveying during exam development.</p>
+<ul>
+<li>
+<p>Current version: 5.0 (Exam codes 101-500 and 102-500)</p>
+</li>
+<li>
+<p>Objectives: 101-500, 102-500</p>
+</li>
+<li>
+<p>Prerequisites: There are no prerequisites for this certification.</p>
+</li>
+<li>
+<p>Requirements: Passing the 101 and 102 exams. Each 90-minute exam is 60 multiple-choice and fill-in-the-blank questions.</p>
+</li>
+<li>
+<p>Validity period: 5 years unless retaken or higher level is achieved.</p>
+</li>
+<li>
+<p>Cost: Click here for exam pricing in your country.</p>
+</li>
+</ul>
+<p>Languages for exam available in VUE test centers: English, German, Japanese, Portuguese (Brazilian), Chinese (Simplified), Chinese (Traditional), Spanish (Modern)</p>
+<p>Languages for exam available online via OnVUE: English, German, Japanese, Portuguese (Brazilian), Spanish</p>
+<p>To become LPIC-1 certified the candidate must be able to:</p>
+<ul>
+<li>understand the architecture of a Linux system;</li>
+<li>install and maintain a Linux workstation, including X11 and setup it up as a network client;</li>
+<li>work at the Linux command line, including common GNU and Unix commands;</li>
+<li>handle files and access permissions as well as system security; and</li>
+<li>perform easy maintenance tasks: help users, add users to a larger system, backup and restore, shutdown and reboot.</li>
+</ul>
+<h1 id="lpic-2">LPIC-2</h1>
+<p>LPIC-2 is the second certification in the multi-level professional certification program of the Linux Professional Institute (LPI). The LPIC-2 will validate the candidate&rsquo;s ability to administer small to medium–sized mixed networks.</p>
+<p>Current version: 4.5 (Exam codes 201-450 and 202-450)</p>
+<ul>
+<li>
+<p>Objectives: 201-450, 202-450</p>
+</li>
+<li>
+<p>Prerequisites: The candidate must have an active LPIC-1 certification to receive the LPIC-2 certification.</p>
+</li>
+<li>
+<p>Requirements: Passing exams 201 and 202. Each 90-minute exam is 60 multiple-choice and fill-in-the-blank questions.</p>
+</li>
+<li>
+<p>Validity period: 5​ years unless retaken or higher level is achieved.</p>
+</li>
+<li>
+<p>Cost: Click here for exam pricing in your country.</p>
+</li>
+<li>
+<p>Languages for exams available in VUE test centers: English, German, Japanese, Portuguese (Brazilian)</p>
+</li>
+<li>
+<p>Languages for exams available online via OnVUE: English, Japanese</p>
+</li>
+</ul>
+<p>To become LPIC-2 certified the candidate must be able to:</p>
+<ul>
+<li>perform advanced system administration, including common tasks regarding the Linux kernel, system startup and maintenance;</li>
+<li>perform advanced Management of block storage and file systems as well as advanced networking and authentication and system security, including firewall and VPN;</li>
+<li>install and configure fundamental network services, including DHCP, DNS,  SSH, Web servers, file servers using FTP, NFS and Samba, email delivery; and</li>
+<li>supervise assistants and advise management on automation and purchases.</li>
+</ul>
+
+
+    
+
+
+                    
+                    <div class="row"><div class="position-relative mx-auto col-lg-9">
+                          <div class="bg-primary overflow-hidden p-3 mt-5 shadow">
+
+    <h4 class="text-white text-center">Read more</h4>
+
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/trevorsmale/cumulus/Linux/TC/" title="Training &amp; Certifications"><i class="fas fa-chevron-left p-1"></i>Training &amp; Certifications</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/trevorsmale/cumulus/Linux/TC/LPI/ESENT/" title="Essentials">Essentials<i class="fas fa-chevron-right p-1"></i></a>
+    </div>
+</div>
+
+
+                        </div></div> 
+
+                </div>
+
+            </div> 
+
+        </div> 
+<script src="https://github.com/trevorsmale/cumuluslib/jquery.min.js"></script> 
+<script src="https://github.com/trevorsmale/cumuluslib/popper.min.js"></script> 
+
+<script src="https://github.com/trevorsmale/cumulusjs/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/auto-complete.js"></script>
+<link href="/trevorsmale/cumulus/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "https:\/\/github.com\/trevorsmale\/cumulus";
+  
+</script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/search.js"></script>
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/favorites.js"></script>
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>

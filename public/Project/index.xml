@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project on Trevor Smale&#39; Notes</title>
+    <link>https://github.com/trevorsmale/cumulus/Project/</link>
+    <description>Recent content in Project on Trevor Smale&#39; Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 29 May 2023 18:31:10 -0400</lastBuildDate><atom:link href="https://github.com/trevorsmale/cumulus/Project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stringer</title>
+      <link>https://github.com/trevorsmale/cumulus/Project/Stringer/</link>
+      <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/Project/Stringer/</guid>
+      <description>Stringer Word Processor A low-tech digital word processing unit Stringer is a bespoke small form factor lo-tech computer purpose built for offline pros drafting. Stringer refers to the process of stringing words, sentences and paragraphs together.
+Overview I am interested in creating dedicated devices, machines that are assembled and configured for a single task. While creating a digital typewriter like Stringer may not be a new idea, I am confident in my ability to conduct thorough research on the topic and arrive at unique ideas and thoughtful design decisions.</description>
+    </item>
+    
+  </channel>
+</rss>

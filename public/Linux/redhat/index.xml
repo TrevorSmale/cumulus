@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RedHat on Trevor Smale&#39; Notes</title>
+    <link>https://github.com/trevorsmale/cumulus/Linux/redhat/</link>
+    <description>Recent content in RedHat on Trevor Smale&#39; Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 29 May 2023 18:31:10 -0400</lastBuildDate><atom:link href="https://github.com/trevorsmale/cumulus/Linux/redhat/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ansible</title>
+      <link>https://github.com/trevorsmale/cumulus/Linux/redhat/Ansible/</link>
+      <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/Linux/redhat/Ansible/</guid>
+      <description>Update Log   2023 06 05 - Initial Commit     Overview Ansible is an open-source automation platform that simplifies IT infrastructure provisioning, configuration management, and application deployment. It allows users to define infrastructure as code using simple, human-readable YAML files, making it easier to automate complex tasks and streamline IT operations.
+History Ansible was created by Michael DeHaan in 2012 and was later acquired by Red Hat (now part of IBM).</description>
+    </item>
+    
+    <item>
+      <title>OpenShift</title>
+      <link>https://github.com/trevorsmale/cumulus/Linux/redhat/OpenShift/</link>
+      <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/Linux/redhat/OpenShift/</guid>
+      <description>Update Log   2023 06 05 - Initial Commit     Overview OpenShift is a Kubernetes-based open-source container platform developed by Red Hat (now part of IBM). It provides a complete containerized application platform, offering features for container orchestration, scalability, security, and automation. OpenShift simplifies the process of deploying, managing, and scaling containerized applications in the cloud or on-premises environments.
+History OpenShift originated from the open-source project called &amp;ldquo;Origin,&amp;rdquo; which was initiated by Red Hat in 2011.</description>
+    </item>
+    
+  </channel>
+</rss>

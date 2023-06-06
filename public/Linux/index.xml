@@ -1,10 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Linux on TS Tech Notes</title>
+    <title>Linux on Trevor Smale&#39; Notes</title>
     <link>https://github.com/trevorsmale/cumulus/Linux/</link>
-    <description>Recent content in Linux on TS Tech Notes</description>
+    <description>Recent content in Linux on Trevor Smale&#39; Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 29 May 2023 18:31:10 -0400</lastBuildDate><atom:link href="https://github.com/trevorsmale/cumulus/Linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cron</title>
+      <link>https://github.com/trevorsmale/cumulus/Linux/Cron/</link>
+      <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/Linux/Cron/</guid>
+      <description>Update Log   2023 06 02 - Initial Commit     Overview UNIX cron is a time-based job scheduling system used in UNIX-like operating systems to automate recurring tasks or jobs. It allows users to schedule commands or scripts to run at specific intervals, such as minutes, hours, days, or months. Cron jobs are created and managed using the cron daemon.
+Here are some key components and concepts related to UNIX cron:</description>
+    </item>
+    
+    <item>
+      <title>R-Sync</title>
+      <link>https://github.com/trevorsmale/cumulus/Linux/Rsync/</link>
+      <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/Linux/Rsync/</guid>
+      <description>Update Log   2023 06 02 - Initial Commit     Overview A backup and copy software Transfer files over SSH. Only transfer the files that have changes or are missing. Much faster and secure than FTP.
+Options -a # Recursion and preserve everything. -v # Transfer log. -h # Display the output numbers in a human-readable format. -e # Specify remote shell. -W # Copy whole file, without checking for changes.</description>
+    </item>
+    
+    <item>
+      <title>SSH</title>
+      <link>https://github.com/trevorsmale/cumulus/Linux/SSH/</link>
+      <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/Linux/SSH/</guid>
+      <description>Update Log   2023 06 02 - Initial Commit      What is SSH? SSH is a cryptographic network protocol that allows secure communication between networked devices. It was developed as a replacement for Telnet, which sends all data, including passwords, in clear text, making it susceptible to eavesdropping and interception.
+SSH provides encryption and authentication mechanisms to protect the confidentiality and integrity of network communications.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://github.com/trevorsmale/cumulus/Linux/SSHT/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://github.com/trevorsmale/cumulus/Linux/SSHT/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

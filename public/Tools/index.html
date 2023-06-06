@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="description" content="Windows Subsystem for Linux 2">
+    
+    <link rel="alternate" type="application/rss+xml" href="https://github.com/trevorsmale/cumulus/Tools/index.xml" title="Trevor Smale' Notes" />
+    <link rel="canonical" href="https://github.com/trevorsmale/cumulus/Tools/">
+
+    <title>
+        
+        Tools | Trevor Smale&#39; Notes
+        
+    </title>
+
+    
+    <link href="https://github.com/trevorsmale/cumuluscss/fontawesome.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://github.com/trevorsmale/cumulus/css/ace.min.css">
+
+    
+
+    
+    
+        
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/trevorsmale/cumulus">
+                
+                Trevor Smale&#39; Notes
+            </a>
+        </div>
+        
+    </div>
+    <div class="feed-icons">
+            <a href="https://github.com/trevorsmale/cumulus/Tools/index.xml"><img src="/img/feed-icon.svg" alt="RSS feed" /></a>
+        </div>
+    </nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+            <form class="form-inline my-2 my-lg-0 searchbox">
+                <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder="Search">
+            </form>
+
+        
+
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/trevorsmale/cumulus/JavaScript/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/JavaScript/"><h6>JavaScript</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Kubernetes/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Kubernetes/"><h6>Kubernetes</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Tools/" class="nav-item my-1 parent active
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Tools/"><h6>Tools</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Workflows/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Workflows/"><h6>Work-Flows</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Workflows/MSDHNGINX/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Workflows/MSDHNGINX/" class="nav-link p-0">
+                    Multi-Site Single Server
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Workflows/Gitea/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Workflows/Gitea/" class="nav-link p-0">
+                    Private Gitea Server
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Workflows/RSS/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Workflows/RSS/" class="nav-link p-0">
+                    RSS feed
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/WSL2/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/WSL2/"><h6>WSL2</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/AI/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/AI/"><h6>AI</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Azure/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Azure/"><h6>Azure</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+    <li data-nav-id="/trevorsmale/cumulus/Azure/Certifications/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Azure/Certifications/"><h6>Azure Certifications</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Azure/Certifications/AZ104/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Azure/Certifications/AZ104/" class="nav-link p-0">
+                    AZ-104
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Blender-3D/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Blender-3D/"><h6>Blender 3D</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Blender-3D/Intro-Course/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Blender-3D/Intro-Course/" class="nav-link p-0">
+                    Intro Course
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Containers/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Containers/"><h6>Containers</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/CSS/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/CSS/"><h6>CSS</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Electronics/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Electronics/"><h6>Electronics</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/GO/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/GO/"><h6>GO</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/GO/Course1/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/GO/Course1/" class="nav-link p-0">
+                    Making Modern Applications with GO
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/GO/WAILS/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/GO/WAILS/" class="nav-link p-0">
+                    WAILS
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/"><h6>Linux</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Linux/Cron/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/Cron/" class="nav-link p-0">
+                    Cron
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Linux/Rsync/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/Rsync/" class="nav-link p-0">
+                    R-Sync
+                  </a>
+                
+        </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/redhat/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/redhat/"><h6>RedHat</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Linux/redhat/Ansible/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/redhat/Ansible/" class="nav-link p-0">
+                    Ansible
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Linux/redhat/OpenShift/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/redhat/OpenShift/" class="nav-link p-0">
+                    OpenShift
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+        <li data-nav-id="/trevorsmale/cumulus/Linux/SSH/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/SSH/" class="nav-link p-0">
+                    SSH
+                  </a>
+                
+        </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/TC/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/TC/"><h6>Training &amp; Certifications</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+    <li data-nav-id="/trevorsmale/cumulus/Linux/TC/LPI/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/TC/LPI/"><h6>Linux Professional Institute (LPI)</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Linux/TC/LPI/ESENT/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/TC/LPI/ESENT/" class="nav-link p-0">
+                    Essentials
+                  </a>
+                
+        </li>
+        <li data-nav-id="/trevorsmale/cumulus/Linux/TC/LPI/LPIC1/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/TC/LPI/LPIC1/" class="nav-link p-0">
+                    LPIC 1 Certification
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/TC/Skilstak/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/TC/Skilstak/"><h6>SkilStak</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Linux/TC/Skilstak/BB/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/TC/Skilstak/BB/" class="nav-link p-0">
+                    Beginner Boost
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Linux/NIX/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/NIX/"><h6>NIX</h6></a>
+        
+    </li>
+        <li data-nav-id="/trevorsmale/cumulus/Linux/SSHT/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Linux/SSHT/" class="nav-link p-0">
+                    
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/LOG/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/LOG/"><h6>LogBook</h6></a>
+        
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/Project/" class="nav-item my-1 haschildren
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/Project/"><h6>Project</h6></a>
+        
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Project/Stringer/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Project/Stringer/" class="nav-link p-0">
+                    Stringer
+                  </a>
+                
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/trevorsmale/cumulus/VIM/" class="nav-item my-1
+        ">
+        
+        
+          <a class="nav-link p-0" href="/trevorsmale/cumulus/VIM/"><h6>VIM</h6></a>
+        
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#command-line-interface">Command Line Interface</a></li>
+        <li><a href="#current-computer">Current Computer</a></li>
+        <li><a href="#dev-tools">Dev Tools</a>
+          <ul>
+            <li><a href="#vscode">VSCODE</a>
+              <ul>
+                <li><a href="#blender-python-code-templates---plug-in">Blender Python Code Templates - Plug-In</a></li>
+                <li><a href="#bootstrap-4-snippets---plug-in">Bootstrap 4 snippets - Plug-In</a></li>
+                <li><a href="#firefox-debugger---plug-in">Firefox Debugger - Plug-In</a></li>
+                <li><a href="#es7--react---plug-in">ES7 + REACT - Plug-In</a></li>
+                <li><a href="#hugo-syntax---plug-in">Hugo Syntax - Plug-In</a></li>
+                <li><a href="#js-jsx-snippets---plug-in">JS JSX Snippets - Plug-In</a></li>
+                <li><a href="#wsl---plug-in">WSL - Plug-In</a></li>
+                <li><a href="#pylance---plug-in">Pylance - Plug-In</a></li>
+                <li><a href="#markdownlint---plug-in">markdownlint - Plug-In</a></li>
+                <li><a href="#docker---plug-in">Docker - Plug-In</a></li>
+                <li><a href="#github-copilot---plug-in">GitHub Copilot - Plug-In</a></li>
+                <li><a href="#eslint---plug-in">ESLint - Plug-In</a></li>
+                <li><a href="#xml-tools---plug-in">XML Tools - Plug-In</a></li>
+                <li><a href="#github-actions---plug-in">GitHub Actions - Plug-In</a></li>
+                <li><a href="#makefile-tools---plug-in">Makefile Tools - Plug-In</a></li>
+              </ul>
+            </li>
+            <li><a href="#neovim">NEOVIM</a>
+              <ul>
+                <li><a href="#tree-sitter---plug-in">Tree Sitter - Plug-In</a></li>
+                <li><a href="#telescope---plug-in">Telescope - Plug-In</a></li>
+                <li><a href="#fzf---plug-in">FZF - Plug-In</a></li>
+              </ul>
+            </li>
+            <li><a href="#fish">FISH</a>
+              <ul>
+                <li><a href="#fisher---plug-in-manager">Fisher - Plug-in manager</a></li>
+                <li><a href="#tide---plug-in">Tide - Plug-in</a></li>
+              </ul>
+            </li>
+            <li><a href="#tmux">TMUX</a>
+              <ul>
+                <li><a href="#tpm---plug-in-manager">TPM - Plug-in manager</a></li>
+                <li><a href="#resurect---plug-in">Resurect - Plug-in</a></li>
+                <li><a href="#zoxide---plug-in">Zoxide - Plug-in</a></li>
+                <li><a href="#bash">BASH</a></li>
+                <li><a href="#git--git-actions">Git &amp; Git Actions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<div class="d-flex flex-column">
+    <h1 class="js-title">Tools</h1>
+    <div class="d-flex align-items-center">
+        
+    </div>
+</div>
+
+<hr>
+
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<p><svg
+class="ionicon"
+viewBox="0 0 510.50439 162.02531"
+version="1.1"
+id="svg1232"
+sodipodi:docname="Wrench.svg"
+inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+xml:space="preserve"
+inkscape:export-filename="cup.png"
+inkscape:export-xdpi="96"
+inkscape:export-ydpi="96"
+width="510.50439"
+height="162.02531"
+xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:svg="http://www.w3.org/2000/svg"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:cc="http://creativecommons.org/ns#"
+xmlns:dc="http://purl.org/dc/elements/1.1/"><defs
+id="defs1236" />&lt;sodipodi:namedview
+id=&ldquo;namedview1234&rdquo;
+pagecolor=&quot;#ffffff&quot;
+bordercolor=&quot;#000000&quot;
+borderopacity=&ldquo;0.25&rdquo;
+inkscape:showpageshadow=&ldquo;2&rdquo;
+inkscape:pageopacity=&ldquo;0.0&rdquo;
+inkscape:pagecheckerboard=&ldquo;0&rdquo;
+inkscape:deskcolor=&quot;#d1d1d1&quot;
+showgrid=&ldquo;false&rdquo;
+inkscape:zoom=&ldquo;2.0058594&rdquo;
+inkscape:cx=&ldquo;72.288217&rdquo;
+inkscape:cy=&ldquo;256.24927&rdquo;
+inkscape:window-width=&ldquo;3840&rdquo;
+inkscape:window-height=&ldquo;2066&rdquo;
+inkscape:window-x=&ldquo;3829&rdquo;
+inkscape:window-y=&quot;-11&quot;
+inkscape:window-maximized=&ldquo;1&rdquo;
+inkscape:current-layer=&ldquo;svg1232&rdquo; /&gt;<title
+id="title1226">Backspace</title><path
+style="fill:#cccccc;stroke-width:0.872211"
+d="m 483.55994,123.43064 c -15.07256,6.3401 -32.91413,2.57117 -49.182,3.0754 -84.85825,-2.44596 -169.71288,-5.898 -254.59273,-7.02877 -32.29306,-0.67679 -53.19124,30.91202 -84.062002,36.03161 C 75.767036,165.69827 75.098885,126.7607 52.729937,137.43925 31.795213,140.45715 12.811656,128.28166 5.9217955,107.7092 18.45085,95.953746 38.349708,90.086387 54.814508,84.364337 65.237489,96.465308 68.1765,76.076959 59.274158,74.738767 42.122802,75.782634 16.190791,100.59878 5.5731994,77.480225 2.3513985,58.589474 23.311695,43.836227 34.948776,31.306089 47.12047,21.979944 59.427223,10.798211 75.17428,9.038438 c 32.87183,-1.8365068 56.25195,26.139617 82.46319,42.055321 29.15199,14.961398 62.84601,8.193998 94.14776,9.106599 73.83279,-0.87502 147.69218,-2.438961 221.4982,-3.480658 19.39876,-0.241253 37.64383,18.459946 32.36115,39.135071 -1.91521,12.744609 -12.02545,21.211529 -22.08464,27.575869 z m 7.55285,-26.108112 C 503.3308,73.465701 478.80466,54.595199 457.3353,60.877555 c -90.71839,1.93684 -181.50269,5.838039 -272.23321,3.117389 -13.42518,3.915802 -33.04868,-16.445116 -39.73533,-11.678869 2.36814,18.705678 4.77466,37.435678 8.13401,55.976885 17.2122,-7.00233 35.67358,-5.29686 53.75389,-4.40966 83.99082,3.04031 167.93859,7.37833 251.92087,10.51508 12.33454,0.16882 26.12189,-4.97459 31.93726,-17.075852 z m -21.80664,11.033722 c -33.00728,11.87266 -35.68766,-43.648089 -3.94859,-43.07493 22.70688,-2.859401 27.78766,31.044336 9.24915,40.37203 l -2.54519,1.48906 z m 10.43479,-15.803053 c 8.96733,-33.425328 -45.88563,-5.811953 -21.78152,11.382853 8.42949,1.59268 17.55984,-3.92812 21.78152,-11.382853 z m -98.82435,5.515738 c -68.65915,-2.805212 -137.4229,-3.808339 -206.00438,-8.157522 -13.02765,-15.323678 19.82732,-11.102817 28.71693,-12.111234 77.34093,-1.929773 154.69858,-4.221902 232.05873,-4.477238 -9.1337,9.693106 2.71107,32.735009 -16.87385,25.929702 -12.63529,-0.286776 -25.26583,-0.764005 -37.89743,-1.183708 z M 130.64508,92.652909 c -9.28718,-8.401706 -33.156717,7.470261 -24.55192,12.231401 5.14988,-15.461506 25.65421,-3.78218 29.3463,-9.092697 L 133.6008,94.311029 Z M 103.41016,115.44436 C 97.115415,110.37414 84.253097,109.8369 87.39245,95.179693 83.870261,81.263925 82.893125,65.255133 97.668644,58.979298 95.482981,44.413738 96.311144,28.907448 91.311342,15.149868 68.536977,8.341436 46.984585,25.653833 31.263551,41.010068 26.08323,47.849063 9.8719227,60.781231 12.494393,66.132323 29.188855,63.881695 52.49259,40.814489 64.222073,62.770395 70.995027,85.110859 69.233,109.65351 75.606778,132.03878 c 7.743008,-5.87246 25.503982,-7.03243 27.803382,-16.59442 z M 128.8579,80.523392 c -8.9164,-9.184933 -32.84023,2.906293 -26.90926,12.298426 5.54569,-14.682489 23.89156,-7.108187 30.12227,-9.459047 z M 127.83827,69.83807 C 120.8367,55.304698 89.763116,72.867522 99.167512,79.069084 105.3972,65.955852 119.66861,70.525671 128.65142,71.741973 Z M 66.889253,108.66376 C 65.768458,75.665629 34.950714,95.662492 18.894677,103.32515 c -21.6082013,9.68757 16.855706,16.04336 26.037646,16.18558 8.404819,-0.80435 28.43672,5.61832 21.95693,-10.84697 z"
+id="path7964" /><metadata
+id="metadata7966"><a href="rdf:RDF">rdf:RDF</a>&lt;cc:Work
+rdf:about=&quot;&quot;&gt;<a href="dc:title">dc:title</a>Backspace&lt;/dc:title&gt;&lt;/cc:Work&gt;&lt;/rdf:RDF&gt;</metadata></svg></p>
+
+
+<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-success rounded" style="border-width:4px !important;">
+    <div class="wrap border border-left-0 rounded">
+        
+        <div class="card-header border-0 bg-white pl-3 text-success">
+            <h3>Update Log</h3>
+        </div>
+        
+        <div class="card-body pt-1">
+            Updated 2023 06 02
+        </div>
+    </div>
+</div>
+
+<h2 id="command-line-interface">Command Line Interface</h2>
+<p class="lead">
+    A command line interface (CLI) is a text-based user interface that allows users to interact with a computer program or operating system through typed commands. It provides a direct and efficient way to execute commands, manage files and directories, and perform various tasks. The CLI typically presents a prompt where users can enter commands and receive text-based output in response. It offers powerful scripting capabilities, enabling automation and batch processing. While lacking graphical elements, the CLI offers flexibility, speed, and precise control over system operations, making it a preferred choice for developers, system administrators, and advanced users.
+</p>
+
+<h2 id="current-computer">Current Computer</h2>
+<ul>
+<li>Windows 10 + WSL2 UBUNTU</li>
+<li>Intel Core i9-10900K CPU @ 3.70GHz (10 Core 20 Threads)</li>
+<li>32 GB DDR4</li>
+<li>2 x 2 TB NVME SSD&rsquo;s</li>
+<li>GTX 1060 6GB Video Card</li>
+</ul>
+<h2 id="dev-tools">Dev Tools</h2>
+<hr>
+<h3 id="vscode">VSCODE</h3>
+<p>Visual Studio Code (VSCode) is a popular and highly customizable source code editor that provides an intuitive and feature-rich environment for writing, debugging, and collaborating on software development projects.</p>
+<h4 id="blender-python-code-templates---plug-in">Blender Python Code Templates - Plug-In</h4>
+<h4 id="bootstrap-4-snippets---plug-in">Bootstrap 4 snippets - Plug-In</h4>
+<h4 id="firefox-debugger---plug-in">Firefox Debugger - Plug-In</h4>
+<h4 id="es7--react---plug-in">ES7 + REACT - Plug-In</h4>
+<h4 id="hugo-syntax---plug-in">Hugo Syntax - Plug-In</h4>
+<h4 id="js-jsx-snippets---plug-in">JS JSX Snippets - Plug-In</h4>
+<h4 id="wsl---plug-in">WSL - Plug-In</h4>
+<h4 id="pylance---plug-in">Pylance - Plug-In</h4>
+<h4 id="markdownlint---plug-in">markdownlint - Plug-In</h4>
+<h4 id="docker---plug-in">Docker - Plug-In</h4>
+<h4 id="github-copilot---plug-in">GitHub Copilot - Plug-In</h4>
+<h4 id="eslint---plug-in">ESLint - Plug-In</h4>
+<h4 id="xml-tools---plug-in">XML Tools - Plug-In</h4>
+<h4 id="github-actions---plug-in">GitHub Actions - Plug-In</h4>
+<h4 id="makefile-tools---plug-in">Makefile Tools - Plug-In</h4>
+<hr>
+<h3 id="neovim">NEOVIM</h3>
+<p>Neovim is a modernized and extensible text editor that aims to improve upon the classic Vim editor by enhancing its performance, adding new features, and offering better compatibility with modern workflows.</p>
+<h4 id="tree-sitter---plug-in">Tree Sitter - Plug-In</h4>
+<h4 id="telescope---plug-in">Telescope - Plug-In</h4>
+<h4 id="fzf---plug-in">FZF - Plug-In</h4>
+<hr>
+<h3 id="fish">FISH</h3>
+<p>Fish is a user-friendly command shell with an intuitive interface, auto-completion, syntax highlighting, and powerful scripting, making it a popular choice for developers and power users.</p>
+<h4 id="fisher---plug-in-manager">Fisher - Plug-in manager</h4>
+<h4 id="tide---plug-in">Tide - Plug-in</h4>
+<hr>
+<h3 id="tmux">TMUX</h3>
+<p>TMUX is a terminal multiplexer that allows users to create and manage multiple terminal sessions within a single window, providing efficient multitasking and enhanced productivity in a command-line environment.</p>
+<h4 id="tpm---plug-in-manager">TPM - Plug-in manager</h4>
+<h4 id="resurect---plug-in">Resurect - Plug-in</h4>
+<h4 id="zoxide---plug-in">Zoxide - Plug-in</h4>
+<hr>
+<h4 id="bash">BASH</h4>
+<hr>
+<h4 id="git--git-actions">Git &amp; Git Actions</h4>
+
+
+    
+
+
+                    
+                    <div class="row"><div class="position-relative mx-auto col-lg-9">
+                          <div class="bg-primary overflow-hidden p-3 mt-5 shadow">
+
+    <h4 class="text-white text-center">Read more</h4>
+
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/trevorsmale/cumulus/Kubernetes/" title="Kubernetes"><i class="fas fa-chevron-left p-1"></i>Kubernetes</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/trevorsmale/cumulus/Workflows/" title="Work-Flows">Work-Flows<i class="fas fa-chevron-right p-1"></i></a>
+    </div>
+</div>
+
+
+                        </div></div> 
+
+                </div>
+
+            </div> 
+
+        </div> 
+<script src="https://github.com/trevorsmale/cumuluslib/jquery.min.js"></script> 
+<script src="https://github.com/trevorsmale/cumuluslib/popper.min.js"></script> 
+
+<script src="https://github.com/trevorsmale/cumulusjs/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/auto-complete.js"></script>
+<link href="/trevorsmale/cumulus/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "https:\/\/github.com\/trevorsmale\/cumulus";
+  
+</script>
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/search.js"></script>
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/favorites.js"></script>
+
+
+<script type="text/javascript" src="/trevorsmale/cumulus/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>

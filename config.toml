@@ -1,6 +1,6 @@
 baseURL = "https://github.com/trevorsmale/cumulus"
 weight = 2
-title = "TS Tech Notes"
+title = "Trevor Smale' Notes"
 theme = "ace-documentation"
 
 pluralizeListTitles = false
