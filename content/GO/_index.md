@@ -57,15 +57,54 @@ draft: false
      id="metadata7966"><rdf:RDF><cc:Work
          rdf:about=""><dc:title>Backspace</dc:title></cc:Work></rdf:RDF></metadata></svg>
 
-
-
-{{< lead >}}
-
 ## Overview
 
 Golang, also known as Go, is a statically typed programming language developed by Google. Designed to be efficient, simple, and highly scalable, Go has gained popularity for its clean syntax, robust standard library, and built-in support for concurrent programming. It emphasizes simplicity and readability, making it easy to learn and write code. Go's strong type system helps catch errors at compile-time, ensuring safer and more reliable code. With its excellent performance and low memory footprint, Go is commonly used for developing web applications, network servers, system tools, and other software projects that require efficiency and concurrency.
 
-{{< /lead >}}
+## Why it matters
+
+Golang was developed at Google because Rob Pike was frustrated with the state of writing software for large and complex infrastructure. He stated during a 2021 conference that dependencies were impossible to manage with any language they tried.
+Some major point to remember about go.
+
+### Concurrency and Scalability: 
+
+Go has built-in support for concurrency with Goroutines and channels. Goroutines allow lightweight concurrent execution, enabling developers to easily handle thousands of concurrent connections efficiently. Channels facilitate safe communication and synchronization between Goroutines, making it easier to build highly concurrent and scalable applications.
+
+### Efficiency and Performance: 
+
+Go is designed to be fast and efficient. It compiles to machine code, resulting in executables that have minimal startup time and low memory footprint. Go's garbage collector is optimized for low-latency, allowing applications to handle a large number of requests without significant performance degradation.
+
+### Simplicity and Readability: 
+
+Go emphasizes simplicity and readability in its syntax and design. It has a minimalistic approach, offering a small and clean language specification. This simplicity makes it easier to write, read, and maintain code. Go's syntax is straightforward, reducing the cognitive load on developers and promoting code clarity.
+
+### Strong Standard Library: 
+
+Go comes with a comprehensive and powerful standard library that provides a wide range of functionality out of the box. It includes packages for networking, cryptography, file handling, JSON/XML parsing, concurrency, and much more. The standard library encourages consistent practices and reduces the reliance on third-party libraries.
+
+### Static Typing and Safety: 
+
+Go is statically typed, which means that type-checking occurs at compile-time, catching many errors before the program is executed. This promotes code reliability, early bug detection, and better refactoring capabilities. Go's type system is expressive and allows developers to define complex types and structures easily.
+
+### Excellent Concurrency Primitives: 
+
+Go's concurrency primitives, Goroutines and channels, provide a powerful and safe way to handle concurrent tasks. Goroutines are lightweight, allowing the creation of thousands or even millions of concurrent Goroutines without significant resource overhead. Channels facilitate communication and synchronization between Goroutines, simplifying concurrent programming.
+
+### Cross-Platform Support: 
+
+Go supports cross-platform development, allowing developers to write code once and run it on multiple platforms without significant modifications. It provides binaries for major operating systems and processor architectures, making it easy to develop applications that are compatible with various platforms.
+
+### Easy Deployment: 
+
+Go produces self-contained executables that can be deployed without any external dependencies. This simplifies the deployment process, as there is no need to install additional runtime environments or libraries on the target system. Go's support for static linking and the ability to compile to a single binary contribute to its ease of deployment.
+
+### Built-in Testing Support: 
+
+Go has excellent support for writing unit tests and conducting test-driven development. The standard library includes a testing package that provides testing utilities and a testing framework. This built-in testing support encourages developers to write tests, leading to better code quality and maintainability.
+
+### Community and Ecosystem: 
+
+Go has a vibrant and active community. It is backed by major organizations, including Google, and has a growing ecosystem of third-party libraries and frameworks. The community-driven nature of Go fosters collaboration, knowledge sharing, and the development of high-quality open-source tools and packages.
 
 ## GO API
 

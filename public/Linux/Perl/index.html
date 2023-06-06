@@ -4,13 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <meta name="description" content="Procedural Workflows">
-    
-    <link rel="canonical" href="https://github.com/trevorsmale/cumulus/Workflows/Gitea/">
+    <link rel="canonical" href="https://github.com/trevorsmale/cumulus/Linux/Perl/">
 
     <title>
         
-        Private Gitea Server | Trevor Smale&#39; Notes
+        Perl | Trevor Smale&#39; Notes
         
     </title>
 
@@ -76,7 +74,7 @@
           <a class="nav-link p-0" href="/trevorsmale/cumulus/Tools/"><h6>Tools</h6></a>
         
     </li>
-    <li data-nav-id="/trevorsmale/cumulus/Workflows/" class="nav-item my-1 parent haschildren
+    <li data-nav-id="/trevorsmale/cumulus/Workflows/" class="nav-item my-1 haschildren
         ">
         
         
@@ -91,7 +89,7 @@
                   </a>
                 
         </li>
-        <li data-nav-id="/trevorsmale/cumulus/Workflows/Gitea/" class="nav-item my-1 active">
+        <li data-nav-id="/trevorsmale/cumulus/Workflows/Gitea/" class="nav-item my-1">
                 
                 
                   <a href="/trevorsmale/cumulus/Workflows/Gitea/" class="nav-link p-0">
@@ -212,7 +210,7 @@
         </li>
         </ul>
     </li>
-    <li data-nav-id="/trevorsmale/cumulus/Linux/" class="nav-item my-1 haschildren
+    <li data-nav-id="/trevorsmale/cumulus/Linux/" class="nav-item my-1 parent haschildren
         ">
         
         
@@ -227,7 +225,7 @@
                   </a>
                 
         </li>
-        <li data-nav-id="/trevorsmale/cumulus/Linux/Perl/" class="nav-item my-1">
+        <li data-nav-id="/trevorsmale/cumulus/Linux/Perl/" class="nav-item my-1 active">
                 
                 
                   <a href="/trevorsmale/cumulus/Linux/Perl/" class="nav-link p-0">
@@ -386,12 +384,7 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#installing-gitea">Installing Gitea</a></li>
-        <li><a href="#setting-up-a-nginx-reverse-proxy">Setting up a Nginx reverse proxy</a></li>
-        <li><a href="#setting-up-gitea">Setting up Gitea</a></li>
-        <li><a href="#a-few-extras">A few extras</a></li>
-        <li><a href="#automatically-create-a-new-repo-on-push">Automatically create a new repo on push</a></li>
-        <li><a href="#change-tab-width">Change tab-width</a></li>
+        <li><a href="#what-is-perl">What is Perl?</a></li>
       </ul>
     </li>
   </ul>
@@ -402,7 +395,7 @@
                 
 
 <div class="d-flex flex-column">
-    <h1 class="js-title">Private Gitea Server</h1>
+    <h1 class="js-title">Perl</h1>
     <div class="d-flex align-items-center">
         
     </div>
@@ -417,101 +410,69 @@
     <div class="wrap border border-left-0 rounded">
         
         <div class="card-header border-0 bg-white pl-3 text-success">
-            <h3>Tried &amp; Tested Workflow</h3>
+            <h3>Update Log</h3>
         </div>
         
         <div class="card-body pt-1">
-            I have used this procedure to setup a Gitea repository on a single low-cost VPS using Dynamic Hosting with NGINX
+            <ul>
+<li>2023 06 06 - Initial Commit</li>
+</ul>
+
         </div>
     </div>
 </div>
 
-<p>Gitea allows you to self-host your git repositories similar to <a href="/git">bare
-repositories</a>, but comes with additional features that you might know
-from GitHub, such as issues, pull requests or multiple users. Its advantage
-over GitLab&mdash;another Free Software GitHub clone&mdash;is that it is much more
-lightweight and easier to setup.</p>
-<p>Head over to <a href="https://gitea.com">gitea.com</a> to see what it looks like in
-practice.</p>
-<p>Although Gitea is lighter than Gitlab, if you have a VPS with only 512MB of
-RAM, you will probably have to upgrade. Gitea is more memory-intensive than
-having just a bare git repository. If you just want a minimalist browseable git
-server without  issue tracking and pull requests, install <a href="/cgit">cgit</a>
-instead.</p>
-<h2 id="installing-gitea">Installing Gitea</h2>
-<p>First install a few dependencies:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">apt install curl sqlite3
-</code></pre></div><p>Unfortunately, Gitea itself is not in the official Debian repos, so we
-will add a third-party repository for it.</p>
-<p>Add the repo's gpg key to apt's trusted keys:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">curl -sL -o /etc/apt/trusted.gpg.d/morph027-gitea.asc https://packaging.gitlab.io/gitea/gpg.key
-</code></pre></div><p>Then add the actual repository to apt:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="nb">echo</span> <span class="s2">&#34;deb [arch=</span><span class="k">$(</span>dpkg --print-architecture<span class="k">)</span><span class="s2">] https://packaging.gitlab.io/gitea gitea main&#34;</span> &gt; /etc/apt/sources.list.d/morph027-gitea.list
-</code></pre></div><p>Now we can install Gitea:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">apt update
-apt install gitea
-</code></pre></div><p>Since apt automatically enables and starts the Gitea service, it should
-already be running on port <code>3000</code> on your server!</p>
-<h2 id="setting-up-a-nginx-reverse-proxy">Setting up a Nginx reverse proxy</h2>
-<p>You should know how to generate SSL certificates and use Nginx by now.
-Add this to your Nginx config to proxy requests made to your git
-subdomain to Gitea running on port 3000:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">server</span> <span class="p">{</span>
-	<span class="kn">listen</span> <span class="mi">443</span> <span class="s">ssl</span><span class="p">;</span>
-	<span class="kn">listen</span> <span class="s">[::]:443</span> <span class="s">ssl</span><span class="p">;</span>
-	<span class="kn">ssl_certificate</span> <span class="s">/etc/ssl/nginx/git.example.org.crt</span><span class="p">;</span>
-	<span class="kn">ssl_certificate_key</span> <span class="s">/etc/ssl/nginx/git.example.org.key</span><span class="p">;</span>
-	<span class="kn">server_name</span> <span class="s">Gitea</span> <span class="s">Example</span> <span class="s">git.example.org</span><span class="p">;</span>
-	<span class="kn">location</span> <span class="s">/</span> <span class="p">{</span>
-		<span class="kn">proxy_pass</span> <span class="s">http://localhost:3000/</span><span class="p">;</span> <span class="c1"># The / is important!
-</span><span class="c1"></span>		<span class="kn">proxy_redirect</span> <span class="no">off</span><span class="p">;</span>
-		<span class="kn">proxy_set_header</span> <span class="s">Host</span> <span class="nv">$host</span><span class="p">;</span>
-		<span class="kn">proxy_set_header</span> <span class="s">X-Real-IP</span> <span class="nv">$remote_addr</span><span class="p">;</span>
-		<span class="kn">proxy_set_header</span> <span class="s">X-Forwarded-For</span> <span class="nv">$proxy_add_x_forwarded_for</span><span class="p">;</span>
-		<span class="kn">proxy_set_header</span> <span class="s">X-Forwarded-Proto</span> <span class="nv">$scheme</span><span class="p">;</span>
-	<span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div><p>And reload Nginx:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">systemctl reload nginx
-</code></pre></div><h2 id="setting-up-gitea">Setting up Gitea</h2>
-<p>If everything worked fine you should now see a setup screen when you go
-to your configured domain in the browser. The options should be pretty
-self-explanatory, it is only important to select SQLite3 and to replace
-the base url and SSH server domain with your own.</p>
-<dl>
-<dt>Database Type:</dt>
-<dd>SQLite3</dd>
-<dt>SSH Server Domain:</dt>
-<dd><strong>git.example.org</strong></dd>
-<dt>Gitea Base URL:</dt>
-<dd><strong>git.example.org</strong></dd>
-</dl>
-<p>These and other settings can be changed in a configuration file later so
-don't worry about making wrong decisions right now.</p>
-<p>After clicking the install button you should now be able to log into
-your Gitea instance with the account you just created! Explore the
-settings for more things to do, such as setting up your SSH keys.</p>
-<p>If Gitea does not load fully and has random errors, it is possible that
-you need to increase your available memory on your VPS. This can usually
-be done on your VPS-provider's website without too much trouble.</p>
-<h2 id="a-few-extras">A few extras</h2>
-<h2 id="automatically-create-a-new-repo-on-push">Automatically create a new repo on push</h2>
-<p>This is an incredibly useful feature for me. Open up
-<code>/etc/gitea/app.ini</code> and add <code>DEFAULT_PUSH_CREATE_PRIVATE = true</code> to the
-<code>repository</code> section like so:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-systemd" data-lang="systemd"><span class="k">[repository]</span>
-<span class="na">ROOT </span><span class="o">=</span><span class="s"> /var/lib/gitea/data/gitea-repositories</span>
-<span class="na">DEFAULT_PUSH_CREATE_PRIVATE </span><span class="o">=</span><span class="s"> true</span>
-</code></pre></div><p>If you now add a remote to a repository like this</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">git remote add origin <span class="s1">&#39;ssh://gitea@git.example.org/username/coolproject.git&#39;</span>
-</code></pre></div><p>and push, Gitea will automatically create a private <code>coolproject</code>
-repository in your account!</p>
-<h2 id="change-tab-width">Change tab-width</h2>
-<p>By default Gitea displays tabs 8 spaces wide, however I prefer 4 spaces.
-We can change this!</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">mkdir -p /var/lib/gitea/custom/templates/custom/
-</code></pre></div><p>And write this into
-<code>/var/lib/gitea/custom/templates/custom/header.tmpl</code>:</p>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<p><svg
+viewBox="0 0 43.17 48.65"
+width="2218"
+height="2500"
+version="1.1"
+id="svg6"
+sodipodi:docname="perl-programming-language.svg"
+inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:svg="http://www.w3.org/2000/svg">
+<defs
+id="defs10" />
+&lt;sodipodi:namedview
+id=&ldquo;namedview8&rdquo;
+pagecolor=&quot;#ffffff&quot;
+bordercolor=&quot;#000000&quot;
+borderopacity=&ldquo;0.25&rdquo;
+inkscape:showpageshadow=&ldquo;2&rdquo;
+inkscape:pageopacity=&ldquo;0.0&rdquo;
+inkscape:pagecheckerboard=&ldquo;0&rdquo;
+inkscape:deskcolor=&quot;#d1d1d1&quot;
+showgrid=&ldquo;false&rdquo;
+inkscape:zoom=&ldquo;0.4108&rdquo;
+inkscape:cx=&ldquo;1110.0292&rdquo;
+inkscape:cy=&ldquo;1251.2171&rdquo;
+inkscape:window-width=&ldquo;3840&rdquo;
+inkscape:window-height=&ldquo;2066&rdquo;
+inkscape:window-x=&quot;-11&quot;
+inkscape:window-y=&quot;-11&quot;
+inkscape:window-maximized=&ldquo;1&rdquo;
+inkscape:current-layer=&ldquo;svg6&rdquo; /&gt;</p>
+  <title
+     id="title2">perl</title>
+  <path
+     d="M28 25.93a69.79 69.79 0 0 1 .86 7.53 7.42 7.42 0 0 1-1.31 4.41c-.21.75-.84 0-1.29 0-1.11 0-1.52-1.2-2.12-1.94s-.17-1.41.23-2c.43-.31.6-1 1.22-1s.54-.85.45-1.3c.41-.63.16-1.56.56-2.25.72-.32.51-1.44.76-2.07.2-.45 0-1.31.57-1.5 0 0 .07 0 .06.1M27.3.23c-.94-.11-1.65.53-2.44.89a18 18 0 0 1-2 .54c-.49 1-1.62 1.59-2.23 2.53a10 10 0 0 1-3.34 4.72c-2.22 1.15-3.34 3.65-4.07 6-.25.53-.21 1.31-.48 1.76-.88.25-.41-.9-.51-1.45-.13-.82.59-1.35.64-2.15a3.29 3.29 0 0 0 .36-1.85c-.1-1.43.33-3.17-.68-4.34-.6-.35-.41-1.09-.63-1.66a7.27 7.27 0 0 0-2.23-2c-.72-.07-1.38-1-2.12-.57-.46.54-1.31.53-1.58 1.25-.17.9-1.18.66-1.84.88-.84.33-1.92 0-2.61.67S-.28 7.1.06 8.23C.85 9.78 2.89 9 4 9.94A32 32 0 0 1 2.79 13a18.06 18.06 0 0 0-.08 4.09c.21 1.36-.14 3.11 1 4.07.65.24.61 1 .86 1.56s.73-.2.93.34c.58.32.06 1 .38 1.4a2.76 2.76 0 0 1 1.41.75A11.82 11.82 0 0 1 9 26.66c.4.82.91-.8 1.35-.19a1 1 0 0 0 1.41.5A5.1 5.1 0 0 0 14 26c.43 1.53.1 3.19.29 4.77a20.89 20.89 0 0 1 .5 3.51 16.86 16.86 0 0 1 .52 3.56 12.7 12.7 0 0 1-1.22 7.29 1.76 1.76 0 0 1-1.39 1.4c-.5.23-1.54.64-1.19 1.36 1.16 1 3 .89 4.33.38.88-.43.12-1.5.57-2.15.59-2.28.3-4.72 1-7a6.72 6.72 0 0 0 .59-3.69c.14-.77-.18-1.7.32-2.33a3.21 3.21 0 0 1 .81-2.1 26.44 26.44 0 0 0 .25-3.55 5.45 5.45 0 0 1 2.18-.22c0 .66-.47 1.42-.33 2.16a3.48 3.48 0 0 1-.45 2.41c-.31 1.3-.52 2.9.29 4 1.34 1.47 3.09 2.51 4.36 4.08a.92.92 0 0 1 .06 1.38 2.66 2.66 0 0 1-1.7 1.81c-.53.21-1.38 1-.76 1.55a6.61 6.61 0 0 0 3.75-.25c.82-.3.52-1.29.84-1.91a19.74 19.74 0 0 1 1.22 1.87c.51.76 1.39.13 2-.11a6.3 6.3 0 0 0-.65-3.22c-.28-.66-1.37-.68-1.32-1.49.54-2 1.88-3.56 2.94-5.25.88-.84.22-2.09.27-3.15a12 12 0 0 1 1.87-7.76 28.15 28.15 0 0 0 1.19 3.75A11 11 0 0 0 37 31.06c.41 1.42.3 3 .57 4.47a18.66 18.66 0 0 1-.42 7.62c.07.91-.79 1.58-.71 2.47.24.82 1.2.16 1.7.51a1.9 1.9 0 0 0 2.28-1A11.21 11.21 0 0 1 40 43a13.31 13.31 0 0 1-.44-6.52c.08-1.18.79-2.62-.13-3.63-.25-1.08.18-2.25-.08-3.36a23 23 0 0 1-.21-8.65c.16-.4 0-1.14.43-1.36a3.29 3.29 0 0 1 .54 2.16 6.61 6.61 0 0 1 .14 3.65c-.73.93-.28 2.19-.19 3.24.12.74.89.21 1-.25a20.93 20.93 0 0 0 1.62-3.93c.46-.62 0-1.35 0-2 .71-.09.44-.89.06-1.24-.38-1.28-.29-2.76-1.15-3.85a18.44 18.44 0 0 1-3.34-4.78c-.91-2.87-3.51-4.78-4.39-7.68A6.23 6.23 0 0 0 31.07.73a13.24 13.24 0 0 0-2-.73 10.88 10.88 0 0 1-1.77.22"
+     fill="#004065"
+     id="path4"
+     style="fill:#6196b5;fill-opacity:1" />
+</svg>
+<h2 id="what-is-perl">What is Perl?</h2>
+<p>Perl is a high-level, general-purpose programming language renowned for its versatility and strong text processing capabilities. Created by Larry Wall in the late 1980s, Perl stands for &ldquo;Practical Extraction and Reporting Language,&rdquo; emphasizing its original purpose of text manipulation and extraction from various data sources.</p>
+<p>Perl incorporates features from several programming languages, including C, sed, awk, and shell scripting. It combines procedural, object-oriented, and functional programming paradigms, offering flexibility to developers. Known for its &ldquo;TIMTOWTDI&rdquo; (There&rsquo;s More Than One Way To Do It) philosophy, Perl allows programmers to approach problems from different angles, encouraging creativity and diversity in coding solutions.</p>
+<p>One of Perl&rsquo;s notable strengths lies in its exceptional text processing capabilities. It provides powerful regular expression support, allowing developers to easily search, replace, and extract patterns from strings and files. This makes Perl an ideal choice for tasks such as parsing log files, manipulating large datasets, and building text-based utilities.</p>
+<p>Perl offers extensive built-in functions and modules, which provide a wide range of functionality right out of the box. These modules cover areas such as file I/O, network programming, database integration, XML parsing, and more. Additionally, Perl has a vibrant and active community that contributes to an extensive library of third-party modules, further expanding its capabilities.</p>
+<p>The language&rsquo;s syntax can sometimes be described as &ldquo;write-only&rdquo; due to its conciseness and expressive power. Perl allows developers to write compact and efficient code, often employing cryptic shortcuts and special variables. While this can lead to code that is difficult to read for beginners or inexperienced developers, Perl&rsquo;s community encourages good coding practices and emphasizes the importance of maintaining readability.</p>
+<p>Perl has found applications in a variety of domains, including web development, system administration, bioinformatics, and network programming. It has been extensively used to build CGI (Common Gateway Interface) web applications and was once popular for dynamic website development. However, in recent years, Perl&rsquo;s popularity in web development has declined, with other languages like Python and Ruby gaining more traction.</p>
+<p>Despite its diminished prominence in web development, Perl remains a valuable tool for system administrators, automation tasks, and text processing-oriented projects. Its robustness, expressive power, and vast ecosystem of modules make it a versatile language that continues to be relied upon by many developers.</p>
+<hr>
 
 
     
@@ -523,8 +484,8 @@ We can change this!</p>
 
     <h4 class="text-white text-center">Read more</h4>
 
-    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/trevorsmale/cumulus/Workflows/MSDHNGINX/" title="Multi-Site Single Server"><i class="fas fa-chevron-left p-1"></i>Multi-Site Single Server</a>
-        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/trevorsmale/cumulus/Workflows/RSS/" title="RSS feed">RSS feed<i class="fas fa-chevron-right p-1"></i></a>
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/trevorsmale/cumulus/Linux/Cron/" title="Cron"><i class="fas fa-chevron-left p-1"></i>Cron</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/trevorsmale/cumulus/Linux/Rsync/" title="R-Sync">R-Sync<i class="fas fa-chevron-right p-1"></i></a>
     </div>
 </div>
 

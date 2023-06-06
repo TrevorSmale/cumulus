@@ -15,6 +15,8 @@ draft: false
 * WASM [ ]
 * HTML [ ]
 * Formatting LPIC index [ ]
+* Expand out GO mini textbook [ ]
+
 {{< /panel >}}
 
 {{< panel title="Update Log" style="black" >}}
@@ -55,6 +57,8 @@ draft: false
 * 2023 06 05 - Creation of SkilStak Note
 * 2023 06 05 - Creation of AZ-104 Note
 * 2023 06 05 - Creation of Seperate LogBook Note + Moving Log
+
+* 2023 06 06 - Creation of GO mini textbook
 
 
 {{< /panel >}}
