@@ -9,8 +9,3 @@ draft: false
 
 {{< /panel >}}
 
-{{< panel title="Extracted Content" style="danger" >}}
-
-* 2023 06 05 - Initial Commit
-
-{{< /panel >}}
