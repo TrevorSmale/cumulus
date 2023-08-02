@@ -88,9 +88,9 @@ place to list dependancies
 
 example mod file:
 
-module github.com/trevorsmale/projectname
+    module github.com/trevorsmale/projectname
 
-go 1.14
+    go 1.14
 
 ### Creating the program
 
@@ -98,24 +98,24 @@ file example 'main.go':
 
 package main
 
-func main() {
-    println("Hello World")
-}
+    func main() {
+        println("Hello World")
+    }
 
 ### run main.go
 
-go run main.go
+    go run main.go
 
 ### build to executable
 
-go build main.go
+    go build main.go
 
 
-
+---
 
 # 2023 Boost - Week 1 [x]
 
-📺 <https://youtu.be/cE-kkVwz0Xg> [x]
+📺 <https://youtu.be/cE-kkVwz0Xg> 
 
 This week we start taking notes in basic Markdown on GitHub and connect with others doing the Boost. Then we go over the core applications that must be installed next week: bash shell, a good terminal, and Podman desktop.
 
@@ -140,7 +140,7 @@ This week we start taking notes in basic Markdown on GitHub and connect with oth
 
 # 2023 Boost - Week 2 [x]
 
-📺 <https://youtu.be/0gNR6qj87a0> [x]
+📺 <https://youtu.be/0gNR6qj87a0> 
 
 This week we learn about terminal and command line interfaces, containers and virtual machines and start using Podman Desktop and podman command for the first time.
 
@@ -187,7 +187,7 @@ This week we learn about terminal and command line interfaces, containers and vi
 
 # 2023 Boost - Week 3 [x]
 
-📺 <https://youtu.be/mUmQk1o6FFs> [x]
+📺 <https://youtu.be/mUmQk1o6FFs> 
 
 (PLEASE SKIP TO WEEK 4.) This week we setup an Ubuntu Linux container image using podman command and apt package manager, learn how to save (commit) an image copy so we have backups during our setup, and how to navigate the command line.
 
@@ -231,7 +231,7 @@ This week we learn about terminal and command line interfaces, containers and vi
 
 # 2023 Boost - Week 4 [x]
 
-📺 <https://youtu.be/SPoqW1CMEhY> [x]
+📺 <https://youtu.be/SPoqW1CMEhY> 
 
 Let's do this again. Weeks 2 and 3 were a little harder than most beginners might be able to handle. Most Linux users will be using a Linux that has been installed already. The Boost is primarily intended for *them* (not admins and hackers, who are also users). So we've prepared a quick-start with an existing Linux container image. Here's how to get it and another take at how to get going without having to setup anything.
 
@@ -303,7 +303,7 @@ Let's do this again. Weeks 2 and 3 were a little harder than most beginners migh
 
 # 2023 Boost - Week 5 [x]
 
-📺 <https://youtu.be/ZcEIJFbHRn4> [x]
+📺 <https://youtu.be/ZcEIJFbHRn4> 
 
 This week we do "destructive" file system stuff related and take a lot of time to review the most common dangers. Watch this is you want to *keep* your job once you get it.
 
