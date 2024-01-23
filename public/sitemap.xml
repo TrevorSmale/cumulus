@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://github.com/trevorsmale/cumulus/</loc>
-    <lastmod>2023-05-29T18:31:10-04:00</lastmod>
+    <lastmod>2023-08-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://github.com/trevorsmale/cumulus/JavaScript/</loc>
   </url><url>
@@ -21,6 +21,9 @@
   </url><url>
     <loc>https://github.com/trevorsmale/cumulus/WSL2/</loc>
   </url><url>
+    <loc>https://github.com/trevorsmale/cumulus/Project/Skool/</loc>
+    <lastmod>2023-08-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://github.com/trevorsmale/cumulus/AI/</loc>
     <lastmod>2023-05-29T18:31:10-04:00</lastmod>
   </url><url>
@@ -34,9 +37,6 @@
     <lastmod>2023-05-29T18:31:10-04:00</lastmod>
   </url><url>
     <loc>https://github.com/trevorsmale/cumulus/Azure/Certifications/</loc>
-    <lastmod>2023-05-29T18:31:10-04:00</lastmod>
-  </url><url>
-    <loc>https://github.com/trevorsmale/cumulus/Linux/TC/Skilstak/BB/</loc>
     <lastmod>2023-05-29T18:31:10-04:00</lastmod>
   </url><url>
     <loc>https://github.com/trevorsmale/cumulus/Blender-3D/</loc>
@@ -54,10 +54,10 @@
     <loc>https://github.com/trevorsmale/cumulus/Electronics/</loc>
     <lastmod>2023-05-29T18:31:10-04:00</lastmod>
   </url><url>
-    <loc>https://github.com/trevorsmale/cumulus/Linux/TC/LPI/ESENT/</loc>
+    <loc>https://github.com/trevorsmale/cumulus/GO/</loc>
     <lastmod>2023-05-29T18:31:10-04:00</lastmod>
   </url><url>
-    <loc>https://github.com/trevorsmale/cumulus/GO/</loc>
+    <loc>https://github.com/trevorsmale/cumulus/GO/WAM/</loc>
     <lastmod>2023-05-29T18:31:10-04:00</lastmod>
   </url><url>
     <loc>https://github.com/trevorsmale/cumulus/Blender-3D/Intro-Course/</loc>
@@ -66,13 +66,7 @@
     <loc>https://github.com/trevorsmale/cumulus/Linux/</loc>
     <lastmod>2023-05-29T18:31:10-04:00</lastmod>
   </url><url>
-    <loc>https://github.com/trevorsmale/cumulus/Linux/TC/LPI/</loc>
-    <lastmod>2023-05-29T18:31:10-04:00</lastmod>
-  </url><url>
     <loc>https://github.com/trevorsmale/cumulus/LOG/</loc>
-    <lastmod>2023-05-29T18:31:10-04:00</lastmod>
-  </url><url>
-    <loc>https://github.com/trevorsmale/cumulus/Linux/TC/LPI/LPIC1/</loc>
     <lastmod>2023-05-29T18:31:10-04:00</lastmod>
   </url><url>
     <loc>https://github.com/trevorsmale/cumulus/GO/Course1/</loc>
@@ -93,16 +87,10 @@
     <loc>https://github.com/trevorsmale/cumulus/Linux/redhat/</loc>
     <lastmod>2023-05-29T18:31:10-04:00</lastmod>
   </url><url>
-    <loc>https://github.com/trevorsmale/cumulus/Linux/TC/Skilstak/</loc>
-    <lastmod>2023-05-29T18:31:10-04:00</lastmod>
-  </url><url>
     <loc>https://github.com/trevorsmale/cumulus/Linux/SSH/</loc>
     <lastmod>2023-05-29T18:31:10-04:00</lastmod>
   </url><url>
     <loc>https://github.com/trevorsmale/cumulus/Project/Stringer/</loc>
-    <lastmod>2023-05-29T18:31:10-04:00</lastmod>
-  </url><url>
-    <loc>https://github.com/trevorsmale/cumulus/Linux/TC/</loc>
     <lastmod>2023-05-29T18:31:10-04:00</lastmod>
   </url><url>
     <loc>https://github.com/trevorsmale/cumulus/VIM/</loc>
@@ -113,6 +101,8 @@
   </url><url>
     <loc>https://github.com/trevorsmale/cumulus/Linux/NIX/</loc>
     <lastmod>2023-05-29T18:25:29-04:00</lastmod>
+  </url><url>
+    <loc>https://github.com/trevorsmale/cumulus/Azure/Certifications/AZ900/</loc>
   </url><url>
     <loc>https://github.com/trevorsmale/cumulus/Linux/SSHT/</loc>
   </url><url>

@@ -4,14 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <meta name="description" content="Windows Subsystem for Linux 2">
+    <meta name="description" content="Building out an interactive online school for effective remote training">
     
-    <link rel="alternate" type="application/rss+xml" href="https://github.com/trevorsmale/cumulus/WSL2/index.xml" title="Trevor Smale' Notes" />
-    <link rel="canonical" href="https://github.com/trevorsmale/cumulus/WSL2/">
+    <link rel="canonical" href="https://github.com/trevorsmale/cumulus/Project/Skool/">
 
     <title>
         
-        WSL2 | Trevor Smale&#39; Notes
+        Skool | Trevor Smale&#39; Notes
         
     </title>
 
@@ -39,9 +38,6 @@
         </div>
         
     </div>
-    <div class="feed-icons">
-            <a href="https://github.com/trevorsmale/cumulus/WSL2/index.xml"><img src="/img/feed-icon.svg" alt="RSS feed" /></a>
-        </div>
     </nav>
 <div class="container-fluid">
             <div class="row">
@@ -113,7 +109,7 @@
         </li>
         </ul>
     </li>
-    <li data-nav-id="/trevorsmale/cumulus/WSL2/" class="nav-item my-1 active
+    <li data-nav-id="/trevorsmale/cumulus/WSL2/" class="nav-item my-1
         ">
         
         
@@ -320,14 +316,14 @@
           <a class="nav-link p-0" href="/trevorsmale/cumulus/LOG/"><h6>LogBook</h6></a>
         
     </li>
-    <li data-nav-id="/trevorsmale/cumulus/Project/" class="nav-item my-1 haschildren
+    <li data-nav-id="/trevorsmale/cumulus/Project/" class="nav-item my-1 parent haschildren
         ">
         
         
           <a class="nav-link p-0" href="/trevorsmale/cumulus/Project/"><h6>Project</h6></a>
         
         <ul class="list-unstyled ml-2">
-        <li data-nav-id="/trevorsmale/cumulus/Project/Skool/" class="nav-item my-1">
+        <li data-nav-id="/trevorsmale/cumulus/Project/Skool/" class="nav-item my-1 active">
                 
                 
                   <a href="/trevorsmale/cumulus/Project/Skool/" class="nav-link p-0">
@@ -361,12 +357,9 @@
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#windows-subsytem-for-linux-overview">Windows Subsytem for Linux overview</a></li>
-        <li><a href="#issues-i-have-experienced">Issues I have experienced</a></li>
-      </ul>
-    </li>
+    <li><a href="#how-it-started">How it started</a></li>
+    <li><a href="#how-its-going">How its going</a></li>
+    <li><a href="#the-compose-file">The Compose file:</a></li>
   </ul>
 </nav>
 </div>
@@ -375,7 +368,7 @@
                 
 
 <div class="d-flex flex-column">
-    <h1 class="js-title">WSL2</h1>
+    <h1 class="js-title">Skool</h1>
     <div class="d-flex align-items-center">
         
     </div>
@@ -384,80 +377,97 @@
 <hr>
 
 
-<h2 id="windows-subsytem-for-linux-overview">Windows Subsytem for Linux overview</h2>
-<p class="lead">
-    Ubuntu WSL2, or Windows Subsystem for Linux 2, is a compatibility layer that allows running Ubuntu, a popular Linux distribution, on Windows 10 or Windows Server. It provides a seamless integration of Ubuntu within the Windows operating system, enabling users to execute Linux commands and run Linux applications without the need for virtual machines. WSL2 offers improved performance compared to its predecessor, WSL1, by utilizing a full Linux kernel running in a lightweight virtual machine. With Ubuntu WSL2, developers and users can leverage the power of Linux tools and utilities while still benefiting from the familiarity and convenience of the Windows environment.
-</p>
+<h1 id="how-it-started">How it started</h1>
+<p>Over the years, I have been involved in delivering both in-person and online courses, using a range of Learning and Course Management tools such as Evernote, Excel, GitHub, and others. While I have managed to make these solutions work for my needs, I have come to realize that they are not ideal for creating a seamless and efficient learning environment.</p>
+<p>As part of my journey to enhance my applied IT skills, I delved into the world of self-hosting and explored various solutions like VMs, LXC containers, and Docker containers. After conducting thorough research, I recognized the potential of building a fast and efficient online school for both Synchronous and Asynchronous Learning through self-hosting.</p>
+<p>As I explored available options, I came across Moodle, the most popular open-source Learning Management System (LMS). While it is not written in Golang as I initially hoped, it is still an excellent solution for my requirements. Its feature-rich nature and open-source flexibility make it an attractive choice.</p>
+<p>For this project, I aim to create a portable, repeatable, quick, and secure environment to host the Moodle LMS. After evaluating various approaches, I have chosen to utilize containers to achieve this goal. Containers provide an isolated and lightweight environment for applications, making it easier to deploy and manage the LMS. To further improve the security and flexibility of my setup, I have chosen to work with Podman over Docker as my container engine.</p>
+<p>By using a Podman pod, which is a networked group of containers, I can orchestrate and manage my online school more effectively. To define this environment, I will leverage Podman Compose, a tool similar to Docker Compose but tailored for Podman.</p>
+<p>Overall, this project aims to leverage the power of containers, particularly Podman, to create a self-hosted and efficient online learning platform using Moodle. I am excited to explore this path as it aligns with my goal of enhancing my IT skills while providing an optimal learning experience for students in both synchronous and asynchronous modes.</p>
+<h1 id="how-its-going">How its going</h1>
+<p>I have been diligently working on crafting this Podman Compose YAML file, which, when executed, can seamlessly build and deploy the entire project from scratch. This approach aligns perfectly with our goal of using a portable, repeatable, fast, and secure environment for hosting the application.</p>
+<p>To ensure both speed and security, I have made use of alpine-based container images, which are lightweight and efficient. Additionally, I have implemented a secure virtual network within the pod, providing an extra layer of protection for our applications.</p>
+<p>With this setup, we can confidently deploy our project in a reliable and consistent manner, making it easy to replicate and scale when needed. By leveraging the power of Podman and its ability to orchestrate containers efficiently, we can create a robust environment for our applications to thrive.</p>
+<h1 id="the-compose-file">The Compose file:</h1>
+<pre><code>version: '1'
+services:
+postgres:
+    image: docker.io/alpine:3.18
+    restart: unless-stopped
+    command: [&quot;postgres&quot;]
+    environment:
+    - POSTGRES_PASSWORD=moodle
+    # PostgreSQL username
+    - POSTGRES_USER=moodle
+    # PostgreSQL database name
+    - POSTGRES_DB=moodle
+    volumes:
+    - postgres:/var/lib/postgresql/data
+    networks:
+    - MOODLE-NETWORK
 
-<h2 id="issues-i-have-experienced">Issues I have experienced</h2>
+moodle:
+    image: erseco/alpine-moodle
+    restart: unless-stopped
+    environment:
+    - LANG=en_US.UTF-8
+    - LANGUAGE=en_US:en
+    - SITE_URL=http://localhost
+    # Moodle database type (PostgreSQL)
+    - DB_TYPE=pgsql
+    # PostgreSQL hostname (service name of the postgres container)
+    - DB_HOST=postgres
+    # PostgreSQL port
+    - DB_PORT=5432
+    # Moodle database name
+    - DB_NAME=moodle
+    # Moodle database username
+    - DB_USER=moodle
+    # Moodle database password
+    - DB_PASS=moodle
+    # Moodle database table prefix
+    - DB_PREFIX=mdl_
+    # Whether to use SSL proxy or not
+    - SSLPROXY=false
+    # Moodle administrator's email address
+    - MOODLE_EMAIL=user@example.com
+    # Default Moodle language
+    - MOODLE_LANGUAGE=en
+    # Site name for Moodle instance
+    - MOODLE_SITENAME=New-Site
+    # Moodle administrator's username
+    - MOODLE_USERNAME=moodleuser
+    # Moodle administrator's password (PLEASE_CHANGEME is a placeholder)
+    - MOODLE_PASSWORD=PLEASE_CHANGEME
+    # SMTP server host for sending Moodle emails
+    - SMTP_HOST=smtp.gmail.com
+    # SMTP server port
+    - SMTP_PORT=587
+    # SMTP server username for authentication
+    - SMTP_USER=your_email@gmail.com
+    # SMTP server password for authentication
+    - SMTP_PASSWORD=your_password
+    # SMTP protocol for email delivery (TLS in this case)
+    - SMTP_PROTOCOL=tls
+    # Moodle no-reply email address
+    - MOODLE_MAIL_NOREPLY_ADDRESS=noreply@localhost
+    # Moodle email prefix
+    - MOODLE_MAIL_PREFIX=[moodle]
+    ports:
+    - &quot;80:8080&quot;
+    volumes:
+    # Moodle data directory
+    - moodledata:/var/www/moodledata
+    # Moodle web root directory
+    - moodlehtml:/var/www/html
+    depends_on:
+    - postgres
+    networks:
+    - MOODLE-NETWORK
 
-
-<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-danger rounded" style="border-width:4px !important;">
-    <div class="wrap border border-left-0 rounded">
-        
-        <div class="card-header border-0 bg-white pl-3 text-danger">
-            <h3>VSCODE CLI Problem</h3>
-        </div>
-        
-        <div class="card-body pt-1">
-            I normally invoke VSCODE within Ubuntu WSL2 CLI with:
-$ code Documents/Git/Project
-Which opens VSCODE to that target directory.
-However I started getting an error regarding the path to VSCODE being broken
-        </div>
-    </div>
-</div>
-
-
-
-<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-success rounded" style="border-width:4px !important;">
-    <div class="wrap border border-left-0 rounded">
-        
-        <div class="card-header border-0 bg-white pl-3 text-success">
-            <h3>VSCODE CLI Solution</h3>
-        </div>
-        
-        <div class="card-body pt-1">
-            <ul>
-<li>Within the WSL terminal, type rm -r ~/.vscode-server to delete the VS Code WSL server.</li>
-<li>Exit the terminal and from your PowerShell/Cmd, run wsl &ndash;shutdown.</li>
-</ul>
-
-        </div>
-    </div>
-</div>
-
-<hr>
-
-
-<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-danger rounded" style="border-width:4px !important;">
-    <div class="wrap border border-left-0 rounded">
-        
-        <div class="card-header border-0 bg-white pl-3 text-danger">
-            <h3>GO Path Variable constant reset</h3>
-        </div>
-        
-        <div class="card-body pt-1">
-            Go Path variable keeps resetting in WSL2:
-        </div>
-    </div>
-</div>
-
-
-
-<div class="card my-3 border-top-0 border-right-0 border-bottom-0 border-left border-success rounded" style="border-width:4px !important;">
-    <div class="wrap border border-left-0 rounded">
-        
-        <div class="card-header border-0 bg-white pl-3 text-success">
-            <h3>GO Path Variable solution</h3>
-        </div>
-        
-        <div class="card-body pt-1">
-            echo &rsquo;export PATH=$PATH:/usr/local/go/bin&rsquo; &raquo; ~/.bashrc
-        </div>
-    </div>
-</div>
-
+networks:
+MOODLE-NETWORK:
+</code></pre>
 
 
     
@@ -469,8 +479,8 @@ However I started getting an error regarding the path to VSCODE being broken
 
     <h4 class="text-white text-center">Read more</h4>
 
-    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/trevorsmale/cumulus/Workflows/RSS/" title="RSS feed"><i class="fas fa-chevron-left p-1"></i>RSS feed</a>
-        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/trevorsmale/cumulus/AI/" title="AI">AI<i class="fas fa-chevron-right p-1"></i></a>
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/trevorsmale/cumulus/Project/" title="Project"><i class="fas fa-chevron-left p-1"></i>Project</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/trevorsmale/cumulus/Project/Stringer/" title="Stringer">Stringer<i class="fas fa-chevron-right p-1"></i></a>
     </div>
 </div>
 

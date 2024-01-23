@@ -5,55 +5,43 @@
     <link>https://github.com/trevorsmale/cumulus/Linux/</link>
     <description>Recent content in Linux / Unix on Trevor Smale&#39; Notes</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 29 May 2023 18:31:10 -0400</lastBuildDate><atom:link href="https://github.com/trevorsmale/cumulus/Linux/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Mon, 29 May 2023 18:31:10 -0400</lastBuildDate>
+    <atom:link href="https://github.com/trevorsmale/cumulus/Linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cron</title>
       <link>https://github.com/trevorsmale/cumulus/Linux/Cron/</link>
       <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
-      
       <guid>https://github.com/trevorsmale/cumulus/Linux/Cron/</guid>
-      <description>Update Log   2023 06 02 - Initial Commit     Overview UNIX cron is a time-based job scheduling system used in UNIX-like operating systems to automate recurring tasks or jobs. It allows users to schedule commands or scripts to run at specific intervals, such as minutes, hours, days, or months. Cron jobs are created and managed using the cron daemon.
-Here are some key components and concepts related to UNIX cron:</description>
+      <description>Update Log 2023 06 02 - Initial Commit Overview UNIX cron is a time-based job scheduling system used in UNIX-like operating systems to automate recurring tasks or jobs. It allows users to schedule commands or scripts to run at specific intervals, such as minutes, hours, days, or months. Cron jobs are created and managed using the cron daemon.&#xA;Here are some key components and concepts related to UNIX cron:</description>
     </item>
-    
     <item>
       <title>Perl</title>
       <link>https://github.com/trevorsmale/cumulus/Linux/Perl/</link>
       <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
-      
       <guid>https://github.com/trevorsmale/cumulus/Linux/Perl/</guid>
-      <description>Update Log   2023 06 06 - Initial Commit     &amp;lt;sodipodi:namedview id=&amp;ldquo;namedview8&amp;rdquo; pagecolor=&amp;quot;#ffffff&amp;quot; bordercolor=&amp;quot;#000000&amp;quot; borderopacity=&amp;ldquo;0.25&amp;rdquo; inkscape:showpageshadow=&amp;ldquo;2&amp;rdquo; inkscape:pageopacity=&amp;ldquo;0.0&amp;rdquo; inkscape:pagecheckerboard=&amp;ldquo;0&amp;rdquo; inkscape:deskcolor=&amp;quot;#d1d1d1&amp;quot; showgrid=&amp;ldquo;false&amp;rdquo; inkscape:zoom=&amp;ldquo;0.4108&amp;rdquo; inkscape:cx=&amp;ldquo;1110.0292&amp;rdquo; inkscape:cy=&amp;ldquo;1251.2171&amp;rdquo; inkscape:window-width=&amp;ldquo;3840&amp;rdquo; inkscape:window-height=&amp;ldquo;2066&amp;rdquo; inkscape:window-x=&amp;quot;-11&amp;quot; inkscape:window-y=&amp;quot;-11&amp;quot; inkscape:window-maximized=&amp;ldquo;1&amp;rdquo; inkscape:current-layer=&amp;ldquo;svg6&amp;rdquo; /&amp;gt;
-perl  What is Perl? Perl is a high-level, general-purpose programming language renowned for its versatility and strong text processing capabilities. Created by Larry Wall in the late 1980s, Perl stands for &amp;ldquo;Practical Extraction and Reporting Language,&amp;rdquo; emphasizing its original purpose of text manipulation and extraction from various data sources.</description>
+      <description>Update Log 2023 06 06 - Initial Commit What is Perl? Perl is a high-level, general-purpose programming language renowned for its versatility and strong text processing capabilities. Created by Larry Wall in the late 1980s, Perl stands for &amp;ldquo;Practical Extraction and Reporting Language,&amp;rdquo; emphasizing its original purpose of text manipulation and extraction from various data sources.&#xA;Strengths One of Perl&amp;rsquo;s notable strengths lies in its exceptional text processing capabilities. It provides powerful regular expression support, allowing developers to easily search, replace, and extract patterns from strings and files.</description>
     </item>
-    
     <item>
       <title>R-Sync</title>
       <link>https://github.com/trevorsmale/cumulus/Linux/Rsync/</link>
       <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
-      
       <guid>https://github.com/trevorsmale/cumulus/Linux/Rsync/</guid>
-      <description>Update Log   2023 06 02 - Initial Commit     Overview A backup and copy software Transfer files over SSH. Only transfer the files that have changes or are missing. Much faster and secure than FTP.
-Options -a # Recursion and preserve everything. -v # Transfer log. -h # Display the output numbers in a human-readable format. -e # Specify remote shell. -W # Copy whole file, without checking for changes.</description>
+      <description>Update Log 2023 06 02 - Initial Commit Overview A backup and copy software&#xA;Transfer files over SSH. Only transfer the files that have changes or are missing. Much faster and secure than FTP.&#xA;Options -a # Recursion and preserve everything. -v # Transfer log. -h # Display the output numbers in a human-readable format. -e # Specify remote shell. -W # Copy whole file, without checking for changes. --progress # Show the sync progress during transfer Exclude files/folders rsync -av .</description>
     </item>
-    
     <item>
       <title>SSH</title>
       <link>https://github.com/trevorsmale/cumulus/Linux/SSH/</link>
       <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
-      
       <guid>https://github.com/trevorsmale/cumulus/Linux/SSH/</guid>
-      <description>Update Log   2023 06 02 - Initial Commit      What is SSH? SSH is a cryptographic network protocol that allows secure communication between networked devices. It was developed as a replacement for Telnet, which sends all data, including passwords, in clear text, making it susceptible to eavesdropping and interception.
-SSH provides encryption and authentication mechanisms to protect the confidentiality and integrity of network communications.</description>
+      <description>Update Log 2023 06 02 - Initial Commit What is SSH? SSH is a cryptographic network protocol that allows secure communication between networked devices. It was developed as a replacement for Telnet, which sends all data, including passwords, in clear text, making it susceptible to eavesdropping and interception.&#xA;SSH provides encryption and authentication mechanisms to protect the confidentiality and integrity of network communications. Brief History of SSH&#xA;History The SSH protocol was first developed by Tatu Ylönen in 1995 as a more secure alternative to Telnet and FTP.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://github.com/trevorsmale/cumulus/Linux/SSHT/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://github.com/trevorsmale/cumulus/Linux/SSHT/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

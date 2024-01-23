@@ -145,6 +145,14 @@
                   </a>
                 
         </li>
+        <li data-nav-id="/trevorsmale/cumulus/Azure/Certifications/AZ900/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Azure/Certifications/AZ900/" class="nav-link p-0">
+                    
+                  </a>
+                
+        </li>
         </ul>
     </li>
         </ul>
@@ -194,6 +202,14 @@
           <a class="nav-link p-0" href="/trevorsmale/cumulus/GO/"><h6>GO</h6></a>
         
         <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/GO/WAM/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/GO/WAM/" class="nav-link p-0">
+                    GO Web App Mini Textbook
+                  </a>
+                
+        </li>
         <li data-nav-id="/trevorsmale/cumulus/GO/Course1/" class="nav-item my-1">
                 
                 
@@ -276,57 +292,6 @@
                   </a>
                 
         </li>
-    <li data-nav-id="/trevorsmale/cumulus/Linux/TC/" class="nav-item my-1 haschildren
-        ">
-        
-        
-          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/TC/"><h6>Training &amp; Certifications</h6></a>
-        
-        <ul class="list-unstyled ml-2">
-    <li data-nav-id="/trevorsmale/cumulus/Linux/TC/LPI/" class="nav-item my-1 haschildren
-        ">
-        
-        
-          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/TC/LPI/"><h6>Linux Professional Institute (LPI)</h6></a>
-        
-        <ul class="list-unstyled ml-2">
-        <li data-nav-id="/trevorsmale/cumulus/Linux/TC/LPI/ESENT/" class="nav-item my-1">
-                
-                
-                  <a href="/trevorsmale/cumulus/Linux/TC/LPI/ESENT/" class="nav-link p-0">
-                    Essentials
-                  </a>
-                
-        </li>
-        <li data-nav-id="/trevorsmale/cumulus/Linux/TC/LPI/LPIC1/" class="nav-item my-1">
-                
-                
-                  <a href="/trevorsmale/cumulus/Linux/TC/LPI/LPIC1/" class="nav-link p-0">
-                    LPIC 1 Certification
-                  </a>
-                
-        </li>
-        </ul>
-    </li>
-    <li data-nav-id="/trevorsmale/cumulus/Linux/TC/Skilstak/" class="nav-item my-1 haschildren
-        ">
-        
-        
-          <a class="nav-link p-0" href="/trevorsmale/cumulus/Linux/TC/Skilstak/"><h6>SkilStak</h6></a>
-        
-        <ul class="list-unstyled ml-2">
-        <li data-nav-id="/trevorsmale/cumulus/Linux/TC/Skilstak/BB/" class="nav-item my-1">
-                
-                
-                  <a href="/trevorsmale/cumulus/Linux/TC/Skilstak/BB/" class="nav-link p-0">
-                    Beginner Boost
-                  </a>
-                
-        </li>
-        </ul>
-    </li>
-        </ul>
-    </li>
     <li data-nav-id="/trevorsmale/cumulus/Linux/NIX/" class="nav-item my-1
         ">
         
@@ -358,6 +323,14 @@
           <a class="nav-link p-0" href="/trevorsmale/cumulus/Project/"><h6>Project</h6></a>
         
         <ul class="list-unstyled ml-2">
+        <li data-nav-id="/trevorsmale/cumulus/Project/Skool/" class="nav-item my-1">
+                
+                
+                  <a href="/trevorsmale/cumulus/Project/Skool/" class="nav-link p-0">
+                    Skool
+                  </a>
+                
+        </li>
         <li data-nav-id="/trevorsmale/cumulus/Project/Stringer/" class="nav-item my-1">
                 
                 
@@ -440,40 +413,40 @@ server without  issue tracking and pull requests, install <a href="/cgit">cgit</
 instead.</p>
 <h2 id="installing-gitea">Installing Gitea</h2>
 <p>First install a few dependencies:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">apt install curl sqlite3
-</code></pre></div><p>Unfortunately, Gitea itself is not in the official Debian repos, so we
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">apt install curl sqlite3
+</span></span></code></pre></div><p>Unfortunately, Gitea itself is not in the official Debian repos, so we
 will add a third-party repository for it.</p>
 <p>Add the repo's gpg key to apt's trusted keys:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">curl -sL -o /etc/apt/trusted.gpg.d/morph027-gitea.asc https://packaging.gitlab.io/gitea/gpg.key
-</code></pre></div><p>Then add the actual repository to apt:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="nb">echo</span> <span class="s2">&#34;deb [arch=</span><span class="k">$(</span>dpkg --print-architecture<span class="k">)</span><span class="s2">] https://packaging.gitlab.io/gitea gitea main&#34;</span> &gt; /etc/apt/sources.list.d/morph027-gitea.list
-</code></pre></div><p>Now we can install Gitea:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">apt update
-apt install gitea
-</code></pre></div><p>Since apt automatically enables and starts the Gitea service, it should
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">curl -sL -o /etc/apt/trusted.gpg.d/morph027-gitea.asc https://packaging.gitlab.io/gitea/gpg.key
+</span></span></code></pre></div><p>Then add the actual repository to apt:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;deb [arch=</span><span class="k">$(</span>dpkg --print-architecture<span class="k">)</span><span class="s2">] https://packaging.gitlab.io/gitea gitea main&#34;</span> &gt; /etc/apt/sources.list.d/morph027-gitea.list
+</span></span></code></pre></div><p>Now we can install Gitea:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">apt update
+</span></span><span class="line"><span class="cl">apt install gitea
+</span></span></code></pre></div><p>Since apt automatically enables and starts the Gitea service, it should
 already be running on port <code>3000</code> on your server!</p>
 <h2 id="setting-up-a-nginx-reverse-proxy">Setting up a Nginx reverse proxy</h2>
 <p>You should know how to generate SSL certificates and use Nginx by now.
 Add this to your Nginx config to proxy requests made to your git
 subdomain to Gitea running on port 3000:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">server</span> <span class="p">{</span>
-	<span class="kn">listen</span> <span class="mi">443</span> <span class="s">ssl</span><span class="p">;</span>
-	<span class="kn">listen</span> <span class="s">[::]:443</span> <span class="s">ssl</span><span class="p">;</span>
-	<span class="kn">ssl_certificate</span> <span class="s">/etc/ssl/nginx/git.example.org.crt</span><span class="p">;</span>
-	<span class="kn">ssl_certificate_key</span> <span class="s">/etc/ssl/nginx/git.example.org.key</span><span class="p">;</span>
-	<span class="kn">server_name</span> <span class="s">Gitea</span> <span class="s">Example</span> <span class="s">git.example.org</span><span class="p">;</span>
-	<span class="kn">location</span> <span class="s">/</span> <span class="p">{</span>
-		<span class="kn">proxy_pass</span> <span class="s">http://localhost:3000/</span><span class="p">;</span> <span class="c1"># The / is important!
-</span><span class="c1"></span>		<span class="kn">proxy_redirect</span> <span class="no">off</span><span class="p">;</span>
-		<span class="kn">proxy_set_header</span> <span class="s">Host</span> <span class="nv">$host</span><span class="p">;</span>
-		<span class="kn">proxy_set_header</span> <span class="s">X-Real-IP</span> <span class="nv">$remote_addr</span><span class="p">;</span>
-		<span class="kn">proxy_set_header</span> <span class="s">X-Forwarded-For</span> <span class="nv">$proxy_add_x_forwarded_for</span><span class="p">;</span>
-		<span class="kn">proxy_set_header</span> <span class="s">X-Forwarded-Proto</span> <span class="nv">$scheme</span><span class="p">;</span>
-	<span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div><p>And reload Nginx:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">systemctl reload nginx
-</code></pre></div><h2 id="setting-up-gitea">Setting up Gitea</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="line"><span class="cl"><span class="k">server</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kn">listen</span> <span class="mi">443</span> <span class="s">ssl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kn">listen</span> <span class="s">[::]:443</span> <span class="s">ssl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kn">ssl_certificate</span> <span class="s">/etc/ssl/nginx/git.example.org.crt</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kn">ssl_certificate_key</span> <span class="s">/etc/ssl/nginx/git.example.org.key</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kn">server_name</span> <span class="s">Gitea</span> <span class="s">Example</span> <span class="s">git.example.org</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kn">location</span> <span class="s">/</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="kn">proxy_pass</span> <span class="s">http://localhost:3000/</span><span class="p">;</span> <span class="c1"># The / is important!
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>		<span class="kn">proxy_redirect</span> <span class="no">off</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="kn">proxy_set_header</span> <span class="s">Host</span> <span class="nv">$host</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="kn">proxy_set_header</span> <span class="s">X-Real-IP</span> <span class="nv">$remote_addr</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="kn">proxy_set_header</span> <span class="s">X-Forwarded-For</span> <span class="nv">$proxy_add_x_forwarded_for</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="kn">proxy_set_header</span> <span class="s">X-Forwarded-Proto</span> <span class="nv">$scheme</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>And reload Nginx:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">systemctl reload nginx
+</span></span></code></pre></div><h2 id="setting-up-gitea">Setting up Gitea</h2>
 <p>If everything worked fine you should now see a setup screen when you go
 to your configured domain in the browser. The options should be pretty
 self-explanatory, it is only important to select SQLite3 and to replace
@@ -499,18 +472,18 @@ be done on your VPS-provider's website without too much trouble.</p>
 <p>This is an incredibly useful feature for me. Open up
 <code>/etc/gitea/app.ini</code> and add <code>DEFAULT_PUSH_CREATE_PRIVATE = true</code> to the
 <code>repository</code> section like so:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-systemd" data-lang="systemd"><span class="k">[repository]</span>
-<span class="na">ROOT </span><span class="o">=</span><span class="s"> /var/lib/gitea/data/gitea-repositories</span>
-<span class="na">DEFAULT_PUSH_CREATE_PRIVATE </span><span class="o">=</span><span class="s"> true</span>
-</code></pre></div><p>If you now add a remote to a repository like this</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">git remote add origin <span class="s1">&#39;ssh://gitea@git.example.org/username/coolproject.git&#39;</span>
-</code></pre></div><p>and push, Gitea will automatically create a private <code>coolproject</code>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-systemd" data-lang="systemd"><span class="line"><span class="cl"><span class="k">[repository]</span>
+</span></span><span class="line"><span class="cl"><span class="na">ROOT </span><span class="o">=</span><span class="s"> /var/lib/gitea/data/gitea-repositories</span>
+</span></span><span class="line"><span class="cl"><span class="na">DEFAULT_PUSH_CREATE_PRIVATE </span><span class="o">=</span><span class="s"> true</span>
+</span></span></code></pre></div><p>If you now add a remote to a repository like this</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git remote add origin <span class="s1">&#39;ssh://gitea@git.example.org/username/coolproject.git&#39;</span>
+</span></span></code></pre></div><p>and push, Gitea will automatically create a private <code>coolproject</code>
 repository in your account!</p>
 <h2 id="change-tab-width">Change tab-width</h2>
 <p>By default Gitea displays tabs 8 spaces wide, however I prefer 4 spaces.
 We can change this!</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">mkdir -p /var/lib/gitea/custom/templates/custom/
-</code></pre></div><p>And write this into
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">mkdir -p /var/lib/gitea/custom/templates/custom/
+</span></span></code></pre></div><p>And write this into
 <code>/var/lib/gitea/custom/templates/custom/header.tmpl</code>:</p>
 
 

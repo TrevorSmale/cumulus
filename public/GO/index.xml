@@ -5,25 +5,29 @@
     <link>https://github.com/trevorsmale/cumulus/GO/</link>
     <description>Recent content in GO on Trevor Smale&#39; Notes</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 29 May 2023 18:31:10 -0400</lastBuildDate><atom:link href="https://github.com/trevorsmale/cumulus/GO/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Mon, 29 May 2023 18:31:10 -0400</lastBuildDate>
+    <atom:link href="https://github.com/trevorsmale/cumulus/GO/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GO Web App Mini Textbook</title>
+      <link>https://github.com/trevorsmale/cumulus/GO/WAM/</link>
+      <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
+      <guid>https://github.com/trevorsmale/cumulus/GO/WAM/</guid>
+      <description>Update Log 2023 06 06 - Initial Commit To-Do Create example code snippes [ ] Golang Web Application Development Mini Textbook 1. Introduction to Go for Web Development Overview of Go and its features Go is a powerful programming language known for its efficiency, simplicity, and concurrency support. Its statically typed nature and fast compilation make it an excellent choice for building web applications. With a rich standard library and a vibrant ecosystem of packages, Go provides developers with a solid foundation for web development.</description>
+    </item>
     <item>
       <title>Making Modern Applications with GO</title>
       <link>https://github.com/trevorsmale/cumulus/GO/Course1/</link>
       <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
-      
       <guid>https://github.com/trevorsmale/cumulus/GO/Course1/</guid>
-      <description>Update Log   2023 06 01 - Initial Commit     &amp;lt;sodipodi:namedview id=&amp;ldquo;namedview1234&amp;rdquo; pagecolor=&amp;quot;#ffffff&amp;quot; bordercolor=&amp;quot;#000000&amp;quot; borderopacity=&amp;ldquo;0.25&amp;rdquo; inkscape:showpageshadow=&amp;ldquo;2&amp;rdquo; inkscape:pageopacity=&amp;ldquo;0.0&amp;rdquo; inkscape:pagecheckerboard=&amp;ldquo;0&amp;rdquo; inkscape:deskcolor=&amp;quot;#d1d1d1&amp;quot; showgrid=&amp;ldquo;false&amp;rdquo; inkscape:zoom=&amp;ldquo;2.0058594&amp;rdquo; inkscape:cx=&amp;ldquo;301.61635&amp;rdquo; inkscape:cy=&amp;ldquo;257.74488&amp;rdquo; inkscape:window-width=&amp;ldquo;2802&amp;rdquo; inkscape:window-height=&amp;ldquo;1694&amp;rdquo; inkscape:window-x=&amp;ldquo;4435&amp;rdquo; inkscape:window-y=&amp;ldquo;132&amp;rdquo; inkscape:window-maximized=&amp;ldquo;0&amp;rdquo; inkscape:current-layer=&amp;ldquo;svg1232&amp;rdquo; /&amp;gt;Backspacerdf:RDF&amp;lt;cc:Work rdf:about=&amp;quot;&amp;quot;&amp;gt;dc:titleBackspace&amp;lt;/dc:title&amp;gt;&amp;lt;/cc:Work&amp;gt;&amp;lt;/rdf:RDF&amp;gt;
-Course Overview Learn to write modern, fast, and secure web applications in Google&amp;rsquo;s Go programming language, and learn it from an award winning University professor with 20 years of teaching experience, and 20 years of experience working in the industry as an entrepreneur.</description>
+      <description>Update Log 2023 06 01 - Initial Commit &lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34; standalone=&#34;no&#34;?&gt; &amp;lt;sodipodi:namedview id=&amp;ldquo;namedview1234&amp;rdquo; pagecolor=&amp;quot;#ffffff&amp;quot; bordercolor=&amp;quot;#000000&amp;quot; borderopacity=&amp;ldquo;0.25&amp;rdquo; inkscape:showpageshadow=&amp;ldquo;2&amp;rdquo; inkscape:pageopacity=&amp;ldquo;0.0&amp;rdquo; inkscape:pagecheckerboard=&amp;ldquo;0&amp;rdquo; inkscape:deskcolor=&amp;quot;#d1d1d1&amp;quot; showgrid=&amp;ldquo;false&amp;rdquo; inkscape:zoom=&amp;ldquo;2.0058594&amp;rdquo; inkscape:cx=&amp;ldquo;301.61635&amp;rdquo; inkscape:cy=&amp;ldquo;257.74488&amp;rdquo; inkscape:window-width=&amp;ldquo;2802&amp;rdquo; inkscape:window-height=&amp;ldquo;1694&amp;rdquo; inkscape:window-x=&amp;ldquo;4435&amp;rdquo; inkscape:window-y=&amp;ldquo;132&amp;rdquo; inkscape:window-maximized=&amp;ldquo;0&amp;rdquo; inkscape:current-layer=&amp;ldquo;svg1232&amp;rdquo; /&amp;gt;Backspacerdf:RDF&amp;lt;cc:Work rdf:about=&amp;quot;&amp;quot;&amp;gt;dc:titleBackspace&amp;lt;/dc:title&amp;gt;&amp;lt;/cc:Work&amp;gt;&amp;lt;/rdf:RDF&amp;gt;&#xA;Course Overview Learn to write modern, fast, and secure web applications in Google&amp;rsquo;s Go programming language, and learn it from an award winning University professor with 20 years of teaching experience, and 20 years of experience working in the industry as an entrepreneur.</description>
     </item>
-    
     <item>
       <title>WAILS</title>
       <link>https://github.com/trevorsmale/cumulus/GO/WAILS/</link>
       <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
-      
       <guid>https://github.com/trevorsmale/cumulus/GO/WAILS/</guid>
-      <description>Overview A tool for running cross platform applications using Go and JS Wails Features  Native Menus, Dialogs, Theming and Translucency Windows, macOS and linux support Built in templates for Svelte, React, Preact, Vue, Lit and Vanilla JS Easily call Go methods from JavaScript Automatic Go struct to TypeScript model generation No CGO or external DLLs required on Windows Live development mode using the power of Vite Powerful CLI to easily Create, Build and Package applications A rich runtime library Applications built with Wails are Apple &amp;amp; Microsoft Store compliant  Feature Notes Quick Start Templates Wails comes with a number of pre-configured templates that allow you to get your application up and running quickly.</description>
+      <description>Overview A tool for running cross platform applications using Go and JS&#xA;Wails Features Native Menus, Dialogs, Theming and Translucency Windows, macOS and linux support Built in templates for Svelte, React, Preact, Vue, Lit and Vanilla JS Easily call Go methods from JavaScript Automatic Go struct to TypeScript model generation No CGO or external DLLs required on Windows Live development mode using the power of Vite Powerful CLI to easily Create, Build and Package applications A rich runtime library Applications built with Wails are Apple &amp;amp; Microsoft Store compliant Feature Notes Quick Start Templates Wails comes with a number of pre-configured templates that allow you to get your application up and running quickly.</description>
     </item>
-    
   </channel>
 </rss>

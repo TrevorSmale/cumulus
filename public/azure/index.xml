@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Azure on TS Tech Notes</title>
-    <link>https://github.com/trevorsmale/cumulus/azure/</link>
-    <description>Recent content in Azure on TS Tech Notes</description>
+    <title>Azure on Trevor Smale&#39; Notes</title>
+    <link>https://github.com/trevorsmale/cumulus/Azure/</link>
+    <description>Recent content in Azure on Trevor Smale&#39; Notes</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 25 May 2023 20:21:28 -0400</lastBuildDate><atom:link href="https://github.com/trevorsmale/cumulus/azure/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Azure AD Roles and RBAC</title>
-      <link>https://github.com/trevorsmale/cumulus/Azure/AADR/</link>
-      <pubDate>Thu, 25 May 2023 20:21:28 -0400</pubDate>
-      
-      <guid>https://github.com/trevorsmale/cumulus/Azure/AADR/</guid>
-      <description>Role-Based Access Control (RBAC) is a vital component of Azure&amp;rsquo;s security model. RBAC allows you to assign specific roles to users or groups, granting them the necessary permissions to manage Azure resources. Azure provides a set of built-in roles with different levels of access, such as Owner, Contributor, and Reader. Additionally, you can create custom roles to meet specific requirements. RBAC ensures that users have the right level of access to perform their tasks while maintaining security and governance.</description>
-    </item>
-    
+    <language>en</language>
+    <lastBuildDate>Mon, 29 May 2023 18:31:10 -0400</lastBuildDate>
+    <atom:link href="https://github.com/trevorsmale/cumulus/Azure/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

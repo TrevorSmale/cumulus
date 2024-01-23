@@ -5,16 +5,15 @@
     <link>https://github.com/trevorsmale/cumulus/Blender-3D/</link>
     <description>Recent content in Blender 3D on Trevor Smale&#39; Notes</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 29 May 2023 18:31:10 -0400</lastBuildDate><atom:link href="https://github.com/trevorsmale/cumulus/Blender-3D/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Mon, 29 May 2023 18:31:10 -0400</lastBuildDate>
+    <atom:link href="https://github.com/trevorsmale/cumulus/Blender-3D/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Intro Course</title>
       <link>https://github.com/trevorsmale/cumulus/Blender-3D/Intro-Course/</link>
       <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
-      
       <guid>https://github.com/trevorsmale/cumulus/Blender-3D/Intro-Course/</guid>
-      <description>&amp;lt;sodipodi:namedview id=&amp;ldquo;namedview55&amp;rdquo; pagecolor=&amp;quot;#ffffff&amp;quot; bordercolor=&amp;quot;#000000&amp;quot; borderopacity=&amp;ldquo;0.25&amp;rdquo; inkscape:showpageshadow=&amp;ldquo;2&amp;rdquo; inkscape:pageopacity=&amp;ldquo;0.0&amp;rdquo; inkscape:pagecheckerboard=&amp;ldquo;0&amp;rdquo; inkscape:deskcolor=&amp;quot;#d1d1d1&amp;quot; showgrid=&amp;ldquo;false&amp;rdquo; inkscape:zoom=&amp;ldquo;0.73681641&amp;rdquo; inkscape:cx=&amp;ldquo;1023.3214&amp;rdquo; inkscape:cy=&amp;ldquo;10.857522&amp;rdquo; inkscape:window-width=&amp;ldquo;3840&amp;rdquo; inkscape:window-height=&amp;ldquo;2066&amp;rdquo; inkscape:window-x=&amp;quot;-11&amp;quot; inkscape:window-y=&amp;quot;-11&amp;quot; inkscape:window-maximized=&amp;ldquo;1&amp;rdquo; inkscape:current-layer=&amp;ldquo;g51&amp;rdquo; /&amp;gt;           ®     
-Hugo Image Issue  Fix Bug relating to png image references    Hardware Requirements Blender Foundation recommendations Blender does have some special hardware requirements that may not be satisfied by the average computer.</description>
+      <description>&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34; standalone=&#34;no&#34;?&gt; &amp;lt;sodipodi:namedview id=&amp;ldquo;namedview55&amp;rdquo; pagecolor=&amp;quot;#ffffff&amp;quot; bordercolor=&amp;quot;#000000&amp;quot; borderopacity=&amp;ldquo;0.25&amp;rdquo; inkscape:showpageshadow=&amp;ldquo;2&amp;rdquo; inkscape:pageopacity=&amp;ldquo;0.0&amp;rdquo; inkscape:pagecheckerboard=&amp;ldquo;0&amp;rdquo; inkscape:deskcolor=&amp;quot;#d1d1d1&amp;quot; showgrid=&amp;ldquo;false&amp;rdquo; inkscape:zoom=&amp;ldquo;0.73681641&amp;rdquo; inkscape:cx=&amp;ldquo;1023.3214&amp;rdquo; inkscape:cy=&amp;ldquo;10.857522&amp;rdquo; inkscape:window-width=&amp;ldquo;3840&amp;rdquo; inkscape:window-height=&amp;ldquo;2066&amp;rdquo; inkscape:window-x=&amp;quot;-11&amp;quot; inkscape:window-y=&amp;quot;-11&amp;quot; inkscape:window-maximized=&amp;ldquo;1&amp;rdquo; inkscape:current-layer=&amp;ldquo;g51&amp;rdquo; /&amp;gt; ® Hugo Image Issue Fix Bug relating to png image references Hardware Requirements Blender Foundation recommendations Blender does have some special hardware requirements that may not be satisfied by the average computer. Blender.org lists the minimum hardware requirements as follows:&#xA;64-bit quad core CPU with SSE2 support.</description>
     </item>
-    
   </channel>
 </rss>

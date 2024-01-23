@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI on TS Tech Notes</title>
-    <link>https://github.com/trevorsmale/cumulus/ai/</link>
-    <description>Recent content in AI on TS Tech Notes</description>
+    <title>AI on Trevor Smale&#39; Notes</title>
+    <link>https://github.com/trevorsmale/cumulus/AI/</link>
+    <description>Recent content in AI on Trevor Smale&#39; Notes</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 29 May 2023 18:31:10 -0400</lastBuildDate><atom:link href="https://github.com/trevorsmale/cumulus/ai/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>AI Overview</title>
-      <link>https://github.com/trevorsmale/cumulus/AI/AI/</link>
-      <pubDate>Mon, 29 May 2023 18:31:10 -0400</pubDate>
-      
-      <guid>https://github.com/trevorsmale/cumulus/AI/AI/</guid>
-      <description>Artificial Intelegence &amp;amp; Machine Learning Models  From Age of Information to Age of Understanding    AOI AOU     Information Understanding   Mechanistic Humanistic   Single Interaction Conversational   We Synthesize AI Synthesizes   We conform to computers Computer conform to us   Content created by humans Content created by computers   Wrought memorization External facts and references   Dissociative Relational    LLM (Large Language Model) A large language model (LLM) is a language model consisting of a neural network with many parameters (typically billions of weights or more), trained on large quantities of unlabelled text using self-supervised learning.</description>
-    </item>
-    
+    <language>en</language>
+    <lastBuildDate>Mon, 29 May 2023 18:31:10 -0400</lastBuildDate>
+    <atom:link href="https://github.com/trevorsmale/cumulus/AI/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

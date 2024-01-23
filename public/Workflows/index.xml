@@ -4,34 +4,29 @@
     <title>Work-Flows on Trevor Smale&#39; Notes</title>
     <link>https://github.com/trevorsmale/cumulus/Workflows/</link>
     <description>Recent content in Work-Flows on Trevor Smale&#39; Notes</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://github.com/trevorsmale/cumulus/Workflows/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://github.com/trevorsmale/cumulus/Workflows/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Multi-Site Single Server</title>
       <link>https://github.com/trevorsmale/cumulus/Workflows/MSDHNGINX/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://github.com/trevorsmale/cumulus/Workflows/MSDHNGINX/</guid>
-      <description>Tried &amp;amp; Tested Workflow  I have used this procedure to setup multiple websites on a single low-cost VPS using Dynamic Hosting with NGINX    Debian VPS deployment workflow Simple Outline  Purchase Domain name. Choose a reputable VPS provider. Select Debian as the operating system. Connect to the VPS via SSH. Install necessary packages. Configure HTTP server. Deploy your application.  Purchase Domain Name 1. Simple as Rent Virtual Private Server (VPS) 1.</description>
+      <description>Tried &amp;amp; Tested Workflow I have used this procedure to setup multiple websites on a single low-cost VPS using Dynamic Hosting with NGINX Debian VPS deployment workflow Simple Outline Purchase Domain name. Choose a reputable VPS provider. Select Debian as the operating system. Connect to the VPS via SSH. Install necessary packages. Configure HTTP server. Deploy your application. Purchase Domain Name 1. Simple as Rent Virtual Private Server (VPS) 1.</description>
     </item>
-    
     <item>
       <title>Private Gitea Server</title>
       <link>https://github.com/trevorsmale/cumulus/Workflows/Gitea/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://github.com/trevorsmale/cumulus/Workflows/Gitea/</guid>
-      <description>Tried &amp;amp; Tested Workflow  I have used this procedure to setup a Gitea repository on a single low-cost VPS using Dynamic Hosting with NGINX    Gitea allows you to self-host your git repositories similar to bare repositories, but comes with additional features that you might know from GitHub, such as issues, pull requests or multiple users. Its advantage over GitLab&amp;mdash;another Free Software GitHub clone&amp;mdash;is that it is much more lightweight and easier to setup.</description>
+      <description>Tried &amp;amp; Tested Workflow I have used this procedure to setup a Gitea repository on a single low-cost VPS using Dynamic Hosting with NGINX Gitea allows you to self-host your git repositories similar to bare repositories, but comes with additional features that you might know from GitHub, such as issues, pull requests or multiple users. Its advantage over GitLab&amp;mdash;another Free Software GitHub clone&amp;mdash;is that it is much more lightweight and easier to setup.</description>
     </item>
-    
     <item>
       <title>RSS feed</title>
       <link>https://github.com/trevorsmale/cumulus/Workflows/RSS/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://github.com/trevorsmale/cumulus/Workflows/RSS/</guid>
-      <description>Tried &amp;amp; Tested Workflow  I have used this procedure to setup multiple websites on a single low-cost VPS using Dynamic Hosting with NGINX    Function RSS feeds are an easy way to be notified about new content from various websites, and they are easy to implement in your website.
-How an RSS Feed Works Some websites with frequently changing content like blogs, podcasts, or video sharing sites, will have a link to a file containing the RSS feed and its items.</description>
+      <description>Tried &amp;amp; Tested Workflow I have used this procedure to setup multiple websites on a single low-cost VPS using Dynamic Hosting with NGINX Function RSS feeds are an easy way to be notified about new content from various websites, and they are easy to implement in your website.&#xA;How an RSS Feed Works Some websites with frequently changing content like blogs, podcasts, or video sharing sites, will have a link to a file containing the RSS feed and its items.</description>
     </item>
-    
   </channel>
 </rss>
